@@ -146,10 +146,10 @@ Every Tharaic word descends from a consonantal root — usually **biconsonantal*
 
 VSO is the only canonical order in all registers. Word order variation is used exclusively for **emphasis**.
 
-> *Nāvei has navos ān navān.* — Sails the-sailor the-ship. → "The sailor sails the ship."
+> *Nāvei navos navān.* — Sails sailor ship. → "The sailor sails the ship."
 
 Fronting a noun for emphasis:
-> *Ān navān nāvei has navos.* — THE SHIP — the sailor sails it.
+> *Navān nāvei navos.* — THE SHIP — the sailor sails it.
 
 ---
 
@@ -257,7 +257,7 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 Tharaic has **two ways to express possession**:
 
 **① Genitive case** — Greek-derived, everyday spoken language:
-> *ā navā hi bāsili* — the ship of the captain
+> *navā bāsili* — the ship of the captain
 
 **② Construct state** — Phoenician-derived, for titles, epithets, sacred formulas, and permanent relationships.
 
@@ -304,7 +304,7 @@ Examples:
 | 3sg IN | *-a* | 3pl IN | *-om* |
 | 1du | *-nain* | 3du AN | *-ain* |
 
-> *Idei-ni has thāros.* — "The sea sees me."
+> *Idei-ni thāros.* — "The sea sees me."
 > *Phereu-ta ani.* — "I carry you."
 
 **Enclitic possessive pronouns — attach to nouns:**
@@ -325,13 +325,13 @@ Examples:
 #### Future: particle *sha* + present
 
 > *sha nāvō* — I will sail
-> *sha nāvei has navos* — The sailor will sail
+> *sha nāvei navos* — The sailor will sail
 
 #### Narrative past prefix *va-* (Phoenician wayyiqtol-analog)
 
 In oral storytelling and chant, sequential past events are marked with *va-* prefixed to the present-tense form.
 
-> *va-Enāve has velos… va-Enāva has navā… va-Eleka has bāsilos.*
+> *va-Enāve velos… va-Enāva navā… va-Eleka bāsilos.*
 > "The wind rose… the ship moved… the captain spoke."
 
 This form is for **oral narrative and poetry only**. Formal written prose uses the augment past.
@@ -543,16 +543,16 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 | Tharaic | Gloss | Natural English |
 |---------|-------|-----------------|
 | *Kalos velos!* | Fair wind! | Fair winds! (blessing & farewell) |
-| *Nāvei has navos epi has thāros.* | Sails the-sailor on the-sea. | The sailor sails upon the sea. |
+| *Nāvei navos epi thāros.* | Sails sailor on sea. | The sailor sails upon the sea. |
 | *Bāsil navā — adenos thāri.* | Captain-CONSTR ship — lord-CONSTR crew. | The ship's captain — lord of the crew. |
-| *Idei-ni has yamos.* | Sees-me the-western-deep. | The deep sea sees me. |
+| *Idei-ni yamos.* | Sees-me western-deep. | The deep sea sees me. |
 | *Venei hūa navatha.* | Comes he/she ship-ABL. | He comes off the ship. |
 | *Pherou-ta ani naveli.* | Carry-you I ship-LOC. | I carry you aboard the ship. |
 | *Lakul thāros: nāve, zāe.* | Word-CONSTR sea: sail, live. | The law of the sea: sail, live. |
-| *sha Ideim ān selēnān naveli.* | FUT see-1DU the moon ship-LOC. | We two will see the moon from the ship. |
-| *va-Enāve has velos… va-Enāva has navā… va-Eleka has bāsilos.* | And-rose the wind… and-moved the ship… and-spoke the captain. | The wind rose… the ship moved… the captain spoke. |
-| *Lekō ani — ani, navos hi thāri!* | Speak I — I, sailor of-the deep! | I speak — I, sailor of the deep! |
-| *Sha Nāvousi him kapanoi mizrakhātha.* | FUT sail the merchants from-the-east. | The merchants will sail in from the east. |
+| *sha Ideim selēnān naveli.* | FUT see-1DU moon ship-LOC. | We two will see the moon from the ship. |
+| *va-Enāve velos… va-Enāva navā… va-Eleka bāsilos.* | And-rose wind… and-moved ship… and-spoke captain. | The wind rose… the ship moved… the captain spoke. |
+| *Lekō ani — ani, navos thāri!* | Speak I — I, sailor of-deep! | I speak — I, sailor of the deep! |
+| *Sha Nāvousi kapanoi mizrakhātha.* | FUT sail merchants from-east. | The merchants will sail in from the east. |
 
 ---
 
