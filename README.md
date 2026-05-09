@@ -252,39 +252,7 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 ---
 
-### 3.4 Articles
-
-The definite article agrees in gender, case, and number. No indefinite article — context handles it.
-
-The *h-* initial is the direct signature of the **Phoenician definite article *ha-***.
-
-**Animate article:**
-
-| Case | O-stem SG | A-stem SG | Dual | Plural |
-|------|-----------|-----------|------|--------|
-| **NOM** | *has* | *hā* | *hein* | *him* |
-| **ACC** | *han* | *hān* | *hein* | *honas* |
-| **GEN** | *hi* | *his* | *hoin* | *hōn* |
-| **DAT** | *hoi* | *hai* | *hoin* | *hoim* |
-| **VOC** | *he* | *he* | *hein* | *him* |
-| **LOC** | *heli* | *heli* | *helin* | *helis* |
-| **INS** | *hom* | *hom* | *homen* | *homis* |
-| **ABL** | *hatha* | *hatha* | *hathin* | *hathis* |
-
-**Inanimate article:**
-
-| Case | ON-stem SG | AR-stem SG | Dual | Plural |
-|------|------------|------------|------|--------|
-| **NOM/ACC/VOC** | *to* | *tar* | *toin* | *ta* |
-| **GEN** | *tou* | *tari* | *toin* | *tōn* |
-| **DAT** | *toi* | *taroi* | *toin* | *toim* |
-| **LOC** | *teli* | *tareli* | *telin* | *telis* |
-| **INS** | *tom* | *tarom* | *tomen* | *tomis* |
-| **ABL** | *tatha* | *taratha* | *tathin* | *tathis* |
-
----
-
-### 3.5 Construct State — Phoenician Possession
+### 3.4 Construct State — Phoenician Possession
 
 Tharaic has **two ways to express possession**:
 
@@ -309,7 +277,7 @@ Examples:
 
 ---
 
-### 3.6 Pronouns & Enclitics
+### 3.5 Pronouns & Enclitics
 
 **Independent personal pronouns:**
 
@@ -352,7 +320,7 @@ Examples:
 
 ---
 
-### 3.7 Verbs
+### 3.6 Verbs
 
 #### Future: particle *sha* + present
 
@@ -402,7 +370,7 @@ This form is for **oral narrative and poetry only**. Formal written prose uses t
 
 ---
 
-### 3.8 Adjectives
+### 3.7 Adjectives
 
 Agree in **Animate / Inanimate** gender. Full declension for *kalos* (good, fair, favorable):
 
@@ -421,7 +389,7 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 
 ---
 
-### 3.9 Prepositions
+### 3.8 Prepositions
 
 | Tharaic | Meaning |
 |---------|---------|
@@ -438,7 +406,7 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 | *syn* | with, together with |
 | *anti* | against, opposite |
 
-### 3.10 Conjunctions
+### 3.9 Conjunctions
 
 | Tharaic | Meaning |
 |---------|---------|
