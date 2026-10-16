@@ -6,6 +6,8 @@
 
 Every Tharaic word descends from a consonantal root — usually **biconsonantal** (2 consonants) or **triconsonantal** (3 consonants). The root carries the *meaning*; vowels, affixes, and stem patterns carry the *grammar*. Roots are written with hyphens.
 
+The root vowel shows the word's role: **e-grade** for plain verbs and agents (*λεκειν*, *λεκος*), **a-grade** for things and results (*λακον*, *ταρον*), and **ā-grade** for great actors and permanent roles (*μᾱλικος*, *θᾱρος*). See [History § Root vowel grades](history.md#1-root-vowel-grades).
+
 ### Root Examples
 
 **Ν-Ϝ** — *sailing, ships, seafaring*
@@ -65,6 +67,8 @@ Every Tharaic word descends from a consonantal root — usually **biconsonantal*
 
 Ships, the sea, winds, and stars are animate — these forces have agency. They are spoken to, bargained with, and honored.
 
+A few nouns have endings that don't match their gender, because they changed gender over time: *αστρα* "constellation" and *ρεμα* "oars" are old plurals used as collectives, and *ͱυδᾱ* "fresh water" keeps the A-stem endings of a once-animate noun. See [History § Nouns that changed gender](history.md#4-nouns-that-changed-gender).
+
 ---
 
 ## Noun Paradigms
@@ -93,19 +97,21 @@ Ships, the sea, winds, and stars are animate — these forces have agency. They 
 
 The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the *three sea cases*: Where are you? How did you get here? Where did you come from?
 
+The dual ends in **-ιν** (instrumental **-ομιν**); the genitive and dative dual end in -οιν. See [History § The noun dual](history.md#5-the-noun-dual).
+
 ---
 
 ### Animate O-stem: *θᾱρος* (sea) | Root: Τ-Ρ
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *θᾱρος*<br>thāros | *θᾱρειν*<br>thārein | *θᾱριμ*<br>thārim |
-| **ACC** | *θᾱρον*<br>thāron | *θᾱρειν*<br>thārein | *θᾱρονας*<br>thāronas |
+| **NOM** | *θᾱρος*<br>thāros | *θᾱριν*<br>thārin | *θᾱριμ*<br>thārim |
+| **ACC** | *θᾱρον*<br>thāron | *θᾱριν*<br>thārin | *θᾱρονας*<br>thāronas |
 | **GEN** | *θᾱρι*<br>thāri | *θᾱροιν*<br>thāroin | *θᾱρων*<br>thārōn |
 | **DAT** | *θᾱροι*<br>thāroi | *θᾱροιν*<br>thāroin | *θᾱροιμ*<br>thāroim |
-| **VOC** | *θᾱρε*<br>thāre | *θᾱρειν*<br>thārein | *θᾱριμ*<br>thārim |
+| **VOC** | *θᾱρε*<br>thāre | *θᾱριν*<br>thārin | *θᾱριμ*<br>thārim |
 | **LOC** | *θᾱρελι*<br>thāreli | *θᾱρελιν*<br>thārelin | *θᾱρελις*<br>thārelis |
-| **INS** | *θᾱρομ*<br>thārom | *θᾱρομεν*<br>thāromen | *θᾱρομις*<br>thāromis |
+| **INS** | *θᾱρομ*<br>thārom | *θᾱρομιν*<br>thāromin | *θᾱρομις*<br>thāromis |
 | **ABL** | *θᾱραθα*<br>thāratha | *θᾱραθιν*<br>thārathin | *θᾱραθις*<br>thārathis |
 
 ---
@@ -114,13 +120,13 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *ναϝᾱ*<br>navā | *ναϝειν*<br>navein | *ναϝιμ*<br>navim |
-| **ACC** | *ναϝᾱν*<br>navān | *ναϝειν*<br>navein | *ναϝᾱνας*<br>navānas |
+| **NOM** | *ναϝᾱ*<br>navā | *ναϝιν*<br>navin | *ναϝιμ*<br>navim |
+| **ACC** | *ναϝᾱν*<br>navān | *ναϝιν*<br>navin | *ναϝᾱνας*<br>navānas |
 | **GEN** | *ναϝις*<br>navis | *ναϝοιν*<br>navoin | *ναϝων*<br>navōn |
 | **DAT** | *ναϝαι*<br>navai | *ναϝοιν*<br>navoin | *ναϝαιμ*<br>navaim |
-| **VOC** | *ναϝε*<br>nave | *ναϝειν*<br>navein | *ναϝιμ*<br>navim |
+| **VOC** | *ναϝε*<br>nave | *ναϝιν*<br>navin | *ναϝιμ*<br>navim |
 | **LOC** | *ναϝελι*<br>naveli | *ναϝελιν*<br>navelin | *ναϝελις*<br>navelis |
-| **INS** | *ναϝομ*<br>navom | *ναϝομεν*<br>navomen | *ναϝομις*<br>navomis |
+| **INS** | *ναϝομ*<br>navom | *ναϝομιν*<br>navomin | *ναϝομις*<br>navomis |
 | **ABL** | *ναϝαθα*<br>navatha | *ναϝαθιν*<br>navathin | *ναϝαθις*<br>navathis |
 
 ---
@@ -135,7 +141,7 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 | **DAT** | *λακοι*<br>lakoi | *λακοιν*<br>lakoin | *λακοιμ*<br>lakoim |
 | **VOC** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
 | **LOC** | *λακελι*<br>lakeli | *λακελιν*<br>lakelin | *λακελις*<br>lakelis |
-| **INS** | *λακομ*<br>lakom | *λακομεν*<br>lakomen | *λακομις*<br>lakomis |
+| **INS** | *λακομ*<br>lakom | *λακομιν*<br>lakomin | *λακομις*<br>lakomis |
 | **ABL** | *λακαθα*<br>lakatha | *λακαθιν*<br>lakathin | *λακαθις*<br>lakathis |
 
 ---
@@ -150,7 +156,7 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 | **DAT** | *πελαροι*<br>pelaroi | *πελαριν*<br>pelarin | *πελαροιμ*<br>pelaroim |
 | **VOC** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
 | **LOC** | *πελαρελι*<br>pelareli | *πελαρελιν*<br>pelarelin | *πελαρελις*<br>pelarelis |
-| **INS** | *πελαρομ*<br>pelarom | *πελαρομεν*<br>pelaromen | *πελαρομις*<br>pelaromis |
+| **INS** | *πελαρομ*<br>pelarom | *πελαρομιν*<br>pelaromin | *πελαρομις*<br>pelaromis |
 | **ABL** | *πελαραθα*<br>pelaratha | *πελαραθιν*<br>pelarathin | *πελαραθις*<br>pelarathis |
 
 ---
@@ -177,6 +183,13 @@ Examples:
 > *λακυλ θᾱρος* — "the law of the sea" (fixed sacred expression)
 
 **Rule of thumb:** Construct = titles, sacred phrases, inherent identity. Genitive = everyday, temporary, incidental possession.
+
+**Notes:**
+- A construct form is always said together with the noun after it and never ends a phrase. That is why *-ιτ* can end in τ, which is otherwise not allowed at the end of a syllable.
+- Stems that already end in -ιλ drop one syllable: *βᾱσιλος* → *βᾱσιλ*, not \*βᾱσιλιλ.
+- Chant keeps the older endings *-ιλα, -ιτα, -υλα, -αρυλα*.
+
+See [History § Change 3](history.md#change-3--construct-forms-lost-their-final-vowel-classical-tharaic).
 
 ---
 
@@ -208,7 +221,7 @@ Examples:
 | 1du | *-ναιν*<br>-nain | 3du AN | *-αιν*<br>-ain |
 
 > *Ιδει-νι θᾱρος.* — "The sea sees me."
-> *Φερευ-τα ανι.* — "I carry you."
+> *Φερω-τα ανι.* — "I carry you."
 
 **Enclitic possessive pronouns — attach to nouns:**
 
@@ -234,8 +247,10 @@ Examples:
 
 In oral storytelling and chant, sequential past events are marked with *ϝα-* prefixed to the present-tense form.
 
-> *ϝα-Ενᾱϝε ϝελος… ϝα-Ενᾱϝα ναϝᾱ… ϝα-Ελεκα βᾱσιλος.*
-> "The wind rose… the ship moved… the captain spoke."
+> *Ϝα-ϝενει ϝελος… ϝα-νᾱϝει ναϝᾱ… ϝα-λεκει βᾱσιλος.*
+> "The wind came… the ship sailed… the captain spoke."
+
+The form after *ϝα-* is the present (*ϝενει*, *νᾱϝει*, *λεκει*), as with the Hebrew *wayyiqtol*, which also uses the non-past form.
 
 This form is for **oral narrative and poetry only**. Formal written prose uses the augment past.
 
@@ -279,13 +294,13 @@ Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good,
 
 | Case | Animate SG | Inanimate SG | Animate DU | Animate PL | Inanimate PL |
 |------|-----------|--------------|------------|------------|--------------|
-| **NOM** | *καλος*<br>kalos | *καλον*<br>kalon | *καλειν*<br>kalein | *καλιμ*<br>kalim | *καλα*<br>kala |
-| **ACC** | *καλον*<br>kalon | *καλον*<br>kalon | *καλειν*<br>kalein | *καλονας*<br>kalonas | *καλα*<br>kala |
+| **NOM** | *καλος*<br>kalos | *καλον*<br>kalon | *καλιν*<br>kalin | *καλιμ*<br>kalim | *καλα*<br>kala |
+| **ACC** | *καλον*<br>kalon | *καλον*<br>kalon | *καλιν*<br>kalin | *καλονας*<br>kalonas | *καλα*<br>kala |
 | **GEN** | *καλι*<br>kali | *καλου*<br>kalou | *καλοιν*<br>kaloin | *καλων*<br>kalōn | *καλων*<br>kalōn |
 | **DAT** | *καλοι*<br>kaloi | *καλοι*<br>kaloi | *καλοιν*<br>kaloin | *καλοιμ*<br>kaloim | *καλοιμ*<br>kaloim |
-| **VOC** | *καλε*<br>kale | *καλον*<br>kalon | *καλειν*<br>kalein | *καλιμ*<br>kalim | *καλα*<br>kala |
+| **VOC** | *καλε*<br>kale | *καλον*<br>kalon | *καλιν*<br>kalin | *καλιμ*<br>kalim | *καλα*<br>kala |
 | **LOC** | *καλελι*<br>kaleli | *καλελι*<br>kaleli | *καλελιν*<br>kalelin | *καλελις*<br>kalelis | *καλελις*<br>kalelis |
-| **INS** | *καλομ*<br>kalom | *καλομ*<br>kalom | *καλομεν*<br>kalomen | *καλομις*<br>kalomis | *καλομις*<br>kalomis |
+| **INS** | *καλομ*<br>kalom | *καλομ*<br>kalom | *καλομιν*<br>kalomin | *καλομις*<br>kalomis | *καλομις*<br>kalomis |
 | **ABL** | *καλαθα*<br>kalatha | *καλαθα*<br>kalatha | *καλαθιν*<br>kalathin | *καλαθις*<br>kalathis | *καλαθις*<br>kalathis |
 
 The LOC, INS, and ABL cases are identical across both genders — a structural reminder of their Phoenician origin.

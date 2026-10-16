@@ -7,7 +7,7 @@
 | Topic | Decision |
 |-------|----------|
 | Overall feel | **Naturalistic**: irregular forms are allowed when a documented sound change explains them |
-| Consonant clusters | Explained **by history**: Proto-Tharaic had no clusters; everyday speech later lost unstressed short vowels next to ρ/λ and between stops. Chant and sacred speech keep the older, cluster-free forms (*τιρια*, *ασταρος*) |
+| Consonant clusters | Explained **by history** ([History](history.md)): Proto-Tharaic had no clusters; everyday speech later lost short vowels before the stress next to ρ/λ, and later loans kept clusters of the same shape. Chant keeps the older forms of native words (*τιρια*) and breaks up loan clusters with an echo vowel (*αστορος*) |
 | Word building | **Two layers**: older Phoenician-style vowel patterns on roots (agent CeC-ος, result CaC-ον, place/instrument μα-CaC-αρ) plus younger Greek-style suffixes (-ικος, diminutive -ιον, tradesman -ευς) |
 | Negation | Two particles: **βαλ** for statements (Phoenician *bl*), **μη** for commands and wishes (Greek *μή*) |
 | "To be" | A full verb in every tense, built from two roots: a Greek-like present (*εμι, εις, εσι…*) and Phoenician Κ-Ν for past and future (*εκανα* "I was", *ϸα κανω* "I will be") |
@@ -18,8 +18,8 @@
 
 Each step is a separate pull request.
 
-1. **Restructure** — split the README into `docs/`, add the Greek conversion and phonotactics-check tools. No content changes.
-2. **History & consistency fixes** — new `docs/history.md` with the sound changes from Proto-Tharaic, and fixes that follow from it:
+1. ✅ **Restructure** — split the README into `docs/`, add the Greek conversion and phonotactics-check tools. No content changes.
+2. ✅ **History & consistency fixes** — new `docs/history.md` with the sound changes from Proto-Tharaic, and fixes that follow from it:
    - the cluster story (above) for words like *αστρος*, *τρια*, *προς*, *επτα*, *μιζραχᾱ*
    - θ/τ in root Τ-Ρ: τ became θ before a stressed long vowel (\*τᾱρος → *θᾱρος*, but *ταρον*)
    - ε/α alternation inside roots (*λεκ-* for verbs and agents, *λακ-* for results)

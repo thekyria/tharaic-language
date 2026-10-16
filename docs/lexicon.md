@@ -30,9 +30,9 @@
 | *ͱαβλον* | hablon | IN | rope, rigging (Phoenician HBL) |
 | *ϝελον* | velon | IN | sail |
 | *ϝελος* | velos | AN | wind |
-| *ρεμα* | rema | IN | oar |
+| *ρεμα* | rema | IN | oars, a ship's oarage — collective, takes a singular verb ([history](history.md#4-nouns-that-changed-gender)) |
 | *αστρος* | astros | AN | a star (as animate navigator) |
-| *αστρα* | astra | IN | constellation, the star-system |
+| *αστρα* | astra | IN | constellation, the star-system — collective, takes a singular verb ([history](history.md#4-nouns-that-changed-gender)) |
 
 ## People & Society
 
@@ -47,7 +47,7 @@
 | *εινᾱ* | einā | AN | woman |
 | *παιδᾱ* | paidā | AN | child |
 | *φιλος* | philos | AN | friend, ally |
-| *ξενος* | xenos | AN | stranger, guest |
+| *ξενος* | xenos | AN | stranger, guest — loan, keeps its foreign ξ ([history](history.md#later-loans)) |
 | *θαρια* | tharia | AN | the crew, the seafaring community |
 | *δεμᾱ* | demā | AN | the people |
 | *οικον* | oikon | IN | home, household (as place/concept) |
@@ -60,7 +60,7 @@
 | *γαια* | gaia | AN | the living earth (as divine force) |
 | *ϸαμον* | shamon | IN | sky, the heavens (Phoenician ŠMM) |
 | *ᾱερ* | āer | AN | wind-breath, air as a living force |
-| *ͱυδᾱ* | hydā | IN | water (fresh) |
+| *ͱυδᾱ* | hydā | IN | water (fresh) — A-stem endings, inanimate agreement ([history](history.md#4-nouns-that-changed-gender)) |
 | *πυρα* | pyra | AN | fire (animate — it lives, it hungers) |
 | *σεληνᾱ* | selēnā | AN | moon |
 | *ϳαραχᾱ* | yarakhā | AN | the moon (poetic/sacred, Phoenician YRḤ) |

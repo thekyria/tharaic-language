@@ -21,6 +21,7 @@ Tharaic descends from a proto-language that absorbed two streams:
 | [Syntax & Function Words](docs/syntax.md) | Word order, prepositions, conjunctions |
 | [Lexicon](docs/lexicon.md) | Vocabulary by theme, numbers, core verbs and adjectives |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
+| [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
 | [Roadmap](docs/roadmap.md) | Planned work |
 
 ## Tools
@@ -28,7 +29,7 @@ Tharaic descends from a proto-language that absorbed two streams:
 Python 3 scripts, standard library only:
 
 - `python3 tools/greek.py nāvei navos` — convert romanized Tharaic to Greek script (reads stdin if no words are given)
-- `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the syllable rules (defaults to `docs/*.md`)
+- `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, or the strict chant rules with `--chant` (defaults to `docs/*.md`)
 
 ---
 
@@ -38,7 +39,8 @@ Python 3 scripts, standard library only:
 THARAIC
 │
 ├── PHONOLOGICAL LAYER
-│   └── Open syllable, max CVC, no clusters
+│   └── Open syllable, max CVC, no clusters (strict in chant;
+│       everyday speech allows obstruent + ρ/λ)
 │       ├── New: ϸ /ʃ/
 │       └── New: ϙ /ɣ/
 │
