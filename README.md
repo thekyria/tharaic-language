@@ -17,8 +17,9 @@ Tharaic descends from a proto-language that absorbed two streams:
 | Document | Covers |
 |----------|--------|
 | [Phonology & Script](docs/phonology.md) | Greek alphabet and extra letters, vowels, consonants, phonotactics, stress |
-| [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs, adjectives |
-| [Syntax & Function Words](docs/syntax.md) | Word order, prepositions, conjunctions |
+| [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
+| [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
+| [Word Building](docs/word-building.md) | Root patterns (older layer) and suffixes (younger layer) |
 | [Lexicon](docs/lexicon.md) | Vocabulary by theme, numbers, core verbs and adjectives |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
 | [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
@@ -65,8 +66,21 @@ THARAIC
 │       ├── on verbs (-νι, -τα…)
 │       └── on nouns (-ι, -κα…)
 │
-└── VERBAL LAYER
-    ├── Inflection: Greek (person/number/tense)
-    ├── Future: particle ϸα (Phoenician-analog)
-    └── Narrative past: ϝα- prefix (Phoenician wayyiqtol-analog)
+├── VERBAL LAYER
+│   ├── Inflection: Greek (person/number/tense)
+│   ├── Voice: active / middle (Greek -ομαι)
+│   ├── "To be": present ε(σ)- (Greek) + past/future Κ-Ν (Phoenician)
+│   ├── Future: particle ϸα (Phoenician-analog)
+│   ├── Imperfective past: εκανα + present (Hebrew hāyāh-analog)
+│   └── Narrative past: ϝα- prefix (Phoenician wayyiqtol-analog)
+│
+├── CLAUSE LAYER
+│   ├── Negation: βαλ (Phoenician) for facts, μη (Greek) for commands/wishes/conditions
+│   ├── Questions: ͱα- prefix (Phoenician); fronted question words
+│   ├── Relative clauses: ϸε- + resumptive pronoun (Phoenician)
+│   └── Conditions: ιμ "if" (Phoenician) + αν "would" (Greek)
+│
+└── WORD-BUILDING LAYER
+    ├── Older: vowel patterns on roots, μα- places, -υτον abstracts (Phoenician)
+    └── Younger: -ικος, -ιον, -ευς suffixes (Greek)
 ```

@@ -288,6 +288,77 @@ This form is for **oral narrative and poetry only**. Formal written prose uses t
 
 ---
 
+### Imperfective past: *εκανα* + present
+
+An ongoing or habitual action in the past uses the past of "to be" with the present form of the main verb. Both verbs agree with the subject. This is the same construction as Hebrew *hāyāh* + participle, and close to English "was sailing".
+
+> *Εκανε νᾱϝει ναϝος ναϝᾱν.* — Was sails sailor ship. → "The sailor was sailing / used to sail the ship."
+> *Εκανα νᾱϝω.* — "I was sailing."
+
+It is negated as a whole: *βαλ εκανε νᾱϝει* "he was not sailing".
+
+---
+
+### Middle voice
+
+The middle voice shows that the action comes back to the subject: done **to oneself**, **for oneself**, or **to the subject by someone else** (the passive). It takes Greek-style endings.
+
+**Present middle** of *φερ-* "carry":
+
+| | Singular | Dual | Plural |
+|--|----------|------|--------|
+| 1st | *φερομαι*<br>pheromai | *φερεσθον*<br>pheresthon | *φερομεθα*<br>pherometha |
+| 2nd | *φερεσαι*<br>pheresai | *φερεσθον*<br>pheresthon | *φερεσθε*<br>pheresthe |
+| 3rd | *φερεται*<br>pheretai | *φερεσθον*<br>pheresthon | *φερονται*<br>pherontai |
+
+**Aorist middle:**
+
+| | Singular | Dual | Plural |
+|--|----------|------|--------|
+| 1st | *εφεραμην*<br>epheramēn | *εφερασθον*<br>epherasthon | *εφεραμεθα*<br>epherametha |
+| 2nd | *εφερασο*<br>epheraso | *εφερασθον*<br>epherasthon | *εφερασθε*<br>epherasthe |
+| 3rd | *εφερατο*<br>epherato | *εφερασθον*<br>epherasthon | *εφεραντο*<br>epheranto |
+
+Infinitive: *φερεσθαι* (pheresthai). The future is *ϸα* + present middle; the narrative past is *ϝα-* + present middle.
+
+> *Ιδεται ναϝος ͱυδελι.* — Sees-himself sailor water-LOC. → "The sailor sees himself in the water."
+> *Φερομαι φαρον.* — "I carry the cargo for myself."
+> *Φερεται ναϝᾱ ϝελαθα.* — Is-carried ship wind-ABL. → "The ship is carried by the wind."
+
+The agent of a passive goes in the **ablative**: the action comes *from* it.
+
+---
+
+### "To be"
+
+"To be" takes its forms from two roots. The present comes from a Greek-like root ε(σ)-; the past and the future come from the Phoenician-analog root **Κ-Ν** "to be, to stand firm".
+
+| | Present | Aorist (past) | Future |
+|--|---------|---------------|--------|
+| 1sg | *εμι*<br>emi | *εκανα*<br>ekana | *ϸα κανω*<br>sha kanō |
+| 2sg | *εις*<br>eis | *εκανας*<br>ekanas | *ϸα κανεις*<br>sha kaneis |
+| 3sg | *εσι*<br>esi | *εκανε*<br>ekane | *ϸα κανει*<br>sha kanei |
+| dual | *εστον*<br>eston | *εκανατον*<br>ekanaton | *ϸα κανετον*<br>sha kaneton |
+| 1pl | *εσμεν*<br>esmen | *εκαναμεν*<br>ekanamen | *ϸα κανομεν*<br>sha kanomen |
+| 2pl | *εστε*<br>este | *εκανατε*<br>ekanate | *ϸα κανετε*<br>sha kanete |
+| 3pl | *εισι*<br>eisi | *εκαναν*<br>ekanan | *ϸα κανουσι*<br>sha kanousi |
+
+Infinitive *κανειν* (kanein), imperative *κανε!* / *κανετε!* (kane! / kanete!). The present root has no infinitive or imperative of its own, so Κ-Ν fills the gap.
+
+**Uses:**
+
+- **Linking a subject and a description.** VSO order still holds: verb, subject, then the predicate, which agrees with the subject.
+  > *Εσι θᾱρος καλος.* — "The sea is fair."
+  > *Εσμεν ναϝιμ.* — "We are sailors."
+  > *Εκανε βᾱσιλος ξενος.* — "The captain was a stranger."
+  > *Ϸα κανω ναϝος.* — "I will be a sailor."
+- **"There is".**
+  > *Εσι ναϝᾱ εν λιμελι.* — "There is a ship in the harbor."
+- **Possession**, with the owner in the dative. Tharaic has no verb "to have".
+  > *Εσι ναϝᾱ βᾱσιλοι.* — Is ship captain-DAT. → "The captain has a ship."
+
+---
+
 ## Adjectives
 
 Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good, fair, favorable):
@@ -304,3 +375,17 @@ Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good,
 | **ABL** | *καλαθα*<br>kalatha | *καλαθα*<br>kalatha | *καλαθιν*<br>kalathin | *καλαθις*<br>kalathis | *καλαθις*<br>kalathis |
 
 The LOC, INS, and ABL cases are identical across both genders — a structural reminder of their Phoenician origin.
+
+### Comparison
+
+| Degree | Ending (AN / IN) | Example |
+|--------|------------------|---------|
+| Comparative | *-οτερος* / *-οτερον*<br>-oteros / -oteron | *καλοτερος*<br>kaloteros "fairer, better" |
+| Superlative | *-οτατος* / *-οτατον*<br>-otatos / -otaton | *καλοτατος*<br>kalotatos "fairest, best" |
+
+The endings attach to the adjective's stem (*μεγ-ᾱς* → *μεγοτερος*) and decline like *καλος*. The standard of comparison goes in the ablative ([Syntax § Comparison](syntax.md#comparison)).
+
+**Sacred superlative.** Titles and sacred formulas use the Phoenician-style construct instead: a noun in the construct state followed by its own plural, as in Hebrew "song of songs".
+
+> *ναϝιτ ναϝιμ* — "ship of ships", the finest ship
+> *λακυλ λακα* — "word of words", the supreme word

@@ -27,7 +27,7 @@ Each step is a separate pull request.
    - the dual change to -ιν
    - the A-stem construct ending *-ιτ*, whose final τ breaks the coda rule
    - corrected sample sentences: the *-ειμ* ending, *καπανοι* → *καπανιμ*, the "crew" gloss, narrative ϝα- with present vs aorist, the case after *επι*
-3. **Grammar** — negation, yes/no questions with ͱα-, question words, relative clauses with ϸε-, conditionals (if/when/unless), the case each preposition takes, "to be", the two layers of word building, imperfective past, middle voice, comparatives.
+3. ✅ **Grammar** — negation, yes/no questions with ͱα-, question words, relative clauses with ϸε-, conditionals (if/when/unless), the case each preposition takes, "to be", the two layers of word building, imperfective past, middle voice, comparatives.
 4. **Lexicon** — `data/lexicon.yaml` with about 300 entries, generated into `docs/lexicon.md`. Four themes: body & kinship, weather & sea life, trade & craft, ritual & abstract. Each entry records Greek spelling, romanization, root, part of speech, gender and stem class, meaning, source layer (native, Phoenician, Greek), and the chant form where it differs.
 
 ## Later
