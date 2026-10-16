@@ -12,58 +12,73 @@ Tharaic descends from a proto-language that absorbed two streams:
 
 ---
 
-## Phase 2 — Phonology
+## Phase 2 — Phonology & Script
+
+Tharaic is written in the **Greek alphabet**, extended with a few archaic and auxiliary letters for sounds that Classical Greek lacks:
+
+| Letter | Name | Sound | Origin |
+|--------|------|-------|--------|
+| **Ϝ ϝ** | digamma | /v/ | Archaic Greek (Aeolic) |
+| **Ͱ ͱ** | heta | /h/ | Archaic Greek; used instead of the rough breathing so /h/ can appear inside words |
+| **Ϳ ϳ** | yot | /j/ | Greek-alphabet linguistic convention |
+| **Ϸ ϸ** | sho | /ʃ/ | Bactrian Greek script |
+| **Ϙ ϙ** | koppa | /ɣ/ | Archaic Greek, from Phoenician qoph |
+
+No accent marks are written: stress is predictable (see 2.3). A final sigma is written **ς**. The Latin romanization is given alongside each letter below for reference.
 
 ### 2.1 Vowels
 
-| Letter | Sound | Like… |
-|--------|-------|-------|
-| **a** | /a/ | "father" |
-| **e** | /e/ | "bed" |
-| **i** | /i/ | "machine" |
-| **o** | /o/ | "go" |
-| **u** | /u/ | "moon" |
-| **ā** | /aː/ long | held "a" |
-| **ē** | /eː/ long | held "e" |
-| **ō** | /oː/ long | held "o" |
+| Letter | Romanized | Sound | Like… |
+|--------|-----------|-------|-------|
+| **α** | a | /a/ | "father" |
+| **ε** | e | /e/ | "bed" |
+| **ι** | i | /i/ | "machine" |
+| **ο** | o | /o/ | "go" |
+| **υ** | u | /u/ | "moon" |
+| **ᾱ** | ā | /aː/ long | held "a" |
+| **η** | ē | /eː/ long | held "e" |
+| **ω** | ō | /oː/ long | held "o" |
+| **ῡ** | ū | /uː/ long | held "u" |
 
-In casual writing, long vowels may be doubled: *ā → aa*, *ē → ee*, *ō → oo*. Use macrons in formal/literary contexts.
+Long *ᾱ* and *ῡ* carry a macron in formal/literary contexts; in casual writing the macron is often dropped. *η* and *ω* are always long.
 
 **Diphthongs:**
 
-| Diphthong | Sound | Like… |
-|-----------|-------|-------|
-| **ai** | /aj/ | "eye" |
-| **au** | /aw/ | "ow!" |
-| **ei** | /eɪ/ | "ay" |
-| **ou** | /oʊ/ | "owe" |
+| Diphthong | Romanized | Sound | Like… |
+|-----------|-----------|-------|-------|
+| **αι** | ai | /aj/ | "eye" |
+| **αυ** | au | /aw/ | "ow!" |
+| **ει** | ei | /eɪ/ | "ay" |
+| **ου** | ou | /oʊ/ | "owe" |
 
 ---
 
 ### 2.2 Consonants
 
-| Letter | Sound | Like… |
-|--------|-------|-------|
-| **p** | /p/ | "port" |
-| **t** | /t/ | "tide" |
-| **k** | /k/ | "keel" |
-| **b** | /b/ | "bay" |
-| **d** | /d/ | "dock" |
-| **g** | /g/ | "gale" |
-| **ph** | /f/ | "fish" (Greek phi) |
-| **th** | /θ/ | "thin" (Greek theta) |
-| **kh** | /x/ | Scottish "loch" (Greek chi) |
-| **sh** | /ʃ/ | "shore" (Phoenician shin) |
-| **gh** | /ɣ/ | soft voiced g (Phoenician ghayin) |
-| **s** | /s/ | "sail" |
-| **z** | /z/ | "zone" |
-| **h** | /h/ | "harbor" |
-| **m** | /m/ | "mast" |
-| **n** | /n/ | "net" |
-| **l** | /l/ | "line" |
-| **r** | /r/ | trilled, like Spanish or Greek |
-| **v** | /v/ | "vessel" (Aeolic digamma influence) |
-| **y** | /j/ | "yes" |
+| Letter | Romanized | Sound | Like… |
+|--------|-----------|-------|-------|
+| **π** | p | /p/ | "port" |
+| **τ** | t | /t/ | "tide" |
+| **κ** | k | /k/ | "keel" |
+| **β** | b | /b/ | "bay" |
+| **δ** | d | /d/ | "dock" |
+| **γ** | g | /g/ | "gale" |
+| **φ** | ph | /f/ | "fish" (Greek phi) |
+| **θ** | th | /θ/ | "thin" (Greek theta) |
+| **χ** | kh | /x/ | Scottish "loch" (Greek chi) |
+| **ϸ** | sh | /ʃ/ | "shore" (Phoenician shin) |
+| **ϙ** | gh | /ɣ/ | soft voiced g (Phoenician ghayin) |
+| **σ / ς** | s | /s/ | "sail" |
+| **ζ** | z | /z/ | "zone" |
+| **ͱ** | h | /h/ | "harbor" |
+| **μ** | m | /m/ | "mast" |
+| **ν** | n | /n/ | "net" |
+| **λ** | l | /l/ | "line" |
+| **ρ** | r | /r/ | trilled, like Spanish or Greek |
+| **ϝ** | v | /v/ | "vessel" (Aeolic digamma influence) |
+| **ϳ** | y | /j/ | "yes" |
+
+Greek-derived words keep their etymological **υ** (*συν*, *πυρα*, *ͱυδᾱ*) and **ξ** (*ξενος*).
 
 ---
 
@@ -75,14 +90,14 @@ This is a defining feature of Tharaic. The language breathes. It is made for voi
 
 **Rules:**
 - Maximum **one consonant** at syllable onset
-- Maximum **one consonant** at syllable coda — and only from: **n, s, r, l, m, k**
-- No consonant clusters at word start (str-, skr-, phl- etc.)
-- No heavy internal clusters (-ntr-, -kst- etc.)
-- No *kh* in word-final position
-- Words prefer to end in **vowels** or **-n, -s, -r, -l**
+- Maximum **one consonant** at syllable coda — and only from: **ν, σ, ρ, λ, μ, κ**
+- No consonant clusters at word start (στρ-, σκρ-, φλ- etc.)
+- No heavy internal clusters (-ντρ-, -κστ- etc.)
+- No *χ* in word-final position
+- Words prefer to end in **vowels** or **-ν, -ς, -ρ, -λ**
 
 **Stress:** Default **penultimate** (second-to-last syllable). Aeolic recessive accent influence.
-> *navā* → na-VĀ | *thāros* → THĀ-ros | *elekamen* → e-le-KA-men
+> *ναϝᾱ* → να-ϜᾹ | *θᾱρος* → ΘᾹ-ρος | *ελεκαμεν* → ε-λε-ΚΑ-μεν
 
 ---
 
@@ -92,51 +107,51 @@ Every Tharaic word descends from a consonantal root — usually **biconsonantal*
 
 ### Root Examples
 
-**N-V** — *sailing, ships, seafaring*
+**Ν-Ϝ** — *sailing, ships, seafaring*
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *navos* | sailor |
-| Animate A-stem | *navā* | ship |
-| Inanimate ON-stem | *navon* | a voyage |
-| Verb | *nāvein* | to sail |
-| Adjective | *navikos* | nautical |
-| Construct | *navil* | ship-of / sailor-of |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *ναϝος* | navos | sailor |
+| Animate A-stem | *ναϝᾱ* | navā | ship |
+| Inanimate ON-stem | *ναϝον* | navon | a voyage |
+| Verb | *νᾱϝειν* | nāvein | to sail |
+| Adjective | *ναϝικος* | navikos | nautical |
+| Construct | *ναϝιλ* | navil | ship-of / sailor-of |
 
-**T-R** — *sea, depth, distance*
+**Τ-Ρ** — *sea, depth, distance*
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *thāros* | the open sea |
-| Inanimate ON-stem | *taron* | the deep, depth |
-| Adjective | *tarios* | deep, far-reaching |
-| Verb | *thārein* | to cross the sea |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *θᾱρος* | thāros | the open sea |
+| Inanimate ON-stem | *ταρον* | taron | the deep, depth |
+| Adjective | *ταριος* | tarios | deep, far-reaching |
+| Verb | *θᾱρειν* | thārein | to cross the sea |
 
-**L-K** — *speech, word, call*
+**Λ-Κ** — *speech, word, call*
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *lekos* | speaker, herald |
-| Inanimate ON-stem | *lakon* | word, utterance |
-| Verb | *lekein* | to speak |
-| Adjective | *lakikos* | verbal, spoken |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *λεκος* | lekos | speaker, herald |
+| Inanimate ON-stem | *λακον* | lakon | word, utterance |
+| Verb | *λεκειν* | lekein | to speak |
+| Adjective | *λακικος* | lakikos | verbal, spoken |
 
-**M-L-K** — *rule, authority, kingship* (triconsonantal — Phoenician MLK)
+**Μ-Λ-Κ** — *rule, authority, kingship* (triconsonantal — Phoenician MLK)
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *mālikos* | ruler, king |
-| Animate A-stem | *mālikā* | queen, ruling woman |
-| Inanimate ON-stem | *malkon* | kingdom, domain |
-| Verb | *mālikein* | to rule |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *μᾱλικος* | mālikos | ruler, king |
+| Animate A-stem | *μᾱλικᾱ* | mālikā | queen, ruling woman |
+| Inanimate ON-stem | *μαλκον* | malkon | kingdom, domain |
+| Verb | *μᾱλικειν* | mālikein | to rule |
 
-**Sh-M** — *sky, name, reputation* (Phoenician ŠMM / ŠM)
+**Ϸ-Μ** — *sky, name, reputation* (Phoenician ŠMM / ŠM)
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Inanimate ON-stem | *shamon* | sky, the heavens |
-| Inanimate AR-stem | *shamar* | a name, one's reputation |
-| Verb | *shamein* | to name, to call by name |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Inanimate ON-stem | *ϸαμον* | shamon | sky, the heavens |
+| Inanimate AR-stem | *ϸαμαρ* | shamar | a name, one's reputation |
+| Verb | *ϸαμειν* | shamein | to name, to call by name |
 
 ---
 
@@ -146,10 +161,10 @@ Every Tharaic word descends from a consonantal root — usually **biconsonantal*
 
 VSO is the only canonical order in all registers. Word order variation is used exclusively for **emphasis**.
 
-> *Nāvei navos navān.* — Sails sailor ship. → "The sailor sails the ship."
+> *Νᾱϝει ναϝος ναϝᾱν.* — Sails sailor ship. → "The sailor sails the ship."
 
 Fronting a noun for emphasis:
-> *Navān nāvei navos.* — THE SHIP — the sailor sails it.
+> *Ναϝᾱν νᾱϝει ναϝος.* — THE SHIP — the sailor sails it.
 
 ---
 
@@ -157,8 +172,8 @@ Fronting a noun for emphasis:
 
 | Gender | Applies to | Examples |
 |--------|-----------|---------|
-| **Animate (AN)** | People, animals, deities, winds, ships, the sea, stars, fire | *navā, thāros, velos, astros, pyra* |
-| **Inanimate (IN)** | Objects, materials, places, concepts, abstractions | *lakon, shamon, taron, hablon* |
+| **Animate (AN)** | People, animals, deities, winds, ships, the sea, stars, fire | *ναϝᾱ, θᾱρος, ϝελος, αστρος, πυρα*<br>navā, thāros, velos, astros, pyra |
+| **Inanimate (IN)** | Objects, materials, places, concepts, abstractions | *λακον, ϸαμον, ταρον, ͱαβλον*<br>lakon, shamon, taron, hablon |
 
 Ships, the sea, winds, and stars are animate — these forces have agency. They are spoken to, bargained with, and honored.
 
@@ -170,10 +185,10 @@ Ships, the sea, winds, and stars are animate — these forces have agency. They 
 
 | Stem | Gender | NOM.SG marker | Paradigm noun |
 |------|--------|--------------|---------------|
-| **O-stem** | Animate | *-os* | *thāros* (sea) |
-| **A-stem** | Animate | *-ā* | *navā* (ship) |
-| **ON-stem** | Inanimate | *-on* | *lakon* (word) |
-| **AR-stem** | Inanimate | *-ar* | *pelar* (expanse) |
+| **O-stem** | Animate | *-ος*<br>-os | *θᾱρος* (sea)<br>thāros |
+| **A-stem** | Animate | *-ᾱ*<br>-ā | *ναϝᾱ* (ship)<br>navā |
+| **ON-stem** | Inanimate | *-ον*<br>-on | *λακον* (word)<br>lakon |
+| **AR-stem** | Inanimate | *-αρ*<br>-ar | *πελαρ* (expanse)<br>pelar |
 
 **The eight cases:**
 
@@ -192,63 +207,63 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 ---
 
-#### Animate O-stem: *thāros* (sea) | Root: T-R
+#### Animate O-stem: *θᾱρος* (sea) | Root: Τ-Ρ
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *thāros* | *thārein* | *thārim* |
-| **ACC** | *thāron* | *thārein* | *thāronas* |
-| **GEN** | *thāri* | *thāroin* | *thārōn* |
-| **DAT** | *thāroi* | *thāroin* | *thāroim* |
-| **VOC** | *thāre* | *thārein* | *thārim* |
-| **LOC** | *thāreli* | *thārelin* | *thārelis* |
-| **INS** | *thārom* | *thāromen* | *thāromis* |
-| **ABL** | *thāratha* | *thārathin* | *thārathis* |
+| **NOM** | *θᾱρος*<br>thāros | *θᾱρειν*<br>thārein | *θᾱριμ*<br>thārim |
+| **ACC** | *θᾱρον*<br>thāron | *θᾱρειν*<br>thārein | *θᾱρονας*<br>thāronas |
+| **GEN** | *θᾱρι*<br>thāri | *θᾱροιν*<br>thāroin | *θᾱρων*<br>thārōn |
+| **DAT** | *θᾱροι*<br>thāroi | *θᾱροιν*<br>thāroin | *θᾱροιμ*<br>thāroim |
+| **VOC** | *θᾱρε*<br>thāre | *θᾱρειν*<br>thārein | *θᾱριμ*<br>thārim |
+| **LOC** | *θᾱρελι*<br>thāreli | *θᾱρελιν*<br>thārelin | *θᾱρελις*<br>thārelis |
+| **INS** | *θᾱρομ*<br>thārom | *θᾱρομεν*<br>thāromen | *θᾱρομις*<br>thāromis |
+| **ABL** | *θᾱραθα*<br>thāratha | *θᾱραθιν*<br>thārathin | *θᾱραθις*<br>thārathis |
 
 ---
 
-#### Animate A-stem: *navā* (ship) | Root: N-V
+#### Animate A-stem: *ναϝᾱ* (ship) | Root: Ν-Ϝ
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *navā* | *navein* | *navim* |
-| **ACC** | *navān* | *navein* | *navānas* |
-| **GEN** | *navis* | *navoin* | *navōn* |
-| **DAT** | *navai* | *navoin* | *navaim* |
-| **VOC** | *nave* | *navein* | *navim* |
-| **LOC** | *naveli* | *navelin* | *navelis* |
-| **INS** | *navom* | *navomen* | *navomis* |
-| **ABL** | *navatha* | *navathin* | *navathis* |
+| **NOM** | *ναϝᾱ*<br>navā | *ναϝειν*<br>navein | *ναϝιμ*<br>navim |
+| **ACC** | *ναϝᾱν*<br>navān | *ναϝειν*<br>navein | *ναϝᾱνας*<br>navānas |
+| **GEN** | *ναϝις*<br>navis | *ναϝοιν*<br>navoin | *ναϝων*<br>navōn |
+| **DAT** | *ναϝαι*<br>navai | *ναϝοιν*<br>navoin | *ναϝαιμ*<br>navaim |
+| **VOC** | *ναϝε*<br>nave | *ναϝειν*<br>navein | *ναϝιμ*<br>navim |
+| **LOC** | *ναϝελι*<br>naveli | *ναϝελιν*<br>navelin | *ναϝελις*<br>navelis |
+| **INS** | *ναϝομ*<br>navom | *ναϝομεν*<br>navomen | *ναϝομις*<br>navomis |
+| **ABL** | *ναϝαθα*<br>navatha | *ναϝαθιν*<br>navathin | *ναϝαθις*<br>navathis |
 
 ---
 
-#### Inanimate ON-stem: *lakon* (word) | Root: L-K
+#### Inanimate ON-stem: *λακον* (word) | Root: Λ-Κ
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *lakon* | *lakoin* | *laka* |
-| **ACC** | *lakon* | *lakoin* | *laka* |
-| **GEN** | *lakou* | *lakoin* | *lakōn* |
-| **DAT** | *lakoi* | *lakoin* | *lakoim* |
-| **VOC** | *lakon* | *lakoin* | *laka* |
-| **LOC** | *lakeli* | *lakelin* | *lakelis* |
-| **INS** | *lakom* | *lakomen* | *lakomis* |
-| **ABL** | *lakatha* | *lakathin* | *lakathis* |
+| **NOM** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
+| **ACC** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
+| **GEN** | *λακου*<br>lakou | *λακοιν*<br>lakoin | *λακων*<br>lakōn |
+| **DAT** | *λακοι*<br>lakoi | *λακοιν*<br>lakoin | *λακοιμ*<br>lakoim |
+| **VOC** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
+| **LOC** | *λακελι*<br>lakeli | *λακελιν*<br>lakelin | *λακελις*<br>lakelis |
+| **INS** | *λακομ*<br>lakom | *λακομεν*<br>lakomen | *λακομις*<br>lakomis |
+| **ABL** | *λακαθα*<br>lakatha | *λακαθιν*<br>lakathin | *λακαθις*<br>lakathis |
 
 ---
 
-#### Inanimate AR-stem: *pelar* (expanse) | Root: P-L
+#### Inanimate AR-stem: *πελαρ* (expanse) | Root: Π-Λ
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *pelar* | *pelarin* | *pelara* |
-| **ACC** | *pelar* | *pelarin* | *pelara* |
-| **GEN** | *pelari* | *pelarin* | *pelarōn* |
-| **DAT** | *pelaroi* | *pelarin* | *pelaroim* |
-| **VOC** | *pelar* | *pelarin* | *pelara* |
-| **LOC** | *pelareli* | *pelarelin* | *pelarelis* |
-| **INS** | *pelarom* | *pelaromen* | *pelaromis* |
-| **ABL** | *pelaratha* | *pelarathin* | *pelarathis* |
+| **NOM** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
+| **ACC** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
+| **GEN** | *πελαρι*<br>pelari | *πελαριν*<br>pelarin | *πελαρων*<br>pelarōn |
+| **DAT** | *πελαροι*<br>pelaroi | *πελαριν*<br>pelarin | *πελαροιμ*<br>pelaroim |
+| **VOC** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
+| **LOC** | *πελαρελι*<br>pelareli | *πελαρελιν*<br>pelarelin | *πελαρελις*<br>pelarelis |
+| **INS** | *πελαρομ*<br>pelarom | *πελαρομεν*<br>pelaromen | *πελαρομις*<br>pelaromis |
+| **ABL** | *πελαραθα*<br>pelaratha | *πελαραθιν*<br>pelarathin | *πελαραθις*<br>pelarathis |
 
 ---
 
@@ -257,21 +272,21 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 Tharaic has **two ways to express possession**:
 
 **① Genitive case** — Greek-derived, everyday spoken language:
-> *navā bāsili* — the ship of the captain
+> *ναϝᾱ βᾱσιλι* — the ship of the captain
 
 **② Construct state** — Phoenician-derived, for titles, epithets, sacred formulas, and permanent relationships.
 
 | Stem | Normal NOM.SG | Construct form |
 |------|--------------|----------------|
-| O-stem | *-os* | *-il* |
-| A-stem | *-ā* | *-it* |
-| ON-stem | *-on* | *-ul* |
-| AR-stem | *-ar* | *-arul* |
+| O-stem | *-ος*<br>-os | *-ιλ*<br>-il |
+| A-stem | *-ᾱ*<br>-ā | *-ιτ*<br>-it |
+| ON-stem | *-ον*<br>-on | *-υλ*<br>-ul |
+| AR-stem | *-αρ*<br>-ar | *-αρυλ*<br>-arul |
 
 Examples:
-> *bāsil navā* — "the ship's captain" (permanent role, title)
-> *navit mālikos* — "the ruler's ship" (identity, heraldic)
-> *lakul thāros* — "the law of the sea" (fixed sacred expression)
+> *βᾱσιλ ναϝᾱ* — "the ship's captain" (permanent role, title)
+> *ναϝιτ μᾱλικος* — "the ruler's ship" (identity, heraldic)
+> *λακυλ θᾱρος* — "the law of the sea" (fixed sacred expression)
 
 **Rule of thumb:** Construct = titles, sacred phrases, inherent identity. Genitive = everyday, temporary, incidental possession.
 
@@ -283,107 +298,107 @@ Examples:
 
 | Person | Pronoun | Person | Pronoun |
 |--------|---------|--------|---------|
-| 1sg | *ani* | 1du | *anain* |
-| 2sg | *ata* | 2du | *atain* |
-| 3sg AN | *hūa* | 3du AN | *hūain* |
-| 3sg IN | *hia* | 3du IN | *hiain* |
-| 1pl | *anen* | | |
-| 2pl | *atem* | | |
-| 3pl AN | *hūim* | | |
-| 3pl IN | *hiom* | | |
+| 1sg | *ανι*<br>ani | 1du | *αναιν*<br>anain |
+| 2sg | *ατα*<br>ata | 2du | *αταιν*<br>atain |
+| 3sg AN | *ͱῡα*<br>hūa | 3du AN | *ͱῡαιν*<br>hūain |
+| 3sg IN | *ͱια*<br>hia | 3du IN | *ͱιαιν*<br>hiain |
+| 1pl | *ανεν*<br>anen |  |  |
+| 2pl | *ατεμ*<br>atem |  |  |
+| 3pl AN | *ͱῡιμ*<br>hūim |  |  |
+| 3pl IN | *ͱιομ*<br>hiom |  |  |
 
-*ani* and *ata* are modeled on Phoenician *ʾnk* (I) and *ʾt* (you).
+*ανι* and *ατα* are modeled on Phoenician *ʾnk* (I) and *ʾt* (you).
 
 **Enclitic object pronouns — attach to verbs:**
 
 | Person | Enclitic | Person | Enclitic |
 |--------|----------|--------|----------|
-| 1sg | *-ni* | 1pl | *-nen* |
-| 2sg | *-ta* | 2pl | *-tem* |
-| 3sg AN | *-u* | 3pl AN | *-im* |
-| 3sg IN | *-a* | 3pl IN | *-om* |
-| 1du | *-nain* | 3du AN | *-ain* |
+| 1sg | *-νι*<br>-ni | 1pl | *-νεν*<br>-nen |
+| 2sg | *-τα*<br>-ta | 2pl | *-τεμ*<br>-tem |
+| 3sg AN | *-υ*<br>-u | 3pl AN | *-ιμ*<br>-im |
+| 3sg IN | *-α*<br>-a | 3pl IN | *-ομ*<br>-om |
+| 1du | *-ναιν*<br>-nain | 3du AN | *-αιν*<br>-ain |
 
-> *Idei-ni thāros.* — "The sea sees me."
-> *Phereu-ta ani.* — "I carry you."
+> *Ιδει-νι θᾱρος.* — "The sea sees me."
+> *Φερευ-τα ανι.* — "I carry you."
 
 **Enclitic possessive pronouns — attach to nouns:**
 
 | Person | Enclitic | Person | Enclitic |
 |--------|----------|--------|----------|
-| 1sg | *-i* | 1pl | *-en* |
-| 2sg | *-ka* | 2pl | *-kem* |
-| 3sg AN | *-u* | 3pl AN | *-im* |
-| 3sg IN | *-a* | 3pl IN | *-om* |
+| 1sg | *-ι*<br>-i | 1pl | *-εν*<br>-en |
+| 2sg | *-κα*<br>-ka | 2pl | *-κεμ*<br>-kem |
+| 3sg AN | *-υ*<br>-u | 3pl AN | *-ιμ*<br>-im |
+| 3sg IN | *-α*<br>-a | 3pl IN | *-ομ*<br>-om |
 
-> *navāi* — my ship | *navāka* — your ship | *navāu* — his/her ship
+> *ναϝᾱι* — my ship | *ναϝᾱκα* — your ship | *ναϝᾱυ* — his/her ship
 
 ---
 
 ### 3.6 Verbs
 
-#### Future: particle *sha* + present
+#### Future: particle *ϸα* + present
 
-> *sha nāvō* — I will sail
-> *sha nāvei navos* — The sailor will sail
+> *ϸα νᾱϝω* — I will sail
+> *ϸα νᾱϝει ναϝος* — The sailor will sail
 
-#### Narrative past prefix *va-* (Phoenician wayyiqtol-analog)
+#### Narrative past prefix *ϝα-* (Phoenician wayyiqtol-analog)
 
-In oral storytelling and chant, sequential past events are marked with *va-* prefixed to the present-tense form.
+In oral storytelling and chant, sequential past events are marked with *ϝα-* prefixed to the present-tense form.
 
-> *va-Enāve velos… va-Enāva navā… va-Eleka bāsilos.*
+> *ϝα-Ενᾱϝε ϝελος… ϝα-Ενᾱϝα ναϝᾱ… ϝα-Ελεκα βᾱσιλος.*
 > "The wind rose… the ship moved… the captain spoke."
 
 This form is for **oral narrative and poetry only**. Formal written prose uses the augment past.
 
 ---
 
-#### Full Paradigm: *nāv-* (to sail)
+#### Full Paradigm: *νᾱϝ-* (to sail)
 
 **Present:**
 
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
-| 1st | *nāvō* | *nāveton* | *nāvomen* |
-| 2nd | *nāveis* | *nāveton* | *nāvete* |
-| 3rd | *nāvei* | *nāveton* | *nāvousi* |
+| 1st | *νᾱϝω*<br>nāvō | *νᾱϝετον*<br>nāveton | *νᾱϝομεν*<br>nāvomen |
+| 2nd | *νᾱϝεις*<br>nāveis | *νᾱϝετον*<br>nāveton | *νᾱϝετε*<br>nāvete |
+| 3rd | *νᾱϝει*<br>nāvei | *νᾱϝετον*<br>nāveton | *νᾱϝουσι*<br>nāvousi |
 
 **Aorist (completed past, augment):**
 
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
-| 1st | *enāva* | *enāvaton* | *enāvamen* |
-| 2nd | *enāvas* | *enāvaton* | *enāvate* |
-| 3rd | *enāve* | *enāvaton* | *enāvan* |
+| 1st | *ενᾱϝα*<br>enāva | *ενᾱϝατον*<br>enāvaton | *ενᾱϝαμεν*<br>enāvamen |
+| 2nd | *ενᾱϝας*<br>enāvas | *ενᾱϝατον*<br>enāvaton | *ενᾱϝατε*<br>enāvate |
+| 3rd | *ενᾱϝε*<br>enāve | *ενᾱϝατον*<br>enāvaton | *ενᾱϝαν*<br>enāvan |
 
-**Future: *sha* + present form**
+**Future: *ϸα* + present form**
 
 **Non-finite & Imperative:**
 
 | Form | Example | Meaning |
 |------|---------|---------|
-| Infinitive | *nāvein* | to sail |
-| Participle AN | *nāvon* / *nāvousa* | sailing |
-| Imperative sg | *nāve!* | sail! |
-| Imperative pl | *nāvete!* | sail! (pl) |
-| Narrative past | *va-nāvei* | and [he/she/it] sailed… |
+| Infinitive | *νᾱϝειν*<br>nāvein | to sail |
+| Participle AN | *νᾱϝον* / *νᾱϝουσα*<br>nāvon / nāvousa | sailing |
+| Imperative sg | *νᾱϝε!*<br>nāve! | sail! |
+| Imperative pl | *νᾱϝετε!*<br>nāvete! | sail! (pl) |
+| Narrative past | *ϝα-νᾱϝει*<br>va-nāvei | and [he/she/it] sailed… |
 
 ---
 
 ### 3.7 Adjectives
 
-Agree in **Animate / Inanimate** gender. Full declension for *kalos* (good, fair, favorable):
+Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good, fair, favorable):
 
 | Case | Animate SG | Inanimate SG | Animate DU | Animate PL | Inanimate PL |
 |------|-----------|--------------|------------|------------|--------------|
-| **NOM** | *kalos* | *kalon* | *kalein* | *kalim* | *kala* |
-| **ACC** | *kalon* | *kalon* | *kalein* | *kalonas* | *kala* |
-| **GEN** | *kali* | *kalou* | *kaloin* | *kalōn* | *kalōn* |
-| **DAT** | *kaloi* | *kaloi* | *kaloin* | *kaloim* | *kaloim* |
-| **VOC** | *kale* | *kalon* | *kalein* | *kalim* | *kala* |
-| **LOC** | *kaleli* | *kaleli* | *kalelin* | *kalelis* | *kalelis* |
-| **INS** | *kalom* | *kalom* | *kalomen* | *kalomis* | *kalomis* |
-| **ABL** | *kalatha* | *kalatha* | *kalathin* | *kalathis* | *kalathis* |
+| **NOM** | *καλος*<br>kalos | *καλον*<br>kalon | *καλειν*<br>kalein | *καλιμ*<br>kalim | *καλα*<br>kala |
+| **ACC** | *καλον*<br>kalon | *καλον*<br>kalon | *καλειν*<br>kalein | *καλονας*<br>kalonas | *καλα*<br>kala |
+| **GEN** | *καλι*<br>kali | *καλου*<br>kalou | *καλοιν*<br>kaloin | *καλων*<br>kalōn | *καλων*<br>kalōn |
+| **DAT** | *καλοι*<br>kaloi | *καλοι*<br>kaloi | *καλοιν*<br>kaloin | *καλοιμ*<br>kaloim | *καλοιμ*<br>kaloim |
+| **VOC** | *καλε*<br>kale | *καλον*<br>kalon | *καλειν*<br>kalein | *καλιμ*<br>kalim | *καλα*<br>kala |
+| **LOC** | *καλελι*<br>kaleli | *καλελι*<br>kaleli | *καλελιν*<br>kalelin | *καλελις*<br>kalelis | *καλελις*<br>kalelis |
+| **INS** | *καλομ*<br>kalom | *καλομ*<br>kalom | *καλομεν*<br>kalomen | *καλομις*<br>kalomis | *καλομις*<br>kalomis |
+| **ABL** | *καλαθα*<br>kalatha | *καλαθα*<br>kalatha | *καλαθιν*<br>kalathin | *καλαθις*<br>kalathis | *καλαθις*<br>kalathis |
 
 The LOC, INS, and ABL cases are identical across both genders — a structural reminder of their Phoenician origin.
 
@@ -391,30 +406,30 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 
 ### 3.8 Prepositions
 
-| Tharaic | Meaning |
-|---------|---------|
-| *ana* | up, upon |
-| *kata* | down, along |
-| *epi* | on, upon |
-| *para* | beside, alongside |
-| *pros* | toward, against |
-| *apo* | from, away from |
-| *en* | in, within |
-| *ek* | out of |
-| *dia* | through, across |
-| *peri* | around, about |
-| *syn* | with, together with |
-| *anti* | against, opposite |
+| Tharaic | Romanized | Meaning |
+| --------- | ----------- | --------- |
+| *ανα* | ana | up, upon |
+| *κατα* | kata | down, along |
+| *επι* | epi | on, upon |
+| *παρα* | para | beside, alongside |
+| *προς* | pros | toward, against |
+| *απο* | apo | from, away from |
+| *εν* | en | in, within |
+| *εκ* | ek | out of |
+| *δια* | dia | through, across |
+| *περι* | peri | around, about |
+| *συν* | syn | with, together with |
+| *αντι* | anti | against, opposite |
 
 ### 3.9 Conjunctions
 
-| Tharaic | Meaning |
-|---------|---------|
-| *kai* | and |
-| *ē* | or |
-| *alla* | but |
-| *hoti* | because, that |
-| *men…de* | on one hand… on the other |
+| Tharaic | Romanized | Meaning |
+| --------- | ----------- | --------- |
+| *και* | kai | and |
+| *η* | ē | or |
+| *αλλα* | alla | but |
+| *ͱοτι* | hoti | because, that |
+| *μεν…δε* | men…de | on one hand… on the other |
 
 ---
 
@@ -422,137 +437,137 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 
 ### Cardinal Directions (Phoenician-origin)
 
-| Tharaic | Meaning | From |
-|---------|---------|------|
-| *shaphin* | North — "the sacred height" | Phoenician Ṣāpōn |
-| *dāromos* | South — "the noonday direction" | Phoenician drm |
-| *mizrakhā* | East — "direction of sunrise" | Phoenician mzrḥ |
-| *mārabā* | West — "direction of sunset" | Phoenician mrb |
+| Tharaic | Romanized | Meaning | From |
+| --------- | ----------- | --------- | ------ |
+| *ϸαφιν* | shaphin | North — "the sacred height" | Phoenician Ṣāpōn |
+| *δᾱρομος* | dāromos | South — "the noonday direction" | Phoenician drm |
+| *μιζραχᾱ* | mizrakhā | East — "direction of sunrise" | Phoenician mzrḥ |
+| *μᾱραβᾱ* | mārabā | West — "direction of sunset" | Phoenician mrb |
 
 ### The Sea & Navigation
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *thāros* | AN | open sea, deep water |
-| *yamos* | AN | the western deep, the unknown sea (Phoenician YM) |
-| *pelar* | IN | expanse, open water (poetic) |
-| *taron* | IN | the deep, depth |
-| *limā* | AN | harbor, safe anchorage |
-| *akāra* | AN | cape, headland |
-| *navā* | AN | ship |
-| *kapanos* | AN | trading vessel, merchant ship (Phoenician KPN) |
-| *navos* | AN | sailor |
-| *bāsilos* | AN | captain, chief |
-| *proā* | AN | prow |
-| *kormā* | AN | stern |
-| *hablon* | IN | rope, rigging (Phoenician HBL) |
-| *velon* | IN | sail |
-| *velos* | AN | wind |
-| *rema* | IN | oar |
-| *astros* | AN | a star (as animate navigator) |
-| *astra* | IN | constellation, the star-system |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *θᾱρος* | thāros | AN | open sea, deep water |
+| *ϳαμος* | yamos | AN | the western deep, the unknown sea (Phoenician YM) |
+| *πελαρ* | pelar | IN | expanse, open water (poetic) |
+| *ταρον* | taron | IN | the deep, depth |
+| *λιμᾱ* | limā | AN | harbor, safe anchorage |
+| *ακᾱρα* | akāra | AN | cape, headland |
+| *ναϝᾱ* | navā | AN | ship |
+| *καπανος* | kapanos | AN | trading vessel, merchant ship (Phoenician KPN) |
+| *ναϝος* | navos | AN | sailor |
+| *βᾱσιλος* | bāsilos | AN | captain, chief |
+| *προᾱ* | proā | AN | prow |
+| *κορμᾱ* | kormā | AN | stern |
+| *ͱαβλον* | hablon | IN | rope, rigging (Phoenician HBL) |
+| *ϝελον* | velon | IN | sail |
+| *ϝελος* | velos | AN | wind |
+| *ρεμα* | rema | IN | oar |
+| *αστρος* | astros | AN | a star (as animate navigator) |
+| *αστρα* | astra | IN | constellation, the star-system |
 
 ### People & Society
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *adenos* | AN | lord, master (Phoenician ʾDN) |
-| *mālikos* | AN | ruler, king (Phoenician MLK) |
-| *mālikā* | AN | queen, ruling woman |
-| *balos* | AN | husband, lord of the house (Phoenician BʿL) |
-| *bālā* | AN | wife, lady of the house |
-| *anēr* | AN | man |
-| *einā* | AN | woman |
-| *paidā* | AN | child |
-| *philos* | AN | friend, ally |
-| *xenos* | AN | stranger, guest |
-| *tharia* | AN | the crew, the seafaring community |
-| *demā* | AN | the people |
-| *oikon* | IN | home, household (as place/concept) |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *αδενος* | adenos | AN | lord, master (Phoenician ʾDN) |
+| *μᾱλικος* | mālikos | AN | ruler, king (Phoenician MLK) |
+| *μᾱλικᾱ* | mālikā | AN | queen, ruling woman |
+| *βαλος* | balos | AN | husband, lord of the house (Phoenician BʿL) |
+| *βᾱλᾱ* | bālā | AN | wife, lady of the house |
+| *ανηρ* | anēr | AN | man |
+| *εινᾱ* | einā | AN | woman |
+| *παιδᾱ* | paidā | AN | child |
+| *φιλος* | philos | AN | friend, ally |
+| *ξενος* | xenos | AN | stranger, guest |
+| *θαρια* | tharia | AN | the crew, the seafaring community |
+| *δεμᾱ* | demā | AN | the people |
+| *οικον* | oikon | IN | home, household (as place/concept) |
 
 ### Nature & Elements
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *arson* | IN | earth, ground (Phoenician ʾRS) |
-| *gaia* | AN | the living earth (as divine force) |
-| *shamon* | IN | sky, the heavens (Phoenician ŠMM) |
-| *āer* | AN | wind-breath, air as a living force |
-| *hydā* | IN | water (fresh) |
-| *pyra* | AN | fire (animate — it lives, it hungers) |
-| *selēnā* | AN | moon |
-| *yarakhā* | AN | the moon (poetic/sacred, Phoenician YRḤ) |
-| *hēliā* | AN | sun |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *αρσον* | arson | IN | earth, ground (Phoenician ʾRS) |
+| *γαια* | gaia | AN | the living earth (as divine force) |
+| *ϸαμον* | shamon | IN | sky, the heavens (Phoenician ŠMM) |
+| *ᾱερ* | āer | AN | wind-breath, air as a living force |
+| *ͱυδᾱ* | hydā | IN | water (fresh) |
+| *πυρα* | pyra | AN | fire (animate — it lives, it hungers) |
+| *σεληνᾱ* | selēnā | AN | moon |
+| *ϳαραχᾱ* | yarakhā | AN | the moon (poetic/sacred, Phoenician YRḤ) |
+| *ͱηλιᾱ* | hēliā | AN | sun |
 
 ### Materials & Trade (Phoenician layer)
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *zaharon* | IN | gold (Phoenician ZHB) |
-| *kasaphon* | IN | silver (Phoenician KSPH) |
-| *abanon* | IN | stone (Phoenician ʾBN) |
-| *arezon* | IN | cedar wood (Phoenician ʾRZ) |
-| *dagon* | IN | grain (Phoenician DGN) |
-| *shamar* | IN | name, reputation (Phoenician ŠM) |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *ζαͱαρον* | zaharon | IN | gold (Phoenician ZHB) |
+| *κασαφον* | kasaphon | IN | silver (Phoenician KSPH) |
+| *αβανον* | abanon | IN | stone (Phoenician ʾBN) |
+| *αρεζον* | arezon | IN | cedar wood (Phoenician ʾRZ) |
+| *δαγον* | dagon | IN | grain (Phoenician DGN) |
+| *ϸαμαρ* | shamar | IN | name, reputation (Phoenician ŠM) |
 
 ### Numbers
 
-| # | Tharaic | # | Tharaic |
-|---|---------|---|---------|
-| 1 | *enos* | 7 | *epta* |
-| 2 | *deva* | 8 | *okta* |
-| 3 | *tria* | 9 | *neva* |
-| 4 | *keta* | 10 | *dekha* |
-| 5 | *pente* | 100 | *hekhaton* |
-| 6 | *veksha* | 1000 | *alaphos* (Phoenician ʾLP) |
+| # | Tharaic | Romanized | # | Tharaic | Romanized |
+| --- | --------- | ----------- | --- | --------- | ----------- |
+| 1 | *ενος* | enos | 7 | *επτα* | epta |
+| 2 | *δεϝα* | deva | 8 | *οκτα* | okta |
+| 3 | *τρια* | tria | 9 | *νεϝα* | neva |
+| 4 | *κετα* | keta | 10 | *δεχα* | dekha |
+| 5 | *πεντε* | pente | 100 | *ͱεχατον* | hekhaton |
+| 6 | *ϝεκϸα* | veksha | 1000 | *αλαφος* (Phoenician ʾLP) | alaphos |
 
 ### Core Verbs
 
-| Root | Infinitive | Meaning |
-|------|-----------|---------|
-| *nāv-* | *nāvein* | to sail |
-| *ven-* | *venein* | to come |
-| *ag-* | *agein* | to go, move |
-| *lek-* | *lekein* | to speak, say |
-| *id-* | *idein* | to see |
-| *dō-* | *dōein* | to give |
-| *pher-* | *pherein* | to carry, bring |
-| *thel-* | *thelein* | to want, wish |
-| *eid-* | *eidein* | to know |
-| *zā-* | *zāein* | to live |
-| *kal-* | *kalein* | to call, name |
-| *mer-* | *merein* | to divide, share |
+| Root | Infinitive | Romanized | Meaning |
+| ------ | ----------- | ----------- | --------- |
+| *νᾱϝ-* | *νᾱϝειν* | nāvein | to sail |
+| *ϝεν-* | *ϝενειν* | venein | to come |
+| *αγ-* | *αγειν* | agein | to go, move |
+| *λεκ-* | *λεκειν* | lekein | to speak, say |
+| *ιδ-* | *ιδειν* | idein | to see |
+| *δω-* | *δωειν* | dōein | to give |
+| *φερ-* | *φερειν* | pherein | to carry, bring |
+| *θελ-* | *θελειν* | thelein | to want, wish |
+| *ειδ-* | *ειδειν* | eidein | to know |
+| *ζᾱ-* | *ζᾱειν* | zāein | to live |
+| *καλ-* | *καλειν* | kalein | to call, name |
+| *μερ-* | *μερειν* | merein | to divide, share |
 
 ### Core Adjectives
 
-| Tharaic (AN / IN) | Meaning |
-|-----------------|---------|
-| *kalos / kalon* | good, beautiful, favorable |
-| *kakos / kakon* | bad, ill-omened |
-| *megās / megon* | great, large |
-| *mikros / mikron* | small |
-| *neos / neon* | new |
-| *palaiā / palaion* | old, ancient |
-| *takhys / takhon* | swift, fast |
-| *bradys / bradon* | slow |
+| Tharaic (AN / IN) | Romanized | Meaning |
+| ----------------- | ----------- | --------- |
+| *καλος / καλον* | kalos / kalon | good, beautiful, favorable |
+| *κακος / κακον* | kakos / kakon | bad, ill-omened |
+| *μεγᾱς / μεγον* | megās / megon | great, large |
+| *μικρος / μικρον* | mikros / mikron | small |
+| *νεος / νεον* | neos / neon | new |
+| *παλαιᾱ / παλαιον* | palaiā / palaion | old, ancient |
+| *ταχυς / ταχον* | takhys / takhon | swift, fast |
+| *βραδυς / βραδον* | bradys / bradon | slow |
 
 ---
 
 ## Phase 5 — Sample Sentences
 
-| Tharaic | Gloss | Natural English |
-|---------|-------|-----------------|
-| *Kalos velos!* | Fair wind! | Fair winds! (blessing & farewell) |
-| *Nāvei navos epi thāros.* | Sails sailor on sea. | The sailor sails upon the sea. |
-| *Bāsil navā — adenos thāri.* | Captain-CONSTR ship — lord-CONSTR crew. | The ship's captain — lord of the crew. |
-| *Idei-ni yamos.* | Sees-me western-deep. | The deep sea sees me. |
-| *Venei hūa navatha.* | Comes he/she ship-ABL. | He comes off the ship. |
-| *Pherou-ta ani naveli.* | Carry-you I ship-LOC. | I carry you aboard the ship. |
-| *Lakul thāros: nāve, zāe.* | Word-CONSTR sea: sail, live. | The law of the sea: sail, live. |
-| *sha Ideim selēnān naveli.* | FUT see-1DU moon ship-LOC. | We two will see the moon from the ship. |
-| *va-Enāve velos… va-Enāva navā… va-Eleka bāsilos.* | And-rose wind… and-moved ship… and-spoke captain. | The wind rose… the ship moved… the captain spoke. |
-| *Lekō ani — ani, navos thāri!* | Speak I — I, sailor of-deep! | I speak — I, sailor of the deep! |
-| *Sha Nāvousi kapanoi mizrakhātha.* | FUT sail merchants from-east. | The merchants will sail in from the east. |
+| Tharaic | Romanized | Gloss | Natural English |
+| --------- | ----------- | ------- | ----------------- |
+| *Καλος ϝελος!* | Kalos velos! | Fair wind! | Fair winds! (blessing & farewell) |
+| *Νᾱϝει ναϝος επι θᾱρος.* | Nāvei navos epi thāros. | Sails sailor on sea. | The sailor sails upon the sea. |
+| *Βᾱσιλ ναϝᾱ — αδενος θᾱρι.* | Bāsil navā — adenos thāri. | Captain-CONSTR ship — lord-CONSTR crew. | The ship's captain — lord of the crew. |
+| *Ιδει-νι ϳαμος.* | Idei-ni yamos. | Sees-me western-deep. | The deep sea sees me. |
+| *Ϝενει ͱῡα ναϝαθα.* | Venei hūa navatha. | Comes he/she ship-ABL. | He comes off the ship. |
+| *Φερου-τα ανι ναϝελι.* | Pherou-ta ani naveli. | Carry-you I ship-LOC. | I carry you aboard the ship. |
+| *Λακυλ θᾱρος: νᾱϝε, ζᾱε.* | Lakul thāros: nāve, zāe. | Word-CONSTR sea: sail, live. | The law of the sea: sail, live. |
+| *ϸα Ιδειμ σεληνᾱν ναϝελι.* | sha Ideim selēnān naveli. | FUT see-1DU moon ship-LOC. | We two will see the moon from the ship. |
+| *ϝα-Ενᾱϝε ϝελος… ϝα-Ενᾱϝα ναϝᾱ… ϝα-Ελεκα βᾱσιλος.* | va-Enāve velos… va-Enāva navā… va-Eleka bāsilos. | And-rose wind… and-moved ship… and-spoke captain. | The wind rose… the ship moved… the captain spoke. |
+| *Λεκω ανι — ανι, ναϝος θᾱρι!* | Lekō ani — ani, navos thāri! | Speak I — I, sailor of-deep! | I speak — I, sailor of the deep! |
+| *Ϸα Νᾱϝουσι καπανοι μιζραχᾱθα.* | Sha Nāvousi kapanoi mizrakhātha. | FUT sail merchants from-east. | The merchants will sail in from the east. |
 
 ---
 
@@ -563,8 +578,8 @@ THARAIC
 │
 ├── PHONOLOGICAL LAYER
 │   └── Open syllable, max CVC, no clusters
-│       ├── New: sh /ʃ/
-│       └── New: gh /ɣ/
+│       ├── New: ϸ /ʃ/
+│       └── New: ϙ /ɣ/
 │
 ├── ROOT LAYER (Phoenician)
 │   └── Bi/triconsonantal roots carry meaning
@@ -582,15 +597,15 @@ THARAIC
 │   └── Construct state (Phoenician) — titles, sacred
 │
 ├── PRONOMINAL LAYER (Phoenician)
-│   ├── Independent pronouns (ani, ata…)
+│   ├── Independent pronouns (ανι, ατα…)
 │   └── Enclitics
-│       ├── on verbs (-ni, -ta…)
-│       └── on nouns (-i, -ka…)
+│       ├── on verbs (-νι, -τα…)
+│       └── on nouns (-ι, -κα…)
 │
 └── VERBAL LAYER
     ├── Inflection: Greek (person/number/tense)
-    ├── Future: particle sha (Phoenician-analog)
-    └── Narrative past: va- prefix (Phoenician wayyiqtol-analog)
+    ├── Future: particle ϸα (Phoenician-analog)
+    └── Narrative past: ϝα- prefix (Phoenician wayyiqtol-analog)
 ```
 
 ---
