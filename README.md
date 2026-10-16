@@ -172,8 +172,8 @@ Fronting a noun for emphasis:
 
 | Gender | Applies to | Examples |
 |--------|-----------|---------|
-| **Animate (AN)** | People, animals, deities, winds, ships, the sea, stars, fire | *ναϝᾱ, θᾱρος, ϝελος, αστρος, πυρα* |
-| **Inanimate (IN)** | Objects, materials, places, concepts, abstractions | *λακον, ϸαμον, ταρον, ͱαβλον* |
+| **Animate (AN)** | People, animals, deities, winds, ships, the sea, stars, fire | *ναϝᾱ, θᾱρος, ϝελος, αστρος, πυρα*<br>navā, thāros, velos, astros, pyra |
+| **Inanimate (IN)** | Objects, materials, places, concepts, abstractions | *λακον, ϸαμον, ταρον, ͱαβλον*<br>lakon, shamon, taron, hablon |
 
 Ships, the sea, winds, and stars are animate — these forces have agency. They are spoken to, bargained with, and honored.
 
@@ -185,10 +185,10 @@ Ships, the sea, winds, and stars are animate — these forces have agency. They 
 
 | Stem | Gender | NOM.SG marker | Paradigm noun |
 |------|--------|--------------|---------------|
-| **O-stem** | Animate | *-ος* | *θᾱρος* (sea) |
-| **A-stem** | Animate | *-ᾱ* | *ναϝᾱ* (ship) |
-| **ON-stem** | Inanimate | *-ον* | *λακον* (word) |
-| **AR-stem** | Inanimate | *-αρ* | *πελαρ* (expanse) |
+| **O-stem** | Animate | *-ος*<br>-os | *θᾱρος* (sea)<br>thāros |
+| **A-stem** | Animate | *-ᾱ*<br>-ā | *ναϝᾱ* (ship)<br>navā |
+| **ON-stem** | Inanimate | *-ον*<br>-on | *λακον* (word)<br>lakon |
+| **AR-stem** | Inanimate | *-αρ*<br>-ar | *πελαρ* (expanse)<br>pelar |
 
 **The eight cases:**
 
@@ -211,14 +211,14 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *θᾱρος* | *θᾱρειν* | *θᾱριμ* |
-| **ACC** | *θᾱρον* | *θᾱρειν* | *θᾱρονας* |
-| **GEN** | *θᾱρι* | *θᾱροιν* | *θᾱρων* |
-| **DAT** | *θᾱροι* | *θᾱροιν* | *θᾱροιμ* |
-| **VOC** | *θᾱρε* | *θᾱρειν* | *θᾱριμ* |
-| **LOC** | *θᾱρελι* | *θᾱρελιν* | *θᾱρελις* |
-| **INS** | *θᾱρομ* | *θᾱρομεν* | *θᾱρομις* |
-| **ABL** | *θᾱραθα* | *θᾱραθιν* | *θᾱραθις* |
+| **NOM** | *θᾱρος*<br>thāros | *θᾱρειν*<br>thārein | *θᾱριμ*<br>thārim |
+| **ACC** | *θᾱρον*<br>thāron | *θᾱρειν*<br>thārein | *θᾱρονας*<br>thāronas |
+| **GEN** | *θᾱρι*<br>thāri | *θᾱροιν*<br>thāroin | *θᾱρων*<br>thārōn |
+| **DAT** | *θᾱροι*<br>thāroi | *θᾱροιν*<br>thāroin | *θᾱροιμ*<br>thāroim |
+| **VOC** | *θᾱρε*<br>thāre | *θᾱρειν*<br>thārein | *θᾱριμ*<br>thārim |
+| **LOC** | *θᾱρελι*<br>thāreli | *θᾱρελιν*<br>thārelin | *θᾱρελις*<br>thārelis |
+| **INS** | *θᾱρομ*<br>thārom | *θᾱρομεν*<br>thāromen | *θᾱρομις*<br>thāromis |
+| **ABL** | *θᾱραθα*<br>thāratha | *θᾱραθιν*<br>thārathin | *θᾱραθις*<br>thārathis |
 
 ---
 
@@ -226,14 +226,14 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *ναϝᾱ* | *ναϝειν* | *ναϝιμ* |
-| **ACC** | *ναϝᾱν* | *ναϝειν* | *ναϝᾱνας* |
-| **GEN** | *ναϝις* | *ναϝοιν* | *ναϝων* |
-| **DAT** | *ναϝαι* | *ναϝοιν* | *ναϝαιμ* |
-| **VOC** | *ναϝε* | *ναϝειν* | *ναϝιμ* |
-| **LOC** | *ναϝελι* | *ναϝελιν* | *ναϝελις* |
-| **INS** | *ναϝομ* | *ναϝομεν* | *ναϝομις* |
-| **ABL** | *ναϝαθα* | *ναϝαθιν* | *ναϝαθις* |
+| **NOM** | *ναϝᾱ*<br>navā | *ναϝειν*<br>navein | *ναϝιμ*<br>navim |
+| **ACC** | *ναϝᾱν*<br>navān | *ναϝειν*<br>navein | *ναϝᾱνας*<br>navānas |
+| **GEN** | *ναϝις*<br>navis | *ναϝοιν*<br>navoin | *ναϝων*<br>navōn |
+| **DAT** | *ναϝαι*<br>navai | *ναϝοιν*<br>navoin | *ναϝαιμ*<br>navaim |
+| **VOC** | *ναϝε*<br>nave | *ναϝειν*<br>navein | *ναϝιμ*<br>navim |
+| **LOC** | *ναϝελι*<br>naveli | *ναϝελιν*<br>navelin | *ναϝελις*<br>navelis |
+| **INS** | *ναϝομ*<br>navom | *ναϝομεν*<br>navomen | *ναϝομις*<br>navomis |
+| **ABL** | *ναϝαθα*<br>navatha | *ναϝαθιν*<br>navathin | *ναϝαθις*<br>navathis |
 
 ---
 
@@ -241,14 +241,14 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *λακον* | *λακοιν* | *λακα* |
-| **ACC** | *λακον* | *λακοιν* | *λακα* |
-| **GEN** | *λακου* | *λακοιν* | *λακων* |
-| **DAT** | *λακοι* | *λακοιν* | *λακοιμ* |
-| **VOC** | *λακον* | *λακοιν* | *λακα* |
-| **LOC** | *λακελι* | *λακελιν* | *λακελις* |
-| **INS** | *λακομ* | *λακομεν* | *λακομις* |
-| **ABL** | *λακαθα* | *λακαθιν* | *λακαθις* |
+| **NOM** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
+| **ACC** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
+| **GEN** | *λακου*<br>lakou | *λακοιν*<br>lakoin | *λακων*<br>lakōn |
+| **DAT** | *λακοι*<br>lakoi | *λακοιν*<br>lakoin | *λακοιμ*<br>lakoim |
+| **VOC** | *λακον*<br>lakon | *λακοιν*<br>lakoin | *λακα*<br>laka |
+| **LOC** | *λακελι*<br>lakeli | *λακελιν*<br>lakelin | *λακελις*<br>lakelis |
+| **INS** | *λακομ*<br>lakom | *λακομεν*<br>lakomen | *λακομις*<br>lakomis |
+| **ABL** | *λακαθα*<br>lakatha | *λακαθιν*<br>lakathin | *λακαθις*<br>lakathis |
 
 ---
 
@@ -256,14 +256,14 @@ The Locative, Instrumental, and Ablative are the Phoenician-origin cases — the
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
-| **NOM** | *πελαρ* | *πελαριν* | *πελαρα* |
-| **ACC** | *πελαρ* | *πελαριν* | *πελαρα* |
-| **GEN** | *πελαρι* | *πελαριν* | *πελαρων* |
-| **DAT** | *πελαροι* | *πελαριν* | *πελαροιμ* |
-| **VOC** | *πελαρ* | *πελαριν* | *πελαρα* |
-| **LOC** | *πελαρελι* | *πελαρελιν* | *πελαρελις* |
-| **INS** | *πελαρομ* | *πελαρομεν* | *πελαρομις* |
-| **ABL** | *πελαραθα* | *πελαραθιν* | *πελαραθις* |
+| **NOM** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
+| **ACC** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
+| **GEN** | *πελαρι*<br>pelari | *πελαριν*<br>pelarin | *πελαρων*<br>pelarōn |
+| **DAT** | *πελαροι*<br>pelaroi | *πελαριν*<br>pelarin | *πελαροιμ*<br>pelaroim |
+| **VOC** | *πελαρ*<br>pelar | *πελαριν*<br>pelarin | *πελαρα*<br>pelara |
+| **LOC** | *πελαρελι*<br>pelareli | *πελαρελιν*<br>pelarelin | *πελαρελις*<br>pelarelis |
+| **INS** | *πελαρομ*<br>pelarom | *πελαρομεν*<br>pelaromen | *πελαρομις*<br>pelaromis |
+| **ABL** | *πελαραθα*<br>pelaratha | *πελαραθιν*<br>pelarathin | *πελαραθις*<br>pelarathis |
 
 ---
 
@@ -278,10 +278,10 @@ Tharaic has **two ways to express possession**:
 
 | Stem | Normal NOM.SG | Construct form |
 |------|--------------|----------------|
-| O-stem | *-ος* | *-ιλ* |
-| A-stem | *-ᾱ* | *-ιτ* |
-| ON-stem | *-ον* | *-υλ* |
-| AR-stem | *-αρ* | *-αρυλ* |
+| O-stem | *-ος*<br>-os | *-ιλ*<br>-il |
+| A-stem | *-ᾱ*<br>-ā | *-ιτ*<br>-it |
+| ON-stem | *-ον*<br>-on | *-υλ*<br>-ul |
+| AR-stem | *-αρ*<br>-ar | *-αρυλ*<br>-arul |
 
 Examples:
 > *βᾱσιλ ναϝᾱ* — "the ship's captain" (permanent role, title)
@@ -298,14 +298,14 @@ Examples:
 
 | Person | Pronoun | Person | Pronoun |
 |--------|---------|--------|---------|
-| 1sg | *ανι* | 1du | *αναιν* |
-| 2sg | *ατα* | 2du | *αταιν* |
-| 3sg AN | *ͱῡα* | 3du AN | *ͱῡαιν* |
-| 3sg IN | *ͱια* | 3du IN | *ͱιαιν* |
-| 1pl | *ανεν* | | |
-| 2pl | *ατεμ* | | |
-| 3pl AN | *ͱῡιμ* | | |
-| 3pl IN | *ͱιομ* | | |
+| 1sg | *ανι*<br>ani | 1du | *αναιν*<br>anain |
+| 2sg | *ατα*<br>ata | 2du | *αταιν*<br>atain |
+| 3sg AN | *ͱῡα*<br>hūa | 3du AN | *ͱῡαιν*<br>hūain |
+| 3sg IN | *ͱια*<br>hia | 3du IN | *ͱιαιν*<br>hiain |
+| 1pl | *ανεν*<br>anen |  |  |
+| 2pl | *ατεμ*<br>atem |  |  |
+| 3pl AN | *ͱῡιμ*<br>hūim |  |  |
+| 3pl IN | *ͱιομ*<br>hiom |  |  |
 
 *ανι* and *ατα* are modeled on Phoenician *ʾnk* (I) and *ʾt* (you).
 
@@ -313,11 +313,11 @@ Examples:
 
 | Person | Enclitic | Person | Enclitic |
 |--------|----------|--------|----------|
-| 1sg | *-νι* | 1pl | *-νεν* |
-| 2sg | *-τα* | 2pl | *-τεμ* |
-| 3sg AN | *-υ* | 3pl AN | *-ιμ* |
-| 3sg IN | *-α* | 3pl IN | *-ομ* |
-| 1du | *-ναιν* | 3du AN | *-αιν* |
+| 1sg | *-νι*<br>-ni | 1pl | *-νεν*<br>-nen |
+| 2sg | *-τα*<br>-ta | 2pl | *-τεμ*<br>-tem |
+| 3sg AN | *-υ*<br>-u | 3pl AN | *-ιμ*<br>-im |
+| 3sg IN | *-α*<br>-a | 3pl IN | *-ομ*<br>-om |
+| 1du | *-ναιν*<br>-nain | 3du AN | *-αιν*<br>-ain |
 
 > *Ιδει-νι θᾱρος.* — "The sea sees me."
 > *Φερευ-τα ανι.* — "I carry you."
@@ -326,10 +326,10 @@ Examples:
 
 | Person | Enclitic | Person | Enclitic |
 |--------|----------|--------|----------|
-| 1sg | *-ι* | 1pl | *-εν* |
-| 2sg | *-κα* | 2pl | *-κεμ* |
-| 3sg AN | *-υ* | 3pl AN | *-ιμ* |
-| 3sg IN | *-α* | 3pl IN | *-ομ* |
+| 1sg | *-ι*<br>-i | 1pl | *-εν*<br>-en |
+| 2sg | *-κα*<br>-ka | 2pl | *-κεμ*<br>-kem |
+| 3sg AN | *-υ*<br>-u | 3pl AN | *-ιμ*<br>-im |
+| 3sg IN | *-α*<br>-a | 3pl IN | *-ομ*<br>-om |
 
 > *ναϝᾱι* — my ship | *ναϝᾱκα* — your ship | *ναϝᾱυ* — his/her ship
 
@@ -359,17 +359,17 @@ This form is for **oral narrative and poetry only**. Formal written prose uses t
 
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
-| 1st | *νᾱϝω* | *νᾱϝετον* | *νᾱϝομεν* |
-| 2nd | *νᾱϝεις* | *νᾱϝετον* | *νᾱϝετε* |
-| 3rd | *νᾱϝει* | *νᾱϝετον* | *νᾱϝουσι* |
+| 1st | *νᾱϝω*<br>nāvō | *νᾱϝετον*<br>nāveton | *νᾱϝομεν*<br>nāvomen |
+| 2nd | *νᾱϝεις*<br>nāveis | *νᾱϝετον*<br>nāveton | *νᾱϝετε*<br>nāvete |
+| 3rd | *νᾱϝει*<br>nāvei | *νᾱϝετον*<br>nāveton | *νᾱϝουσι*<br>nāvousi |
 
 **Aorist (completed past, augment):**
 
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
-| 1st | *ενᾱϝα* | *ενᾱϝατον* | *ενᾱϝαμεν* |
-| 2nd | *ενᾱϝας* | *ενᾱϝατον* | *ενᾱϝατε* |
-| 3rd | *ενᾱϝε* | *ενᾱϝατον* | *ενᾱϝαν* |
+| 1st | *ενᾱϝα*<br>enāva | *ενᾱϝατον*<br>enāvaton | *ενᾱϝαμεν*<br>enāvamen |
+| 2nd | *ενᾱϝας*<br>enāvas | *ενᾱϝατον*<br>enāvaton | *ενᾱϝατε*<br>enāvate |
+| 3rd | *ενᾱϝε*<br>enāve | *ενᾱϝατον*<br>enāvaton | *ενᾱϝαν*<br>enāvan |
 
 **Future: *ϸα* + present form**
 
@@ -377,11 +377,11 @@ This form is for **oral narrative and poetry only**. Formal written prose uses t
 
 | Form | Example | Meaning |
 |------|---------|---------|
-| Infinitive | *νᾱϝειν* | to sail |
-| Participle AN | *νᾱϝον* / *νᾱϝουσα* | sailing |
-| Imperative sg | *νᾱϝε!* | sail! |
-| Imperative pl | *νᾱϝετε!* | sail! (pl) |
-| Narrative past | *ϝα-νᾱϝει* | and [he/she/it] sailed… |
+| Infinitive | *νᾱϝειν*<br>nāvein | to sail |
+| Participle AN | *νᾱϝον* / *νᾱϝουσα*<br>nāvon / nāvousa | sailing |
+| Imperative sg | *νᾱϝε!*<br>nāve! | sail! |
+| Imperative pl | *νᾱϝετε!*<br>nāvete! | sail! (pl) |
+| Narrative past | *ϝα-νᾱϝει*<br>va-nāvei | and [he/she/it] sailed… |
 
 ---
 
@@ -391,14 +391,14 @@ Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good,
 
 | Case | Animate SG | Inanimate SG | Animate DU | Animate PL | Inanimate PL |
 |------|-----------|--------------|------------|------------|--------------|
-| **NOM** | *καλος* | *καλον* | *καλειν* | *καλιμ* | *καλα* |
-| **ACC** | *καλον* | *καλον* | *καλειν* | *καλονας* | *καλα* |
-| **GEN** | *καλι* | *καλου* | *καλοιν* | *καλων* | *καλων* |
-| **DAT** | *καλοι* | *καλοι* | *καλοιν* | *καλοιμ* | *καλοιμ* |
-| **VOC** | *καλε* | *καλον* | *καλειν* | *καλιμ* | *καλα* |
-| **LOC** | *καλελι* | *καλελι* | *καλελιν* | *καλελις* | *καλελις* |
-| **INS** | *καλομ* | *καλομ* | *καλομεν* | *καλομις* | *καλομις* |
-| **ABL** | *καλαθα* | *καλαθα* | *καλαθιν* | *καλαθις* | *καλαθις* |
+| **NOM** | *καλος*<br>kalos | *καλον*<br>kalon | *καλειν*<br>kalein | *καλιμ*<br>kalim | *καλα*<br>kala |
+| **ACC** | *καλον*<br>kalon | *καλον*<br>kalon | *καλειν*<br>kalein | *καλονας*<br>kalonas | *καλα*<br>kala |
+| **GEN** | *καλι*<br>kali | *καλου*<br>kalou | *καλοιν*<br>kaloin | *καλων*<br>kalōn | *καλων*<br>kalōn |
+| **DAT** | *καλοι*<br>kaloi | *καλοι*<br>kaloi | *καλοιν*<br>kaloin | *καλοιμ*<br>kaloim | *καλοιμ*<br>kaloim |
+| **VOC** | *καλε*<br>kale | *καλον*<br>kalon | *καλειν*<br>kalein | *καλιμ*<br>kalim | *καλα*<br>kala |
+| **LOC** | *καλελι*<br>kaleli | *καλελι*<br>kaleli | *καλελιν*<br>kalelin | *καλελις*<br>kalelis | *καλελις*<br>kalelis |
+| **INS** | *καλομ*<br>kalom | *καλομ*<br>kalom | *καλομεν*<br>kalomen | *καλομις*<br>kalomis | *καλομις*<br>kalomis |
+| **ABL** | *καλαθα*<br>kalatha | *καλαθα*<br>kalatha | *καλαθιν*<br>kalathin | *καλαθις*<br>kalathis | *καλαθις*<br>kalathis |
 
 The LOC, INS, and ABL cases are identical across both genders — a structural reminder of their Phoenician origin.
 
