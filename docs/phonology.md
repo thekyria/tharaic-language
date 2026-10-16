@@ -84,5 +84,15 @@ This is a defining feature of Tharaic. The language breathes. It is made for voi
 - No *χ* in word-final position
 - Words prefer to end in **vowels** or **-ν, -ς, -ρ, -λ**
 
+These rules hold strictly in **chant** and in the older language. **Everyday speech** has relaxed them in three ways, each with a history ([History § Sound changes](history.md#2-sound-changes)):
+
+| Relaxation | Examples | Origin |
+|------------|----------|--------|
+| A syllable may start with an **obstruent + ρ/λ** | *τρια*, *προς*, *βραδυς*, *μιζραχᾱ*, *αστρος*, *ͱαβλον* | Loss of short vowels before the stress, then loans that fit the new pattern |
+| The construct ending **-ιτ** ends in τ | *ναϝιτ μᾱλικος* | Loss of the final vowel; a construct form never ends a phrase |
+| Two unassimilated loans | *ξενος*, *επτα* | Merchants' words from the Greek-analog stream |
+
+No register allows a three-consonant onset (στρ-, σκρ-). Inside a word, everyday speech allows at most a coda consonant followed by obstruent + ρ/λ (*ασ.τρος*); clusters like -κστ- stay excluded.
+
 **Stress:** Default **penultimate** (second-to-last syllable). Aeolic recessive accent influence.
 > *ναϝᾱ* → να-ϜᾹ | *θᾱρος* → ΘᾹ-ρος | *ελεκαμεν* → ε-λε-ΚΑ-μεν
