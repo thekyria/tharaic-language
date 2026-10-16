@@ -38,6 +38,7 @@ Long *ᾱ* and *ῡ* carry a macron in formal/literary contexts; in casual writi
 | **αυ** | au | /aw/ | "ow!" |
 | **ει** | ei | /eɪ/ | "ay" |
 | **ου** | ou | /oʊ/ | "owe" |
+| **ευ** | eu | /ew/ | "eh-oo", only in nouns in [-ευς](word-building.md#nouns-in--ευς) |
 
 ---
 

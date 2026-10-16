@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Convert romanized Tharaic to Greek script.
+"""Convert romanized Tharaic to Greek script, or back with --roman.
 
 Usage:
     python3 tools/greek.py nāvei navos epi thāros
     echo "Kalos velos!" | python3 tools/greek.py
+    python3 tools/greek.py --roman νᾱϝει ναϝος
 """
 import re
 import sys
@@ -41,6 +42,28 @@ def to_greek(text):
     return re.sub(f"σ(?![\\w{GREEK}])", "ς", "".join(out))
 
 
+ROMAN = {g: r for r, g in list(LETTERS.items()) + list(DIGRAPHS.items())}
+ROMAN.update({"ς": "s", "ϳ": "y"})
+
+
+def to_roman(text):
+    """Romanize Greek-script Tharaic. υ always becomes u, so Greek loans spelled
+    with y (συν → syn) come back as u."""
+    out = []
+    for c in text:
+        lower = c.lower()
+        r = ROMAN.get(lower)
+        if r is None:
+            out.append(c)
+        else:
+            out.append(r[0].upper() + r[1:] if c != lower else r)
+    return "".join(out)
+
+
 if __name__ == "__main__":
-    text = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else sys.stdin.read()
-    print(to_greek(text).rstrip("\n"))
+    args = sys.argv[1:]
+    convert = to_greek
+    if args and args[0] == "--roman":
+        convert, args = to_roman, args[1:]
+    text = " ".join(args) if args else sys.stdin.read()
+    print(convert(text).rstrip("\n"))

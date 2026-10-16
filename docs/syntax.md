@@ -11,24 +11,164 @@ VSO is the only canonical order in all registers. Word order variation is used e
 Fronting a noun for emphasis:
 > *Ναϝᾱν νᾱϝει ναϝος.* — THE SHIP — the sailor sails it.
 
+A few small words always come **before** the verb, in this order:
+
+| Slot | Words |
+|------|-------|
+| 1. Conjunction or question word | *ιμ* "if", *οτε* "when", *μι* "who", *λαμα* "why"… |
+| 2. Question prefix | *ͱα-* |
+| 3. Negation or the unreal particle | *βαλ*, *μη*, *αν* |
+| 4. Future particle | *ϸα* |
+| then | verb — subject — object — other phrases |
+
+> *Λαμα βαλ ϸα νᾱϝεις?* — Why not FUT you-sail? → "Why won't you sail?"
+
+---
+
+## Negation
+
+Tharaic has two negative particles, one from each ancestral stream:
+
+| Particle | Romanized | Used for | Origin |
+|----------|-----------|----------|--------|
+| *βαλ* | bal | statements and questions about facts | Phoenician *bl* |
+| *μη* | mē | commands, wishes, and conditions | Greek *μή* |
+
+> *Βαλ νᾱϝει ναϝος.* — "The sailor does not sail."
+> *Βαλ ϸα νᾱϝω.* — "I will not sail."
+> *Μη νᾱϝε!* — "Don't sail!"
+> *Μη ιδει-νι θᾱρος!* — "May the sea not see me!"
+
+**The narrative past cannot be negated.** A story that needs "and he did not…" switches to the aorist: *ϝα-ϝενει ϝελος… βαλ ενᾱϝε ναϝᾱ* "the wind came… (but) the ship did not sail." The Hebrew *wayyiqtol* behaves the same way.
+
+"No one" and "nothing" are *βαλ … ενος* "not one" (animate) and *βαλ … ενον* (inanimate):
+
+> *Βαλ ιδει ενος ναϝᾱν.* — "No one sees the ship."
+
+---
+
+## Questions
+
+### Yes/no questions
+
+Prefix **ͱα-** to the first word of the clause (Phoenician/Hebrew *ha-*). Word order does not change.
+
+> *Ͱα-νᾱϝει ναϝος?* — "Does the sailor sail?"
+> *Ͱα-βαλ νᾱϝεις?* — "Aren't you sailing?" (expects *yes*)
+
+| Answer | Tharaic | Romanized |
+|--------|---------|-----------|
+| yes | *ναι* | nai |
+| no | *βαλ* | bal |
+
+### Question words
+
+Question words come first in the clause. *Who*, *what* and *why* come from the Phoenician-analog stream; *where*, *when*, *how* and *which* from the Greek-analog stream.
+
+| Tharaic | Romanized | Meaning | Origin |
+|---------|-----------|---------|--------|
+| *μι* | mi | who, whom | Phoenician *my* |
+| *μις* | mis | whose | *μι* + genitive *-ς* |
+| *μα* | ma | what | Phoenician *m* |
+| *λαμα* | lama | why ("for what") | Phoenician *l-* "for" + *m* |
+| *που* | pou | where | Greek-analog *ποῦ* |
+| *ποτε* | pote | when | Greek-analog *πότε* |
+| *πως* | pōs | how | Greek-analog *πῶς* |
+| *ποιος* / *ποιον* | poios / poion | which (AN / IN), declines like *καλος* | Greek-analog *ποῖος* |
+| *ποσος* / *ποσον* | posos / poson | how many, how much (AN / IN) | Greek-analog *πόσος* |
+
+*μι* and *μα* do not decline. Their role comes from the rest of the clause: if a nominative subject follows the verb, *μι* is the object.
+
+> *Μι νᾱϝει?* — "Who sails?"
+> *Μι ιδει ναϝος?* — "Whom does the sailor see?" (*ναϝος* is the subject)
+> *Μα φερει ναϝᾱ?* — "What does the ship carry?"
+> *Που εσι λιμᾱ?* — "Where is the harbor?"
+
+---
+
+## Relative Clauses
+
+A relative clause follows its noun and begins with the prefix **ϸε-** on its verb (Phoenician *š-*, Hebrew *še-*). *ϸε-* never changes form.
+
+When the noun is the **subject** of the relative clause, nothing else is needed. In any other role, a **resumptive pronoun** marks its place, as in Phoenician and Hebrew:
+
+| Role | Example | Literally |
+|------|---------|-----------|
+| Subject | *ναϝᾱ ϸε-νᾱϝει θᾱρελι* — "the ship that sails on the sea" | ship that-sails sea-LOC |
+| Object | *ναϝᾱ ϸε-ιδει-υ ναϝος* — "the ship that the sailor sees" | ship that-sees-it sailor |
+| Possessor | *ναϝος ϸε-νᾱϝει ναϝᾱυ* — "the sailor whose ship sails" | sailor that-sails ship-his |
+
+The resumptive pronoun is the object enclitic on the verb (*-υ*, *-α*…) or the possessive enclitic on the noun ([Pronouns & Enclitics](morphology.md#pronouns--enclitics)).
+
+---
+
+## Conditions
+
+| Tharaic | Romanized | Meaning |
+|---------|-----------|---------|
+| *ιμ* | im | if (Phoenician *ʾm*) |
+| *ιμ μη* | im mē | unless, if not |
+| *οτε* | ote | when, whenever |
+| *αν* | an | particle of the unreal result, "would" (Greek-analog *ἄν*) |
+
+The condition comes first. An "if" clause is negated with *μη*, never *βαλ*.
+
+**Real conditions** use ordinary tenses:
+> *Ιμ εσι ϝελος καλος, ϸα νᾱϝομεν.* — "If the wind is fair, we will sail."
+> *Ιμ μη ϝενει ϝελος, βαλ ϸα νᾱϝομεν.* — "Unless the wind comes, we will not sail."
+> *Οτε ϝενει ϝελος, νᾱϝομεν.* — "Whenever the wind comes, we sail."
+
+**Unreal conditions** put *αν* before the verb of the result clause:
+- past aorist in both clauses for the past: "if … had …, would have …"
+- imperfective past in both clauses for the present: "if … were …, would …"
+
+> *Ιμ εκανε ϝελος καλος, αν ενᾱϝαμεν.* — "If the wind had been fair, we would have sailed."
+> *Ιμ εκανε νᾱϝει ναϝος, αν εκανα νᾱϝω.* — "If the sailor were sailing, I would be sailing."
+
+---
+
+## Comparison
+
+The standard of comparison goes in the **ablative**, "from", as in the Semitic languages:
+
+> *Εσι ναϝᾱ μεγοτερος καπαναθα.* — Is ship bigger merchant-vessel-ABL. → "The ship is bigger than the merchant vessel."
+
+See [Adjectives § Comparison](morphology.md#comparison) for the forms.
+
 ---
 
 ## Prepositions
 
-| Tharaic | Romanized | Meaning |
-| --------- | ----------- | --------- |
-| *ανα* | ana | up, upon |
-| *κατα* | kata | down, along |
-| *επι* | epi | on, upon |
-| *παρα* | para | beside, alongside |
-| *προς* | pros | toward, against |
-| *απο* | apo | from, away from |
-| *εν* | en | in, within |
-| *εκ* | ek | out of |
-| *δια* | dia | through, across |
-| *περι* | peri | around, about |
-| *συν* | syn | with, together with |
-| *αντι* | anti | against, opposite |
+Prepositions are unstressed and lean on the next word. Each one takes a fixed case, and some change meaning with the case. The cases follow the same logic as the *three sea cases*: **where** (LOC), **where to** (ACC), **where from** (ABL), **with what** (INS).
+
+| Tharaic | Romanized | + Case | Meaning |
+| --------- | ----------- | ------ | --------- |
+| *εν* | en | LOC | in, within |
+| *επι* | epi | LOC | on, upon (rest) |
+| | | ACC | onto (motion) |
+| *παρα* | para | LOC | beside, alongside |
+| | | ACC | to the side of |
+| | | ABL | from beside, from someone |
+| *περι* | peri | LOC | around (place) |
+| | | GEN | about, concerning |
+| *ανα* | ana | ACC | up, up along |
+| *κατα* | kata | ACC | down, along |
+| *προς* | pros | ACC | toward, against |
+| *δια* | dia | ACC | through, across |
+| | | GEN | because of |
+| *απο* | apo | ABL | from, away from |
+| *εκ* | ek | ABL | out of |
+| *συν* | syn | INS | with, together with |
+| *αντι* | anti | GEN | against, opposite, instead of |
+
+> *εν λιμελι* — "in the harbor" (LOC)
+> *προς λιμᾱν* — "toward the harbor" (ACC)
+> *απο λιμαθα* — "away from the harbor" (ABL)
+> *δια θᾱρον* — "across the sea" (ACC)
+> *συν φιλομ* — "with a friend" (INS)
+> *περι θᾱρι* — "about the sea" (GEN)
+
+The sea cases also work alone, without a preposition: *θᾱρελι* "on the sea", *ναϝαθα* "from the ship". A preposition adds precision: *επι θᾱρελι* "upon the sea", *εκ ναϝαθα* "out of the ship".
 
 ## Conjunctions
 
@@ -39,3 +179,5 @@ Fronting a noun for emphasis:
 | *αλλα* | alla | but |
 | *ͱοτι* | hoti | because, that |
 | *μεν…δε* | men…de | on one hand… on the other |
+| *ιμ* | im | if |
+| *οτε* | ote | when, whenever |
