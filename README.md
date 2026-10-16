@@ -109,49 +109,49 @@ Every Tharaic word descends from a consonantal root — usually **biconsonantal*
 
 **Ν-Ϝ** — *sailing, ships, seafaring*
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *ναϝος* | sailor |
-| Animate A-stem | *ναϝᾱ* | ship |
-| Inanimate ON-stem | *ναϝον* | a voyage |
-| Verb | *νᾱϝειν* | to sail |
-| Adjective | *ναϝικος* | nautical |
-| Construct | *ναϝιλ* | ship-of / sailor-of |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *ναϝος* | navos | sailor |
+| Animate A-stem | *ναϝᾱ* | navā | ship |
+| Inanimate ON-stem | *ναϝον* | navon | a voyage |
+| Verb | *νᾱϝειν* | nāvein | to sail |
+| Adjective | *ναϝικος* | navikos | nautical |
+| Construct | *ναϝιλ* | navil | ship-of / sailor-of |
 
 **Τ-Ρ** — *sea, depth, distance*
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *θᾱρος* | the open sea |
-| Inanimate ON-stem | *ταρον* | the deep, depth |
-| Adjective | *ταριος* | deep, far-reaching |
-| Verb | *θᾱρειν* | to cross the sea |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *θᾱρος* | thāros | the open sea |
+| Inanimate ON-stem | *ταρον* | taron | the deep, depth |
+| Adjective | *ταριος* | tarios | deep, far-reaching |
+| Verb | *θᾱρειν* | thārein | to cross the sea |
 
 **Λ-Κ** — *speech, word, call*
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *λεκος* | speaker, herald |
-| Inanimate ON-stem | *λακον* | word, utterance |
-| Verb | *λεκειν* | to speak |
-| Adjective | *λακικος* | verbal, spoken |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *λεκος* | lekos | speaker, herald |
+| Inanimate ON-stem | *λακον* | lakon | word, utterance |
+| Verb | *λεκειν* | lekein | to speak |
+| Adjective | *λακικος* | lakikos | verbal, spoken |
 
 **Μ-Λ-Κ** — *rule, authority, kingship* (triconsonantal — Phoenician MLK)
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Animate O-stem | *μᾱλικος* | ruler, king |
-| Animate A-stem | *μᾱλικᾱ* | queen, ruling woman |
-| Inanimate ON-stem | *μαλκον* | kingdom, domain |
-| Verb | *μᾱλικειν* | to rule |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Animate O-stem | *μᾱλικος* | mālikos | ruler, king |
+| Animate A-stem | *μᾱλικᾱ* | mālikā | queen, ruling woman |
+| Inanimate ON-stem | *μαλκον* | malkon | kingdom, domain |
+| Verb | *μᾱλικειν* | mālikein | to rule |
 
 **Ϸ-Μ** — *sky, name, reputation* (Phoenician ŠMM / ŠM)
 
-| Form | Word | Meaning |
-|------|------|---------|
-| Inanimate ON-stem | *ϸαμον* | sky, the heavens |
-| Inanimate AR-stem | *ϸαμαρ* | a name, one's reputation |
-| Verb | *ϸαμειν* | to name, to call by name |
+| Form | Word | Romanized | Meaning |
+| ------ | ------ | ----------- | --------- |
+| Inanimate ON-stem | *ϸαμον* | shamon | sky, the heavens |
+| Inanimate AR-stem | *ϸαμαρ* | shamar | a name, one's reputation |
+| Verb | *ϸαμειν* | shamein | to name, to call by name |
 
 ---
 
@@ -406,30 +406,30 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 
 ### 3.8 Prepositions
 
-| Tharaic | Meaning |
-|---------|---------|
-| *ανα* | up, upon |
-| *κατα* | down, along |
-| *επι* | on, upon |
-| *παρα* | beside, alongside |
-| *προς* | toward, against |
-| *απο* | from, away from |
-| *εν* | in, within |
-| *εκ* | out of |
-| *δια* | through, across |
-| *περι* | around, about |
-| *συν* | with, together with |
-| *αντι* | against, opposite |
+| Tharaic | Romanized | Meaning |
+| --------- | ----------- | --------- |
+| *ανα* | ana | up, upon |
+| *κατα* | kata | down, along |
+| *επι* | epi | on, upon |
+| *παρα* | para | beside, alongside |
+| *προς* | pros | toward, against |
+| *απο* | apo | from, away from |
+| *εν* | en | in, within |
+| *εκ* | ek | out of |
+| *δια* | dia | through, across |
+| *περι* | peri | around, about |
+| *συν* | syn | with, together with |
+| *αντι* | anti | against, opposite |
 
 ### 3.9 Conjunctions
 
-| Tharaic | Meaning |
-|---------|---------|
-| *και* | and |
-| *η* | or |
-| *αλλα* | but |
-| *ͱοτι* | because, that |
-| *μεν…δε* | on one hand… on the other |
+| Tharaic | Romanized | Meaning |
+| --------- | ----------- | --------- |
+| *και* | kai | and |
+| *η* | ē | or |
+| *αλλα* | alla | but |
+| *ͱοτι* | hoti | because, that |
+| *μεν…δε* | men…de | on one hand… on the other |
 
 ---
 
@@ -437,137 +437,137 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 
 ### Cardinal Directions (Phoenician-origin)
 
-| Tharaic | Meaning | From |
-|---------|---------|------|
-| *ϸαφιν* | North — "the sacred height" | Phoenician Ṣāpōn |
-| *δᾱρομος* | South — "the noonday direction" | Phoenician drm |
-| *μιζραχᾱ* | East — "direction of sunrise" | Phoenician mzrḥ |
-| *μᾱραβᾱ* | West — "direction of sunset" | Phoenician mrb |
+| Tharaic | Romanized | Meaning | From |
+| --------- | ----------- | --------- | ------ |
+| *ϸαφιν* | shaphin | North — "the sacred height" | Phoenician Ṣāpōn |
+| *δᾱρομος* | dāromos | South — "the noonday direction" | Phoenician drm |
+| *μιζραχᾱ* | mizrakhā | East — "direction of sunrise" | Phoenician mzrḥ |
+| *μᾱραβᾱ* | mārabā | West — "direction of sunset" | Phoenician mrb |
 
 ### The Sea & Navigation
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *θᾱρος* | AN | open sea, deep water |
-| *ϳαμος* | AN | the western deep, the unknown sea (Phoenician YM) |
-| *πελαρ* | IN | expanse, open water (poetic) |
-| *ταρον* | IN | the deep, depth |
-| *λιμᾱ* | AN | harbor, safe anchorage |
-| *ακᾱρα* | AN | cape, headland |
-| *ναϝᾱ* | AN | ship |
-| *καπανος* | AN | trading vessel, merchant ship (Phoenician KPN) |
-| *ναϝος* | AN | sailor |
-| *βᾱσιλος* | AN | captain, chief |
-| *προᾱ* | AN | prow |
-| *κορμᾱ* | AN | stern |
-| *ͱαβλον* | IN | rope, rigging (Phoenician HBL) |
-| *ϝελον* | IN | sail |
-| *ϝελος* | AN | wind |
-| *ρεμα* | IN | oar |
-| *αστρος* | AN | a star (as animate navigator) |
-| *αστρα* | IN | constellation, the star-system |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *θᾱρος* | thāros | AN | open sea, deep water |
+| *ϳαμος* | yamos | AN | the western deep, the unknown sea (Phoenician YM) |
+| *πελαρ* | pelar | IN | expanse, open water (poetic) |
+| *ταρον* | taron | IN | the deep, depth |
+| *λιμᾱ* | limā | AN | harbor, safe anchorage |
+| *ακᾱρα* | akāra | AN | cape, headland |
+| *ναϝᾱ* | navā | AN | ship |
+| *καπανος* | kapanos | AN | trading vessel, merchant ship (Phoenician KPN) |
+| *ναϝος* | navos | AN | sailor |
+| *βᾱσιλος* | bāsilos | AN | captain, chief |
+| *προᾱ* | proā | AN | prow |
+| *κορμᾱ* | kormā | AN | stern |
+| *ͱαβλον* | hablon | IN | rope, rigging (Phoenician HBL) |
+| *ϝελον* | velon | IN | sail |
+| *ϝελος* | velos | AN | wind |
+| *ρεμα* | rema | IN | oar |
+| *αστρος* | astros | AN | a star (as animate navigator) |
+| *αστρα* | astra | IN | constellation, the star-system |
 
 ### People & Society
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *αδενος* | AN | lord, master (Phoenician ʾDN) |
-| *μᾱλικος* | AN | ruler, king (Phoenician MLK) |
-| *μᾱλικᾱ* | AN | queen, ruling woman |
-| *βαλος* | AN | husband, lord of the house (Phoenician BʿL) |
-| *βᾱλᾱ* | AN | wife, lady of the house |
-| *ανηρ* | AN | man |
-| *εινᾱ* | AN | woman |
-| *παιδᾱ* | AN | child |
-| *φιλος* | AN | friend, ally |
-| *ξενος* | AN | stranger, guest |
-| *θαρια* | AN | the crew, the seafaring community |
-| *δεμᾱ* | AN | the people |
-| *οικον* | IN | home, household (as place/concept) |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *αδενος* | adenos | AN | lord, master (Phoenician ʾDN) |
+| *μᾱλικος* | mālikos | AN | ruler, king (Phoenician MLK) |
+| *μᾱλικᾱ* | mālikā | AN | queen, ruling woman |
+| *βαλος* | balos | AN | husband, lord of the house (Phoenician BʿL) |
+| *βᾱλᾱ* | bālā | AN | wife, lady of the house |
+| *ανηρ* | anēr | AN | man |
+| *εινᾱ* | einā | AN | woman |
+| *παιδᾱ* | paidā | AN | child |
+| *φιλος* | philos | AN | friend, ally |
+| *ξενος* | xenos | AN | stranger, guest |
+| *θαρια* | tharia | AN | the crew, the seafaring community |
+| *δεμᾱ* | demā | AN | the people |
+| *οικον* | oikon | IN | home, household (as place/concept) |
 
 ### Nature & Elements
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *αρσον* | IN | earth, ground (Phoenician ʾRS) |
-| *γαια* | AN | the living earth (as divine force) |
-| *ϸαμον* | IN | sky, the heavens (Phoenician ŠMM) |
-| *ᾱερ* | AN | wind-breath, air as a living force |
-| *ͱυδᾱ* | IN | water (fresh) |
-| *πυρα* | AN | fire (animate — it lives, it hungers) |
-| *σεληνᾱ* | AN | moon |
-| *ϳαραχᾱ* | AN | the moon (poetic/sacred, Phoenician YRḤ) |
-| *ͱηλιᾱ* | AN | sun |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *αρσον* | arson | IN | earth, ground (Phoenician ʾRS) |
+| *γαια* | gaia | AN | the living earth (as divine force) |
+| *ϸαμον* | shamon | IN | sky, the heavens (Phoenician ŠMM) |
+| *ᾱερ* | āer | AN | wind-breath, air as a living force |
+| *ͱυδᾱ* | hydā | IN | water (fresh) |
+| *πυρα* | pyra | AN | fire (animate — it lives, it hungers) |
+| *σεληνᾱ* | selēnā | AN | moon |
+| *ϳαραχᾱ* | yarakhā | AN | the moon (poetic/sacred, Phoenician YRḤ) |
+| *ͱηλιᾱ* | hēliā | AN | sun |
 
 ### Materials & Trade (Phoenician layer)
 
-| Tharaic | Gender | Meaning |
-|---------|--------|---------|
-| *ζαͱαρον* | IN | gold (Phoenician ZHB) |
-| *κασαφον* | IN | silver (Phoenician KSPH) |
-| *αβανον* | IN | stone (Phoenician ʾBN) |
-| *αρεζον* | IN | cedar wood (Phoenician ʾRZ) |
-| *δαγον* | IN | grain (Phoenician DGN) |
-| *ϸαμαρ* | IN | name, reputation (Phoenician ŠM) |
+| Tharaic | Romanized | Gender | Meaning |
+| --------- | ----------- | -------- | --------- |
+| *ζαͱαρον* | zaharon | IN | gold (Phoenician ZHB) |
+| *κασαφον* | kasaphon | IN | silver (Phoenician KSPH) |
+| *αβανον* | abanon | IN | stone (Phoenician ʾBN) |
+| *αρεζον* | arezon | IN | cedar wood (Phoenician ʾRZ) |
+| *δαγον* | dagon | IN | grain (Phoenician DGN) |
+| *ϸαμαρ* | shamar | IN | name, reputation (Phoenician ŠM) |
 
 ### Numbers
 
-| # | Tharaic | # | Tharaic |
-|---|---------|---|---------|
-| 1 | *ενος* | 7 | *επτα* |
-| 2 | *δεϝα* | 8 | *οκτα* |
-| 3 | *τρια* | 9 | *νεϝα* |
-| 4 | *κετα* | 10 | *δεχα* |
-| 5 | *πεντε* | 100 | *ͱεχατον* |
-| 6 | *ϝεκϸα* | 1000 | *αλαφος* (Phoenician ʾLP) |
+| # | Tharaic | Romanized | # | Tharaic | Romanized |
+| --- | --------- | ----------- | --- | --------- | ----------- |
+| 1 | *ενος* | enos | 7 | *επτα* | epta |
+| 2 | *δεϝα* | deva | 8 | *οκτα* | okta |
+| 3 | *τρια* | tria | 9 | *νεϝα* | neva |
+| 4 | *κετα* | keta | 10 | *δεχα* | dekha |
+| 5 | *πεντε* | pente | 100 | *ͱεχατον* | hekhaton |
+| 6 | *ϝεκϸα* | veksha | 1000 | *αλαφος* (Phoenician ʾLP) | alaphos |
 
 ### Core Verbs
 
-| Root | Infinitive | Meaning |
-|------|-----------|---------|
-| *νᾱϝ-* | *νᾱϝειν* | to sail |
-| *ϝεν-* | *ϝενειν* | to come |
-| *αγ-* | *αγειν* | to go, move |
-| *λεκ-* | *λεκειν* | to speak, say |
-| *ιδ-* | *ιδειν* | to see |
-| *δω-* | *δωειν* | to give |
-| *φερ-* | *φερειν* | to carry, bring |
-| *θελ-* | *θελειν* | to want, wish |
-| *ειδ-* | *ειδειν* | to know |
-| *ζᾱ-* | *ζᾱειν* | to live |
-| *καλ-* | *καλειν* | to call, name |
-| *μερ-* | *μερειν* | to divide, share |
+| Root | Infinitive | Romanized | Meaning |
+| ------ | ----------- | ----------- | --------- |
+| *νᾱϝ-* | *νᾱϝειν* | nāvein | to sail |
+| *ϝεν-* | *ϝενειν* | venein | to come |
+| *αγ-* | *αγειν* | agein | to go, move |
+| *λεκ-* | *λεκειν* | lekein | to speak, say |
+| *ιδ-* | *ιδειν* | idein | to see |
+| *δω-* | *δωειν* | dōein | to give |
+| *φερ-* | *φερειν* | pherein | to carry, bring |
+| *θελ-* | *θελειν* | thelein | to want, wish |
+| *ειδ-* | *ειδειν* | eidein | to know |
+| *ζᾱ-* | *ζᾱειν* | zāein | to live |
+| *καλ-* | *καλειν* | kalein | to call, name |
+| *μερ-* | *μερειν* | merein | to divide, share |
 
 ### Core Adjectives
 
-| Tharaic (AN / IN) | Meaning |
-|-----------------|---------|
-| *καλος / καλον* | good, beautiful, favorable |
-| *κακος / κακον* | bad, ill-omened |
-| *μεγᾱς / μεγον* | great, large |
-| *μικρος / μικρον* | small |
-| *νεος / νεον* | new |
-| *παλαιᾱ / παλαιον* | old, ancient |
-| *ταχυς / ταχον* | swift, fast |
-| *βραδυς / βραδον* | slow |
+| Tharaic (AN / IN) | Romanized | Meaning |
+| ----------------- | ----------- | --------- |
+| *καλος / καλον* | kalos / kalon | good, beautiful, favorable |
+| *κακος / κακον* | kakos / kakon | bad, ill-omened |
+| *μεγᾱς / μεγον* | megās / megon | great, large |
+| *μικρος / μικρον* | mikros / mikron | small |
+| *νεος / νεον* | neos / neon | new |
+| *παλαιᾱ / παλαιον* | palaiā / palaion | old, ancient |
+| *ταχυς / ταχον* | takhys / takhon | swift, fast |
+| *βραδυς / βραδον* | bradys / bradon | slow |
 
 ---
 
 ## Phase 5 — Sample Sentences
 
-| Tharaic | Gloss | Natural English |
-|---------|-------|-----------------|
-| *Καλος ϝελος!* | Fair wind! | Fair winds! (blessing & farewell) |
-| *Νᾱϝει ναϝος επι θᾱρος.* | Sails sailor on sea. | The sailor sails upon the sea. |
-| *Βᾱσιλ ναϝᾱ — αδενος θᾱρι.* | Captain-CONSTR ship — lord-CONSTR crew. | The ship's captain — lord of the crew. |
-| *Ιδει-νι ϳαμος.* | Sees-me western-deep. | The deep sea sees me. |
-| *Ϝενει ͱῡα ναϝαθα.* | Comes he/she ship-ABL. | He comes off the ship. |
-| *Φερου-τα ανι ναϝελι.* | Carry-you I ship-LOC. | I carry you aboard the ship. |
-| *Λακυλ θᾱρος: νᾱϝε, ζᾱε.* | Word-CONSTR sea: sail, live. | The law of the sea: sail, live. |
-| *ϸα Ιδειμ σεληνᾱν ναϝελι.* | FUT see-1DU moon ship-LOC. | We two will see the moon from the ship. |
-| *ϝα-Ενᾱϝε ϝελος… ϝα-Ενᾱϝα ναϝᾱ… ϝα-Ελεκα βᾱσιλος.* | And-rose wind… and-moved ship… and-spoke captain. | The wind rose… the ship moved… the captain spoke. |
-| *Λεκω ανι — ανι, ναϝος θᾱρι!* | Speak I — I, sailor of-deep! | I speak — I, sailor of the deep! |
-| *Ϸα Νᾱϝουσι καπανοι μιζραχᾱθα.* | FUT sail merchants from-east. | The merchants will sail in from the east. |
+| Tharaic | Romanized | Gloss | Natural English |
+| --------- | ----------- | ------- | ----------------- |
+| *Καλος ϝελος!* | Kalos velos! | Fair wind! | Fair winds! (blessing & farewell) |
+| *Νᾱϝει ναϝος επι θᾱρος.* | Nāvei navos epi thāros. | Sails sailor on sea. | The sailor sails upon the sea. |
+| *Βᾱσιλ ναϝᾱ — αδενος θᾱρι.* | Bāsil navā — adenos thāri. | Captain-CONSTR ship — lord-CONSTR crew. | The ship's captain — lord of the crew. |
+| *Ιδει-νι ϳαμος.* | Idei-ni yamos. | Sees-me western-deep. | The deep sea sees me. |
+| *Ϝενει ͱῡα ναϝαθα.* | Venei hūa navatha. | Comes he/she ship-ABL. | He comes off the ship. |
+| *Φερου-τα ανι ναϝελι.* | Pherou-ta ani naveli. | Carry-you I ship-LOC. | I carry you aboard the ship. |
+| *Λακυλ θᾱρος: νᾱϝε, ζᾱε.* | Lakul thāros: nāve, zāe. | Word-CONSTR sea: sail, live. | The law of the sea: sail, live. |
+| *ϸα Ιδειμ σεληνᾱν ναϝελι.* | sha Ideim selēnān naveli. | FUT see-1DU moon ship-LOC. | We two will see the moon from the ship. |
+| *ϝα-Ενᾱϝε ϝελος… ϝα-Ενᾱϝα ναϝᾱ… ϝα-Ελεκα βᾱσιλος.* | va-Enāve velos… va-Enāva navā… va-Eleka bāsilos. | And-rose wind… and-moved ship… and-spoke captain. | The wind rose… the ship moved… the captain spoke. |
+| *Λεκω ανι — ανι, ναϝος θᾱρι!* | Lekō ani — ani, navos thāri! | Speak I — I, sailor of-deep! | I speak — I, sailor of the deep! |
+| *Ϸα Νᾱϝουσι καπανοι μιζραχᾱθα.* | Sha Nāvousi kapanoi mizrakhātha. | FUT sail merchants from-east. | The merchants will sail in from the east. |
 
 ---
 
