@@ -22,6 +22,9 @@ Tharaic descends from a proto-language that absorbed two streams:
 | [Word Building](docs/word-building.md) | Root patterns (older layer) and suffixes (younger layer) |
 | [Lexicon](docs/lexicon.md) | About 400 words by theme, with roots, origins and chant forms (generated from `data/lexicon.yaml`) |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
+| [Proverbs & Oaths](docs/proverbs.md) | Sailor and merchant sayings, weather lore, oath formulas |
+| [The Sacred Register](docs/sacred.md) | Temple speech: divine epithets, prayers, blessings, a votive inscription |
+| [Chants & Stories](docs/stories.md) | A rowing chant and a glossed harbor tale |
 | [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
 | [Roadmap](docs/roadmap.md) | Planned work |
 
@@ -77,6 +80,7 @@ THARAIC
 │
 ├── CLAUSE LAYER
 │   ├── Negation: βαλ (Phoenician) for facts, μη (Greek) for commands/wishes/conditions
+│   ├── Wishes: λυ (Phoenician-analog) + present
 │   ├── Questions: ͱα- prefix (Phoenician); fronted question words
 │   ├── Relative clauses: ϸε- + resumptive pronoun (Phoenician)
 │   └── Conditions: ιμ "if" (Phoenician) + αν "would" (Greek)

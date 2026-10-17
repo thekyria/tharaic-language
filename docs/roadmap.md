@@ -28,14 +28,14 @@ Each step is a separate pull request.
    - the A-stem construct ending *-ιτ*, whose final τ breaks the coda rule
    - corrected sample sentences: the *-ειμ* ending, *καπανοι* → *καπανιμ*, the "crew" gloss, narrative ϝα- with present vs aorist, the case after *επι*
 3. ✅ **Grammar** — negation, yes/no questions with ͱα-, question words, relative clauses with ϸε-, conditionals (if/when/unless), the case each preposition takes, "to be", the two layers of word building, imperfective past, middle voice, comparatives.
-4. ✅ **Lexicon** — `data/lexicon.yaml` with about 300 entries, generated into `docs/lexicon.md`. Four themes: body & kinship, weather & sea life, trade & craft, ritual & abstract. Each entry records Greek spelling, romanization, root, part of speech, gender and stem class, meaning, source layer (native, Phoenician, Greek), and the chant form where it differs.
+4. ✅ **Lexicon** — `data/lexicon.yaml` with about 400 entries (planned as about 300), generated into `docs/lexicon.md`. Four themes: body & kinship, weather & sea life, trade & craft, ritual & abstract. Each entry records Greek spelling, romanization, root, part of speech, gender and stem class, meaning, source layer (native, Phoenician, Greek), and the chant form where it differs.
+
+5. ✅ **Texts** — [Proverbs & Oaths](proverbs.md), [the Sacred Register](sacred.md), and [Chants & Stories](stories.md) (a rowing chant and a glossed tale). The texts added the grammar they needed: the wish particle *λυ*, adjective position, long subjects moving last, *ενος ϸε-* "he who", the demonstrative *ζε*, and case marking at the end of a construct phrase. Their new words are in the lexicon.
 
 ## Later
 
 | Future phase | What it adds |
 |---|---|
-| **Proverb collection** | Fixed expressions, sailor sayings, trade oaths |
-| **Sacred/religious register** | Temple language, divine epithets, ritual formulas |
-| **Texts & culture** | Chants, a calendar and star lore, a glossed story |
+| **Culture** | A calendar and star lore |
 | **Script details** | Punctuation, Greek-style alphabetic numerals |
 | **Dialectal variation** | Coastal dialect vs. island dialect vs. trade pidgin |

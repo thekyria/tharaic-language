@@ -4,7 +4,7 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-425 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+433 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
@@ -20,6 +20,7 @@
 | *αστρα* | astra |  | n. IN, ON-stem plural | constellation, the star-system — collective, takes a singular verb ([history](history.md#4-nouns-that-changed-gender)) | Greek *ἄστρα* | *ασταρα* |
 | *αστρος* | astros |  | n. AN, O-stem | a star (as animate navigator) | Greek *ἄστρον* | *αστορος* |
 | *βᾱσιλος* | bāsilos | Β-Σ-Λ | n. AN, O-stem | captain, chief | native |  |
+| *ερεσσειν* | eressein |  | v. | to row | Greek *ἐρέσσειν* |  |
 | *ϝελον* | velon | Ϝ-Λ | n. IN, ON-stem | sail | native |  |
 | *ϝελος* | velos | Ϝ-Λ | n. AN, O-stem | wind | native |  |
 | *ͱαβλευς* | hableus |  | n. AN, -ευς | ropemaker | native | *ͱαβελευς* |
@@ -44,6 +45,7 @@
 | *ναϝον* | navon | Ν-Ϝ | n. IN, ON-stem | a voyage | native |  |
 | *ναϝος* | navos | Ν-Ϝ | n. AN, O-stem | sailor | native |  |
 | *ναϝυτον* | navuton | Ν-Ϝ | n. IN, ON-stem | seamanship | native |  |
+| *νακαβον* | nakabon | Ν-Κ-Β | n. IN, ON-stem | hole, leak | native (cf. Hebrew *neqeb*) |  |
 | *πελαρ* | pelar | Π-Λ | n. IN, AR-stem | expanse, open water (poetic) | native |  |
 | *πηδαλιον* | pēdalion |  | n. IN, ON-stem | steering oar, rudder | Greek *πηδάλιον* |  |
 | *προᾱ* | proā |  | n. AN, A-stem | prow | Greek *πρῷρα* | *ποροᾱ* |
@@ -53,6 +55,7 @@
 | *ταριος / ταριον* | tarios / tarion | Τ-Ρ | adj. | deep, far-reaching | native |  |
 | *ταρον* | taron | Τ-Ρ | n. IN, ON-stem | the deep, depth | native |  |
 | *ταρϸιϸᾱ* | tarshishā |  | n. AN, A-stem | great ocean-going ship | Phoenician *ʾny tršš* 'ship of Tarshish' |  |
+| *τεβεϙειν* | tebeghein | Τ-Β-Ϙ | v. | to sink | native (cf. Hebrew *ṭbʿ*) |  |
 
 ## Weather & Sea Life
 
@@ -97,7 +100,7 @@
 | *ϙερεβον* | gherebon |  | n. IN, ON-stem | dusk, evening | Phoenician (cf. Hebrew *ʿereb*) |  |
 | *ραϙαμον* | raghamon | Ρ-Ϙ-Μ | n. IN, ON-stem | thunder | native (cf. Hebrew *raʿam*) |  |
 | *σᾱϙιρος* | sāghiros | Σ-Ϙ-Ρ | n. AN, O-stem | the storm (as a great actor) | native (cf. Hebrew *səʿārāh*) |  |
-| *συρον* | suron |  | n. IN, ON-stem | rock, reef | Phoenician *ṣr* (Tyre) |  |
+| *συρον* | suron |  | n. IN, ON-stem | rock, reef; as a name, *Συρον*, the city of Tyre | Phoenician *ṣr* (Tyre) |  |
 | *ϸαλγον* | shalgon | Ϸ-Λ-Γ | n. IN, ON-stem | snow | native (cf. Hebrew *šeleg*) |  |
 | *ϸαχαρ* | shakhar | Ϸ-Χ-Ρ | n. IN, AR-stem | dawn | native (cf. Hebrew *šaḥar*) |  |
 | *τανινος* | taninos |  | n. AN, O-stem | sea serpent, dragon | Phoenician (cf. Hebrew *tannîn*) |  |
@@ -372,6 +375,7 @@
 | *ϸαολον* | shaolon |  | n. IN, ON-stem | the underworld | Phoenician (cf. Hebrew *šəʾôl*) |  |
 | *ϸαρον* | sharon | Ϸ-Ρ | n. IN, ON-stem | song, chant | native (cf. Hebrew *šîr*) |  |
 | *ϸεβεϙειν* | shebeghein | Ϸ-Β-Ϙ | v. | to swear an oath | native (cf. Hebrew *šbʿ*) |  |
+| *ϸεμεϙειν* | shemeghein | Ϸ-Μ-Ϙ | v. | to hear (sacred register; everyday *ακουειν*) | native (cf. Hebrew *šmʿ*) |  |
 | *ϸερειν* | sherein | Ϸ-Ρ | v. | to sing, to chant | native |  |
 | *ϸερος* | sheros | Ϸ-Ρ | n. AN, O-stem | singer, chanter | native |  |
 | *τελον* | telon |  | n. IN, ON-stem | end, goal | Greek *τέλος* |  |
@@ -420,12 +424,14 @@
 | *νᾱϝειν* | nāvein | Ν-Ϝ | v. | to sail | native |  |
 | *πετεχειν* | petekhein | Φ-Τ-Χ | v. | to open | native (cf. Hebrew *ptḥ*) |  |
 | *σεγερειν* | segerein | Σ-Γ-Ρ | v. | to close | native (cf. Hebrew *sgr*) |  |
+| *ϸελεκειν* | shelekein | Ϸ-Λ-Κ | v. | to throw | native (cf. Hebrew *šlk*) |  |
 | *φερειν* | pherein | Φ-Ρ | v. | to carry, bring | native |  |
 
 ## Core Adjectives & Colors
 
 | Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant |
 |---------|-----------|------|---------|---------|--------|-------|
+| *αληθινος / αληθινον* | alēthinos / alēthinon |  | adj. | true, genuine | Greek *ἀληθινός* |  |
 | *αλλος / αλλον* | allos / allon |  | adj. | other | Greek *ἄλλος* |  |
 | *βραδυς / βραδον* | bradys / bradon |  | adj. | slow | Greek *βραδύς* | *βοραδυς / βοραδον* |
 | *ϳαρακος / ϳαρακον* | yarakos / yarakon | Ϳ-Ρ-Κ | adj. | green | native (cf. Hebrew *yārōq*) |  |
@@ -454,6 +460,7 @@
 | *ανι* | ani |  | pron. | I — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |
 | *ατα* | ata |  | pron. | you (sg.) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |
 | *ατεμ* | atem |  | pron. | you (pl.) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |
+| *ζε* | ze |  | pron. | this, these (demonstrative, before a noun) | Phoenician *z* |  |
 | *ͱια* | hia |  | pron. | it (inanimate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |
 | *ͱιομ* | hiom |  | pron. | they (inanimate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |
 | *ͱῡα* | hūa |  | pron. | he, she (animate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |
@@ -482,6 +489,7 @@
 | *ϝα-* | va- |  | particle | narrative past prefix | Phoenician |  |
 | *ͱα-* | ha- |  | particle | yes/no question prefix | Phoenician |  |
 | *κολ* | kol |  | particle | all, every (before a noun) | Phoenician |  |
+| *λυ* | lu |  | particle | may…, if only… (positive wish) — see [Wishes](syntax.md#wishes) | Phoenician (cf. Hebrew *lū*) |  |
 | *μη* | mē |  | particle | not (commands, wishes, conditions) | Greek |  |
 | *ναι* | nai |  | particle | yes | Greek |  |
 | *ϸα* | sha |  | particle | future particle | Phoenician |  |

@@ -11,13 +11,18 @@ VSO is the only canonical order in all registers. Word order variation is used e
 Fronting a noun for emphasis:
 > *Ναϝᾱν νᾱϝει ναϝος.* — THE SHIP — the sailor sails it.
 
+A **long subject**, such as one with a relative clause, may move to the end of the clause, after the object and other phrases:
+> *Φαγει λαχαμον εν λιμελι ενος ϸε-ϸερει σᾱϙιροι.* — Eats bread in harbor-LOC one that-sings storm-DAT. → "He who sings to the storm eats his bread in the harbor."
+
+**Adjectives:** an attributive adjective comes **before** its noun (*καλος ϝελος* "a fair wind"); a predicate adjective follows the subject (*Εσι ϝελος καλος* "The wind is fair"). Numbers behave like attributive adjectives (*ενος ρεμευς* "one rower").
+
 A few small words always come **before** the verb, in this order:
 
 | Slot | Words |
 |------|-------|
 | 1. Conjunction or question word | *ιμ* "if", *οτε* "when", *μι* "who", *λαμα* "why"… |
 | 2. Question prefix | *ͱα-* |
-| 3. Negation or the unreal particle | *βαλ*, *μη*, *αν* |
+| 3. Negation, wish or unreal particle | *βαλ*, *μη*, *λυ*, *αν* |
 | 4. Future particle | *ϸα* |
 | then | verb — subject — object — other phrases |
 
@@ -44,6 +49,13 @@ Tharaic has two negative particles, one from each ancestral stream:
 "No one" and "nothing" are *βαλ … ενος* "not one" (animate) and *βαλ … ενον* (inanimate):
 
 > *Βαλ ιδει ενος ναϝᾱν.* — "No one sees the ship."
+
+### Wishes
+
+A positive wish puts **λυ** "may…, if only…" (Phoenician-analog, cf. Hebrew *lū*) before the present form; its negative is *μη*:
+
+> *Λυ φερει-τα θᾱρος!* — "May the sea carry you!"
+> *Μη λαμβανει-τα θᾱρος!* — "May the sea not take you!"
 
 ---
 
@@ -88,7 +100,7 @@ Question words come first in the clause. *Who*, *what* and *why* come from the P
 
 ## Relative Clauses
 
-A relative clause follows its noun and begins with the prefix **ϸε-** on its verb (Phoenician *š-*, Hebrew *še-*). *ϸε-* never changes form.
+A relative clause follows its noun and begins with the prefix **ϸε-** (Phoenician *š-*, Hebrew *še-*). *ϸε-* never changes form. It attaches to the first word of the clause: normally the verb, but a negation comes first (*ϸε-βαλ ιδει* "who does not see").
 
 When the noun is the **subject** of the relative clause, nothing else is needed. In any other role, a **resumptive pronoun** marks its place, as in Phoenician and Hebrew:
 
@@ -99,6 +111,9 @@ When the noun is the **subject** of the relative clause, nothing else is needed.
 | Possessor | *ναϝος ϸε-νᾱϝει ναϝᾱυ* — "the sailor whose ship sails" | sailor that-sails ship-his |
 
 The resumptive pronoun is the object enclitic on the verb (*-υ*, *-α*…) or the possessive enclitic on the noun ([Pronouns & Enclitics](morphology.md#pronouns--enclitics)).
+
+**"The one who…"**: a relative clause without a noun of its own takes *ενος* "one" (animate) or *ενον* (inanimate) as its head:
+> *Ϸενει επι συρελι ενος ϸε-βαλ ιδει αστρονας.* — "He who does not watch the stars sleeps on the reef."
 
 ---
 
@@ -181,3 +196,13 @@ The sea cases also work alone, without a preposition: *θᾱρελι* "on the se
 | *μεν…δε* | men…de | on one hand… on the other |
 | *ιμ* | im | if |
 | *οτε* | ote | when, whenever |
+
+## Demonstratives
+
+| Tharaic | Romanized | Meaning |
+| --------- | ----------- | --------- |
+| *ζε* | ze | this, these (before a noun; Phoenician *z*) |
+
+> *Ζε αβανον εβενε χᾱριϸος.* — This stone built smith. → "This stone the smith built."
+
+*ζε* does not change for case, gender or number.

@@ -2,6 +2,8 @@
 
 [← Overview](../README.md)
 
+Short example sentences. For longer texts see [Proverbs & Oaths](proverbs.md), [the Sacred Register](sacred.md) and [Chants & Stories](stories.md).
+
 | Tharaic | Romanized | Gloss | Natural English |
 | --------- | ----------- | ------- | ----------------- |
 | *Καλος ϝελος!* | Kalos velos! | Fair wind! | Fair winds! (blessing & farewell) |
