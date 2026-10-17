@@ -14,7 +14,7 @@ Fronting a noun for emphasis:
 A **long subject**, such as one with a relative clause, may move to the end of the clause, after the object and other phrases:
 > *Φαγει λαχαμον εν λιμελι ενος ϸε-ϸερει σᾱϙιροι.* — Eats bread in harbor-LOC one that-sings storm-DAT. → "He who sings to the storm eats his bread in the harbor."
 
-**Adjectives:** an attributive adjective comes **before** its noun (*καλος ϝελος* "a fair wind"); a predicate adjective follows the subject (*Εσι ϝελος καλος* "The wind is fair"). Numbers behave like attributive adjectives (*ενος ρεμευς* "one rower").
+**Adjectives:** an attributive adjective comes **before** its noun (*καλος ϝελος* "a fair wind"); a predicate adjective follows the subject (*Εσι ϝελος καλος* "The wind is fair"). Numbers behave like attributive adjectives (*ενος ρεμευς* "one rower"). After a noun, a number labels it instead and does not agree: *ͱημερον τρια* "day three" ([Calendar § Dates](calendar.md#dates)).
 
 A few small words always come **before** the verb, in this order:
 

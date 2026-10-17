@@ -30,8 +30,8 @@ Weather sayings are pairs of phrases with no verb, the sign first and the outcom
 
 | Tharaic | Romanized | Gloss | Meaning |
 |---------|-----------|-------|---------|
-| *Πυρρον ϸαχαρ — ϸα ϝενει σᾱϙιρος.* | Purron shakhar — sha venei sāghiros. | Red dawn — FUT comes storm. | Red dawn: a storm will come. |
-| *Πυρρον ϙερεβον — καλος ϝελος.* | Purron gherebon — kalos velos. | Red dusk — fair wind. | Red sky at evening: a fair wind tomorrow. |
+| *Πυρρον ϸαχαρ — ϸα ϝενει σᾱϙιρος.* | Pyrron shakhar — sha venei sāghiros. | Red dawn — FUT comes storm. | Red dawn: a storm will come. |
+| *Πυρρον ϙερεβον — καλος ϝελος.* | Pyrron gherebon — kalos velos. | Red dusk — fair wind. | Red sky at evening: a fair wind tomorrow. |
 | *Λαριμ επι χολελι — σᾱϙιρος επι θᾱρελι.* | Larim epi kholeli — sāghiros epi thāreli. | Gulls on sand-LOC — storm on sea-LOC. | Gulls on the beach, a storm on the sea. |
 
 ---

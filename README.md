@@ -25,6 +25,7 @@ Tharaic descends from a proto-language that absorbed two streams:
 | [Proverbs & Oaths](docs/proverbs.md) | Sailor and merchant sayings, weather lore, oath formulas |
 | [The Sacred Register](docs/sacred.md) | Temple speech: divine epithets, prayers, blessings, a votive inscription |
 | [Chants & Stories](docs/stories.md) | A rowing chant and a glossed harbor tale |
+| [Calendar & Star Lore](docs/calendar.md) | The star-set solar year, months, week, festivals, time of day, constellations |
 | [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
 | [Roadmap](docs/roadmap.md) | Planned work |
 

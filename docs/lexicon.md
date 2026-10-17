@@ -4,7 +4,7 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-433 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+444 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
@@ -72,12 +72,9 @@
 | *δελφινος* | delphinos |  | n. AN, O-stem | dolphin | Greek *δελφίς* |  |
 | *δικτυον* | diktuon |  | n. IN, ON-stem | fishing net | Greek *δίκτυον* |  |
 | *δινᾱ* | dinā |  | n. AN, A-stem | whirlpool | Greek *δίνη* |  |
-| *ενιαυτον* | eniauton |  | n. IN, ON-stem | year | Greek *ἐνιαυτός* |  |
 | *ζαραμον* | zaramon | Ζ-Ρ-Μ | n. IN, ON-stem | current, flow | native (cf. Hebrew *zerem*) |  |
 | *ζερεμειν* | zeremein | Ζ-Ρ-Μ | v. | to flow | native |  |
 | *ͱαλιευς* | halieus |  | n. AN, -ευς | fisherman | Greek *ἁλιεύς* |  |
-| *ͱημερον* | hēmeron |  | n. IN, ON-stem | day | Greek *ἡμέρα* |  |
-| *ϳαραχον* | yarakhon | Ϳ-Ρ-Χ | n. IN, ON-stem | month — a-grade 'thing' of the moon root, see *ϳαραχᾱ* | native |  |
 | *καναφον* | kanaphon | Κ-Ν-Φ | n. IN, ON-stem | wing; edge of a sail | native (cf. Hebrew *kānāp*) |  |
 | *καρκινος* | karkinos |  | n. AN, O-stem | crab | Greek *καρκίνος* |  |
 | *καρον* | karon | Κ-Ρ | n. IN, ON-stem | cold, frost | native (cf. Hebrew *qōr*) |  |
@@ -85,7 +82,6 @@
 | *κητος* | kētos |  | n. AN, O-stem | whale, sea monster | Greek *κῆτος* |  |
 | *κονχον* | konkhon |  | n. IN, ON-stem | shell | Greek *κόγχη* |  |
 | *κοραλλιον* | korallion |  | n. IN, ON-stem | coral | Greek *κοράλλιον* |  |
-| *λαιλον* | lailon |  | n. IN, ON-stem | night | Phoenician (cf. Hebrew *layil*) |  |
 | *λαρος* | laros |  | n. AN, O-stem | gull | Greek *λάρος* |  |
 | *μαδον* | madon |  | n. IN, ON-stem | flood tide | Phoenician (cf. Arabic *madd*) |  |
 | *μαλχον* | malkhon | Μ-Λ-Χ | n. IN, ON-stem | salt — Phoenician sailors were 'salt-men', *mallāḥ* | native (cf. Hebrew *melaḥ*) |  |
@@ -97,12 +93,10 @@
 | *ορνος* | ornos |  | n. AN, O-stem | bird | Greek *ὄρνις* |  |
 | *πολυπος* | polypos |  | n. AN, O-stem | octopus | Greek *πολύπους* |  |
 | *ϙαβον* | ghabon | Ϙ-Β | n. IN, ON-stem | cloud | native (cf. Hebrew *ʿāb*) |  |
-| *ϙερεβον* | gherebon |  | n. IN, ON-stem | dusk, evening | Phoenician (cf. Hebrew *ʿereb*) |  |
 | *ραϙαμον* | raghamon | Ρ-Ϙ-Μ | n. IN, ON-stem | thunder | native (cf. Hebrew *raʿam*) |  |
 | *σᾱϙιρος* | sāghiros | Σ-Ϙ-Ρ | n. AN, O-stem | the storm (as a great actor) | native (cf. Hebrew *səʿārāh*) |  |
 | *συρον* | suron |  | n. IN, ON-stem | rock, reef; as a name, *Συρον*, the city of Tyre | Phoenician *ṣr* (Tyre) |  |
 | *ϸαλγον* | shalgon | Ϸ-Λ-Γ | n. IN, ON-stem | snow | native (cf. Hebrew *šeleg*) |  |
-| *ϸαχαρ* | shakhar | Ϸ-Χ-Ρ | n. IN, AR-stem | dawn | native (cf. Hebrew *šaḥar*) |  |
 | *τανινος* | taninos |  | n. AN, O-stem | sea serpent, dragon | Phoenician (cf. Hebrew *tannîn*) |  |
 | *φυκον* | phykon |  | n. IN, ON-stem | seaweed | Greek *φῦκος* |  |
 | *φωκᾱ* | phōkā |  | n. AN, A-stem | seal | Greek *φώκη* |  |
@@ -363,7 +357,6 @@
 | *πολεμον* | polemon |  | n. IN, ON-stem | war | Greek *πόλεμος* |  |
 | *ϙαζον* | ghazon | Ϙ-Ζ | n. IN, ON-stem | strength, might | native (cf. Hebrew *ʿōz*) |  |
 | *ϙαλαμον* | ghalamon | Ϙ-Λ-Μ | n. IN, ON-stem | eternity, the world-age | native (cf. Hebrew *ʿôlām*) |  |
-| *ϙατον* | ghaton |  | n. IN, ON-stem | time, season | Phoenician (cf. Hebrew *ʿēt*) |  |
 | *ραϸιτον* | rashiton | Ρ-Ϸ | n. IN, ON-stem | beginning — from *ραϸον* 'head' | native (cf. Hebrew *rēʾšît*) |  |
 | *ρῡχᾱ* | rūkhā |  | n. AN, A-stem | spirit, ghost | Phoenician (cf. Hebrew *rûaḥ*) |  |
 | *σαδακον* | sadakon | Σ-Δ-Κ | n. IN, ON-stem | justice, righteousness | native (cf. Hebrew *ṣedeq*) |  |
@@ -387,6 +380,28 @@
 | *χατον* | khaton | Χ-Τ | n. IN, ON-stem | error, fault ('missing the mark') | native (cf. Hebrew *ḥṭʾ*) |  |
 | *χᾱκιμος* | khākimos | Χ-Κ-Μ | n. AN, O-stem | sage | native (cf. Arabic *ḥakīm*) |  |
 | *χορον* | khoron |  | n. IN, ON-stem | dance, chorus | Greek *χορός* |  |
+
+## Time, Calendar & Stars
+
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant |
+|---------|-----------|------|---------|---------|--------|-------|
+| *αμες* | ames |  | adv. | yesterday, last night | Phoenician (cf. Hebrew *ʾemeš*) |  |
+| *δυνειν* | dynein |  | v. | to set (of the sun and stars) | Greek *δύνειν* |  |
+| *ενιαυτον* | eniauton |  | n. IN, ON-stem | year | Greek *ἐνιαυτός* |  |
+| *ͱαϳομ* | hayom |  | adv. | today | Phoenician (cf. Hebrew *hayyôm*) |  |
+| *ͱημερον* | hēmeron |  | n. IN, ON-stem | day | Greek *ἡμέρα* |  |
+| *ϳαραχον* | yarakhon | Ϳ-Ρ-Χ | n. IN, ON-stem | month — a-grade 'thing' of the moon root, see *ϳαραχᾱ* | native |  |
+| *ϳωνᾱ* | yōnā |  | n. AN, A-stem | dove; plural *Ϳωνιμ* 'the Doves', the Pleiades | Phoenician (cf. Hebrew *yônāh*) |  |
+| *κελεβος* | kelebos |  | n. AN, O-stem | dog; *Κελεβος*, the star Sirius | Phoenician (cf. Hebrew *keleb*) |  |
+| *λαιλον* | lailon |  | n. IN, ON-stem | night | Phoenician (cf. Hebrew *layil*) |  |
+| *μαχαρ* | makhar |  | adv. | tomorrow | Phoenician (cf. Hebrew *māḥār*) |  |
+| *παταχον* | patakhon | Π-Τ-Χ | n. IN, ON-stem | opening; *Παταχον*, the Open Sea (months 1–6) | native |  |
+| *ϙατον* | ghaton |  | n. IN, ON-stem | time, season | Phoenician (cf. Hebrew *ʿēt*) |  |
+| *ϙερεβον* | gherebon |  | n. IN, ON-stem | dusk, evening | Phoenician (cf. Hebrew *ʿereb*) |  |
+| *σαγαρον* | sagaron | Σ-Γ-Ρ | n. IN, ON-stem | closing; *Σαγαρον*, the Closed Sea (months 7–12) | native |  |
+| *ϸαβατον* | shabaton | Ϸ-Β-Τ | n. IN, ON-stem | the rest day, the seventh day of the week | native (cf. Hebrew *šabbāt*) |  |
+| *ϸαχαρ* | shakhar | Ϸ-Χ-Ρ | n. IN, AR-stem | dawn | native (cf. Hebrew *šaḥar*) |  |
+| *φυλακον* | phylakon |  | n. IN, ON-stem | a watch of the night | Greek *φυλακή* |  |
 
 ## Numbers
 
@@ -422,7 +437,7 @@
 | *λεκειν* | lekein | Λ-Κ | v. | to speak, say | native |  |
 | *μερειν* | merein | Μ-Ρ | v. | to divide, share | native |  |
 | *νᾱϝειν* | nāvein | Ν-Ϝ | v. | to sail | native |  |
-| *πετεχειν* | petekhein | Φ-Τ-Χ | v. | to open | native (cf. Hebrew *ptḥ*) |  |
+| *πετεχειν* | petekhein | Π-Τ-Χ | v. | to open | native (cf. Hebrew *ptḥ*) |  |
 | *σεγερειν* | segerein | Σ-Γ-Ρ | v. | to close | native (cf. Hebrew *sgr*) |  |
 | *ϸελεκειν* | shelekein | Ϸ-Λ-Κ | v. | to throw | native (cf. Hebrew *šlk*) |  |
 | *φερειν* | pherein | Φ-Ρ | v. | to carry, bring | native |  |
@@ -443,6 +458,7 @@
 | *ματακος / ματακον* | matakos / matakon | Μ-Τ-Κ | adj. | sweet | native (cf. Hebrew *mātôq*) |  |
 | *μεγᾱς / μεγον* | megās / megon |  | adj. | great, large | Greek *μέγας* |  |
 | *μελανος / μελανον* | melanos / melanon |  | adj. | black, dark | Greek *μέλας* |  |
+| *μεσος / μεσον* | mesos / meson |  | adj. | middle; *μεσον* + genitive 'the middle of' | Greek *μέσος* |  |
 | *μικρος / μικρον* | mikros / mikron |  | adj. | small | Greek *μικρός* |  |
 | *νεος / νεον* | neos / neon |  | adj. | new | Greek *νέος* |  |
 | *παλαιᾱ / παλαιον* | palaiā / palaion |  | adj. | old, ancient | Greek *παλαιός* |  |
