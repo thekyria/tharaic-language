@@ -188,6 +188,7 @@ Examples:
 - A construct form is always said together with the noun after it and never ends a phrase. That is why *-ιτ* can end in τ, which is otherwise not allowed at the end of a syllable.
 - Stems that already end in -ιλ drop one syllable: *βᾱσιλος* → *βᾱσιλ*, not \*βᾱσιλιλ.
 - Chant keeps the older endings *-ιλα, -ιτα, -υλα, -αρυλα*.
+- A construct phrase acts as one unit, and **its case is marked on its last word**: *Ζεβεχομεν ζαβαχον βαλιλ ϳαμοι* "We offer the sacrifice to the Lord of the Deep" (dative on *ϳαμος*); addressing him, *Βαλιλ ϳαμε!* (vocative).
 
 See [History § Change 3](history.md#change-3--construct-forms-lost-their-final-vowel-classical-tharaic).
 
