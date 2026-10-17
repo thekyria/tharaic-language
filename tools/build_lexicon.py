@@ -8,7 +8,7 @@ Usage:
 Each entry in data/lexicon.yaml has these fields:
 
     greek     the word in Greek script. Adjectives give both forms: "καλος / καλον"
-    pos       noun, verb, adj, prep, conj, particle, question, pron or num
+    pos       noun, verb, adj, adv, prep, conj, particle, question, pron or num
     meaning   English meaning
     layer     native (inherited, built on a root), phoenician or greek (later loans)
     theme     which section of the lexicon it belongs to (see THEMES below)
@@ -48,14 +48,15 @@ THEMES = [
     ("people", "People, Kinship & Society"),
     ("trade", "Trade & Craft"),
     ("ritual", "Ritual & Abstract"),
+    ("time", "Time, Calendar & Stars"),
     ("numbers", "Numbers"),
     ("verbs", "Core Verbs"),
     ("adjectives", "Core Adjectives & Colors"),
     ("function", "Function Words"),
 ]
 POS = {"noun": "n.", "verb": "v.", "adj": "adj.", "prep": "prep.", "conj": "conj.",
-       "particle": "particle", "question": "question word", "pron": "pron.", "num": "num."}
-FUNCTION_ORDER = ["pron", "prep", "conj", "particle", "question"]
+       "particle": "particle", "question": "question word", "pron": "pron.", "num": "num.", "adv": "adv."}
+FUNCTION_ORDER = ["pron", "prep", "conj", "particle", "question", "adv"]
 LAYERS = {"native": "native", "phoenician": "Phoenician", "greek": "Greek"}
 STEMS = {"O": ("AN", "ος", "O-stem"), "A": ("AN", ("ᾱ", "α"), "A-stem"), "EUS": ("AN", "ευς", "-ευς"),
          "ON": ("IN", "ον", "ON-stem"), "AR": ("IN", "αρ", "AR-stem"),

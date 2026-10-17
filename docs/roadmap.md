@@ -32,10 +32,11 @@ Each step is a separate pull request.
 
 5. ✅ **Texts** — [Proverbs & Oaths](proverbs.md), [the Sacred Register](sacred.md), and [Chants & Stories](stories.md) (a rowing chant and a glossed tale). The texts added the grammar they needed: the wish particle *λυ*, adjective position, long subjects moving last, *ενος ϸε-* "he who", the demonstrative *ζε*, and case marking at the end of a construct phrase. Their new words are in the lexicon.
 
+6. ✅ **Calendar & star lore** — [Calendar & Star Lore](calendar.md): a solar year set by the rising and setting of the Doves (the Pleiades), split into the Open Sea and the Closed Sea; twelve 30-day months and the Days of Memory; a seven-day planetary week; year counting by judges and from the Voyage of the Beginning; the night watches; festivals; constellations and navigation stars. Adds number labels after a noun (*ͱημερον τρια* "day three") and a *Time, Calendar & Stars* section of the lexicon.
+
 ## Later
 
 | Future phase | What it adds |
 |---|---|
-| **Culture** | A calendar and star lore |
 | **Script details** | Punctuation, Greek-style alphabetic numerals |
 | **Dialectal variation** | Coastal dialect vs. island dialect vs. trade pidgin |
