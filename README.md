@@ -20,12 +20,13 @@ Tharaic descends from a proto-language that absorbed two streams:
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Word Building](docs/word-building.md) | Root patterns (older layer) and suffixes (younger layer) |
-| [Lexicon](docs/lexicon.md) | About 400 words by theme, with roots, origins and chant forms (generated from `data/lexicon.yaml`) |
+| [Lexicon](docs/lexicon.md) | About 1,150 words by theme, with roots, origins and chant forms (generated from `data/lexicon.yaml`) |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
 | [Proverbs & Oaths](docs/proverbs.md) | Sailor and merchant sayings, weather lore, oath formulas |
 | [The Sacred Register](docs/sacred.md) | Temple speech: divine epithets, prayers, blessings, a votive inscription |
 | [Chants & Stories](docs/stories.md) | A rowing chant and a glossed harbor tale |
 | [Calendar & Star Lore](docs/calendar.md) | The star-set solar year, months, week, festivals, time of day, constellations |
+| [Translating the Gospels](docs/gospels.md) | How Greek constructions, titles and names are rendered; the Lord's Prayer and John 1:1 |
 | [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
 | [Roadmap](docs/roadmap.md) | Planned work |
 
@@ -35,7 +36,7 @@ Python 3 scripts, standard library only:
 
 - `python3 tools/greek.py nāvei navos` — convert romanized Tharaic to Greek script, or back with `--roman` (reads stdin if no words are given)
 - `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, or the strict chant rules with `--chant` (defaults to `docs/*.md`)
-- `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date
+- `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
 
 ---
 

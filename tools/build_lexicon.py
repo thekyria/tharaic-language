@@ -5,6 +5,8 @@ Usage:
     python3 tools/build_lexicon.py           # check, then write docs/lexicon.md
     python3 tools/build_lexicon.py --check   # check, and fail if docs/lexicon.md is out of date
 
+It also checks that every Tharaic word in data/gospels.tsv is in the lexicon.
+
 Each entry in data/lexicon.yaml has these fields:
 
     greek     the word in Greek script. Adjectives give both forms: "καλος / καλον"
@@ -38,20 +40,26 @@ from check_phonotactics import problems, OBSTRUENTS, VOWELS  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "lexicon.yaml")
 OUT = os.path.join(ROOT, "docs", "lexicon.md")
+GOSPELS = os.path.join(ROOT, "data", "gospels.tsv")
 
 THEMES = [
     ("sea", "The Sea & Navigation"),
     ("weather", "Weather & Sea Life"),
     ("nature", "Nature & Elements"),
+    ("land", "Land, Plants & Animals"),
     ("directions", "Cardinal Directions"),
-    ("body", "The Body"),
+    ("body", "The Body, Health & Sickness"),
     ("people", "People, Kinship & Society"),
+    ("home", "House, Food & Clothing"),
     ("trade", "Trade & Craft"),
-    ("ritual", "Ritual & Abstract"),
+    ("city", "City, Law & Power"),
+    ("ritual", "Ritual, Belief & Abstract"),
+    ("mind", "Mind, Speech & Feeling"),
     ("time", "Time, Calendar & Stars"),
     ("numbers", "Numbers"),
     ("verbs", "Core Verbs"),
-    ("adjectives", "Core Adjectives & Colors"),
+    ("motion", "Movement & Position"),
+    ("adjectives", "Adjectives & Colors"),
     ("function", "Function Words"),
 ]
 POS = {"noun": "n.", "verb": "v.", "adj": "adj.", "prep": "prep.", "conj": "conj.",
@@ -195,6 +203,26 @@ def check(entries):
     return errors
 
 
+def check_gospels(entries):
+    """Every Tharaic word in data/gospels.tsv must be a lexicon headword."""
+    heads = {w.strip("-") for e in entries for w in words(e["greek"])}
+    errors = []
+    with open(GOSPELS, encoding="utf-8") as f:
+        for n, line in enumerate(f, 1):
+            if line.startswith(("#", "greek\t")) or not line.strip():
+                continue
+            cols = line.rstrip("\n").split("\t")
+            if len(cols) != 5:
+                errors.append(f"{GOSPELS}:{n}: expected 5 columns")
+                continue
+            if not cols[3] and not cols[4]:
+                errors.append(f"{GOSPELS}:{n}: {cols[0]} has no Tharaic equivalent")
+            for w in cols[3].split():
+                if w.strip("-") not in heads:
+                    errors.append(f"{GOSPELS}:{n}: {cols[0]}: {w} is not in the lexicon")
+    return errors
+
+
 def sort_key(text):
     return [ALPHABET.index(c) if c in ALPHABET else len(ALPHABET) for c in text.lower()]
 
@@ -265,10 +293,12 @@ def render(entries):
 def main():
     entries = parse(DATA)
     errors = check(entries)
+    if os.path.exists(GOSPELS):
+        errors += check_gospels(entries)
     for line in errors:
         print(line)
     if errors:
-        sys.exit(f"{len(errors)} problem(s) in {DATA}")
+        sys.exit(f"{len(errors)} problem(s) in data/")
     text = render(entries)
     if "--check" in sys.argv[1:]:
         with open(OUT, encoding="utf-8") as f:

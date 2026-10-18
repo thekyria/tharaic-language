@@ -88,6 +88,7 @@ Question words come first in the clause. *Who*, *what* and *why* come from the P
 | *πως* | pōs | how | Greek-analog *πῶς* |
 | *ποιος* / *ποιον* | poios / poion | which (AN / IN), declines like *καλος* | Greek-analog *ποῖος* |
 | *ποσος* / *ποσον* | posos / poson | how many, how much (AN / IN) | Greek-analog *πόσος* |
+| *μαιν* | main | from where, whence | Phoenician-analog, cf. Hebrew *mēʾayin* |
 
 *μι* and *μα* do not decline. Their role comes from the rest of the clause: if a nominative subject follows the verb, *μι* is the object.
 
@@ -152,6 +153,23 @@ See [Adjectives § Comparison](morphology.md#comparison) for the forms.
 
 ---
 
+## Adverbs
+
+The inanimate singular of an adjective serves as an adverb of manner, as in Greek (*ταχύ*, *πολύ*):
+
+> *Λεκει καλον.* — "He speaks well."
+> *Ϝενει ταχον.* — "He comes quickly."
+
+**How many times** is a number with *παϙαμα*, the plural of *παϙαμον* "a time, an occurrence":
+
+> *τρια παϙαμα* — "three times" | *επτα δεχα παϙαμα* — "seventy times"
+
+**Without:** Tharaic has no negative prefix like English *un-* or Greek *ἀ-*. It uses *βιλτι* "without" with the ablative:
+
+> *ζαραϙον βιλτι καρπαθα* — "seed without fruit, fruitless seed" | *βιλτι αμαναθα* — "without faith, unbelieving"
+
+---
+
 ## Prepositions
 
 Prepositions are unstressed and lean on the next word. Each one takes a fixed case, and some change meaning with the case. The cases follow the same logic as the *three sea cases*: **where** (LOC), **where to** (ACC), **where from** (ABL), **with what** (INS).
@@ -175,6 +193,18 @@ Prepositions are unstressed and lean on the next word. Each one takes a fixed ca
 | *εκ* | ek | ABL | out of |
 | *συν* | syn | INS | with, together with |
 | *αντι* | anti | GEN | against, opposite, instead of |
+| *ͱυπο* | hypo | LOC | under (rest) |
+| | | ACC | to under (motion) |
+| *ͱυπερ* | hyper | GEN | for, on behalf of; above, more than |
+| *αχαρε* | akhare | GEN | after (time); behind (place) |
+| *λαπανε* | lapane | GEN | before, in front of, in the presence of |
+| *ϙεβερ* | gheber | GEN | beyond, on the other side of |
+| *βεν* | ben | GEN | between, among |
+| *βαϙαβυρ* | baghabur | GEN | for the sake of |
+| *ϙαδι* | ghadi | ACC | until, as far as |
+| *βιλτι* | bilti | ABL | without |
+
+The prepositions in the lower part of the table come from the Phoenician-analog stream (*αχαρε*, *λαπανε* "to the face of", *ϙεβερ*, *βεν*, *βαϙαβυρ*, *ϙαδι*, *βιλτι*), except the Greek-analog *ͱυπο* and *ͱυπερ*.
 
 > *εν λιμελι* — "in the harbor" (LOC)
 > *προς λιμᾱν* — "toward the harbor" (ACC)
@@ -192,6 +222,11 @@ The sea cases also work alone, without a preposition: *θᾱρελι* "on the se
 | *και* | kai | and |
 | *η* | ē | or |
 | *αλλα* | alla | but |
+| *λακεν* | laken | therefore, so |
+| *λεμαϙαν* | lemaghan | so that, in order that |
+| *πεν* | pen | lest, so that not |
+| *κεμω* | kemō | as, like, just as |
+| *ϙαδι ϸε-* | ghadi she- | until (+ clause) |
 | *ͱοτι* | hoti | because, that |
 | *μεν…δε* | men…de | on one hand… on the other |
 | *ιμ* | im | if |
@@ -202,7 +237,8 @@ The sea cases also work alone, without a preposition: *θᾱρελι* "on the se
 | Tharaic | Romanized | Meaning |
 | --------- | ----------- | --------- |
 | *ζε* | ze | this, these (before a noun; Phoenician *z*) |
+| *δεκ* | dek | that, those (before a noun; Aramaic-analog *dēk*) |
 
 > *Ζε αβανον εβενε χᾱριϸος.* — This stone built smith. → "This stone the smith built."
 
-*ζε* does not change for case, gender or number.
+*ζε* and *δεκ* do not change for case, gender or number.

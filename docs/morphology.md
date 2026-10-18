@@ -235,6 +235,17 @@ See [History § Change 3](history.md#change-3--construct-forms-lost-their-final-
 
 > *ναϝᾱι* — my ship | *ναϝᾱκα* — your ship | *ναϝᾱυ* — his/her ship
 
+The enclitic follows the case ending: *κολονυ* "his voice" (ACC *κολον* + *-υ*).
+
+### Reflexive: oneself
+
+Tharaic has no reflexive pronoun. When the middle voice is not enough, "oneself" is *νεφεϸᾱ* "soul" with a possessive enclitic, as in Hebrew *nap̄šô* "his soul, himself":
+
+> *Ϳεϸεϙε νεφεϸᾱνκα!* — Save soul-ACC-your! → "Save yourself!"
+> *Εͱεβει ϸεκενον κεμω νεφεϸᾱνυ.* — He-loves neighbor-ACC like soul-ACC-his. → "He loves his neighbor as himself."
+
+"Each other" is *αλληλιμ*, which declines like a plural O-stem (ACC *αλληλονας*).
+
 ---
 
 ## Verbs
@@ -320,7 +331,7 @@ The middle voice shows that the action comes back to the subject: done **to ones
 | 2nd | *εφερασο*<br>epheraso | *εφερασθον*<br>epherasthon | *εφερασθε*<br>epherasthe |
 | 3rd | *εφερατο*<br>epherato | *εφερασθον*<br>epherasthon | *εφεραντο*<br>epheranto |
 
-Infinitive: *φερεσθαι* (pheresthai). The future is *ϸα* + present middle; the narrative past is *ϝα-* + present middle.
+Infinitive: *φερεσθαι* (pheresthai). Imperative: *φερεσο!* (sg), *φερεσθε!* (pl), as in *Κεμεσο!* "Get up!" (*κεμεσθαι* "to rise"). The future is *ϸα* + present middle; the narrative past is *ϝα-* + present middle.
 
 > *Ιδεται ναϝος ͱυδελι.* — Sees-himself sailor water-LOC. → "The sailor sees himself in the water."
 > *Φερομαι φαρον.* — "I carry the cargo for myself."
