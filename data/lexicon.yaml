@@ -4351,6 +4351,15 @@
   source: "cf. Hebrew *ṭāhôr*"
   theme: "ritual"
 
+- greek: "ταͱαρον"
+  pos: "noun"
+  gender: "IN"
+  stem: "ON"
+  root: "Τ-Ͱ-Ρ"
+  meaning: "cleansing, purification"
+  layer: "native"
+  theme: "ritual"
+
 - greek: "τεͱερειν"
   pos: "verb"
   root: "Τ-Ͱ-Ρ"

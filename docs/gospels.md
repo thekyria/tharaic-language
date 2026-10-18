@@ -2,7 +2,7 @@
 
 [← Overview](../README.md)
 
-The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every word of the Greek text, about 2,690 dictionary forms besides names, was checked against the lexicon (using the lemmas of the SBL Greek New Testament). Each one has a Tharaic word, or a regular construction from the grammar. The full list is [`data/gospels.tsv`](../data/gospels.tsv): Greek word, number of occurrences, Tharaic equivalent, and how it is rendered; `tools/build_lexicon.py` checks that every Tharaic word in it is in the lexicon. This page lists those constructions, gives rules for names, and ends with two sample passages.
+The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every word of the Greek text, about 2,690 dictionary forms besides names, was checked against the lexicon (using the lemmas of the SBL Greek New Testament). Each one has a Tharaic word, or a regular construction from the grammar. The full list is [`data/gospels.tsv`](../data/gospels.tsv): Greek word, number of occurrences, Tharaic equivalent, and how it is rendered; `tools/build_lexicon.py` checks that every Tharaic word in it is in the lexicon. This page lists those constructions, gives rules for names, and ends with two sample passages. A whole chapter is translated in [Mark 1](mark-1.md).
 
 ---
 
@@ -50,6 +50,7 @@ The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every 
 | Σίμων | *Ϸιμϙωνος* | Shimghōnos | *Šimʿôn* |
 | Πέτρος, Κηφᾶς | *Κηφᾱ* | Kēphā | Aramaic *Kêpā* "rock" |
 | Ἰάκωβος | *Ϳαϙακωβος* | Yaghakōbos | *Yaʿăqōb* |
+| Ζεβεδαῖος | *Ζεβαδιᾱ* | Zebadiā | *Zəbadyāh* |
 | Ἀνδρέας | *Ανδρεος* | Andreos | Greek |
 | Φίλιππος | *Φιλιπος* | Philipos | Greek |
 | Θωμᾶς | *Τωμᾱ* | Tōmā | Aramaic *Təʾômā* "twin" |
