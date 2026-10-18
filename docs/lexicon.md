@@ -4,7 +4,7 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-1157 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+1158 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
@@ -846,6 +846,7 @@
 | *ϸεχεσθαι* | shekhesthai | Ϸ-Χ | v. (middle) | to bow down, worship — middle: one bows oneself | native (cf. Hebrew *hištaḥăwāh*) |  |
 | *ϸοφαρον* | shopharon |  | n. IN, ON-stem | trumpet, ram's horn | Phoenician (cf. Hebrew *šôpār*) |  |
 | *ταβαλον* | tabalon | Τ-Β-Λ | n. IN, ON-stem | immersion, baptism | native |  |
+| *ταͱαρον* | taharon | Τ-Ͱ-Ρ | n. IN, ON-stem | cleansing, purification | native |  |
 | *ταͱορος / ταͱορον* | tahoros / tahoron | Τ-Ͱ-Ρ | adj. | clean, pure | native (cf. Hebrew *ṭāhôr*) |  |
 | *ταμεος / ταμεον* | tameos / tameon | Τ-Μ | adj. | unclean, impure | native (cf. Hebrew *ṭāmēʾ*) |  |
 | *τεβελειν* | tebelein | Τ-Β-Λ | v. | to dip, immerse; to baptize | native (cf. Hebrew *ṭābal*) |  |

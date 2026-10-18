@@ -36,6 +36,8 @@ Each step is a separate pull request.
 
 7. ✅ **Gospel vocabulary** — about 710 new words, so that every word of the four Gospels (about 2,690 Greek dictionary forms besides names, checked one by one against the SBL Greek New Testament) has a Tharaic equivalent or a regular construction. Five new lexicon sections (*Land, Plants & Animals*; *House, Food & Clothing*; *City, Law & Power*; *Mind, Speech & Feeling*; *Movement & Position*). Most new words are native, built on roots with Hebrew cognates; Roman and Greek things (the denarius, the praetorium) are Greek-layer loans. [Translating the Gospels](gospels.md) gives the constructions, rules for names, and two sample passages. The grammar gained adverbs from adjectives, *παϙαμα* "times", *βιλτι* "without", the reflexive with *νεφεϸᾱ*, the middle imperative, new prepositions and conjunctions, and the CiCeC-ος pattern for bodily defects.
 
+8. ✅ **Mark 1** — [the first chapter of Mark](mark-1.md), in narrative prose with the *ϝα-* past, as running text and verse by verse. Running text needed a few additions: *ϝα-* in written sacred narrative, *ϝα-κανει* "and it came to pass", object enclitics after prepositions and as indirect objects (*προς-υ*, *λεκει-υ*, *εσι-υ* "he has"), *απο* + enclitic in comparisons, agreement with compound subjects, *λυ* "let us", and the noun *ταͱαρον* "cleansing".
+
 ## Later
 
 | Future phase | What it adds |

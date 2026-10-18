@@ -224,6 +224,11 @@ See [History § Change 3](history.md#change-3--construct-forms-lost-their-final-
 > *Ιδει-νι θᾱρος.* — "The sea sees me."
 > *Φερω-τα ανι.* — "I carry you."
 
+Object enclitics also stand for:
+- an **indirect object**: *λεκει-υ* "he says to him", *Δωε-νεν!* "Give us!"
+- a pronoun **after a preposition**, as Phoenician and Hebrew attach suffixes to prepositions: *προς-υ* "to him", *εκ-υ* "out of him", *αχαρε-νι* "after me", *εν-τα* "in you"
+- the owner with *εσι* "there is": *Εσι-υ ναϝᾱ.* "He has a ship." (compare *Εσι ναϝᾱ βᾱσιλοι* "The captain has a ship")
+
 **Enclitic possessive pronouns — attach to nouns:**
 
 | Person | Enclitic | Person | Enclitic |
@@ -264,7 +269,11 @@ In oral storytelling and chant, sequential past events are marked with *ϝα-* p
 
 The form after *ϝα-* is the present (*ϝενει*, *νᾱϝει*, *λεκει*), as with the Hebrew *wayyiqtol*, which also uses the non-past form.
 
-This form is for **oral narrative and poetry only**. Formal written prose uses the augment past.
+This form belongs to **oral narrative, poetry, and sacred narrative**. Sacred narrative uses it in writing too, as Hebrew Bible prose uses the *wayyiqtol*: see [Mark 1](mark-1.md). Other formal written prose uses the augment past.
+
+"To be" takes *ϝα-* on the Κ-Ν root, since the present root ε(σ)- takes no prefix: *ϝα-κανει* "and there was, and it came to pass", like Hebrew *wayhî*.
+
+> *Ϝα-κανει ϙερεβον.* — "And it was evening."
 
 ---
 

@@ -14,6 +14,9 @@ Fronting a noun for emphasis:
 A **long subject**, such as one with a relative clause, may move to the end of the clause, after the object and other phrases:
 > *Φαγει λαχαμον εν λιμελι ενος ϸε-ϸερει σᾱϙιροι.* — Eats bread in harbor-LOC one that-sings storm-DAT. → "He who sings to the storm eats his bread in the harbor."
 
+A verb before a **compound subject** agrees with its first part, as in Hebrew:
+> *Εκανε ϳεσει προς-υ κολ γαβυλον και κολ αδαμιμ.* — Was goes-out to-him all region and all people. → "The whole region and all the people were going out to him." ([Mark 1:5](mark-1.md#john-the-immerser-18))
+
 **Adjectives:** an attributive adjective comes **before** its noun (*καλος ϝελος* "a fair wind"); a predicate adjective follows the subject (*Εσι ϝελος καλος* "The wind is fair"). Numbers behave like attributive adjectives (*ενος ρεμευς* "one rower"). After a noun, a number labels it instead and does not agree: *ͱημερον τρια* "day three" ([Calendar § Dates](calendar.md#dates)).
 
 A few small words always come **before** the verb, in this order:
@@ -56,6 +59,8 @@ A positive wish puts **λυ** "may…, if only…" (Phoenician-analog, cf. Hebre
 
 > *Λυ φερει-τα θᾱρος!* — "May the sea carry you!"
 > *Μη λαμβανει-τα θᾱρος!* — "May the sea not take you!"
+
+With *we*, *λυ* means "let us": *Λυ αγομεν!* "Let us go!"
 
 ---
 
@@ -148,6 +153,8 @@ The condition comes first. An "if" clause is negated with *μη*, never *βαλ*
 The standard of comparison goes in the **ablative**, "from", as in the Semitic languages:
 
 > *Εσι ναϝᾱ μεγοτερος καπαναθα.* — Is ship bigger merchant-vessel-ABL. → "The ship is bigger than the merchant vessel."
+
+For a pronoun, the standard is *απο* with an enclitic, like Hebrew *mimmennî* "than I": *γαβαροτερος απο-νι* "mightier than I".
 
 See [Adjectives § Comparison](morphology.md#comparison) for the forms.
 
