@@ -36,7 +36,7 @@ Python 3 scripts, standard library only:
 
 - `python3 tools/greek.py nāvei navos` — convert romanized Tharaic to Greek script, or back with `--roman` (reads stdin if no words are given)
 - `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, or the strict chant rules with `--chant` (defaults to `docs/*.md`)
-- `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date
+- `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
 
 ---
 

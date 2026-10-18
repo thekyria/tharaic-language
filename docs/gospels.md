@@ -2,7 +2,7 @@
 
 [← Overview](../README.md)
 
-The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every word of the Greek text, about 2,690 dictionary forms besides names, was checked against the lexicon (using the lemmas of the SBL Greek New Testament). Each one has a Tharaic word, or a regular construction from the grammar. This page lists those constructions, gives rules for names, and ends with two sample passages.
+The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every word of the Greek text, about 2,690 dictionary forms besides names, was checked against the lexicon (using the lemmas of the SBL Greek New Testament). Each one has a Tharaic word, or a regular construction from the grammar. The full list is [`data/gospels.tsv`](../data/gospels.tsv): Greek word, number of occurrences, Tharaic equivalent, and how it is rendered; `tools/build_lexicon.py` checks that every Tharaic word in it is in the lexicon. This page lists those constructions, gives rules for names, and ends with two sample passages.
 
 ---
 
@@ -85,6 +85,7 @@ The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every 
 | Ναζαρέθ | *Νασερατον* | Naseraton | *Nāṣərat* |
 | Καφαρναούμ | *Καφαρυλ Ναχυμος* | Kapharul Nakhumos | "village of Nahum", a construct of *καφαρον* |
 | Γεθσημανί | *Γατυλ ϸεμενον* | Gatul shemenon | "the oil press", a construct of *γατον* |
+| γέεννα | *Γεͱινομον* | Gehinomon | *Gê-Hinnōm* "the valley of Hinnom" |
 | Γολγοθᾶ | *Γολγολον* | Golgolon | "the Skull", the lexicon word *γολγολον* |
 | Ἰορδάνης | *Ϳαρδενον* | Yardenon | *Yardēn*, root Ϳ-Ρ-Δ "go down", as in *ϳερεδειν* |
 | Τύρος | *Συρον* | Suron | the lexicon word *συρον* "rock" |
