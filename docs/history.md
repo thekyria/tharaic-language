@@ -89,6 +89,11 @@ Once change 2 had made obstruent + ρ/λ a normal syllable start, words borrowed
 | *αστρος*, *αστρα* | star, constellation | Greek-analog star lore |
 | *ͱαβλον* | rope, rigging | Phoenician-analog *ḥbl*, a shipwrights' word |
 
+Later loans that did not fit even the new pattern were adapted:
+
+- **σ + consonant at the start** of a Greek-analog word takes a **prothetic ι-**, as Greek words did in Aramaic (*ʾisṭlā* from *στολή*): *ισπονγον* "sponge", from *σπόγγος*.
+- A **Phoenician-analog noun ending in a vowel** keeps the vowel and adds the ON-stem ending: *πιναον* "corner" (cf. Hebrew *pinnāh*), *μαρεον* "sight" (*marʾeh*).
+
 Two loans still break the everyday rules and are felt as foreign, merchants' words:
 
 | Word | Meaning | Source | Why it is irregular |

@@ -26,8 +26,13 @@ The vowel grades come from [History § Root vowel grades](history.md#1-root-vowe
 | μα-CaC-αρ | IN, AR-stem | place or instrument | Ν-Ϝ | *μαναϝαρ* | manavar | shipyard |
 | | | | Λ-Κ | *μαλακαρ* | malakar | assembly, place of speaking |
 | | | | Δ-Γ | *μαδαγαρ* | madagar | granary |
+| | | | Δ-Β-Ρ | *μαδαβαρ* | madabar | wilderness, pasture land |
+| | | | Π-Τ-Χ | *μαπαταχαρ* | mapatakhar | key ("opener") |
 | CaC-ια | AN, A-stem (short -α in the nominative) | collective, group | Ν-Ϝ | *ναϝια* | navia | fleet |
 | | | | Τ-Ρ | *θαρια* | tharia | the crew, the seafaring community |
+| CiCeC-ος / -ον | adjective | bodily defect (Hebrew *ʿiwwēr*, *ʾillēm*, with the doubled consonant simplified) | Ϙ-Ϝ-Ρ | *ϙιϝερος* | ghiveros | blind |
+| | | | Α-Λ-Μ | *ιλεμος* | ilemos | mute |
+| | | | Φ-Σ-Χ | *φισεχος* | phisekhos | lame |
 | -υτον | IN, ON-stem | abstract quality (Phoenician *-ut*) | Μ-Λ-Κ | *μαλκυτον* | malkuton | kingship |
 | | | | — | *φιλυτον* | philuton | friendship (from *φιλος*) |
 | | | | — | *ναϝυτον* | navuton | seamanship (from *ναϝος*) |

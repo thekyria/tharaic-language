@@ -34,6 +34,8 @@ Each step is a separate pull request.
 
 6. ✅ **Calendar & star lore** — [Calendar & Star Lore](calendar.md): a solar year set by the rising and setting of the Doves (the Pleiades), split into the Open Sea and the Closed Sea; twelve 30-day months and the Days of Memory; a seven-day planetary week; year counting by judges and from the Voyage of the Beginning; the night watches; festivals; constellations and navigation stars. Adds number labels after a noun (*ͱημερον τρια* "day three") and a *Time, Calendar & Stars* section of the lexicon.
 
+7. ✅ **Gospel vocabulary** — about 710 new words, so that every word of the four Gospels (about 2,690 Greek dictionary forms besides names, checked one by one against the SBL Greek New Testament) has a Tharaic equivalent or a regular construction. Five new lexicon sections (*Land, Plants & Animals*; *House, Food & Clothing*; *City, Law & Power*; *Mind, Speech & Feeling*; *Movement & Position*). Most new words are native, built on roots with Hebrew cognates; Roman and Greek things (the denarius, the praetorium) are Greek-layer loans. [Translating the Gospels](gospels.md) gives the constructions, rules for names, and two sample passages. The grammar gained adverbs from adjectives, *παϙαμα* "times", *βιλτι* "without", the reflexive with *νεφεϸᾱ*, the middle imperative, new prepositions and conjunctions, and the CiCeC-ος pattern for bodily defects.
+
 ## Later
 
 | Future phase | What it adds |
