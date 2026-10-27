@@ -15,7 +15,7 @@ A **long subject**, such as one with a relative clause, may move to the end of t
 > *Φαγει λαχαμον εν λιμελι ενος ϸε-ϸερει σᾱϙιροι.* — Eats bread in harbor-LOC one that-sings storm-DAT. → "He who sings to the storm eats his bread in the harbor."
 
 A verb before a **compound subject** agrees with its first part, as in Hebrew:
-> *Εκανε ϳεσει προς-υ κολ γαβυλον και κολ αδαμιμ.* — Was goes-out to-him all region and all people. → "The whole region and all the people were going out to him." ([Mark 1:5](mark-1.md#john-the-immerser-18))
+> *Εκανε ϳεσει προς-υ κολ γαβυλον και κολ αδαμιμ.* — Was goes-out to-him all region and all people. → "The whole region and all the people were going out to him." (everyday wording; [Mark 1:5](mark-1.md#john-the-immerser-18) has the high-register *εκανε ϳεσοντον*, inanimate like *γαβυλον*)
 
 **Adjectives:** an attributive adjective comes **before** its noun (*καλος ϝελος* "a fair wind"); a predicate adjective follows the subject (*Εσι ϝελος καλος* "The wind is fair"). Numbers behave like attributive adjectives (*ενος ρεμευς* "one rower"). After a noun, a number labels it instead and does not agree: *ͱημερον τρια* "day three" ([Calendar § Dates](calendar.md#dates)).
 
@@ -30,6 +30,8 @@ A few small words always come **before** the verb, in this order:
 | then | verb — subject — object — other phrases |
 
 > *Λαμα βαλ ϸα νᾱϝεις?* — Why not FUT you-sail? → "Why won't you sail?"
+
+Two high-register conjunctions, *γαρ* "for" and *ων* "so", come **second** in their clause instead, as in Greek ([§ High-register clauses](#high-register-clauses)).
 
 ---
 
@@ -121,6 +123,37 @@ The resumptive pronoun is the object enclitic on the verb (*-υ*, *-α*…) or t
 **"The one who…"**: a relative clause without a noun of its own takes *ενος* "one" (animate) or *ενον* (inanimate) as its head:
 > *Ϸενει επι συρελι ενος ϸε-βαλ ιδει αστρονας.* — "He who does not watch the stars sleeps on the reef."
 
+In the high register, a [participle phrase](#participle-phrases) usually takes the place of a relative clause.
+
+---
+
+## Participle phrases
+
+[Participles](morphology.md#participles) are adjectives, so they agree with the noun they describe. A participle with words of its own forms a phrase, and inside it the participle comes first, like the verb of a clause. Everyday speech uses few such phrases. **The high register builds its long sentences with them.**
+
+**1. Describing a noun.** The phrase follows the noun, as a relative clause does:
+
+> *Ιδω ναϝᾱν νᾱϝοντον θᾱρελι.* — I-see ship-ACC sailing-ACC sea-LOC. → "I see the ship sailing on the sea."<br>
+> Everyday: *Ιδω ναϝᾱν ϸε-νᾱϝει θᾱρελι.* "I see the ship that sails on the sea."
+
+**2. As a noun**, "the one who…", in place of *ενος ϸε-*:
+
+> *Εσι μακαριος ποιοντος δικαιοσυνᾱν.* — Is blessed doing justice-ACC. → "Blessed is the one who does justice."<br>
+> Everyday: *Εσι αϸαρος ενος ϸε-ϙεσει σαδακον.*
+
+**3. Setting the scene.** A participle that agrees with the subject or object tells what happened before (aorist) or at the same time (present). The phrase usually comes before the main clause, which keeps VSO order:
+
+> *Βλεψαντιμ λιμᾱν, ευχαριστησαν ναϝιμ ηλοιμ.* — Having-seen-PL harbor-ACC, gave-thanks sailors gods-DAT. → "When they saw the harbor, the sailors gave thanks to the gods."<br>
+> Everyday: *Ϝα-νεβετουσι λιμᾱν ναϝιμ, ϝα-ϳεδουσι ηλοιμ.* "The sailors saw the harbor, and they thanked the gods."
+
+**4. The genitive absolute.** When the participle has a subject of its own, not part of the main clause, both go in the **genitive**, as in Greek:
+
+> *Σᾱϙιρι ϝεναντι, εϸεβε ναϝᾱ.* — Storm-GEN having-come-GEN, turned-back ship. → "When the storm had come, the ship turned back."<br>
+> *Ϝελι ϝελοντι, ενᾱϝε ναϝᾱ.* — Wind-GEN blowing-GEN, sailed ship. → "While the wind was blowing, the ship sailed."<br>
+> Everyday: *Οτε ενᾱϝε ναϝᾱ, εκανε ϝελει ϝελος.* "When the ship sailed, the wind was blowing."
+
+The genitive absolute belongs to the high register only. Everyday speech uses a clause with *οτε*.
+
 ---
 
 ## Conditions
@@ -133,6 +166,8 @@ The resumptive pronoun is the object enclitic on the verb (*-υ*, *-α*…) or t
 | *αν* | an | particle of the unreal result, "would" (Greek-analog *ἄν*) |
 
 The condition comes first. An "if" clause is negated with *μη*, never *βαλ*.
+
+The high register says *αι* for *ιμ* and *αι μη* for *ιμ μη* ([§ High-register clauses](#high-register-clauses)).
 
 **Real conditions** use ordinary tenses:
 > *Ιμ εσι ϝελος καλος, ϸα νᾱϝομεν.* — "If the wind is fair, we will sail."
@@ -238,6 +273,26 @@ The sea cases also work alone, without a preposition: *θᾱρελι* "on the se
 | *μεν…δε* | men…de | on one hand… on the other |
 | *ιμ* | im | if |
 | *οτε* | ote | when, whenever |
+
+### High-register clauses
+
+The high register joins clauses with Doric conjunctions, and it puts subordinate clauses and participle phrases **before** the main clause, building long Greek-style periods. Inside each clause, VSO order still holds.
+
+| High | Everyday | Meaning | Example |
+|------|----------|---------|---------|
+| *αι* | *ιμ* | if | *Αι εσι ϝελος καλος, ϸα νᾱϝομεν.* "If the wind is fair, we will sail." |
+| *ͱοκα* | *οτε* | when, whenever | *Ͱοκα ϝενει ϝελος, νᾱϝομεν.* "Whenever the wind comes, we sail." |
+| *ͱινα* | *λεμαϙαν* | so that, in order that | *Εδιδαξε-νεν διδασκαλος, ͱινα νοομες.* "The teacher taught us so that we would understand." |
+| *πριν* | *τερεμ* | before | *Ευχεσθε πριν νᾱϝετε!* "Pray before you sail!" |
+| *ͱως* | *κεμω* | as, just as | |
+| *επει* | *ͱοτι* | since, because | *ͱοτι* stays for "that" after verbs of saying and knowing |
+| *ωστε* | | so that, with the result that; + infinitive, with its subject in the accusative | *ωστε βαλ ϳεκελειν Ϳεϸῡϙον βεϝειν* "so that Jesus could not go in" ([Mark 1:45](mark-1.md#a-man-with-leprosy-4045)) |
+| *γαρ* | | for, because (second word) | *Βαλ ϸα νᾱϝομεν· ϝενει γαρ σᾱϙιρος.* "We will not sail, for a storm is coming." |
+| *ων* | *λακεν* | so, therefore (second word) | |
+| *τοκα* | *αζα* | then, at that time | |
+| *ποκα* | | once, at some time; ever | |
+
+These are the *-κα* adverbs and conjunctions of Doric (*ὅκα*, *τόκα*, *πόκα*, for Attic *ὅτε*, *τότε*, *ποτέ*), which mark a speaker as educated as clearly as *ᾱ* for *η* does.
 
 ## Demonstratives
 

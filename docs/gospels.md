@@ -2,7 +2,9 @@
 
 [← Overview](../README.md)
 
-The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every word of the Greek text, about 2,690 dictionary forms besides names, was checked against the lexicon (using the lemmas of the SBL Greek New Testament). Each one has a Tharaic word, or a regular construction from the grammar. The full list is [`data/gospels.tsv`](../data/gospels.tsv): Greek word, number of occurrences, Tharaic equivalent, and how it is rendered; `tools/build_lexicon.py` checks that every Tharaic word in it is in the lexicon. This page lists those constructions, gives rules for names, and ends with two sample passages. A whole chapter is translated in [Mark 1](mark-1.md).
+The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every word of the Greek text, about 2,690 dictionary forms besides names, was checked against the lexicon (using the lemmas of the SBL Greek New Testament). Each one has a Tharaic word, or a regular construction from the grammar. The full list is [`data/gospels.tsv`](../data/gospels.tsv): Greek word, number of occurrences, Tharaic equivalent, and how it is rendered; `tools/build_lexicon.py` checks that every Tharaic word in it is in the lexicon and fit for the high register. This page lists those constructions, gives rules for names, and ends with two sample passages. A whole chapter is translated in [Mark 1](mark-1.md).
+
+**Register.** Scripture is translated in the [high register](registers.md). Where the high register has a learned Doric word for the same Greek word, the translation uses it: *μαθητᾱς* "disciple", *πιστις* "faith", *ψυχᾱ* "soul", *ευανγελιον* "gospel". Words that belong to both registers stay as they are, and `tools/build_lexicon.py` refuses words marked *everyday*. The narrative uses the aorist and participles, not the narrative past *ϝα-*.
 
 ---
 
@@ -12,7 +14,11 @@ The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every 
 |-------|---------|---------|
 | The article *ὁ, ἡ, τό* | not translated: Tharaic has no article | |
 | Compound verbs (*εἰσ-*, *ἐξ-*, *ἀπ-*…) | a verb of its own for the common ones, otherwise the simple verb with a preposition or a [sea case](morphology.md#noun-paradigms) | *βεϝειν* "go in", *ϳεσειν* "go out", *ϙελειν* "go up", *ϳερεδειν* "go down", *ϸεβειν* "turn back" |
-| Passive | the [middle voice](morphology.md#middle-voice), agent in the ablative | *κεδεϸεται* "is made holy" |
+| Passive | the [middle voice](morphology.md#middle-voice), agent in the ablative | *κεδεϸεται* "is made holy", *εβαπτισατο Ϳωχαναναθα* "was immersed by John" |
+| Participles | [participles](morphology.md#participles), in the same roles as in Greek ([Participle phrases](syntax.md#participle-phrases)) | *ϙεζεβαντιμ δικτυα, εδεβεκαν-υ* "leaving their nets, they followed him" |
+| Genitive absolute | the same construction | *Ϳωχανανι μεσεραμενι* "after John was handed over" |
+| *ἐγένετο* "it came to pass" | *εͱεϝατο* | |
+| *εἰ, ἐάν; ὅτε, ὅταν; ἵνα; ὡς; γάρ; οὖν; ὥστε* | the Doric conjunctions *αι*; *ͱοκα*; *ͱινα*; *ͱως*; *γαρ*; *ων*; *ωστε* + infinitive ([High-register clauses](syntax.md#high-register-clauses)) | *Αι θελεις…* "If you are willing…" |
 | *ἔχω* "have" | "to be" with the owner in the dative ([To be](morphology.md#to-be)); *εχεζειν* "hold" for physical holding | |
 | Adverbs in *-ως* | the inanimate adjective ([Adverbs](syntax.md#adverbs)) | *καλον* "well" |
 | *τρίς*, *ἑπτάκις* | number + *παϙαμα* | *τρια παϙαμα* "three times" |
@@ -21,7 +27,9 @@ The [lexicon](lexicon.md) has enough words to translate the four Gospels. Every 
 | *ἑαυτοῦ* "himself" | *νεφεϸᾱ* + possessive ([Reflexive](morphology.md#reflexive-oneself)) | *νεφεϸᾱνκα* "yourself" |
 | *ἀμὴν λέγω ὑμῖν* | *αμεν* first, as in the Greek | *Αμεν, λεκω-τεμ…* "Amen, I tell you…" |
 
-**Titles** are construct phrases ([Construct state](morphology.md#construct-state--phoenician-possession)):
+### Titles
+
+The titles are **fixed**: like divine names, they keep their native words and the construct state even in the high register ([Construct state](morphology.md#construct-state--phoenician-possession)). Free high prose would say *βασιλειᾱ ηλι* for "the kingdom of God", but the title stays *μαλκυλ ηλος*.
 
 | Tharaic | Romanized | Meaning |
 |---------|-----------|---------|
@@ -110,7 +118,7 @@ The Gospels quote some Aramaic and then translate it. A Tharaic translation keep
 | ἐφφαθα | *εφαθα* | *Πετεχεσο!* "Be opened!" |
 | ἐλωΐ ἐλωΐ λεμὰ σαβαχθάνι | *ελωι, ελωι, λεμα σαβακθανι* | *Ηλει, ηλει, λαμα εϙεζεβας-νι?* "My God, my God, why have you left me?" |
 | ἀββα | *αβα* | *αβε* "father!" |
-| ῥαββουνι | *ραβουνι* | *λᾱμιδε* "teacher!" |
+| ῥαββουνι | *ραβουνι* | *διδασκαλε* "teacher!" |
 | κορβᾶν | *καρβανον* | the lexicon word, "an offering" |
 
 ---
@@ -119,11 +127,11 @@ The Gospels quote some Aramaic and then translate it. A Tharaic translation keep
 
 ### The Lord's Prayer (Matthew 6:9–13)
 
-In everyday Tharaic. Recited in the temple, it would take the [sacred register](sacred.md): chant forms such as *πορος* for *προς*.
+In the high register, as in scripture and the temple:
 
-> *Αβεεν ϸε-εις εν ϸαμελι,*<br>
-> Abeen she-eis en shameli,<br>
-> Father-VOC-our that-you-are in heaven-LOC,<br>
+> *Αβεεν, κανοντε εν ωρανελι,*<br>
+> Abeen, kanonte en ōraneli,<br>
+> Father-VOC-our, being-VOC in heaven-LOC,<br>
 > "Our Father in heaven,"
 
 > *λυ κεδεϸεται ϸαμαρκα.*<br>
@@ -131,19 +139,19 @@ In everyday Tharaic. Recited in the temple, it would take the [sacred register](
 > WISH is-made-holy name-your.<br>
 > "may your name be made holy."
 
-> *Λυ ϝενει μαλκονκα, λυ ͱεϝεται θελημονκα,*<br>
-> Lu venei malkonka, lu hevetai thelēmonka,<br>
+> *Λυ ερχεται βασιλειᾱκα, λυ ͱεϝεται θελημονκα,*<br>
+> Lu erkhetai basileiāka, lu hevetai thelēmonka,<br>
 > WISH comes kingdom-your, WISH happens will-your,<br>
 > "May your kingdom come, may your will be done,"
 
-> *κεμω εν ϸαμελι, κεν επι αρσελι.*<br>
-> kemō en shameli, ken epi arseli.<br>
-> as in heaven-LOC, so on earth-LOC.<br>
+> *ͱως εν ωρανελι, και επι γᾱελι.*<br>
+> hōs en ōraneli, kai epi gāeli.<br>
+> as in heaven-LOC, also on earth-LOC.<br>
 > "as in heaven, so on earth."
 
-> *Δωε-νεν ͱαϳομ λαχαμον κολ ͱημερου,*<br>
-> Dōe-nen hayom lakhamon kol hēmerou,<br>
-> Give-us today bread every day-GEN,<br>
+> *Δωε-νεν ͱαϳομ ͱᾱμερινον λαχαμον,*<br>
+> Dōe-nen hayom hāmerinon lakhamon,<br>
+> Give-us today daily bread,<br>
 > "Give us today our daily bread,"
 
 > *και σελεχε ναϸαεν,*<br>
@@ -151,8 +159,8 @@ In everyday Tharaic. Recited in the temple, it would take the [sacred register](
 > and forgive debts-our,<br>
 > "and forgive us our debts,"
 
-> *κεμω και ανεν σελεχομεν κολ χαϳαβοι.*<br>
-> kemō kai anen selekhomen kol khayaboi.<br>
+> *ͱως και ανεν σελεχομεν κολ χαϳαβοι.*<br>
+> hōs kai anen selekhomen kol khayaboi.<br>
 > as also we forgive every debtor-DAT.<br>
 > "as we also forgive every debtor."
 
@@ -166,16 +174,21 @@ In everyday Tharaic. Recited in the temple, it would take the [sacred register](
 > but save-us from evil-ABL.<br>
 > "but rescue us from evil."
 
+Said at home, the prayer is in everyday Tharaic:
+
+> *Αβεεν ϸε-εις εν ϸαμελι, λυ κεδεϸεται ϸαμαρκα. Λυ ϝενει μαλκονκα, λυ ͱεϝεται θελημονκα, κεμω εν ϸαμελι, κεν επι αρσελι. Δωε-νεν ͱαϳομ λαχαμον κολ ͱημερου, και σελεχε ναϸαεν, κεμω και ανεν σελεχομεν κολ χαϳαβοι. Και μη νεͱεγε-νεν προς νασον, αλλα ϳεϸεϙε-νεν απο ραϙαθα.*
+
 Notes:
+- **The two versions** differ only where the high register has its own words or forms: *κανοντε* "being", a participle in the vocative, for the relative *ϸε-εις* "who are"; *ωρανελι* and *γᾱελι* for *ϸαμελι* and *αρσελι*; *ερχεται βασιλειᾱκα* for *ϝενει μαλκονκα*; *ͱως* for *κεμω*; and the learned adjective *ͱᾱμερινον* "daily" for *κολ ͱημερου* "of every day". Words common to both registers, such as *λαχαμον*, *σελεχειν* and *νασον*, stay the same.
 - ***λυ* with the middle voice** makes the passive wishes "may it be made holy, may it be done".
 - ***ναϸαεν, χαϳαβοι*:** the Aramaic behind the prayer used one word, *ḥôbā*, for both "debt" and "sin". Tharaic keeps the debt image with *ναϸον* "debt" and *χαϳαβος* "debtor", which also means "guilty".
 - ***ραϙαθα*** is the ablative of both *ραϙος* "the Evil One" and *ραϙον* "evil". The Greek *τοῦ πονηροῦ* is ambiguous in the same way.
 
 ### The beginning of John (John 1:1)
 
-> *Εν ραϸιτελι εκανε λακον, και εκανε λακον παρα ηλελι, και εκανε λακον ηλος.*<br>
-> En rashiteli ekane lakon, kai ekane lakon para ēleli, kai ekane lakon ēlos.<br>
+> *Εν αρχελι εκανε λογος, και εκανε λογος παρα ηλελι, και εκανε λογος ηλος.*<br>
+> En arkheli ekane logos, kai ekane logos para ēleli, kai ekane logos ēlos.<br>
 > In beginning-LOC was word, and was word beside God-LOC, and was word God.<br>
 > "In the beginning was the Word, and the Word was with God, and the Word was God."
 
-VSO order makes the last clause clear: the verb, then the subject *λακον*, then the predicate *ηλος*.
+VSO order makes the last clause clear: the verb, then the subject *λογος*, then the predicate *ηλος*. The high word *λογος* "word, reason, discourse" suits John's *Logos* better than the everyday *λακον* "utterance". *ηλος* stays: it is the name of God in both registers.

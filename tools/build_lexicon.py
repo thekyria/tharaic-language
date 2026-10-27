@@ -5,21 +5,33 @@ Usage:
     python3 tools/build_lexicon.py           # check, then write docs/lexicon.md
     python3 tools/build_lexicon.py --check   # check, and fail if docs/lexicon.md is out of date
 
-It also checks that every Tharaic word in data/gospels.tsv is in the lexicon.
+It also checks that every Tharaic word in data/gospels.tsv is in the lexicon and
+not marked everyday, since scripture is in the high register.
 
 Each entry in data/lexicon.yaml has these fields:
 
     greek     the word in Greek script. Adjectives give both forms: "καλος / καλον"
     pos       noun, verb, adj, adv, prep, conj, particle, question, pron or num
     meaning   English meaning
-    layer     native (inherited, built on a root), phoenician or greek (later loans)
+    layer     native (inherited, built on a root), phoenician, greek (the older
+              sailors' Greek) or doric (the learned Doric layer); see docs/registers.md
     theme     which section of the lexicon it belongs to (see THEMES below)
     gender    nouns only: AN or IN
-    stem      nouns only: O, A, ON, AR, EUS, ON-PL (old plural used as a collective) or irregular
+    stem      nouns only: O, A, ON, AR, EUS, ON-PL (old plural used as a collective) or irregular;
+              Doric loans may also be AS (-ᾱς), MA (-μα) or IS (-ις), see docs/registers.md
     cases     prepositions only: the case(s) it takes, e.g. "LOC, ACC"
     root      optional: consonantal root, e.g. "Ν-Ϝ"
     source    optional: etymology note
     chant     the chant form; required when the word breaks the strict chant rules
+    register  optional: high (used only in the high register) or everyday (avoided
+              in it). Without it, the word belongs to both. High-register words
+              follow the high syllable rules, which keep Doric clusters
+    doublet   optional: the counterpart in the other register, by its first form
+              (e.g. "χαδαρον" for θαλαμος). The counterpart must point back
+    aorist    Doric verbs: the first person singular aorist (εποιησα, middle ευξαμην),
+              which cannot be predicted from the infinitive (docs/morphology.md)
+    base      optional, learned adjectives: the everyday noun they serve as
+              adjective for (σελᾱναιος "lunar" for σεληνᾱ "moon")
     note      optional: extra remark, shown after the meaning
     value     numbers only: the numeric value, used for ordering
     late      optional, "yes": a native word formed after the sound changes in
@@ -55,6 +67,7 @@ THEMES = [
     ("city", "City, Law & Power"),
     ("ritual", "Ritual, Belief & Abstract"),
     ("mind", "Mind, Speech & Feeling"),
+    ("learning", "Learning, Arts & Science"),
     ("time", "Time, Calendar & Stars"),
     ("numbers", "Numbers"),
     ("verbs", "Core Verbs"),
@@ -65,10 +78,13 @@ THEMES = [
 POS = {"noun": "n.", "verb": "v.", "adj": "adj.", "prep": "prep.", "conj": "conj.",
        "particle": "particle", "question": "question word", "pron": "pron.", "num": "num.", "adv": "adv."}
 FUNCTION_ORDER = ["pron", "prep", "conj", "particle", "question", "adv"]
-LAYERS = {"native": "native", "phoenician": "Phoenician", "greek": "Greek"}
+LAYERS = {"native": "native", "phoenician": "Phoenician", "greek": "Greek", "doric": "Doric"}
+REGISTERS = ("high", "everyday")
 STEMS = {"O": ("AN", "ος", "O-stem"), "A": ("AN", ("ᾱ", "α"), "A-stem"), "EUS": ("AN", "ευς", "-ευς"),
          "ON": ("IN", "ον", "ON-stem"), "AR": ("IN", "αρ", "AR-stem"),
-         "ON-PL": ("IN", "α", "ON-stem plural"), "irregular": (None, "", "irregular")}
+         "ON-PL": ("IN", "α", "ON-stem plural"), "irregular": (None, "", "irregular"),
+         "AS": (None, "ᾱς", "Doric -ᾱς"), "MA": (None, "μα", "Doric -μα"), "IS": (None, "ις", "Doric -ις")}
+DORIC_STEMS = {"AS", "MA", "IS"}
 # Alphabetical order, with the extra letters at their historical places
 ALPHABET = "αᾱβγδεϝζͱηθιϳκλμνξοπϙρσςϸτυῡφχψω"
 DIPHTHONGS = {"αι", "αυ", "ει", "ου", "ευ", "οι"}
@@ -100,8 +116,8 @@ def romanize(e):
     if "roman" in e:
         return e["roman"]
     r = to_roman(e["greek"])
-    if e["layer"] == "greek":
-        # Greek-layer words write υ as y (συν syn), except in diphthongs and before a vowel
+    if e["layer"] in ("greek", "doric"):
+        # Greek- and Doric-layer words write υ as y (συν syn), except in diphthongs and before a vowel
         r = re.sub(r"(?<![aeo])u(?![aeiouāēōū])", "y", r)
         r = re.sub(r"(?<![aeo])U(?![aeiouāēōū])", "Y", r)
     return r
@@ -139,9 +155,14 @@ def history_problems(word):
     return found
 
 
+def head(e):
+    return e["greek"].split(" / ")[0]
+
+
 def check(entries):
     errors, seen = [], {}
     themes = {k for k, _ in THEMES}
+    by_head = {head(e): e for e in entries if "greek" in e}
     for e in entries:
         where = f"{DATA}:{e['_line']}: {e.get('greek', '?')}"
         err = lambda msg: errors.append(f"{where}: {msg}")  # noqa: E731
@@ -157,6 +178,32 @@ def check(entries):
             err(f"unknown layer {e['layer']}")
         if e["theme"] not in themes:
             err(f"unknown theme {e['theme']}")
+        register = e.get("register")
+        if register and register not in REGISTERS:
+            err(f"unknown register {register}")
+        if "doublet" in e:
+            other = by_head.get(e["doublet"])
+            if other is None:
+                err(f"doublet {e['doublet']} is not in the lexicon")
+            elif other.get("doublet") != head(e):
+                err(f"doublet {e['doublet']} does not point back")
+            elif "high" not in (register, other.get("register")):
+                err("one word of a doublet should be high register")
+        if "aorist" in e:
+            a = e["aorist"]
+            if pos != "verb":
+                err("only verbs take an aorist")
+            elif not a.endswith(("α", "αμην")):
+                err("aorist should end in -α (active) or -αμην (middle)")
+            for p in problems(a, high=register == "high"):
+                err(f"aorist: {p}")
+        elif pos == "verb" and e["layer"] == "doric":
+            err("Doric verb needs its aorist")
+        if "base" in e:
+            if e["pos"] != "adj":
+                err("only adjectives take a base")
+            if e["base"] not in by_head:
+                err(f"base {e['base']} is not in the lexicon")
         key = (g, pos)
         if key in seen:
             err(f"duplicate of line {seen[key]}")
@@ -171,9 +218,12 @@ def check(entries):
                 err(f"noun needs a stem from {', '.join(STEMS)}")
             else:
                 want_gender, ending, _ = STEMS[stem]
+                if stem in DORIC_STEMS and e["layer"] != "doric":
+                    err(f"{stem} is a Doric stem class")
                 if not g.endswith(ending):
                     err(f"{stem} noun should end in {ending}")
-                if want_gender and gender != want_gender and "note" not in e:
+                # Doric loans take their gender from their meaning (docs/registers.md)
+                if want_gender and gender != want_gender and "note" not in e and e["layer"] != "doric":
                     err(f"{stem} nouns are {want_gender}; explain the exception in a note")
         elif pos == "verb" and not g.endswith(("ειν", "σθαι")):
             err("verb should be an infinitive in -ειν or (middle) -σθαι")
@@ -187,7 +237,7 @@ def check(entries):
         for w in words(g):
             body = w.strip("-")
             start, end = not w.startswith("-"), not w.endswith("-")
-            for p in problems(body, start, end):
+            for p in problems(body, start, end, high=register == "high"):
                 err(p)
             if problems(body, start, end, chant=True):
                 strict_ok = False
@@ -206,6 +256,8 @@ def check(entries):
 def check_gospels(entries):
     """Every Tharaic word in data/gospels.tsv must be a lexicon headword."""
     heads = {w.strip("-") for e in entries for w in words(e["greek"])}
+    # The Gospels are translated in the high register (docs/registers.md)
+    everyday = {w.strip("-") for e in entries if e.get("register") == "everyday" for w in words(e["greek"])}
     errors = []
     with open(GOSPELS, encoding="utf-8") as f:
         for n, line in enumerate(f, 1):
@@ -220,6 +272,8 @@ def check_gospels(entries):
             for w in cols[3].split():
                 if w.strip("-") not in heads:
                     errors.append(f"{GOSPELS}:{n}: {cols[0]}: {w} is not in the lexicon")
+                elif w.strip("-") in everyday:
+                    errors.append(f"{GOSPELS}:{n}: {cols[0]}: {w} is everyday register; scripture is high")
     return errors
 
 
@@ -232,7 +286,8 @@ def grammar(e):
     if pos == "noun":
         return f"n. {e['gender']}, {STEMS[e['stem']][2]}"
     if pos == "verb":
-        return "v. (middle)" if e["greek"].endswith("σθαι") else "v."
+        g = "v. (middle)" if e["greek"].endswith("σθαι") else "v."
+        return f"{g}, aor. *{e['aorist']}*" if "aorist" in e else g
     if pos == "prep":
         return f"prep. + {e['cases']}"
     return POS[pos]
@@ -261,8 +316,13 @@ def render(entries):
         "- **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).",
         "- **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans "
         "that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.",
+        "- **Origin** *Greek* is the older sailors' Greek, borrowed in the ports; *Doric* is the learned layer, "
+        "borrowed through poetry and the schools ([Registers](registers.md)).",
         "- **Chant** gives the form used in chant and sacred speech, where it differs ([History § The chant register](history.md#3-the-chant-register)).",
-        "- In Greek-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).",
+        "- **Register**: *high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it, "
+        "and words with neither belong to both. ↔ marks the counterpart in the other register; "
+        "*adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with.",
+        "- In Greek- and Doric-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).",
         "",
     ]
     by_theme = {k: [] for k, _ in THEMES}
@@ -278,14 +338,16 @@ def render(entries):
             items.sort(key=lambda e: (FUNCTION_ORDER.index(e["pos"]), sort_key(e["greek"])))
         else:
             items.sort(key=lambda e: sort_key(e["greek"]))
-        out += [f"## {title}", "", "| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant |",
-                "|---------|-----------|------|---------|---------|--------|-------|"]
+        out += [f"## {title}", "", "| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |",
+                "|---------|-----------|------|---------|---------|--------|-------|----------|"]
         for e in items:
             meaning = e["meaning"] + (f" — {e['note']}" if "note" in e else "")
             origin = origin_text(e)
             chant = f"*{e['chant']}*" if "chant" in e else ""
+            register = " ".join(filter(None, [e.get("register"), f"↔ *{e['doublet']}*" if "doublet" in e else "",
+                                              f"adj. for *{e['base']}*" if "base" in e else ""]))
             out.append(f"| *{e['greek']}* | {romanize(e)} | {e.get('root', '')} | {grammar(e)} | "
-                       f"{meaning} | {origin} | {chant} |")
+                       f"{meaning} | {origin} | {chant} | {register} |")
         out.append("")
     return "\n".join(out)
 

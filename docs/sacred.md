@@ -2,26 +2,31 @@
 
 [← Overview](../README.md)
 
-Temple speech, prayers, oaths and inscriptions use a register of their own. It is the same language, but it chooses the older and more Phoenician side of every pair.
+Temple speech, prayers, oaths and inscriptions use a style of the [high register](registers.md). It has two layers:
+
+- **The old formulas**, recited word for word as they have always been. They show the older temple style: native and Phoenician words, the construct state, the narrative *ϝα-*. They are to Tharaic what "Our Father, which art in heaven" is to English.
+- **New composition**, in the high style: Doric words for theology, the aorist, the genitive, participle phrases. Temple scholars learned it in the Doric schools.
+
+When temple speech is sung, both layers use [chant forms](history.md#3-the-chant-register).
 
 ---
 
 ## How it differs from everyday speech
 
-| Feature | Everyday | Sacred | See |
-|---------|----------|--------|-----|
-| Word forms | *τρια*, *προς*, *ναϝιτ* | chant forms: *τιρια*, *πορος*, *ναϝιτα* | [History § The chant register](history.md#3-the-chant-register) |
-| Vocabulary | Greek loans: *σεληνᾱ* moon, *καρδιᾱ* heart, *ακουειν* hear | native and Phoenician words: *ϳαραχᾱ*, *λαβον*, *ϸεμεϙειν* | [Lexicon](lexicon.md) |
-| Possession | genitive: *ναϝᾱ βᾱσιλι* | construct: *βᾱσιλ ναϝᾱ* | [Construct state](morphology.md#construct-state--phoenician-possession) |
-| Superlative | *-οτατος*: *καλοτατος* | construct with its own plural: *ηλιλ ηλιμ* "god of gods" | [Comparison](morphology.md#comparison) |
-| Telling the past | written prose: aorist *ενᾱϝε* | narrative *ϝα-* + present *ϝα-νᾱϝει*, as in oral tales | [Verbs](morphology.md#verbs) |
+| Feature | Everyday | Temple speech | See |
+|---------|----------|---------------|-----|
+| Word forms | *τρια*, *προς*, *ψυχᾱ* | sung: chant forms *τιρια*, *πορος*, *πυσυχᾱ*; spoken: high-register forms | [History § The chant register](history.md#3-the-chant-register) |
+| Vocabulary | *σεληνᾱ* moon, *καδοϸος* holy, *ζαβαχον* sacrifice, *λιτον* prayer | Doric words: *σελᾱνᾱ*, *ͱιαρος*, *θυσιᾱ*, *ευχᾱ*. Old Phoenician words (*ϳαραχᾱ*, *ϸεμεϙειν*) survive in divine names and old formulas | [Registers § Worship](registers.md#worship) |
+| Possession | genitive or construct | genitive; the construct only in divine names and titles: *Βαλιλ ϳαμος* | [Construct state](morphology.md#construct-state--phoenician-possession) |
+| Superlative | *-οτατος* | *-οτατος*, except the title *ηλιλ ηλιμ* "god of gods" | [Comparison](morphology.md#comparison) |
+| Telling the past | narrative *ϝα-* + present | aorist and participles; *ϝα-* only in old formulas | [Verbs](morphology.md#verbs) |
 | Wishes | *λυ* + present | *λυ* + present, often repeated in pairs | [Wishes](syntax.md#wishes) |
 
 ---
 
 ## Divine names and epithets
 
-The gods are addressed by construct titles. A title takes its case on its last word: *Βαλιλ ϳαμος* in the nominative, *Βαλιλ ϳαμοι* "to the Lord of the Deep", *Βαλιλ ϳαμε!* "O Lord of the Deep!".
+The gods are addressed by construct titles. These are names, so they keep the construct even in the high register. A title takes its case on its last word: *Βαλιλ ϳαμος* in the nominative, *Βαλιλ ϳαμοι* "to the Lord of the Deep", *Βαλιλ ϳαμε!* "O Lord of the Deep!".
 
 | Tharaic | Romanized | Meaning |
 |---------|-----------|---------|
@@ -33,11 +38,13 @@ The gods are addressed by construct titles. A title takes its case on its last w
 | *Μᾱτος* | Mātos | Death, named in curses and proverbs but never prayed to |
 | *Μοιρᾱ* | Moirā | Fate, who measures each voyage |
 | *Γαδος* | Gados | Luck, invoked by merchants |
-| *ϳαραχᾱ* | yarakhā | the moon in sacred speech (everyday *σεληνᾱ*) |
+| *ϳαραχᾱ* | yarakhā | the moon in old formulas. New hymns call her *σελᾱνᾱ* (everyday *σεληνᾱ*) |
 
 ---
 
-## Formulas
+## Old formulas
+
+These are recited unchanged, in the older temple style.
 
 **Invocation** at the start of a voyage:
 > *Βαλιλ ϳαμε, μᾱλικιλ γαλιμ — λυ φερεις ναϝᾱν πορος λιμᾱν!*<br>
@@ -70,5 +77,31 @@ The gods are addressed by construct titles. A title takes its case on its last w
 > "This stone Kharishos son of Adenos set up for the Lord of the Deep, because he heard his voice. May he bless him!"
 
 The object *ζε αβανον* is fronted for emphasis, as inscriptions begin with the thing they are written on. *Χᾱριϸος* "smith" and *Αδενος* "lord" are used here as personal names.
+
+---
+
+## In the high style
+
+**A hymn to the moon**, sung, so the chant form *πυσυχᾱς* replaces *ψυχᾱς*:
+> *Ͱυμνομες σελᾱνᾱν, νυκτερινον νηρον ωρανω. Λυ ζεͱερει ναϝαιμ θαλασσελι! Λυ ϸεμερει πυσυχᾱς ναυτᾱν!*<br>
+> Humnomes selānān, nukterinon nēron ōranō. Lu zeherei navaim thalasseli! Lu shemerei pusukhās nautān!<br>
+> We-hymn moon-ACC, nightly lamp heaven-GEN. WISH shines ships-DAT sea-LOC! WISH guards souls-ACC seamen-GEN!<br>
+> "We hymn the moon, the night lamp of heaven. May she shine for the ships on the sea! May she guard the souls of the seamen!"
+
+*Ͱυμνομες* has the Doric 1st plural *-μες*; *ωρανω*, *ψυχᾱς* and *ναυτᾱν* have Doric endings, and *θαλασσελι* has a Tharaic sea case on a Doric stem ([Doric nouns](morphology.md#doric-nouns-high-register)).
+
+**A prayer in a storm**, with a genitive absolute:
+> *Βαλιλ ϳαμε, σᾱϙιρι κεμαμενι, ϳεϸεϙε ναυτᾱς ευχομενονας!*<br>
+> Balil yame, sāghiri kemameni, yesheghe nautās eukhomenonas!<br>
+> Lord-CONSTR deep-VOC, storm-GEN having-risen-GEN, save seamen-ACC praying-ACC!<br>
+> "Lord of the Deep, now that the storm has risen, save the seamen who are praying!"
+
+**Votive inscription** in the high style. Compare the old one above:
+> *Ζε αγαλμα εκεμε Χᾱριϸος βενιλ Αδενος Βαλιλ ϳαμοι, ευχᾱνυ τελεσαντος, επει εϸεμεϙε φωνᾱνυ. Λυ ευλογει-υ!*<br>
+> Ze agalma ekeme Khārishos benil Adenos Balil yamoi, eukhānu telesantos, epei eshemeghe phōnānu. Lu eulogei-u!<br>
+> This statue set-up Kharishos son-CONSTR Adenos Lord-CONSTR deep-DAT, vow-ACC-his having-fulfilled, since heard voice-ACC-his. WISH blesses-him!<br>
+> "This statue Kharishos son of Adenos set up for the Lord of the Deep, having fulfilled his vow, since he heard his voice. May he bless him!"
+
+The construct stays in the god's name and in "son of". The rest is high style: *αγαλμα* "statue", the participle *τελεσαντος*, *επει* "since", *ευλογειν* "bless". The heart of the old formula, *εϸεμεϙε* "he heard", keeps its old verb.
 
 For oaths and self-curses, see [Proverbs & Oaths § Oaths](proverbs.md#oaths).

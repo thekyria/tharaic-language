@@ -10,6 +10,8 @@ Tharaic descends from a proto-language that absorbed two streams:
 - A **Greek-analog branch** → contributed vowel richness, inflectional endings, and poetic vocabulary
 - A **Phoenician-analog branch** → contributed VSO word order tendency, trade/mercantile vocabulary, and some consonantal texture
 
+Later, **literary Doric** (a second Greek-analog dialect, the language of poetry and learning) gave Tharaic a **high register**, much as French and Latin did for English: *χαδαρον* "room" next to *θαλαμος* "chamber".
+
 ---
 
 ## Contents
@@ -19,15 +21,16 @@ Tharaic descends from a proto-language that absorbed two streams:
 | [Phonology & Script](docs/phonology.md) | Greek alphabet and extra letters, vowels, consonants, phonotactics, stress |
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
+| [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |
 | [Word Building](docs/word-building.md) | Root patterns (older layer) and suffixes (younger layer) |
-| [Lexicon](docs/lexicon.md) | About 1,150 words by theme, with roots, origins and chant forms (generated from `data/lexicon.yaml`) |
+| [Lexicon](docs/lexicon.md) | About 1,450 words by theme, with roots, origins, chant forms and registers (generated from `data/lexicon.yaml`) |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
 | [Proverbs & Oaths](docs/proverbs.md) | Sailor and merchant sayings, weather lore, oath formulas |
 | [The Sacred Register](docs/sacred.md) | Temple speech: divine epithets, prayers, blessings, a votive inscription |
 | [Chants & Stories](docs/stories.md) | A rowing chant and a glossed harbor tale |
 | [Calendar & Star Lore](docs/calendar.md) | The star-set solar year, months, week, festivals, time of day, constellations |
 | [Translating the Gospels](docs/gospels.md) | How Greek constructions, titles and names are rendered; the Lord's Prayer and John 1:1 |
-| [Mark 1](docs/mark-1.md) | The first chapter of Mark in Tharaic: running text, then verse by verse with gloss and notes |
+| [Mark 1](docs/mark-1.md) | The first chapter of Mark in the high register: running text, then verse by verse with gloss and notes |
 | [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
 | [Roadmap](docs/roadmap.md) | Planned work |
 
@@ -36,7 +39,7 @@ Tharaic descends from a proto-language that absorbed two streams:
 Python 3 scripts, standard library only:
 
 - `python3 tools/greek.py nāvei navos` — convert romanized Tharaic to Greek script, or back with `--roman` (reads stdin if no words are given)
-- `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, or the strict chant rules with `--chant` (defaults to `docs/*.md`)
+- `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, the strict chant rules with `--chant`, or the high-register rules with `--high` (defaults to `docs/*.md`)
 - `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
 
 ---
@@ -50,7 +53,8 @@ THARAIC
 │   └── Open syllable, max CVC, no clusters (strict in chant;
 │       everyday speech allows obstruent + ρ/λ)
 │       ├── New: ϸ /ʃ/
-│       └── New: ϙ /ɣ/
+│       ├── New: ϙ /ɣ/
+│       └── High register: Doric clusters kept (ψ, κτ, στρ)
 │
 ├── ROOT LAYER (Phoenician)
 │   └── Bi/triconsonantal roots carry meaning
@@ -79,6 +83,7 @@ THARAIC
 │   ├── "To be": present ε(σ)- (Greek) + past/future Κ-Ν (Phoenician)
 │   ├── Future: particle ϸα (Phoenician-analog)
 │   ├── Imperfective past: εκανα + present (Hebrew hāyāh-analog)
+│   ├── Participles: adjectives in -οντος (present), -αντος (aorist)
 │   └── Narrative past: ϝα- prefix (Phoenician wayyiqtol-analog)
 │
 ├── CLAUSE LAYER
@@ -88,7 +93,12 @@ THARAIC
 │   ├── Relative clauses: ϸε- + resumptive pronoun (Phoenician)
 │   └── Conditions: ιμ "if" (Phoenician) + αν "would" (Greek)
 │
-└── WORD-BUILDING LAYER
-    ├── Older: vowel patterns on roots, μα- places, -υτον abstracts (Phoenician)
-    └── Younger: -ικος, -ιον, -ευς suffixes (Greek)
+├── WORD-BUILDING LAYER
+│   ├── Older: vowel patterns on roots, μα- places, -υτον abstracts (Phoenician)
+│   └── Younger: -ικος, -ιον, -ευς suffixes (Greek)
+│
+└── REGISTER LAYER
+    ├── Everyday: native, Phoenician and sailors' Greek words
+    └── High: learned Doric words (ᾱ for η, clusters), aorist narration,
+        genitive over construct, participles; includes temple speech
 ```
