@@ -27,6 +27,8 @@ Each entry in data/lexicon.yaml has these fields:
               follow the high syllable rules, which keep Doric clusters
     doublet   optional: the counterpart in the other register, by its first form
               (e.g. "χαδαρον" for θαλαμος). The counterpart must point back
+    aorist    Doric verbs: the first person singular aorist (εποιησα, middle ευξαμην),
+              which cannot be predicted from the infinitive (docs/morphology.md)
     base      optional, learned adjectives: the everyday noun they serve as
               adjective for (σελᾱναιος "lunar" for σεληνᾱ "moon")
     note      optional: extra remark, shown after the meaning
@@ -186,6 +188,16 @@ def check(entries):
                 err(f"doublet {e['doublet']} does not point back")
             elif "high" not in (register, other.get("register")):
                 err("one word of a doublet should be high register")
+        if "aorist" in e:
+            a = e["aorist"]
+            if pos != "verb":
+                err("only verbs take an aorist")
+            elif not a.endswith(("α", "αμην")):
+                err("aorist should end in -α (active) or -αμην (middle)")
+            for p in problems(a, high=register == "high"):
+                err(f"aorist: {p}")
+        elif pos == "verb" and e["layer"] == "doric":
+            err("Doric verb needs its aorist")
         if "base" in e:
             if e["pos"] != "adj":
                 err("only adjectives take a base")
@@ -269,7 +281,8 @@ def grammar(e):
     if pos == "noun":
         return f"n. {e['gender']}, {STEMS[e['stem']][2]}"
     if pos == "verb":
-        return "v. (middle)" if e["greek"].endswith("σθαι") else "v."
+        g = "v. (middle)" if e["greek"].endswith("σθαι") else "v."
+        return f"{g}, aor. *{e['aorist']}*" if "aorist" in e else g
     if pos == "prep":
         return f"prep. + {e['cases']}"
     return POS[pos]

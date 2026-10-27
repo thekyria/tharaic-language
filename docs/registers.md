@@ -17,7 +17,7 @@ The two registers relate much as native English words relate to French and Latin
 | prayers said at home | worship, theology and scripture |
 | talking to equals and children | formal letters, polite address, talking to strangers of rank |
 
-The old sacred register is now a **style of the high register**: temple speech uses high-register words and grammar, and it still uses chant forms when it is sung ([§ Worship](#worship)). The [Sacred Register](sacred.md) page describes the older temple style and will be revised to match.
+The old sacred register is now a **style of the high register**: temple speech uses high-register words and grammar, keeps its old formulas word for word, and still uses chant forms when it is sung ([§ Worship](#worship), [The Sacred Register](sacred.md)).
 
 ---
 
@@ -43,7 +43,7 @@ Because the learned words came after changes 2–4, none of those changes apply 
 
 ## Doublets
 
-The lexicon has about 290 high-register words. About 180 of them have an everyday counterpart, and the lexicon links each pair (↔ in the [Lexicon](lexicon.md)).
+The lexicon has about 300 high-register words. About 190 of them have an everyday counterpart, and the lexicon links each pair (↔ in the [Lexicon](lexicon.md)).
 
 | Kind | Everyday | High | English parallel |
 |------|----------|------|------------------|
@@ -127,26 +127,32 @@ The lexicon gives these chant forms, and `tools/build_lexicon.py` checks high-re
 
 ## Grammar
 
-The high register keeps Tharaic grammar: the eight cases, VSO order, the particles. It changes a few preferences. The full forms will come with the [grammar step of the roadmap](roadmap.md#plan).
+The high register keeps Tharaic grammar: the eight cases, VSO order inside each clause, the particles. It changes a few things:
 
-| Feature | Everyday | High |
-|---------|----------|------|
-| Telling the past | narrative *ϝα-* + present: *ϝα-νᾱϝει* | aorist: *ενᾱϝε*. *ϝα-* becomes a mark of oral tales and folk song |
-| Possession | genitive or construct | genitive. The construct survives only in fixed titles and divine names |
-| Long sentences | clauses joined by "and", relatives with *ϸε-* | participle phrases and subordinate clauses, in the manner of Greek prose |
-| Doric nouns | regular Tharaic endings, in their folk forms | some Doric endings kept, especially the genitive: *ψυχᾱς* "of the soul" (Doric *ψυχᾶς*), not *ψυχις*; *δᾱμω* "of the people" (Doric *δάμω*), not *δᾱμι*. The sea cases keep their Tharaic endings |
+| Feature | Everyday | High | See |
+|---------|----------|------|-----|
+| Telling the past | narrative *ϝα-* + present: *ϝα-νᾱϝει* | aorist: *ενᾱϝε*. *ϝα-* is a mark of oral tales and folk song, and survives in old formulas | [Narrative past](morphology.md#narrative-past-prefix-ϝα--phoenician-wayyiqtol-analog) |
+| Possession | genitive or construct | genitive. The construct survives only in divine names, fixed titles and "son of" in names | [Construct state](morphology.md#construct-state--phoenician-possession) |
+| Long sentences | clauses joined by "and", relatives with *ϸε-* | participle phrases, the genitive absolute, subordinate clauses placed before the main clause | [Participle phrases](syntax.md#participle-phrases) |
+| Conjunctions | *ιμ*, *οτε*, *λεμαϙαν*, *κεμω* | Doric *αι*, *ͱοκα*, *ͱινα*, *ͱως*, and *γαρ*, *ων* in second place | [High-register clauses](syntax.md#high-register-clauses) |
+| "was doing" | *εκανα* + present: *εκανε νᾱϝει* | *εκανα* + participle: *εκανε νᾱϝοντος* | [Imperfective past](morphology.md#imperfective-past-εκανα--present) |
+| Superlative | *-οτατος*, or the construct *ναϝιτ ναϝιμ* | *-οτατος* | [Comparison](morphology.md#comparison) |
+| Doric nouns | — | Doric endings in NOM, ACC, GEN, DAT, VOC; Tharaic endings in the sea cases and the dual: *ψυχᾱς* "of the soul", *ψυχελι* "in the soul" | [Doric nouns](morphology.md#doric-nouns-high-register) |
+| Doric verbs | — | 1st plural *-μες*, 3rd plural *-ντι*: *ποιομες*, *ποιοντι*; the Greek aorist stem: *εγραψα* | [Doric verbs](morphology.md#doric-verbs-high-register) |
 
-### Doric noun classes
+Three noun classes exist only for Doric words: **-ᾱς** (*ποιητᾱς* poet, GEN *ποιητᾱ*), **-μα** (*ποιημα* poem, GEN *ποιηματος*) and **-ις** (*ποιησις* poetry, GEN *ποιησιος*).
 
-Most Doric nouns end like Tharaic ones, in *-ος*, *-ᾱ* (or short *-α*), *-ον* or *-ευς*. Three endings have no Tharaic class, and the lexicon gives them classes of their own:
+### The same story in both registers
 
-| Class | Example | Genitive | Kind of word |
-|-------|---------|----------|--------------|
-| **-ᾱς** (AS) | *ποιητᾱς* poet | *ποιητᾱ* | men and their roles: *μαθητᾱς*, *πολιτᾱς*, *προφᾱτᾱς* |
-| **-μα** (MA) | *ποιημα* poem | *ποιηματος* | results and things: *γραμμα*, *σωμα*, *πνευμα* |
-| **-ις** (IS) | *ποιησις* poetry | *ποιησιος* | actions and qualities: *γνωσις*, *πιστις*, *πολις* (*χαρις* has *χαριτος*) |
+> **Everyday:** *Ϝα-ϝενει ϸερος προς καρτον. Ϝα-ιδει μαλακαρ, ϝα-ϸερει ϸαρον, ϝα-τεμεͱει δεμᾱ. Οτε εκελε, ϝα-κεβεδουσι-υ ϸᾱφιτιμ.*<br>
+> Va-venei sheros pros karton. Va-idei malakar, va-sherei sharon, va-temehei demā. Ote ekele, va-kebedousi-u shāphitim.<br>
+> NARR-comes singer toward town. NARR-sees assembly, NARR-sings song, NARR-marvels people. When he-finished, NARR-honor-him judges.
 
-Their full paradigms come with the grammar step of the [roadmap](roadmap.md#plan).
+> **High:** *Ηνθε ποιητᾱς προς πολιν. Βλεψαντος ͱᾱλιᾱν, ᾱεισε αοιδᾱν, και εθαυμασε δᾱμος. Ποιητᾱ τελεσαντι, εδοξασαν-υ κριται.*<br>
+> Ēnthe poiētās pros polin. Blepsantos hāliān, āeise aoidān, kai ethaumase dāmos. Poiētā telesanti, edoxasan-u kritai.<br>
+> Came poet toward city-ACC. Having-seen assembly-ACC, he-sang ode-ACC, and marveled people. Poet-GEN having-finished-GEN, glorified-him judges.
+
+"The singer came to the town. He saw the assembly, he sang a song, and the people marveled. When he had finished, the judges honored him." The high version has almost the same structure, but it uses Doric words and endings (*πολιν*, *ͱᾱλιᾱν*, *ποιητᾱ*, *κριται*), aorists in place of *ϝα-*, a participle (*βλεψαντος*) and a genitive absolute (*ποιητᾱ τελεσαντι*).
 
 ---
 
@@ -169,3 +175,4 @@ Doric learning reached the temple through its scholars. In the high register:
 - `register`: `high` for words used only in high speech, `everyday` for words avoided in it. Words without it belong to both.
 - `doublet`: the counterpart in the other register. The two entries point to each other.
 - `base`: for a learned adjective, the everyday noun it goes with.
+- `aorist`: for a Doric verb, its aorist, which cannot be predicted ([Doric verbs](morphology.md#doric-verbs-high-register)).

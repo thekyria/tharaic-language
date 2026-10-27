@@ -166,7 +166,7 @@ These later loans came after changes 2–4, so none of them apply. They also did
 |--|----------------|----------------|
 | Greek *η* from older *ā* | *η*: *σεληνᾱ*, *ͱημερον* | *ᾱ*: *σελᾱνᾱ*, *ͱᾱμερᾱ* |
 | Clusters | fitted to the syllable rules, or only obstruent + ρ/λ | kept: *ψυχᾱ*, *κτιζειν*, *σχολᾱ* |
-| Endings | Tharaic stem classes | Doric endings in some cases (genitive *ψυχᾱς*) |
+| Endings | Tharaic stem classes | Doric endings in the five Greek cases (genitive *ψυχᾱς*), Tharaic endings in the sea cases; Doric verb endings *-μες*, *-ντι* |
 | Gender | often by ending (*λιμᾱ* "harbor" is an animate A-stem) | by meaning (*θαλαμος* "chamber" is inanimate) |
 
 The two layers often borrowed the same Greek word, which gives doublets like *ͱημερον* / *ͱᾱμερᾱ* "day". Learned words that came into everyday use were later adapted like other loans: *σχολᾱ* > *ισχολᾱ* "schoolhouse". See [Registers](registers.md).

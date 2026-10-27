@@ -4,7 +4,7 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-1451 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+1462 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
@@ -323,7 +323,7 @@
 | *ζωᾱ* | zōā |  | n. IN, A-stem | life | Doric *ζωά* |  | high ↔ *χαϳον* |
 | *ͱυγιεια* | hygieia |  | n. IN, A-stem | health | Doric *ὑγίεια* |  | high |
 | *θεραπειᾱ* | therapeiā |  | n. IN, A-stem | treatment, care; service | Doric *θεραπεία* |  | high |
-| *θεραπευειν* | therapeuein |  | v. | to treat, heal; to serve | Doric *θεραπεύω* |  | high ↔ *ρεφειν* |
+| *θεραπευειν* | therapeuein |  | v., aor. *εθεραπευσα* | to treat, heal; to serve | Doric *θεραπεύω* |  | high ↔ *ρεφειν* |
 | *ιατρικᾱ* | iatrikā |  | n. IN, A-stem | medicine, the healer's art | Doric *ἰατρικά* | *ιατιρικᾱ* | high |
 | *ιατρος* | iatros |  | n. AN, O-stem | physician | Doric *ἰατρός* | *ιατορος* | high ↔ *ρεφος* |
 | *ιλεμος / ιλεμον* | ilemos / ilemon | Α-Λ-Μ | adj. | mute, unable to speak | native (cf. Hebrew *ʾillēm*) |  |  |
@@ -639,7 +639,7 @@
 | *δηναριον* | dēnarion |  | n. IN, ON-stem | denarius, a day's wage in silver | Greek *δηνάριον* |  |  |
 | *εμπορικος / εμπορικον* | emporikos / emporikon |  | adj. | commercial, of trade | Doric *ἐμπορικός* |  | high adj. for *εμποριον* |
 | *εμποριον* | emporion |  | n. IN, ON-stem | trading post, market | Greek *ἐμπόριον* |  |  |
-| *εργαζεσθαι* | ergazesthai |  | v. (middle) | to work | Doric *ἐργάζομαι* |  | high ↔ *ϙεμελειν* |
+| *εργαζεσθαι* | ergazesthai |  | v. (middle), aor. *ηργασαμην* | to work | Doric *ἐργάζομαι* |  | high ↔ *ϙεμελειν* |
 | *εργον* | ergon |  | n. IN, ON-stem | work, deed | Doric *ἔργον* |  | high ↔ *ϙασον* |
 | *ζαͱαρευς* | zahareus |  | n. AN, -ευς | goldsmith | native |  |  |
 | *ζαͱαρον* | zaharon |  | n. IN, ON-stem | gold | Phoenician *zhb* |  |  |
@@ -774,12 +774,12 @@
 | *καρτον* | karton |  | n. IN, ON-stem | city, town | Phoenician *qrt* |  | ↔ *πολις* |
 | *καφαρον* | kapharon |  | n. IN, ON-stem | village | Phoenician (cf. Aramaic *kəpar*) |  |  |
 | *κισον* | kison |  | n. IN, ON-stem | throne, seat of honor | Phoenician (cf. Hebrew *kissēʾ*) |  |  |
-| *κρινειν* | krinein |  | v. | to judge, decide | Doric *κρίνω* | *κιρινειν* | high ↔ *ϸεφετειν* |
+| *κρινειν* | krinein |  | v., aor. *εκρινα* | to judge, decide | Doric *κρίνω* | *κιρινειν* | high ↔ *ϸεφετειν* |
 | *κρισις* | krisis |  | n. IN, Doric -ις | judgment, decision | Doric *κρίσις* | *κιρισις* | high ↔ *ϸαφατον* |
 | *κριτᾱς* | kritās |  | n. AN, Doric -ᾱς | judge | Doric *κριτάς* | *κιριτᾱς* | high ↔ *ϸᾱφιτος* |
 | *μαγαδαλαρ* | magadalar | Γ-Δ-Λ | n. IN, AR-stem | tower | native (cf. Hebrew *migdāl*) |  |  |
 | *μαρδον* | mardon | Μ-Ρ-Δ | n. IN, ON-stem | rebellion, riot | native |  |  |
-| *μαρτυρειν* | martyrein |  | v. | to bear witness | Doric *μαρτυρέω* |  | high ↔ *ϙεδειν* |
+| *μαρτυρειν* | martyrein |  | v., aor. *εμαρτυρησα* | to bear witness | Doric *μαρτυρέω* |  | high ↔ *ϙεδειν* |
 | *μαρτυριᾱ* | martyriā |  | n. IN, A-stem | testimony | Doric *μαρτυρία* |  | high ↔ *ϙαδον* |
 | *μαστιγον* | mastigon |  | n. IN, ON-stem | whip, scourge; a scourge of illness | Greek *μάστιξ* |  |  |
 | *μαστιζειν* | mastizein |  | v. | to whip, scourge | Greek *μαστίζειν* |  |  |
@@ -841,7 +841,7 @@
 |---------|-----------|------|---------|---------|--------|-------|----------|
 | *αγαλμα* | agalma |  | n. IN, Doric -μα | statue, image of a god | Doric *ἄγαλμα* |  | high ↔ *σελεμον* |
 | *αγαπᾱ* | agapā |  | n. IN, A-stem | love (selfless, divine) | Doric *ἀγάπα* |  | high ↔ *αͱαβον* |
-| *αγαπειν* | agapein |  | v. | to love (with selfless love) | Doric *ἀγαπάω* |  | high ↔ *εͱεβειν* |
+| *αγαπειν* | agapein |  | v., aor. *ᾱγαπᾱσα* | to love (with selfless love) | Doric *ἀγαπάω* |  | high ↔ *εͱεβειν* |
 | *αͱαβον* | ahabon | Α-Ͱ-Β | n. IN, ON-stem | love | native (cf. Hebrew *ʾahăbāh*) |  | ↔ *αγαπᾱ* |
 | *αθανασιᾱ* | athanasiā |  | n. IN, A-stem | immortality | Doric *ἀθανασία* |  | high |
 | *αθανατος / αθανατον* | athanatos / athanaton |  | adj. | immortal, deathless | Doric *ἀθάνατος* |  | high |
@@ -856,7 +856,7 @@
 | *αρερειν* | arerein | Α-Ρ-Ρ | v. | to curse | native |  |  |
 | *αϸαρος / αϸαρον* | asharos / asharon | Α-Ϸ-Ρ | adj. | blessed, happy | native (cf. Hebrew *ʾašrê*) |  | ↔ *μακαριος* |
 | *αφεσις* | aphesis |  | n. IN, Doric -ις | forgiveness, release | Doric *ἄφεσις* |  | high ↔ *σαλαχον* |
-| *βαπτιζειν* | baptizein |  | v. | to immerse, baptize | Doric *βαπτίζω* | *βαπιτιζειν* | high ↔ *τεβελειν* |
+| *βαπτιζειν* | baptizein |  | v., aor. *εβαπτισα* | to immerse, baptize | Doric *βαπτίζω* | *βαπιτιζειν* | high ↔ *τεβελειν* |
 | *βαπτισμα* | baptisma |  | n. IN, Doric -μα | baptism | Doric *βάπτισμα* | *βαπιτισμα* | high ↔ *ταβαλον* |
 | *βαπτιστᾱς* | baptistās |  | n. AN, Doric -ᾱς | baptizer, the Baptist | Doric *βαπτιστάς* | *βαπιτιστᾱς* | high ↔ *τεβελος* |
 | *βαρατον* | baraton | Β-Ρ-Τ | n. IN, ON-stem | covenant, binding contract | native (cf. Hebrew *bərît*) |  |  |
@@ -876,25 +876,25 @@
 | *δικαιοσυνᾱ* | dikaiosynā |  | n. IN, A-stem | justice, righteousness (as a virtue) | Doric *δικαιοσύνα* |  | high ↔ *σαδακον* |
 | *δικαιος / δικαιον* | dikaios / dikaion |  | adj. | just, righteous | Doric *δίκαιος* |  | high ↔ *σαδικος* |
 | *δοξα* | doxa |  | n. IN, A-stem | glory; opinion | Doric *δόξα* |  | high ↔ *καβαδον* |
-| *δοξαζειν* | doxazein |  | v. | to glorify; to hold an opinion | Doric *δοξάζω* |  | high ↔ *κεβεδειν* |
+| *δοξαζειν* | doxazein |  | v., aor. *εδοξασα* | to glorify; to hold an opinion | Doric *δοξάζω* |  | high ↔ *κεβεδειν* |
 | *δυναμις* | dynamis |  | n. IN, Doric -ις | power; a mighty work | Doric *δύναμις* |  | high ↔ *ϙαζον* |
 | *εͱεβειν* | ehebein | Α-Ͱ-Β | v. | to love | native |  | ↔ *αγαπειν* |
 | *ειρᾱνᾱ* | eirānā |  | n. IN, A-stem | peace | Doric *εἰράνα* |  | high ↔ *ϸαλαμον* |
-| *ελεειν* | eleein |  | v. | to have mercy | Doric *ἐλεέω* |  | high ↔ *ρεχεμειν* |
+| *ελεειν* | eleein |  | v., aor. *ηλεησα* | to have mercy | Doric *ἐλεέω* |  | high ↔ *ρεχεμειν* |
 | *ελπον* | elpon |  | n. IN, ON-stem | hope | Greek *ἐλπίς* |  |  |
 | *εμενειν* | emenein | Α-Μ-Ν | v. | to believe, trust | native (cf. Hebrew *heʾĕmîn*) |  | ↔ *πιστευειν* |
 | *ευανγελιον* | euangelion |  | n. IN, ON-stem | good news, the gospel | Doric *εὐαγγέλιον* |  | high ↔ *βασαρον* |
-| *ευλογειν* | eulogein |  | v. | to bless | Doric *εὐλογέω* |  | high ↔ *βερεχειν* |
+| *ευλογειν* | eulogein |  | v., aor. *ευλογησα* | to bless | Doric *εὐλογέω* |  | high ↔ *βερεχειν* |
 | *ευλογιᾱ* | eulogiā |  | n. IN, A-stem | blessing | Doric *εὐλογία* |  | high ↔ *βαραχον* |
-| *ευχαριστειν* | eukharistein |  | v. | to give thanks | Doric *εὐχαριστέω* |  | high ↔ *ϳεδειν* |
+| *ευχαριστειν* | eukharistein |  | v., aor. *ευχαριστησα* | to give thanks | Doric *εὐχαριστέω* |  | high ↔ *ϳεδειν* |
 | *ευχᾱ* | eukhā |  | n. IN, A-stem | prayer; vow | Doric *εὐχά* |  | high ↔ *λιτον* |
-| *ευχεσθαι* | eukhesthai |  | v. (middle) | to pray | Doric *εὔχομαι* |  | high ↔ *λιτεσθαι* |
+| *ευχεσθαι* | eukhesthai |  | v. (middle), aor. *ευξαμην* | to pray | Doric *εὔχομαι* |  | high ↔ *λιτεσθαι* |
 | *ζαβαχον* | zabakhon | Ζ-Β-Χ | n. IN, ON-stem | sacrifice, offering | native |  | ↔ *θυσιᾱ* |
 | *ζακαρον* | zakaron | Ζ-Κ-Ρ | n. IN, ON-stem | memory, memorial | native (cf. Hebrew *zēker*) |  | ↔ *μνᾱμᾱ* |
 | *ζαμαρον* | zamaron | Ζ-Μ-Ρ | n. IN, ON-stem | psalm | native (cf. Hebrew *mizmôr*) |  |  |
 | *ζεβεχειν* | zebekhein | Ζ-Β-Χ | v. | to sacrifice | native |  | ↔ *θυειν* |
 | *ζεκερειν* | zekerein | Ζ-Κ-Ρ | v. | to remember | native |  |  |
-| *ͱαμαρτανειν* | hamartanein |  | v. | to sin | Doric *ἁμαρτάνω* |  | high ↔ *χετειν* |
+| *ͱαμαρτανειν* | hamartanein |  | v., aor. *ͱᾱμαρτησα* | to sin | Doric *ἁμαρτάνω* |  | high ↔ *χετειν* |
 | *ͱαμαρτιᾱ* | hamartiā |  | n. IN, A-stem | sin | Doric *ἁμαρτία* |  | high ↔ *χατον* |
 | *ͱαμαρτωλος* | hamartōlos |  | n. AN, O-stem | sinner | Doric *ἁμαρτωλός* |  | high ↔ *χετος* |
 | *ͱεκαλον* | hekalon |  | n. IN, ON-stem | temple; palace | Phoenician *hkl* |  | ↔ *ναος* |
@@ -903,7 +903,7 @@
 | *ͱιαρον* | hiaron |  | n. IN, ON-stem | sanctuary, holy precinct | Doric *ἱαρόν* |  | high ↔ *μακαδαϸαρ* |
 | *ͱιαρος / ͱιαρον* | hiaros / hiaron |  | adj. | sacred, holy | Doric *ἱαρός* |  | high ↔ *καδοϸος* |
 | *ͱορκον* | horkon |  | n. IN, ON-stem | oath | Greek *ὅρκος* |  |  |
-| *ͱυμνειν* | hymnein |  | v. | to praise in hymns, to hymn | Doric *ὑμνέω* |  | high ↔ *ͱελελειν* |
+| *ͱυμνειν* | hymnein |  | v., aor. *ͱῡμνησα* | to praise in hymns, to hymn | Doric *ὑμνέω* |  | high ↔ *ͱελελειν* |
 | *ͱυμνον* | hymnon |  | n. IN, ON-stem | hymn | Greek *ὕμνος* |  |  |
 | *ηλᾱ* | ēlā |  | n. AN, A-stem | goddess | Phoenician *ʾlt* |  |  |
 | *ηλος* | ēlos |  | n. AN, O-stem | god; plural *ηλιμ* 'the gods' | Phoenician *ʾl* |  |  |
@@ -912,7 +912,7 @@
 | *θαυμα* | thauma |  | n. IN, Doric -μα | wonder, marvel | Doric *θαῦμα* |  | high ↔ *μοφετον* |
 | *θειος / θειον* | theios / theion |  | adj. | divine | Doric *θεῖος* |  | high adj. for *ηλος* |
 | *θεολογιᾱ* | theologiā |  | n. IN, A-stem | theology, discourse about the gods | Doric *θεολογία* |  | high |
-| *θυειν* | thuein |  | v. | to sacrifice | Doric *θύω* |  | high ↔ *ζεβεχειν* |
+| *θυειν* | thuein |  | v., aor. *εθυσα* | to sacrifice | Doric *θύω* |  | high ↔ *ζεβεχειν* |
 | *θυσιᾱ* | thysiā |  | n. IN, A-stem | sacrifice | Doric *θυσία* |  | high ↔ *ζαβαχον* |
 | *ϳαϸαϙον* | yashaghon | Ϳ-Ϸ-Ϙ | n. IN, ON-stem | salvation, rescue | native |  | ↔ *σωτηριᾱ* |
 | *ϳᾱϸιϙος* | yāshighos | Ϳ-Ϸ-Ϙ | n. AN, O-stem | savior, deliverer | native |  |  |
@@ -932,7 +932,7 @@
 | *κοͱενος* | kohenos |  | n. AN, O-stem | priest | Phoenician *khn* |  | ↔ *ͱιαρευς* |
 | *κοσμικος / κοσμικον* | kosmikos / kosmikon |  | adj. | of the world, cosmic | Doric *κοσμικός* |  | high adj. for *κοσμον* |
 | *κοσμον* | kosmon |  | n. IN, ON-stem | order; the world | Greek *κόσμος* |  |  |
-| *κτιζειν* | ktizein |  | v. | to found (a city); to create (of a god) | Doric *κτίζειν* | *κιτιζειν* | high ↔ *βερειν* |
+| *κτιζειν* | ktizein |  | v., aor. *εκτισα* | to found (a city); to create (of a god) | Doric *κτίζειν* | *κιτιζειν* | high ↔ *βερειν* |
 | *κτισις* | ktisis |  | n. IN, Doric -ις | creation, the created world | Doric *κτίσις* | *κιτισις* | high |
 | *λαμαδον* | lamadon | Λ-Μ-Δ | n. IN, ON-stem | teaching, doctrine | native |  | ↔ *διδαχᾱ* |
 | *λᾱμιδειν* | lāmidein | Λ-Μ-Δ | v. | to teach — built on *λᾱμιδος* | native |  | ↔ *διδασκειν* |
@@ -959,7 +959,7 @@
 | *μᾱϸιχος* | māshikhos | Μ-Ϸ-Χ | n. AN, O-stem | the Anointed One, messiah | native (cf. Hebrew *māšîaḥ*) |  |  |
 | *μᾱτος* | mātos | Μ-Τ | n. AN, O-stem | Death (personified) | native (cf. Ugaritic *mt*, the god Mot) |  |  |
 | *μεϸεχειν* | meshekhein | Μ-Ϸ-Χ | v. | to anoint | native (cf. Hebrew *māšaḥ*) |  |  |
-| *μετανοειν* | metanoein |  | v. | to repent | Doric *μετανοέω* |  | high ↔ *ϸεβειν* |
+| *μετανοειν* | metanoein |  | v., aor. *μετενοησα* | to repent — the augment goes after the prefix, as in Greek | Doric *μετανοέω* |  | high ↔ *ϸεβειν* |
 | *μετανοια* | metanoia |  | n. IN, A-stem | repentance, change of heart | Doric *μετάνοια* |  | high ↔ *ϸαβον* |
 | *μισειν* | misein |  | v. | to hate | Greek *μισεῖν* |  |  |
 | *μισον* | mison |  | n. IN, ON-stem | hatred | Greek *μῖσος* |  |  |
@@ -985,14 +985,14 @@
 | *περιτεμνειν* | peritemnein |  | v. | to circumcise | Greek *περιτέμνειν* |  |  |
 | *περιτομον* | peritomon |  | n. IN, ON-stem | circumcision | Greek *περιτομή* |  |  |
 | *πεσαχον* | pesakhon |  | n. IN, ON-stem | the Passover; the lamb eaten at it | Phoenician (cf. Hebrew *pesaḥ*) |  |  |
-| *πιστευειν* | pisteuein |  | v. | to believe, trust | Doric *πιστεύω* |  | high ↔ *εμενειν* |
+| *πιστευειν* | pisteuein |  | v., aor. *επιστευσα* | to believe, trust | Doric *πιστεύω* |  | high ↔ *εμενειν* |
 | *πιστις* | pistis |  | n. IN, Doric -ις | faith, trust | Doric *πίστις* |  | high ↔ *αμανον* |
 | *πιστος / πιστον* | pistos / piston |  | adj. | faithful, trustworthy | Doric *πιστός* |  | high ↔ *αμινος* |
 | *πνευμα* | pneuma |  | n. AN, Doric -μα | spirit; the breath of a god | Doric *πνεῦμα* | *πενευμα* | high ↔ *ρῡχᾱ* |
 | *πνευματικος / πνευματικον* | pneumatikos / pneumatikon |  | adj. | spiritual | Doric *πνευματικός* | *πενευματικος / πενευματικον* | high adj. for *ρῡχᾱ* |
 | *πολεμον* | polemon |  | n. IN, ON-stem | war | Greek *πόλεμος* |  |  |
 | *προφᾱτᾱς* | prophātās |  | n. AN, Doric -ᾱς | prophet | Doric *προφάτας* | *ποροφᾱτᾱς* | high ↔ *νᾱβιος* |
-| *προφᾱτευειν* | prophāteuein |  | v. | to prophesy | Doric *προφατεύω* | *ποροφᾱτευειν* | high ↔ *νᾱβειν* |
+| *προφᾱτευειν* | prophāteuein |  | v., aor. *επροφᾱτευσα* | to prophesy | Doric *προφατεύω* | *ποροφᾱτευειν* | high ↔ *νᾱβειν* |
 | *ϙαζον* | ghazon | Ϙ-Ζ | n. IN, ON-stem | strength, might | native (cf. Hebrew *ʿōz*) |  | ↔ *δυναμις* |
 | *ϙαλαμικος / ϙαλαμικον* | ghalamikos / ghalamikon | Ϙ-Λ-Μ | adj. | eternal, of the world-age | native |  | ↔ *αιωνιος* |
 | *ϙαλαμον* | ghalamon | Ϙ-Λ-Μ | n. IN, ON-stem | eternity, the world-age | native (cf. Hebrew *ʿôlām*) |  |  |
@@ -1066,10 +1066,10 @@
 | Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
 |---------|-----------|------|---------|---------|--------|-------|----------|
 | *αισχυνᾱ* | aiskhynā |  | n. IN, A-stem | shame | Doric *αἰσχύνα* |  | high ↔ *βαϸον* |
-| *αιτειν* | aitein |  | v. | to ask for, request | Doric *αἰτέω* |  | high ↔ *ϸελειν* |
-| *ανγελλειν* | angellein |  | v. | to announce, report | Doric *ἀγγέλλω* |  | high ↔ *νεγεδειν* |
+| *αιτειν* | aitein |  | v., aor. *αιτησα* | to ask for, request | Doric *αἰτέω* |  | high ↔ *ϸελειν* |
+| *ανγελλειν* | angellein |  | v., aor. *ᾱνγειλα* | to announce, report | Doric *ἀγγέλλω* |  | high ↔ *νεγεδειν* |
 | *ανεχειν* | anekhein | Α-Ν-Χ | v. | to sigh, groan | native (cf. Hebrew *ʾānaḥ*) |  |  |
-| *αποκρινεσθαι* | apokrinesthai |  | v. (middle) | to answer, reply | Doric *ἀποκρίνομαι* |  | high ↔ *ϙενειν* |
+| *αποκρινεσθαι* | apokrinesthai |  | v. (middle), aor. *απεκριναμην* | to answer, reply | Doric *ἀποκρίνομαι* |  | high ↔ *ϙενειν* |
 | *αρετᾱ* | aretā |  | n. IN, A-stem | virtue, excellence | Doric *ἀρετά* |  | high |
 | *βεζειν* | bezein | Β-Ζ | v. | to despise, scorn | native (cf. Hebrew *bāzāh*) |  |  |
 | *βεͱελειν* | behelein | Β-Ͱ-Λ | v. | to trouble, alarm; middle *βεͱελεσθαι* 'to be troubled' | native (cf. Hebrew *bāhal*) |  |  |
@@ -1082,18 +1082,18 @@
 | *επιθυμιᾱ* | epithymiā |  | n. IN, A-stem | desire, craving | Doric *ἐπιθυμία* |  | high ↔ *χαμαδον* |
 | *ευδαιμονιᾱ* | eudaimoniā |  | n. IN, A-stem | happiness, a flourishing life | Doric *εὐδαιμονία* |  | high |
 | *ζᾱλος* | zālos |  | n. IN, O-stem | zeal; rivalry | Doric *ζᾶλος* |  | high ↔ *κιναον* |
-| *ζᾱτειν* | zātein |  | v. | to seek, inquire | Doric *ζατέω* |  | high ↔ *βεκεϸειν* |
+| *ζᾱτειν* | zātein |  | v., aor. *εζᾱτησα* | to seek, inquire | Doric *ζατέω* |  | high ↔ *βεκεϸειν* |
 | *ͱᾱδονᾱ* | hādonā |  | n. IN, A-stem | pleasure | Doric *ἁδονά* |  | high ↔ *ϙαδανον* |
 | *ͱεσειν* | hesein | Ͱ-Σ | v. | to be silent, keep still | native (cf. Hebrew *has* 'hush!') |  |  |
 | *ͱυβρις* | hybris |  | n. IN, Doric -ις | insolence, pride | Doric *ὕβρις* | *ͱυβιρις* | high ↔ *γαϝον* |
-| *θαυμαζειν* | thaumazein |  | v. | to marvel, wonder at | Doric *θαυμάζω* |  | high ↔ *τεμεͱειν* |
+| *θαυμαζειν* | thaumazein |  | v., aor. *εθαυμασα* | to marvel, wonder at | Doric *θαυμάζω* |  | high ↔ *τεμεͱειν* |
 | *θελημον* | thelēmon |  | n. IN, ON-stem | will, wish | Greek *θέλημα* |  |  |
 | *ϳαϙασον* | yaghason | Ϳ-Ϙ-Σ | n. IN, ON-stem | counsel, plan, plot | native |  | ↔ *βουλᾱ* |
 | *ϳεκεχειν* | yekekhein | Ϳ-Κ-Χ | v. | to rebuke, convict, prove wrong | native (cf. Hebrew *hôkîaḥ*) |  |  |
 | *ϳεϙεσειν* | yeghesein | Ϳ-Ϙ-Σ | v. | to advise; middle *ϳεϙεσεσθαι* 'to take counsel, plot' | native (cf. Hebrew *yāʿaṣ*) |  |  |
 | *ϳεσερειν* | yeserein | Ϳ-Σ-Ρ | v. | to discipline, instruct | native (cf. Hebrew *yissar*) |  |  |
 | *καρυγμα* | karygma |  | n. IN, Doric -μα | proclamation, preaching | Doric *κάρυγμα* | *καρυγαμα* | high |
-| *καρυσσειν* | karyssein |  | v. | to proclaim, preach | Doric *καρύσσω* |  | high ↔ *κερειν* |
+| *καρυσσειν* | karyssein |  | v., aor. *εκαρυξα* | to proclaim, preach | Doric *καρύσσω* |  | high ↔ *κερειν* |
 | *κασιλος / κασιλον* | kasilos / kasilon | Κ-Σ-Λ | adj. | foolish; *κασιλος* 'a fool' | native (cf. Hebrew *kəsîl*) |  |  |
 | *κεϝειν* | kevein | Κ-Ϝ | v. | to wait for, expect | native (cf. Hebrew *qiwwāh*) |  |  |
 | *κερειν* | kerein | Κ-Ρ | v. | to cry out, proclaim aloud; to read aloud | native (cf. Hebrew *qārāʾ*) |  | ↔ *καρυσσειν* |
@@ -1101,7 +1101,7 @@
 | *κεχεϸειν* | kekheshein | Κ-Χ-Ϸ | v. | to deny, disown | native (cf. Hebrew *kiḥēš*) |  |  |
 | *κιναον* | kinaon |  | n. IN, ON-stem | jealousy, envy; zeal | Phoenician (cf. Hebrew *qinʾāh*) |  | ↔ *ζᾱλος* |
 | *λεϙεγειν* | leghegein | Λ-Ϙ-Γ | v. | to mock | native (cf. Hebrew *lāʿag*) |  |  |
-| *λογιζεσθαι* | logizesthai |  | v. (middle) | to reckon, reason, consider | Doric *λογίζομαι* |  | high ↔ *χεϸεβειν* |
+| *λογιζεσθαι* | logizesthai |  | v. (middle), aor. *ελογισαμην* | to reckon, reason, consider | Doric *λογίζομαι* |  | high ↔ *χεϸεβειν* |
 | *λυπᾱ* | lypā |  | n. IN, A-stem | grief, sorrow | Doric *λύπα* |  | high ↔ *πενθον* |
 | *μακαρον* | makaron |  | n. IN, ON-stem | chance, what befalls | Phoenician (cf. Hebrew *miqreh*) |  |  |
 | *μαρεον* | mareon |  | n. IN, ON-stem | sight, appearance, form; a vision | Phoenician (cf. Hebrew *marʾeh*) |  |  |
@@ -1112,7 +1112,7 @@
 | *νεγεδειν* | negedein | Ν-Γ-Δ | v. | to tell, report, make known | native (cf. Hebrew *higgîd*) |  | ↔ *ανγελλειν* |
 | *νεκερειν* | nekerein | Ν-Κ-Ρ | v. | to recognize | native (cf. Hebrew *hikkîr*) |  |  |
 | *νεχεμειν* | nekhemein | Ν-Χ-Μ | v. | to comfort, console; to urge, entreat | native (cf. Hebrew *niḥam*) |  |  |
-| *νοειν* | noein |  | v. | to perceive, understand | Doric *νοέω* |  | high ↔ *σεκελειν* |
+| *νοειν* | noein |  | v., aor. *ενοησα* | to perceive, understand | Doric *νοέω* |  | high ↔ *σεκελειν* |
 | *νοος* | noos |  | n. IN, O-stem | mind, understanding | Doric *νόος* |  | high ↔ *σακαλον* |
 | *οργᾱ* | orgā |  | n. IN, A-stem | wrath, anger | Doric *ὀργά* |  | high ↔ *αφον* |
 | *παραβολᾱ* | parabolā |  | n. IN, A-stem | parable | Doric *παραβολά* |  | high ↔ *μαϸαλον* |
@@ -1132,7 +1132,7 @@
 | *σεμεχειν* | semekhein | Σ-Μ-Χ | v. | to rejoice, be glad | native (cf. Hebrew *śāmaḥ*) |  | ↔ *χαιρειν* |
 | *σεϙεκειν* | seghekein | Σ-Ϙ-Κ | v. | to cry out, shout | native (cf. Hebrew *ṣāʿaq*) |  |  |
 | *σεϙεφειν* | seghephein | Σ-Ϙ-Φ | v. | to doubt, waver | native (cf. Hebrew *sēʿēp*) |  |  |
-| *σκοπειν* | skopein |  | v. | to examine, consider | Doric *σκοπέω* | *σοκοπειν* | high ↔ *κεϸεβειν* |
+| *σκοπειν* | skopein |  | v., aor. *εσκοπησα* | to examine, consider | Doric *σκοπέω* | *σοκοπειν* | high ↔ *κεϸεβειν* |
 | *σοδον* | sodon |  | n. IN, ON-stem | secret, mystery; a close council | Phoenician (cf. Hebrew *sôd*) |  | ↔ *μυστηριον* |
 | *σοφος / σοφον* | sophos / sophon |  | adj. | wise, learned, skilled | Doric *σοφός* |  | high ↔ *χακαμικος* |
 | *σωφροσυνᾱ* | sōphrosynā |  | n. IN, A-stem | self-control, temperance | Doric *σωφροσύνα* | *σωφοροσυνᾱ* | high |
@@ -1145,7 +1145,7 @@
 | *τερεγεμειν* | teregemein | Τ-Ρ-Γ-Μ | v. | to translate, interpret | native (cf. Aramaic *tirgēm*) |  |  |
 | *φθονος* | phthonos |  | n. IN, O-stem | envy | Doric *φθόνος* | *φοθονος* | high |
 | *φιλειν* | philein |  | v. | to love (as a friend), to like; to kiss | Greek *φιλεῖν* |  |  |
-| *χαιρειν* | khairein |  | v. | to rejoice; imperative *χαιρε* 'greetings!' | Doric *χαίρω* |  | high ↔ *σεμεχειν* |
+| *χαιρειν* | khairein |  | v., aor. *εχαρα* | to rejoice; imperative *χαιρε* 'greetings!' — the aorist takes the -α endings on the stem *χαρ-* | Doric *χαίρω* |  | high ↔ *σεμεχειν* |
 | *χακαμικος / χακαμικον* | khakamikos / khakamikon | Χ-Κ-Μ | adj. | wise, prudent | native |  | ↔ *σοφος* |
 | *χαμαδον* | khamadon | Χ-Μ-Δ | n. IN, ON-stem | desire, longing | native |  | ↔ *επιθυμιᾱ* |
 | *χαραφον* | kharaphon | Χ-Ρ-Φ | n. IN, ON-stem | reproach, disgrace | native |  |  |
@@ -1161,13 +1161,13 @@
 
 | Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
 |---------|-----------|------|---------|---------|--------|-------|----------|
-| *αειδειν* | aeidein |  | v. | to sing (in poetry) | Doric *ἀείδω* |  | high ↔ *ϸερειν* |
+| *αειδειν* | aeidein |  | v., aor. *ᾱεισα* | to sing (in poetry) | Doric *ἀείδω* |  | high ↔ *ϸερειν* |
 | *αισθᾱσις* | aisthāsis |  | n. IN, Doric -ις | perception, sensation | Doric *αἴσθασις* |  | high |
 | *αλᾱθεια* | alātheia |  | n. IN, A-stem | truth | Doric *ἀλάθεια* |  | high ↔ *αληθον* |
 | *αλᾱθινος / αλᾱθινον* | alāthinos / alāthinon |  | adj. | true, genuine | Doric *ἀλαθινός* |  | high ↔ *αληθινος* |
 | *αναλογιᾱ* | analogiā |  | n. IN, A-stem | proportion, analogy | Doric *ἀναλογία* |  | high |
 | *αοιδᾱ* | aoidā |  | n. IN, A-stem | song, ode | Doric *ἀοιδά* |  | high ↔ *ϸαρον* |
-| *αριθμειν* | arithmein |  | v. | to count, number | Doric *ἀριθμέω* | *αριθεμειν* | high ↔ *σεφερειν* |
+| *αριθμειν* | arithmein |  | v., aor. *ᾱριθμησα* | to count, number | Doric *ἀριθμέω* | *αριθεμειν* | high ↔ *σεφερειν* |
 | *αριθμος* | arithmos |  | n. IN, O-stem | number | Doric *ἀριθμός* | *αριθομος* | high |
 | *αρχᾱ* | arkhā |  | n. IN, A-stem | beginning; first principle; rule, office | Doric *ἀρχά* |  | high ↔ *ραϸιτον* |
 | *αστρονομιᾱ* | astronomiā |  | n. IN, A-stem | astronomy | Doric *ἀστρονομία* | *αστορονομιᾱ* | high |
@@ -1180,14 +1180,14 @@
 | *γραμμα* | gramma |  | n. IN, Doric -μα | letter (of the alphabet); plural *γραμματα* 'letters, learning' | Doric *γράμμα* | *γαραμμα* | high ↔ *καταβον* |
 | *γραμματευς* | grammateus |  | n. AN, -ευς | secretary, learned scribe | Doric *γραμματεύς* | *γαραμματευς* | high ↔ *κᾱτιβος* |
 | *γραμμᾱ* | grammā |  | n. IN, A-stem | line (in geometry) | Doric *γραμμά* | *γαραμμᾱ* | high |
-| *γραφειν* | graphein |  | v. | to write (a book, a law) | Doric *γράφω* | *γαραφειν* | high ↔ *κετεβειν* |
+| *γραφειν* | graphein |  | v., aor. *εγραψα* | to write (a book, a law) | Doric *γράφω* | *γαραφειν* | high ↔ *κετεβειν* |
 | *διδασκαλος* | didaskalos |  | n. AN, O-stem | teacher, schoolmaster | Doric *διδάσκαλος* |  | high ↔ *λᾱμιδος* |
-| *διδασκειν* | didaskein |  | v. | to teach | Doric *διδάσκω* |  | high ↔ *λᾱμιδειν* |
+| *διδασκειν* | didaskein |  | v., aor. *εδιδαξα* | to teach | Doric *διδάσκω* |  | high ↔ *λᾱμιδειν* |
 | *διδαχᾱ* | didakhā |  | n. IN, A-stem | teaching, doctrine | Doric *διδαχά* |  | high ↔ *λαμαδον* |
 | *επιστᾱμᾱ* | epistāmā |  | n. IN, A-stem | science, systematic knowledge | Doric *ἐπιστάμα* |  | high |
 | *επιστολᾱ* | epistolā |  | n. IN, A-stem | letter, epistle | Doric *ἐπιστολά* |  | high |
 | *ζωγραφος* | zōgraphos |  | n. AN, O-stem | painter | Doric *ζωγράφος* | *ζωγαραφος* | high |
-| *ͱαρμοζειν* | harmozein |  | v. | to fit together; to tune | Doric *ἁρμόζω* |  | high |
+| *ͱαρμοζειν* | harmozein |  | v., aor. *ͱᾱρμοσα* | to fit together; to tune | Doric *ἁρμόζω* |  | high |
 | *ͱαρμονιᾱ* | harmoniā |  | n. IN, A-stem | harmony; the tuning of strings | Doric *ἁρμονία* |  | high |
 | *ισχολᾱ* | iskholā |  | n. IN, A-stem | schoolhouse, where children learn their letters | Doric (folk form of Doric *σχολά*) |  | everyday ↔ *σχολᾱ* |
 | *κιθαρᾱ* | kitharā |  | n. IN, A-stem | lyre, cithara | Doric *κιθάρα* |  | high |
@@ -1197,13 +1197,13 @@
 | *λογος* | logos |  | n. IN, O-stem | word, discourse; reason | Doric *λόγος* |  | high ↔ *λακον* |
 | *μαθημα* | mathēma |  | n. IN, Doric -μα | lesson; a branch of learning; plural *μαθηματα* 'mathematics' | Doric *μάθημα* |  | high |
 | *μαθητᾱς* | mathētās |  | n. AN, Doric -ᾱς | pupil, student, disciple | Doric *μαθητάς* |  | high ↔ *λεμεδος* |
-| *μανθανειν* | manthanein |  | v. | to learn (by study) | Doric *μανθάνω* |  | high ↔ *λεμεδειν* |
+| *μανθανειν* | manthanein |  | v., aor. *εμαθα* | to learn (by study) — the Greek strong aorist *ἔμαθον* takes the -α endings | Doric *μανθάνω* |  | high ↔ *λεμεδειν* |
 | *μυθος* | mythos |  | n. IN, O-stem | tale, myth | Doric *μῦθος* |  | high |
 | *μωσα* | mōsa |  | n. AN, A-stem | Muse, a goddess of song; the gift of song | Doric *Μῶσα* |  | high |
 | *μωσικᾱ* | mōsikā |  | n. IN, A-stem | music; the arts of the Muses | Doric *μωσικά* |  | high |
 | *μωσικος / μωσικον* | mōsikos / mōsikon |  | adj. | musical, cultivated | Doric *μωσικός* |  | high adj. for *ϸαρον* |
 | *ορθος / ορθον* | orthos / orthon |  | adj. | straight, upright; correct | Doric *ὀρθός* |  | high ↔ *ϳαϸαρος* |
-| *ποιειν* | poiein |  | v. | to make, compose (a poem); to do (formal) | Doric *ποιέω* |  | high ↔ *ϙεσειν* |
+| *ποιειν* | poiein |  | v., aor. *εποιησα* | to make, compose (a poem); to do (formal) | Doric *ποιέω* |  | high ↔ *ϙεσειν* |
 | *ποιημα* | poiēma |  | n. IN, Doric -μα | poem | Doric *ποίημα* |  | high |
 | *ποιησις* | poiēsis |  | n. IN, Doric -ις | poetry, the art of verse | Doric *ποίησις* |  | high |
 | *ποιητᾱς* | poiētās |  | n. AN, Doric -ᾱς | poet, maker of songs | Doric *ποιητάς* |  | high ↔ *ϸερος* |
@@ -1226,7 +1226,7 @@
 
 | Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
 |---------|-----------|------|---------|---------|--------|-------|----------|
-| *αζα* | aza |  | adv. | then, at that time | Phoenician (cf. Hebrew *ʾāz*) |  |  |
+| *αζα* | aza |  | adv. | then, at that time | Phoenician (cf. Hebrew *ʾāz*) |  | ↔ *τοκα* |
 | *αμες* | ames |  | adv. | yesterday, last night | Phoenician (cf. Hebrew *ʾemeš*) |  |  |
 | *αστρικος / αστρικον* | astrikos / astrikon |  | adj. | of the stars, astral | Doric *ἀστρικός* | *αστιρικος / αστιρικον* | high adj. for *αστρος* |
 | *βοκαρ* | bokar |  | n. IN, AR-stem | morning | Phoenician (cf. Hebrew *bōqer*) |  |  |
@@ -1263,7 +1263,7 @@
 | *ϸαϙον* | shaghon |  | n. IN, ON-stem | hour; a short time, moment | Phoenician (cf. Aramaic *šāʿā*) |  | ↔ *ωρᾱ* |
 | *ϸαχαρ* | shakhar | Ϸ-Χ-Ρ | n. IN, AR-stem | dawn | native (cf. Hebrew *šaḥar*) |  |  |
 | *ταμιδα* | tamida |  | adv. | always, continually | Phoenician (cf. Hebrew *tāmîd*) |  |  |
-| *τερεμ* | terem |  | adv. | not yet; before (+ clause) | Phoenician (cf. Hebrew *ṭerem*) |  |  |
+| *τερεμ* | terem |  | adv. | not yet; before (+ clause) | Phoenician (cf. Hebrew *ṭerem*) |  | ↔ *πριν* |
 | *φυλακον* | phylakon |  | n. IN, ON-stem | a watch of the night | Greek *φυλακή* |  |  |
 | *χειμερινος / χειμερινον* | kheimerinos / kheimerinon |  | adj. | of winter, wintry | Doric *χειμερινός* |  | high adj. for *χοραφον* |
 | *χοραφον* | khoraphon |  | n. IN, ON-stem | winter | Phoenician (cf. Hebrew *ḥōrep*) |  |  |
@@ -1294,16 +1294,16 @@
 | *αβαδον* | abadon | Α-Β-Δ | n. IN, ON-stem | destruction, ruin | native |  |  |
 | *αγειν* | agein |  | v. | to go, move | Greek *ἄγειν* |  |  |
 | *αθετειν* | athetein |  | v. | to reject, set aside | Greek *ἀθετεῖν* |  |  |
-| *αρχεσθαι* | arkhesthai |  | v. (middle) | to begin, commence (+ infinitive) | Doric *ἄρχομαι* |  | high ↔ *ρεϸειν* |
+| *αρχεσθαι* | arkhesthai |  | v. (middle), aor. *ᾱρξαμην* | to begin, commence (+ infinitive) | Doric *ἄρχομαι* |  | high ↔ *ρεϸειν* |
 | *βεδελειν* | bedelein | Β-Δ-Λ | v. | to separate, set apart | native (cf. Hebrew *hibdîl*) |  |  |
 | *βεκεϙειν* | bekeghein | Β-Κ-Ϙ | v. | to split, tear | native (cf. Hebrew *bāqaʿ*) |  |  |
 | *βεκεϸειν* | bekeshein | Β-Κ-Ϸ | v. | to seek, look for | native (cf. Hebrew *biqqēš*) |  | ↔ *ζᾱτειν* |
 | *βεχερειν* | bekherein | Β-Χ-Ρ | v. | to choose | native (cf. Hebrew *bāḥar*) |  |  |
-| *βλεπειν* | blepein |  | v. | to look, see | Doric *βλέπω* | *βελεπειν* | high ↔ *νεβετειν* |
+| *βλεπειν* | blepein |  | v., aor. *εβλεψα* | to look, see | Doric *βλέπω* | *βελεπειν* | high ↔ *νεβετειν* |
 | *γεδελειν* | gedelein | Γ-Δ-Λ | v. | to grow, grow up; to make great, magnify | native (cf. Hebrew *gādal*) |  |  |
 | *γελεϳειν* | geleyein | Γ-Λ-Ϳ | v. | to uncover, reveal | native (cf. Hebrew *gālāh*) |  |  |
 | *δεικνυειν* | deiknuein |  | v. | to show, point out | Greek *δεικνύειν* |  |  |
-| *δεκεσθαι* | dekesthai |  | v. (middle) | to receive, welcome | Doric *δέκομαι* |  | high |
+| *δεκεσθαι* | dekesthai |  | v. (middle), aor. *εδεξαμην* | to receive, welcome | Doric *δέκομαι* |  | high |
 | *δωειν* | dōein |  | v. | to give | Greek *δίδωμι* |  |  |
 | *εβεδειν* | ebedein | Α-Β-Δ | v. | to destroy, lose; middle *εβεδεσθαι* 'to perish, be lost' | native (cf. Hebrew *ʾābad*) |  |  |
 | *ειδειν* | eidein |  | v. | to know | Greek *εἰδέναι* |  |  |
@@ -1365,7 +1365,7 @@
 | *ϸεφεκειν* | shephekein | Ϸ-Φ-Κ | v. | to pour, pour out | native (cf. Hebrew *šāpak*) |  |  |
 | *ϸεφελειν* | shephelein | Ϸ-Φ-Λ | v. | to bring low, humble | native |  |  |
 | *τεκενειν* | tekenein | Τ-Κ-Ν | v. | to prepare, make ready, set in order | native (cf. Hebrew *tikkēn*) |  |  |
-| *τελειν* | telein |  | v. | to accomplish, complete | Doric *τελέω* |  | high ↔ *κελειν* |
+| *τελειν* | telein |  | v., aor. *ετελεσα* | to accomplish, complete | Doric *τελέω* |  | high ↔ *κελειν* |
 | *τελεϳειν* | teleyein | Τ-Λ-Ϳ | v. | to hang | native (cf. Hebrew *tālāh*) |  |  |
 | *φερειν* | pherein | Φ-Ρ | v. | to carry, bring | native |  |  |
 | *χενεκειν* | khenekein | Χ-Ν-Κ | v. | to choke, strangle | native (cf. Hebrew *ḥānaq*) |  |  |
@@ -1381,14 +1381,14 @@
 | *γερεϸειν* | gereshein | Γ-Ρ-Ϸ | v. | to drive out, expel, cast out | native (cf. Hebrew *gēraš*) |  |  |
 | *δεβεκειν* | debekein | Δ-Β-Κ | v. | to cling to; to follow | native (cf. Hebrew *dābaq*) |  |  |
 | *δεφεκειν* | dephekein | Δ-Φ-Κ | v. | to knock | native (cf. Hebrew *dāpaq*) |  |  |
-| *ερχεσθαι* | erkhesthai |  | v. (middle) | to come, go | Doric *ἔρχομαι* |  | high ↔ *ϝενειν* |
+| *ερχεσθαι* | erkhesthai |  | v. (middle), aor. *ηνθα* | to come, go — aorist active *ηνθα*, from Doric *ἦνθον* | Doric *ἔρχομαι* |  | high ↔ *ϝενειν* |
 | *ͱελεκειν* | helekein | Ͱ-Λ-Κ | v. | to walk, go about; to live one's life | native (cf. Hebrew *hālak*) |  | ↔ *πορευεσθαι* |
 | *ͱεφεκειν* | hephekein | Ͱ-Φ-Κ | v. | to turn, overturn; middle *ͱεφεκεσθαι* 'to turn around' | native (cf. Hebrew *hāpak*) |  |  |
 | *ͱοδος* | hodos |  | n. IN, O-stem | road, way; a way of life | Doric *ὁδός* |  | high ↔ *δαρακον* |
 | *ϳερεδειν* | yeredein | Ϳ-Ρ-Δ | v. | to go down, come down | native (cf. Hebrew *yārad*) |  |  |
 | *ϳεσειν* | yesein | Ϳ-Σ | v. | to go out, come out | native (cf. Hebrew *yāṣāʾ*) |  |  |
 | *ϳεϸεβειν* | yeshebein | Ϳ-Ϸ-Β | v. | to sit; to dwell | native (cf. Hebrew *yāšab*) |  | ↔ *καθιζειν* |
-| *καθιζειν* | kathizein |  | v. | to sit down; to seat | Doric *καθίζω* |  | high ↔ *ϳεϸεβειν* |
+| *καθιζειν* | kathizein |  | v., aor. *εκαθισα* | to sit down; to seat | Doric *καθίζω* |  | high ↔ *ϳεϸεβειν* |
 | *κεδεμειν* | kedemein | Κ-Δ-Μ | v. | to go before, lead the way | native (cf. Hebrew *qiddēm*) |  |  |
 | *κεμειν* | kemein | Κ-Μ | v. | to raise, set up; middle *κεμεσθαι* 'to rise, stand up' | native (cf. Hebrew *qûm*) |  |  |
 | *κερεβειν* | kerebein | Κ-Ρ-Β | v. | to draw near, approach; to bring near, offer — built on *καραβος* | native |  |  |
@@ -1399,7 +1399,7 @@
 | *νετειν* | netein | Ν-Τ | v. | to bend, incline; to lay down | native (cf. Hebrew *nāṭāh*) |  |  |
 | *νεφελειν* | nephelein | Ν-Φ-Λ | v. | to fall | native (cf. Hebrew *nāpal*) |  |  |
 | *πεγεϙειν* | pegeghein | Π-Γ-Ϙ | v. | to meet, come upon | native (cf. Hebrew *pāgaʿ*) |  |  |
-| *πορευεσθαι* | poreuesthai |  | v. (middle) | to go, journey; to live one's life | Doric *πορεύομαι* |  | high ↔ *ͱελεκειν* |
+| *πορευεσθαι* | poreuesthai |  | v. (middle), aor. *επορευσαμην* | to go, journey; to live one's life | Doric *πορεύομαι* |  | high ↔ *ͱελεκειν* |
 | *ϙεβερειν* | gheberein | Ϙ-Β-Ρ | v. | to pass by, pass through; to cross over | native (cf. Hebrew *ʿābar*) |  |  |
 | *ϙελειν* | ghelein | Ϙ-Λ | v. | to go up, climb, embark | native (cf. Hebrew *ʿālāh*) |  |  |
 | *ϙεμεδειν* | ghemedein | Ϙ-Μ-Δ | v. | to stand; to stop, stand still | native (cf. Hebrew *ʿāmad*) |  |  |
@@ -1510,17 +1510,26 @@
 | *ϙαδι* | ghadi |  | prep. + ACC | until, as far as; *ϙαδι ϸε-* 'until (the time that)' | Phoenician *ʿd* |  |  |
 | *ϙεβερ* | gheber |  | prep. + GEN | beyond, on the other side of | Phoenician (cf. Hebrew *ʿēber*) |  |  |
 | *συν* | syn |  | prep. + INS | with, together with | Greek |  |  |
+| *αι* | ai |  | conj. | if (high register; negative *αι μη* 'unless') | Doric *αἰ* |  | high ↔ *ιμ* |
 | *αλλα* | alla |  | conj. | but | Greek |  |  |
+| *γαρ* | gar |  | conj. | for (gives a reason; second word in its clause) | Doric *γάρ* |  | high |
+| *επει* | epei |  | conj. | since, because | Doric *ἐπεί* |  | high |
+| *ͱινα* | hina |  | conj. | so that, in order that | Doric *ἵνα* |  | high ↔ *λεμαϙαν* |
+| *ͱοκα* | hoka |  | conj. | when, whenever | Doric *ὅκα* |  | high ↔ *οτε* |
 | *ͱοτι* | hoti |  | conj. | because, that | Greek |  |  |
+| *ͱως* | hōs |  | conj. | as, just as | Doric *ὡς* |  | high ↔ *κεμω* |
 | *η* | ē |  | conj. | or | Greek |  |  |
-| *ιμ* | im |  | conj. | if | Phoenician |  |  |
+| *ιμ* | im |  | conj. | if | Phoenician |  | ↔ *αι* |
 | *και* | kai |  | conj. | and | Greek |  |  |
-| *κεμω* | kemō |  | conj. | as, like, just as (before a noun or a clause) | Phoenician (cf. Hebrew *kəmô*) |  |  |
-| *λακεν* | laken |  | conj. | therefore, so | Phoenician (cf. Hebrew *lākēn*) |  |  |
-| *λεμαϙαν* | lemaghan |  | conj. | so that, in order that | Phoenician (cf. Hebrew *ləmaʿan*) |  |  |
+| *κεμω* | kemō |  | conj. | as, like, just as (before a noun or a clause) | Phoenician (cf. Hebrew *kəmô*) |  | ↔ *ͱως* |
+| *λακεν* | laken |  | conj. | therefore, so | Phoenician (cf. Hebrew *lākēn*) |  | ↔ *ων* |
+| *λεμαϙαν* | lemaghan |  | conj. | so that, in order that | Phoenician (cf. Hebrew *ləmaʿan*) |  | ↔ *ͱινα* |
 | *μεν…δε* | men…de |  | conj. | on one hand… on the other | Greek |  |  |
-| *οτε* | ote |  | conj. | when, whenever | Greek |  |  |
+| *οτε* | ote |  | conj. | when, whenever | Greek |  | ↔ *ͱοκα* |
 | *πεν* | pen |  | conj. | lest, so that not | Phoenician (cf. Hebrew *pen*) |  |  |
+| *πριν* | prin |  | conj. | before (+ clause) | Doric *πρίν* | *πιριν* | high ↔ *τερεμ* |
+| *ων* | ōn |  | conj. | so, therefore (second word in its clause) | Doric *ὦν* |  | high ↔ *λακεν* |
+| *ωστε* | ōste |  | conj. | so that, with the result that | Doric *ὥστε* |  | high |
 | *ακ* | ak |  | particle | only; but, however; surely | Phoenician (cf. Hebrew *ʾak*) |  |  |
 | *αμεν* | amen |  | particle | amen, truly (before a saying) | Phoenician *ʾmn* |  |  |
 | *αν* | an |  | particle | would (unreal result) | Greek |  |  |
@@ -1556,5 +1565,7 @@
 | *μιͱενα* | mihena |  | adv. | from here — built like *μιϸαμ* | Phoenician |  |  |
 | *μιϸαμ* | misham |  | adv. | from there | Phoenician (cf. Hebrew *miššām*) |  |  |
 | *ομου* | omou |  | adv. | together | Greek *ὁμοῦ* |  |  |
+| *ποκα* | poka |  | adv. | once, at some time; ever | Doric *ποκά* |  | high |
 | *ϸαμ* | sham |  | adv. | there | Phoenician (cf. Hebrew *šām*) |  |  |
+| *τοκα* | toka |  | adv. | then, at that time | Doric *τόκα* |  | high ↔ *αζα* |
 | *χιναμ* | khinam |  | adv. | freely, for nothing; in vain | Phoenician (cf. Hebrew *ḥinnām*) |  |  |

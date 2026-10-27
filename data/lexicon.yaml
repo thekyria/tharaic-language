@@ -3673,12 +3673,14 @@
   meaning: "if"
   layer: "phoenician"
   theme: "function"
+  doublet: "αι"
 
 - greek: "οτε"
   pos: "conj"
   meaning: "when, whenever"
   layer: "greek"
   theme: "function"
+  doublet: "ͱοκα"
 
 - greek: "βαλ"
   pos: "particle"
@@ -8767,6 +8769,7 @@
   layer: "phoenician"
   source: "cf. Hebrew *ʾāz*"
   theme: "time"
+  doublet: "τοκα"
 
 - greek: "κεβαρ"
   pos: "adv"
@@ -8781,6 +8784,7 @@
   layer: "phoenician"
   source: "cf. Hebrew *ṭerem*"
   theme: "time"
+  doublet: "πριν"
 
 - greek: "πιθομ"
   pos: "adv"
@@ -8879,6 +8883,7 @@
   layer: "phoenician"
   source: "cf. Hebrew *kəmô*"
   theme: "function"
+  doublet: "ͱως"
 
 - greek: "ϙαδι"
   pos: "prep"
@@ -8894,6 +8899,7 @@
   layer: "phoenician"
   source: "cf. Hebrew *lākēn*"
   theme: "function"
+  doublet: "ων"
 
 - greek: "λεμαϙαν"
   pos: "conj"
@@ -8901,6 +8907,7 @@
   layer: "phoenician"
   source: "cf. Hebrew *ləmaʿan*"
   theme: "function"
+  doublet: "ͱινα"
 
 - greek: "ακ"
   pos: "particle"
@@ -10204,6 +10211,7 @@
   theme: "ritual"
   register: "high"
   doublet: "βερειν"
+  aorist: "εκτισα"
 
 - greek: "σοφιᾱ"
   pos: "noun"
@@ -10287,6 +10295,7 @@
   theme: "learning"
   register: "high"
   doublet: "ϙεσειν"
+  aorist: "εποιησα"
 
 - greek: "αειδειν"
   pos: "verb"
@@ -10296,6 +10305,7 @@
   theme: "learning"
   register: "high"
   doublet: "ϸερειν"
+  aorist: "ᾱεισα"
 
 - greek: "αοιδᾱ"
   pos: "noun"
@@ -10356,6 +10366,7 @@
   source: "Doric *ἁρμόζω*"
   theme: "learning"
   register: "high"
+  aorist: "ͱᾱρμοσα"
 
 - greek: "κιθαρᾱ"
   pos: "noun"
@@ -10407,6 +10418,7 @@
   theme: "ritual"
   register: "high"
   doublet: "ͱελελειν"
+  aorist: "ͱῡμνησα"
 
 - greek: "χοραγος"
   pos: "noun"
@@ -10461,6 +10473,7 @@
   theme: "learning"
   register: "high"
   doublet: "κετεβειν"
+  aorist: "εγραψα"
 
 - greek: "γραμματευς"
   pos: "noun"
@@ -10578,6 +10591,7 @@
   theme: "learning"
   register: "high"
   doublet: "σεφερειν"
+  aorist: "ᾱριθμησα"
 
 - greek: "μαθημα"
   pos: "noun"
@@ -10608,6 +10622,8 @@
   theme: "learning"
   register: "high"
   doublet: "λεμεδειν"
+  aorist: "εμαθα"
+  note: "the Greek strong aorist *ἔμαθον* takes the -α endings"
 
 - greek: "διδασκειν"
   pos: "verb"
@@ -10617,6 +10633,7 @@
   theme: "learning"
   register: "high"
   doublet: "λᾱμιδειν"
+  aorist: "εδιδαξα"
 
 - greek: "διδασκαλος"
   pos: "noun"
@@ -10814,6 +10831,7 @@
   theme: "ritual"
   register: "high"
   doublet: "κεβεδειν"
+  aorist: "εδοξασα"
 
 - greek: "νοος"
   pos: "noun"
@@ -10834,6 +10852,7 @@
   theme: "mind"
   register: "high"
   doublet: "σεκελειν"
+  aorist: "ενοησα"
 
 - greek: "λογιζεσθαι"
   pos: "verb"
@@ -10843,6 +10862,7 @@
   theme: "mind"
   register: "high"
   doublet: "χεϸεβειν"
+  aorist: "ελογισαμην"
 
 - greek: "σκοπειν"
   pos: "verb"
@@ -10853,6 +10873,7 @@
   theme: "mind"
   register: "high"
   doublet: "κεϸεβειν"
+  aorist: "εσκοπησα"
 
 - greek: "ζᾱτειν"
   pos: "verb"
@@ -10862,6 +10883,7 @@
   theme: "mind"
   register: "high"
   doublet: "βεκεϸειν"
+  aorist: "εζᾱτησα"
 
 - greek: "αισθᾱσις"
   pos: "noun"
@@ -10972,6 +10994,7 @@
   theme: "ritual"
   register: "high"
   doublet: "εͱεβειν"
+  aorist: "ᾱγαπᾱσα"
 
 - greek: "πιστις"
   pos: "noun"
@@ -10992,6 +11015,7 @@
   theme: "ritual"
   register: "high"
   doublet: "εμενειν"
+  aorist: "επιστευσα"
 
 - greek: "πιστος / πιστον"
   pos: "adj"
@@ -11010,6 +11034,7 @@
   theme: "ritual"
   register: "high"
   doublet: "ρεχεμειν"
+  aorist: "ηλεησα"
 
 - greek: "χαρις"
   pos: "noun"
@@ -11206,6 +11231,7 @@
   theme: "ritual"
   register: "high"
   doublet: "ζεβεχειν"
+  aorist: "εθυσα"
 
 - greek: "βωμος"
   pos: "noun"
@@ -11237,6 +11263,7 @@
   theme: "ritual"
   register: "high"
   doublet: "λιτεσθαι"
+  aorist: "ευξαμην"
 
 - greek: "ευλογειν"
   pos: "verb"
@@ -11246,6 +11273,7 @@
   theme: "ritual"
   register: "high"
   doublet: "βερεχειν"
+  aorist: "ευλογησα"
 
 - greek: "ευλογιᾱ"
   pos: "noun"
@@ -11277,6 +11305,7 @@
   theme: "ritual"
   register: "high"
   doublet: "χετειν"
+  aorist: "ͱᾱμαρτησα"
 
 - greek: "ͱαμαρτωλος"
   pos: "noun"
@@ -11319,6 +11348,8 @@
   theme: "ritual"
   register: "high"
   doublet: "ϸεβειν"
+  aorist: "μετενοησα"
+  note: "the augment goes after the prefix, as in Greek"
 
 - greek: "αναστασις"
   pos: "noun"
@@ -11397,6 +11428,7 @@
   theme: "ritual"
   register: "high"
   doublet: "νᾱβειν"
+  aorist: "επροφᾱτευσα"
 
 - greek: "βαπτιζειν"
   pos: "verb"
@@ -11407,6 +11439,7 @@
   theme: "ritual"
   register: "high"
   doublet: "τεβελειν"
+  aorist: "εβαπτισα"
 
 - greek: "βαπτισμα"
   pos: "noun"
@@ -11558,6 +11591,7 @@
   theme: "mind"
   register: "high"
   doublet: "τεμεͱειν"
+  aorist: "εθαυμασα"
 
 - greek: "δυναμις"
   pos: "noun"
@@ -11736,6 +11770,7 @@
   theme: "city"
   register: "high"
   doublet: "ϸεφετειν"
+  aorist: "εκρινα"
 
 - greek: "μαρτυριᾱ"
   pos: "noun"
@@ -11756,6 +11791,7 @@
   theme: "city"
   register: "high"
   doublet: "ϙεδειν"
+  aorist: "εμαρτυρησα"
 
 - greek: "δᾱμοκρατιᾱ"
   pos: "noun"
@@ -11936,6 +11972,7 @@
   theme: "body"
   register: "high"
   doublet: "ρεφειν"
+  aorist: "εθεραπευσα"
 
 - greek: "θεραπειᾱ"
   pos: "noun"
@@ -12204,6 +12241,8 @@
   theme: "mind"
   register: "high"
   doublet: "σεμεχειν"
+  aorist: "εχαρα"
+  note: "the aorist takes the -α endings on the stem *χαρ-*"
 
 - greek: "αρχεσθαι"
   pos: "verb"
@@ -12213,6 +12252,7 @@
   theme: "verbs"
   register: "high"
   doublet: "ρεϸειν"
+  aorist: "ᾱρξαμην"
 
 - greek: "τελειν"
   pos: "verb"
@@ -12222,6 +12262,7 @@
   theme: "verbs"
   register: "high"
   doublet: "κελειν"
+  aorist: "ετελεσα"
 
 - greek: "αποκρινεσθαι"
   pos: "verb"
@@ -12231,6 +12272,7 @@
   theme: "mind"
   register: "high"
   doublet: "ϙενειν"
+  aorist: "απεκριναμην"
 
 - greek: "αιτειν"
   pos: "verb"
@@ -12240,6 +12282,7 @@
   theme: "mind"
   register: "high"
   doublet: "ϸελειν"
+  aorist: "αιτησα"
 
 - greek: "ευχαριστειν"
   pos: "verb"
@@ -12249,6 +12292,7 @@
   theme: "ritual"
   register: "high"
   doublet: "ϳεδειν"
+  aorist: "ευχαριστησα"
 
 - greek: "ανγελλειν"
   pos: "verb"
@@ -12258,6 +12302,7 @@
   theme: "mind"
   register: "high"
   doublet: "νεγεδειν"
+  aorist: "ᾱνγειλα"
 
 - greek: "καρυσσειν"
   pos: "verb"
@@ -12267,6 +12312,7 @@
   theme: "mind"
   register: "high"
   doublet: "κερειν"
+  aorist: "εκαρυξα"
 
 - greek: "καρυγμα"
   pos: "noun"
@@ -12288,6 +12334,7 @@
   theme: "verbs"
   register: "high"
   doublet: "νεβετειν"
+  aorist: "εβλεψα"
 
 - greek: "ερχεσθαι"
   pos: "verb"
@@ -12297,6 +12344,8 @@
   theme: "motion"
   register: "high"
   doublet: "ϝενειν"
+  aorist: "ηνθα"
+  note: "aorist active *ηνθα*, from Doric *ἦνθον*"
 
 - greek: "πορευεσθαι"
   pos: "verb"
@@ -12306,6 +12355,7 @@
   theme: "motion"
   register: "high"
   doublet: "ͱελεκειν"
+  aorist: "επορευσαμην"
 
 - greek: "καθιζειν"
   pos: "verb"
@@ -12315,6 +12365,7 @@
   theme: "motion"
   register: "high"
   doublet: "ϳεϸεβειν"
+  aorist: "εκαθισα"
 
 - greek: "δεκεσθαι"
   pos: "verb"
@@ -12323,6 +12374,7 @@
   source: "Doric *δέκομαι*"
   theme: "verbs"
   register: "high"
+  aorist: "εδεξαμην"
 
 - greek: "οικος"
   pos: "noun"
@@ -12776,6 +12828,7 @@
   theme: "trade"
   register: "high"
   doublet: "ϙεμελειν"
+  aorist: "ηργασαμην"
 
 - greek: "τεχνᾱ"
   pos: "noun"
@@ -13146,3 +13199,99 @@
   theme: "learning"
   register: "high"
   base: "ϸαρον"
+
+- greek: "αι"
+  pos: "conj"
+  meaning: "if (high register; negative *αι μη* 'unless')"
+  layer: "doric"
+  source: "Doric *αἰ*"
+  theme: "function"
+  register: "high"
+  doublet: "ιμ"
+
+- greek: "ͱοκα"
+  pos: "conj"
+  meaning: "when, whenever"
+  layer: "doric"
+  source: "Doric *ὅκα*"
+  theme: "function"
+  register: "high"
+  doublet: "οτε"
+
+- greek: "ͱινα"
+  pos: "conj"
+  meaning: "so that, in order that"
+  layer: "doric"
+  source: "Doric *ἵνα*"
+  theme: "function"
+  register: "high"
+  doublet: "λεμαϙαν"
+
+- greek: "επει"
+  pos: "conj"
+  meaning: "since, because"
+  layer: "doric"
+  source: "Doric *ἐπεί*"
+  theme: "function"
+  register: "high"
+
+- greek: "ͱως"
+  pos: "conj"
+  meaning: "as, just as"
+  layer: "doric"
+  source: "Doric *ὡς*"
+  theme: "function"
+  register: "high"
+  doublet: "κεμω"
+
+- greek: "πριν"
+  pos: "conj"
+  meaning: "before (+ clause)"
+  layer: "doric"
+  source: "Doric *πρίν*"
+  chant: "πιριν"
+  theme: "function"
+  register: "high"
+  doublet: "τερεμ"
+
+- greek: "ωστε"
+  pos: "conj"
+  meaning: "so that, with the result that"
+  layer: "doric"
+  source: "Doric *ὥστε*"
+  theme: "function"
+  register: "high"
+
+- greek: "γαρ"
+  pos: "conj"
+  meaning: "for (gives a reason; second word in its clause)"
+  layer: "doric"
+  source: "Doric *γάρ*"
+  theme: "function"
+  register: "high"
+
+- greek: "ων"
+  pos: "conj"
+  meaning: "so, therefore (second word in its clause)"
+  layer: "doric"
+  source: "Doric *ὦν*"
+  theme: "function"
+  register: "high"
+  doublet: "λακεν"
+
+- greek: "τοκα"
+  pos: "adv"
+  meaning: "then, at that time"
+  layer: "doric"
+  source: "Doric *τόκα*"
+  theme: "function"
+  register: "high"
+  doublet: "αζα"
+
+- greek: "ποκα"
+  pos: "adv"
+  meaning: "once, at some time; ever"
+  layer: "doric"
+  source: "Doric *ποκά*"
+  theme: "function"
+  register: "high"

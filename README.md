@@ -83,6 +83,7 @@ THARAIC
 │   ├── "To be": present ε(σ)- (Greek) + past/future Κ-Ν (Phoenician)
 │   ├── Future: particle ϸα (Phoenician-analog)
 │   ├── Imperfective past: εκανα + present (Hebrew hāyāh-analog)
+│   ├── Participles: adjectives in -οντος (present), -αντος (aorist)
 │   └── Narrative past: ϝα- prefix (Phoenician wayyiqtol-analog)
 │
 ├── CLAUSE LAYER
