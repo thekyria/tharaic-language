@@ -4,6 +4,8 @@
 
 Temple speech, prayers, oaths and inscriptions use a register of their own. It is the same language, but it chooses the older and more Phoenician side of every pair.
 
+*This page describes the older temple style. Temple speech is now a style of the [high register](registers.md), which uses Doric words for theology and the aorist for narrative. The page will be revised to match.*
+
 ---
 
 ## How it differs from everyday speech

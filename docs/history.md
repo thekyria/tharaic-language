@@ -9,9 +9,10 @@ Tharaic did not always look the way it does today. Most of its irregular forms c
 | Stage | Description |
 |-------|-------------|
 | **Proto-Tharaic** | Strictly open syllables, no clusters. Roots carry meaning through vowel grades (§1) |
-| **Old Tharaic** | Contact with the Greek-analog and Phoenician-analog streams; early loans are fitted to the native syllable shape. Change 1 |
+| **Old Tharaic** | Contact with the Greek-analog (sailors' Greek, Ionic-analog) and Phoenician-analog streams; early loans are fitted to the native syllable shape. Change 1 |
 | **Classical Tharaic** | Changes 2–4. The everyday language described in these docs |
 | **Chant register** | The language of sailor chants and sacred speech: it keeps forms from before changes 2–3 and breaks up clusters in later loans (§3) |
+| **Learned Doric** | Loans from literary Doric through poetry and the schools, after changes 2–4. They keep their Doric shape and make up the high register (§6, [Registers](registers.md)) |
 
 ---
 
@@ -152,3 +153,20 @@ The noun dual ends in **-ιν**, from Proto-Tharaic \*-ιν. The genitive and da
 The ON-stem uses its genitive-dative form *λακοιν* for all the direct cases too, a common merger in inanimate nouns.
 
 *Earlier versions of this grammar wrote the O- and A-stem dual as -ειν and the instrumental dual as -ομεν. Those forms clashed with the infinitive (θᾱρειν "to cross the sea") and the first-person plural verb (νᾱϝομεν "we sail"), and are replaced by -ιν and -ομιν.*
+
+---
+
+## 6. The learned Doric layer
+
+The Greek-analog loans above came from **sailors' Greek**, an Ionic-analog dialect spoken in the ports, with *η* (*σεληνᾱ*, *ͱημερον*). In the Classical Tharaic period a second Greek-analog dialect arrived by another route: **literary Doric**, the language of poetry, medicine and philosophy, learned in schools and from books.
+
+These later loans came after changes 2–4, so none of them apply. They also did not go through the adaptations of the earlier loans:
+
+| | Sailors' Greek | Literary Doric |
+|--|----------------|----------------|
+| Greek *η* from older *ā* | *η*: *σεληνᾱ*, *ͱημερον* | *ᾱ*: *σελᾱνᾱ*, *ͱᾱμερᾱ* |
+| Clusters | fitted to the syllable rules, or only obstruent + ρ/λ | kept: *ψυχᾱ*, *κτιζειν*, *σχολᾱ* |
+| Endings | Tharaic stem classes | Doric endings in some cases (genitive *ψυχᾱς*) |
+| Gender | often by ending (*λιμᾱ* "harbor" is an animate A-stem) | by meaning (*θαλαμος* "chamber" is inanimate) |
+
+The two layers often borrowed the same Greek word, which gives doublets like *ͱημερον* / *ͱᾱμερᾱ* "day". Learned words that came into everyday use were later adapted like other loans: *σχολᾱ* > *ισχολᾱ* "schoolhouse". See [Registers](registers.md).

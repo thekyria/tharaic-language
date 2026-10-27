@@ -93,7 +93,9 @@ These rules hold strictly in **chant** and in the older language. **Everyday spe
 | The construct ending **-ιτ** ends in τ | *ναϝιτ μᾱλικος* | Loss of the final vowel; a construct form never ends a phrase |
 | Two unassimilated loans | *ξενος*, *επτα* | Merchants' words from the Greek-analog stream |
 
-No register allows a three-consonant onset (στρ-, σκρ-). Inside a word, everyday speech allows at most a coda consonant followed by obstruent + ρ/λ (*ασ.τρος*); clusters like -κστ- stay excluded.
+Inside a word, everyday speech allows at most a coda consonant followed by obstruent + ρ/λ (*ασ.τρος*); clusters like -κστ- stay excluded.
+
+The **high register** allows more: learned Doric loans keep the clusters of their source, such as στρ-, κτ-, ψ (*ψυχᾱ*, *κτιζειν*, *σχολᾱ*). These clusters sound bookish to everyday speakers, and chant breaks them up with a copy vowel (*πυσυχᾱ*). See [Registers § Pronunciation](registers.md#pronunciation).
 
 **Stress:** Default **penultimate** (second-to-last syllable). Aeolic recessive accent influence.
 > *ναϝᾱ* → να-ϜᾹ | *θᾱρος* → ΘᾹ-ρος | *ελεκαμεν* → ε-λε-ΚΑ-μεν
