@@ -43,7 +43,7 @@ Because the learned words came after changes 2–4, none of those changes apply 
 
 ## Doublets
 
-Most high-register words have an everyday counterpart. The lexicon links each pair (↔ in the [Lexicon](lexicon.md)).
+The lexicon has about 290 high-register words. About 180 of them have an everyday counterpart, and the lexicon links each pair (↔ in the [Lexicon](lexicon.md)).
 
 | Kind | Everyday | High | English parallel |
 |------|----------|------|------------------|
@@ -58,7 +58,44 @@ Most high-register words have an everyday counterpart. The lexicon links each pa
 
 - **Everyday words are not wrong in high speech.** Most of them belong to both registers: *νεφεϸᾱ* is still the word for "breath" and the base of the reflexive. Only a few are marked *everyday* in the lexicon, because they sound low in high speech. These are mainly the sailors'-Greek words with *η* that have a Doric twin with *ᾱ*.
 - **The high word is often narrower.** *θαλαμος* is a bedchamber or the inner room of a temple, never a storeroom. *δᾱμος* is the people as a body of citizens, the people of law and oratory.
+- **A whole field can be high.** The everyday language never had words for some things, so it uses the high words for them, the way English has no native word for *music* or *theory*: *φιλοσοφιᾱ*, *ρυθμος*, *κιθαρᾱ*, *ιατρικᾱ*.
 - **Folk forms.** When a high-register word comes into everyday use, it is adapted like the [later loans](history.md#later-loans) were: a prothetic *ι-* before σ + consonant, or a copy vowel inside other clusters. *σχολᾱ* became *ισχολᾱ*, the village schoolhouse.
+
+### Where the high words are
+
+| Field | Examples |
+|-------|----------|
+| Poetry, music and letters | *ποιητᾱς* poet (↔ *ϸερος* singer), *αειδειν* sing, *μωσα* Muse, *ͱαρμονιᾱ* harmony, *γραμμα* letter, *βιβλιον* book (↔ *σαφαρον*), *λογος* word, reason (↔ *λακον*) |
+| Philosophy, mathematics and schooling | *φιλοσοφος* (↔ *χᾱκιμος* sage), *αριθμος* number, *μαθητᾱς* pupil (↔ *λεμεδος*), *διδασκαλος* teacher (↔ *λᾱμιδος*), *φυσις* nature, *αλᾱθεια* truth (↔ *αληθον*) |
+| Virtues and feelings | *αρετᾱ* virtue, *δικαιοσυνᾱ* justice (↔ *σαδακον*), *ͱᾱδονᾱ* pleasure, *οργᾱ* wrath (↔ *αφον*), *ͱυβρις* insolence |
+| Worship and theology | *ͱιαρος* sacred (↔ *καδοϸος*), *πνευμα* spirit (↔ *ρῡχᾱ*), *πιστις* faith (↔ *αμανον*), *ͱαμαρτιᾱ* sin (↔ *χατον*), *προφᾱτᾱς* prophet (↔ *νᾱβιος*), *ευανγελιον* gospel (↔ *βασαρον*) |
+| City, law and war | *πολις* city-state (↔ *καρτον* town), *πολιτᾱς* citizen, *δικᾱ* lawsuit, *κριτᾱς* judge (↔ *ϸᾱφιτος*), *ͱᾱλιᾱ* assembly, *στρατᾱγος* general |
+| Medicine and the body | *ιατρος* physician (↔ *ρεφος* healer), *νοσος* disease, *φαρμακον* remedy, *κεφαλᾱ* head (↔ *ραϸον*), *σωμα* body |
+| Polite and formal speech | *αρχεσθαι* commence (↔ *ρεϸειν* begin), *αποκρινεσθαι* reply (↔ *ϙενειν* answer), *αιτειν* request (↔ *ϸελειν* ask), *χαιρε!* greetings, *γυνᾱ* lady (↔ *εινᾱ* woman) |
+| Poetic nature words | *θαλασσα* the sea (↔ *θᾱρος*), *ανεμος* wind (↔ *ϝελος*), *ͱᾱλιος* sun (↔ *ͱηλιᾱ*), *ωρανος* heaven (↔ *ϸαμον*), *νᾱσος* island (↔ *νησον*) |
+
+---
+
+## Learned adjectives
+
+English often pairs a native noun with a learned adjective: *moon* and *lunar*, *mouth* and *oral*, *king* and *royal*. Tharaic does the same. The everyday adjective is built with *-ικος* on the noun itself (*θᾱρικος* "maritime"), when there is one at all. The high register uses an adjective borrowed whole from Doric:
+
+| Everyday noun | High adjective | |
+|---------------|----------------|--|
+| *σεληνᾱ* moon | *σελᾱναιος* | lunar |
+| *ͱηλιᾱ* sun | *ͱᾱλιακος* | solar |
+| *ϸαμον* sky | *ωρανιος* | heavenly |
+| *μᾱλικος* king | *βασιλικος* | royal |
+| *καρτον* town | *πολιτικος* civic; *αστειος* urbane | |
+| *σαδον* field | *αγροικος* | rustic, boorish |
+| *παμον* mouth | *στοματικος* | oral |
+| *βασρον* flesh | *σωματικος* bodily; *σαρκικος* carnal | |
+| *ηλος* god | *θειος* | divine |
+| *χοραφον* winter | *χειμερινος* | wintry, hibernal |
+| *ζαͱαρον* gold | *χρυσεος* | golden |
+| *βαρζαλον* iron | *σιδᾱρεος* | of iron |
+
+The lexicon has about 55 of them. Each records the everyday noun it goes with (`base`, shown as "adj. for" in the [Lexicon](lexicon.md)). Like English *rustic* and *urbane*, *αγροικος* and *αστειος* show how the learned class saw town and country.
 
 ---
 
@@ -99,6 +136,18 @@ The high register keeps Tharaic grammar: the eight cases, VSO order, the particl
 | Long sentences | clauses joined by "and", relatives with *ϸε-* | participle phrases and subordinate clauses, in the manner of Greek prose |
 | Doric nouns | regular Tharaic endings, in their folk forms | some Doric endings kept, especially the genitive: *ψυχᾱς* "of the soul" (Doric *ψυχᾶς*), not *ψυχις*; *δᾱμω* "of the people" (Doric *δάμω*), not *δᾱμι*. The sea cases keep their Tharaic endings |
 
+### Doric noun classes
+
+Most Doric nouns end like Tharaic ones, in *-ος*, *-ᾱ* (or short *-α*), *-ον* or *-ευς*. Three endings have no Tharaic class, and the lexicon gives them classes of their own:
+
+| Class | Example | Genitive | Kind of word |
+|-------|---------|----------|--------------|
+| **-ᾱς** (AS) | *ποιητᾱς* poet | *ποιητᾱ* | men and their roles: *μαθητᾱς*, *πολιτᾱς*, *προφᾱτᾱς* |
+| **-μα** (MA) | *ποιημα* poem | *ποιηματος* | results and things: *γραμμα*, *σωμα*, *πνευμα* |
+| **-ις** (IS) | *ποιησις* poetry | *ποιησιος* | actions and qualities: *γνωσις*, *πιστις*, *πολις* (*χαρις* has *χαριτος*) |
+
+Their full paradigms come with the grammar step of the [roadmap](roadmap.md#plan).
+
 ---
 
 ## Worship
@@ -116,6 +165,7 @@ Doric learning reached the temple through its scholars. In the high register:
 
 `data/lexicon.yaml` marks the registers with these fields:
 
-- `layer: "doric"` for the learned loans. Their gender follows their meaning, not their ending: *θαλαμος* "chamber" is inanimate although it ends in *-ος*.
+- `layer: "doric"` for the learned loans. Their gender follows their meaning, not their ending: *θαλαμος* "chamber" is inanimate although it ends in *-ος*. They may use the stem classes AS, MA and IS.
 - `register`: `high` for words used only in high speech, `everyday` for words avoided in it. Words without it belong to both.
 - `doublet`: the counterpart in the other register. The two entries point to each other.
+- `base`: for a learned adjective, the everyday noun it goes with.

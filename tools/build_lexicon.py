@@ -16,7 +16,8 @@ Each entry in data/lexicon.yaml has these fields:
               sailors' Greek) or doric (the learned Doric layer); see docs/registers.md
     theme     which section of the lexicon it belongs to (see THEMES below)
     gender    nouns only: AN or IN
-    stem      nouns only: O, A, ON, AR, EUS, ON-PL (old plural used as a collective) or irregular
+    stem      nouns only: O, A, ON, AR, EUS, ON-PL (old plural used as a collective) or irregular;
+              Doric loans may also be AS (-ᾱς), MA (-μα) or IS (-ις), see docs/registers.md
     cases     prepositions only: the case(s) it takes, e.g. "LOC, ACC"
     root      optional: consonantal root, e.g. "Ν-Ϝ"
     source    optional: etymology note
@@ -26,6 +27,8 @@ Each entry in data/lexicon.yaml has these fields:
               follow the high syllable rules, which keep Doric clusters
     doublet   optional: the counterpart in the other register, by its first form
               (e.g. "χαδαρον" for θαλαμος). The counterpart must point back
+    base      optional, learned adjectives: the everyday noun they serve as
+              adjective for (σελᾱναιος "lunar" for σεληνᾱ "moon")
     note      optional: extra remark, shown after the meaning
     value     numbers only: the numeric value, used for ordering
     late      optional, "yes": a native word formed after the sound changes in
@@ -61,6 +64,7 @@ THEMES = [
     ("city", "City, Law & Power"),
     ("ritual", "Ritual, Belief & Abstract"),
     ("mind", "Mind, Speech & Feeling"),
+    ("learning", "Learning, Arts & Science"),
     ("time", "Time, Calendar & Stars"),
     ("numbers", "Numbers"),
     ("verbs", "Core Verbs"),
@@ -75,7 +79,9 @@ LAYERS = {"native": "native", "phoenician": "Phoenician", "greek": "Greek", "dor
 REGISTERS = ("high", "everyday")
 STEMS = {"O": ("AN", "ος", "O-stem"), "A": ("AN", ("ᾱ", "α"), "A-stem"), "EUS": ("AN", "ευς", "-ευς"),
          "ON": ("IN", "ον", "ON-stem"), "AR": ("IN", "αρ", "AR-stem"),
-         "ON-PL": ("IN", "α", "ON-stem plural"), "irregular": (None, "", "irregular")}
+         "ON-PL": ("IN", "α", "ON-stem plural"), "irregular": (None, "", "irregular"),
+         "AS": (None, "ᾱς", "Doric -ᾱς"), "MA": (None, "μα", "Doric -μα"), "IS": (None, "ις", "Doric -ις")}
+DORIC_STEMS = {"AS", "MA", "IS"}
 # Alphabetical order, with the extra letters at their historical places
 ALPHABET = "αᾱβγδεϝζͱηθιϳκλμνξοπϙρσςϸτυῡφχψω"
 DIPHTHONGS = {"αι", "αυ", "ει", "ου", "ευ", "οι"}
@@ -180,6 +186,11 @@ def check(entries):
                 err(f"doublet {e['doublet']} does not point back")
             elif "high" not in (register, other.get("register")):
                 err("one word of a doublet should be high register")
+        if "base" in e:
+            if e["pos"] != "adj":
+                err("only adjectives take a base")
+            if e["base"] not in by_head:
+                err(f"base {e['base']} is not in the lexicon")
         key = (g, pos)
         if key in seen:
             err(f"duplicate of line {seen[key]}")
@@ -194,6 +205,8 @@ def check(entries):
                 err(f"noun needs a stem from {', '.join(STEMS)}")
             else:
                 want_gender, ending, _ = STEMS[stem]
+                if stem in DORIC_STEMS and e["layer"] != "doric":
+                    err(f"{stem} is a Doric stem class")
                 if not g.endswith(ending):
                     err(f"{stem} noun should end in {ending}")
                 # Doric loans take their gender from their meaning (docs/registers.md)
@@ -289,7 +302,8 @@ def render(entries):
         "borrowed through poetry and the schools ([Registers](registers.md)).",
         "- **Chant** gives the form used in chant and sacred speech, where it differs ([History § The chant register](history.md#3-the-chant-register)).",
         "- **Register**: *high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it, "
-        "and words with neither belong to both. ↔ marks the counterpart in the other register.",
+        "and words with neither belong to both. ↔ marks the counterpart in the other register; "
+        "*adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with.",
         "- In Greek- and Doric-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).",
         "",
     ]
@@ -312,7 +326,8 @@ def render(entries):
             meaning = e["meaning"] + (f" — {e['note']}" if "note" in e else "")
             origin = origin_text(e)
             chant = f"*{e['chant']}*" if "chant" in e else ""
-            register = " ".join(filter(None, [e.get("register"), f"↔ *{e['doublet']}*" if "doublet" in e else ""]))
+            register = " ".join(filter(None, [e.get("register"), f"↔ *{e['doublet']}*" if "doublet" in e else "",
+                                              f"adj. for *{e['base']}*" if "base" in e else ""]))
             out.append(f"| *{e['greek']}* | {romanize(e)} | {e.get('root', '')} | {grammar(e)} | "
                        f"{meaning} | {origin} | {chant} | {register} |")
         out.append("")

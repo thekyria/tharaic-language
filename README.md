@@ -23,7 +23,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |
 | [Word Building](docs/word-building.md) | Root patterns (older layer) and suffixes (younger layer) |
-| [Lexicon](docs/lexicon.md) | About 1,150 words by theme, with roots, origins and chant forms (generated from `data/lexicon.yaml`) |
+| [Lexicon](docs/lexicon.md) | About 1,450 words by theme, with roots, origins, chant forms and registers (generated from `data/lexicon.yaml`) |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
 | [Proverbs & Oaths](docs/proverbs.md) | Sailor and merchant sayings, weather lore, oath formulas |
 | [The Sacred Register](docs/sacred.md) | Temple speech: divine epithets, prayers, blessings, a votive inscription |
