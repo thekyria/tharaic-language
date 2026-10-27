@@ -5,7 +5,8 @@ Usage:
     python3 tools/build_lexicon.py           # check, then write docs/lexicon.md
     python3 tools/build_lexicon.py --check   # check, and fail if docs/lexicon.md is out of date
 
-It also checks that every Tharaic word in data/gospels.tsv is in the lexicon.
+It also checks that every Tharaic word in data/gospels.tsv is in the lexicon and
+not marked everyday, since scripture is in the high register.
 
 Each entry in data/lexicon.yaml has these fields:
 
@@ -255,6 +256,8 @@ def check(entries):
 def check_gospels(entries):
     """Every Tharaic word in data/gospels.tsv must be a lexicon headword."""
     heads = {w.strip("-") for e in entries for w in words(e["greek"])}
+    # The Gospels are translated in the high register (docs/registers.md)
+    everyday = {w.strip("-") for e in entries if e.get("register") == "everyday" for w in words(e["greek"])}
     errors = []
     with open(GOSPELS, encoding="utf-8") as f:
         for n, line in enumerate(f, 1):
@@ -269,6 +272,8 @@ def check_gospels(entries):
             for w in cols[3].split():
                 if w.strip("-") not in heads:
                     errors.append(f"{GOSPELS}:{n}: {cols[0]}: {w} is not in the lexicon")
+                elif w.strip("-") in everyday:
+                    errors.append(f"{GOSPELS}:{n}: {cols[0]}: {w} is everyday register; scripture is high")
     return errors
 
 

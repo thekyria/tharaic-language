@@ -84,7 +84,7 @@ The object *ζε αβανον* is fronted for emphasis, as inscriptions begin wi
 
 **A hymn to the moon**, sung, so the chant form *πυσυχᾱς* replaces *ψυχᾱς*:
 > *Ͱυμνομες σελᾱνᾱν, νυκτερινον νηρον ωρανω. Λυ ζεͱερει ναϝαιμ θαλασσελι! Λυ ϸεμερει πυσυχᾱς ναυτᾱν!*<br>
-> Hymnomes selānān, nykterinon nēron ōranō. Lu zeherei navaim thalasseli! Lu shemerei pysykhās nautān!<br>
+> Humnomes selānān, nukterinon nēron ōranō. Lu zeherei navaim thalasseli! Lu shemerei pusukhās nautān!<br>
 > We-hymn moon-ACC, nightly lamp heaven-GEN. WISH shines ships-DAT sea-LOC! WISH guards souls-ACC seamen-GEN!<br>
 > "We hymn the moon, the night lamp of heaven. May she shine for the ships on the sea! May she guard the souls of the seamen!"
 

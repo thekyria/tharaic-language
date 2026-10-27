@@ -373,7 +373,7 @@ In everyday storytelling and chant, sequential past events are marked with *ϝα
 
 The form after *ϝα-* is the present (*ϝενει*, *νᾱϝει*, *λεκει*), as with the Hebrew *wayyiqtol*, which also uses the non-past form.
 
-This form belongs to **oral tales, folk song and chant**. The [high register](registers.md#grammar), including written scripture and temple speech, tells the past with the aorist instead, and links the events with [participles](#participles): *ϝα-* there survives only in old fixed formulas. Older sacred narrative used *ϝα-* in writing, as Hebrew Bible prose uses the *wayyiqtol*, and the current [Mark 1](mark-1.md) is still in that style.
+This form belongs to **oral tales, folk song and chant**. The [high register](registers.md#grammar), including written scripture and temple speech, tells the past with the aorist instead, and links the events with [participles](#participles): *ϝα-* there survives only in old fixed formulas. Older sacred narrative used *ϝα-* in writing, as Hebrew Bible prose uses the *wayyiqtol*; [Mark 1](mark-1.md) is now translated in the high style.
 
 "To be" takes *ϝα-* on the Κ-Ν root, since the present root ε(σ)- takes no prefix: *ϝα-κανει* "and there was, and it came to pass", like Hebrew *wayhî*.
 
@@ -425,6 +425,7 @@ A participle is a verbal adjective. It agrees with its noun in gender, number an
 - The aorist participle is built on the aorist without its augment: *ενᾱϝα* → *νᾱϝαντος*; for Doric verbs *εποιησα* → *ποιησαντος*, *ευξαμην* → *ευξαμενος*. A vowel lengthened by the augment is short again: *ᾱρξαμην* → *αρξαμενος*.
 - "To be" uses Κ-Ν: *κανοντος* "being", *καναντος* "having been".
 - A participle is negated with *βαλ* before it: *βαλ νᾱϝοντος* "not sailing".
+- Object enclitics attach only to finite verbs. When the object of a participle is a pronoun, the high register uses a finite verb instead: *εκανε ϸερετει-ιμ* "she was serving them", not \*ϸερετοντος-ιμ.
 - Everyday speech uses participles mostly as plain adjectives and nouns: *νᾱϝοντος ναϝᾱ* "a sailing ship". The high register builds whole phrases with them, in place of relative clauses and chains of verbs ([Syntax § Participle phrases](syntax.md#participle-phrases)).
 
 *Earlier versions gave the participle as νᾱϝον / νᾱϝουσα, the Greek masculine and feminine. Tharaic distinguishes animate and inanimate, not masculine and feminine, so the participle is now a regular adjective.*

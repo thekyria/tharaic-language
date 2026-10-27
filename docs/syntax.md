@@ -15,7 +15,7 @@ A **long subject**, such as one with a relative clause, may move to the end of t
 > *Φαγει λαχαμον εν λιμελι ενος ϸε-ϸερει σᾱϙιροι.* — Eats bread in harbor-LOC one that-sings storm-DAT. → "He who sings to the storm eats his bread in the harbor."
 
 A verb before a **compound subject** agrees with its first part, as in Hebrew:
-> *Εκανε ϳεσει προς-υ κολ γαβυλον και κολ αδαμιμ.* — Was goes-out to-him all region and all people. → "The whole region and all the people were going out to him." ([Mark 1:5](mark-1.md#john-the-immerser-18))
+> *Εκανε ϳεσει προς-υ κολ γαβυλον και κολ αδαμιμ.* — Was goes-out to-him all region and all people. → "The whole region and all the people were going out to him." (everyday wording; [Mark 1:5](mark-1.md#john-the-immerser-18) has the high-register *εκανε ϳεσοντον*, inanimate like *γαβυλον*)
 
 **Adjectives:** an attributive adjective comes **before** its noun (*καλος ϝελος* "a fair wind"); a predicate adjective follows the subject (*Εσι ϝελος καλος* "The wind is fair"). Numbers behave like attributive adjectives (*ενος ρεμευς* "one rower"). After a noun, a number labels it instead and does not agree: *ͱημερον τρια* "day three" ([Calendar § Dates](calendar.md#dates)).
 
@@ -286,7 +286,7 @@ The high register joins clauses with Doric conjunctions, and it puts subordinate
 | *πριν* | *τερεμ* | before | *Ευχεσθε πριν νᾱϝετε!* "Pray before you sail!" |
 | *ͱως* | *κεμω* | as, just as | |
 | *επει* | *ͱοτι* | since, because | *ͱοτι* stays for "that" after verbs of saying and knowing |
-| *ωστε* | | so that, with the result that | |
+| *ωστε* | | so that, with the result that; + infinitive, with its subject in the accusative | *ωστε βαλ ϳεκελειν Ϳεϸῡϙον βεϝειν* "so that Jesus could not go in" ([Mark 1:45](mark-1.md#a-man-with-leprosy-4045)) |
 | *γαρ* | | for, because (second word) | *Βαλ ϸα νᾱϝομεν· ϝενει γαρ σᾱϙιρος.* "We will not sail, for a storm is coming." |
 | *ων* | *λακεν* | so, therefore (second word) | |
 | *τοκα* | *αζα* | then, at that time | |

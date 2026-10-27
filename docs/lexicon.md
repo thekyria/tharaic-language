@@ -4,7 +4,7 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-1462 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+1463 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
@@ -135,7 +135,7 @@
 | *βεϙερειν* | begherein | Β-Ϙ-Ρ | v. | to burn | native (cf. Hebrew *bāʿar*) |  |  |
 | *γαια* | gaia |  | n. AN, A-stem | the living earth (as divine force) — short -α in the nominative | Greek *γαῖα* |  |  |
 | *γαφριτον* | gaphriton |  | n. IN, ON-stem | sulfur, brimstone | Phoenician (cf. Hebrew *goprît*) | *γαφιριτον* |  |
-| *γᾱ* | gā |  | n. IN, A-stem | the earth, land | Doric *γᾶ* |  | high ↔ *αρσον* |
+| *γᾱ* | gā |  | n. IN, A-stem | the earth, land — the sea cases are built on the whole word: LOC *γᾱελι*, INS *γᾱομ*, ABL *γᾱαθα* | Doric *γᾶ* |  | high ↔ *αρσον* |
 | *ζεͱερειν* | zeherein | Ζ-Ͱ-Ρ | v. | to shine, gleam | native (cf. Hebrew *zāhar*) |  |  |
 | *ͱᾱλιακος / ͱᾱλιακον* | hāliakos / hāliakon |  | adj. | of the sun, solar | Doric *ἁλιακός* |  | high adj. for *ͱηλιᾱ* |
 | *ͱᾱλιος* | hālios |  | n. AN, O-stem | the sun | Doric *ἅλιος* |  | high ↔ *ͱηλιᾱ* |
@@ -1143,6 +1143,7 @@
 | *ϸελειν* | shelein | Ϸ-Λ | v. | to ask, request; to question | native (cf. Hebrew *šāʾal*) |  | ↔ *αιτειν* |
 | *τεμεͱειν* | temehein | Τ-Μ-Ͱ | v. | to marvel, be amazed | native (cf. Hebrew *tāmah*) |  | ↔ *θαυμαζειν* |
 | *τερεγεμειν* | teregemein | Τ-Ρ-Γ-Μ | v. | to translate, interpret | native (cf. Aramaic *tirgēm*) |  |  |
+| *φᾱμᾱ* | phāmā |  | n. IN, A-stem | report, fame, rumor | Doric *φάμα* |  | high |
 | *φθονος* | phthonos |  | n. IN, O-stem | envy | Doric *φθόνος* | *φοθονος* | high |
 | *φιλειν* | philein |  | v. | to love (as a friend), to like; to kiss | Greek *φιλεῖν* |  |  |
 | *χαιρειν* | khairein |  | v., aor. *εχαρα* | to rejoice; imperative *χαιρε* 'greetings!' — the aorist takes the -α endings on the stem *χαρ-* | Doric *χαίρω* |  | high ↔ *σεμεχειν* |

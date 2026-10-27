@@ -30,7 +30,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | [Chants & Stories](docs/stories.md) | A rowing chant and a glossed harbor tale |
 | [Calendar & Star Lore](docs/calendar.md) | The star-set solar year, months, week, festivals, time of day, constellations |
 | [Translating the Gospels](docs/gospels.md) | How Greek constructions, titles and names are rendered; the Lord's Prayer and John 1:1 |
-| [Mark 1](docs/mark-1.md) | The first chapter of Mark in Tharaic: running text, then verse by verse with gloss and notes |
+| [Mark 1](docs/mark-1.md) | The first chapter of Mark in the high register: running text, then verse by verse with gloss and notes |
 | [History](docs/history.md) | Sound changes from Proto-Tharaic, root vowel grades, chant forms, irregular nouns |
 | [Roadmap](docs/roadmap.md) | Planned work |
 

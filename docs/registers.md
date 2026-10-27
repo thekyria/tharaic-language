@@ -163,7 +163,7 @@ Doric learning reached the temple through its scholars. In the high register:
 - **Theology uses Doric words**: *ψυχᾱ* for the soul, *κτιζειν* for the creation of the world, *σοφιᾱ* for divine wisdom.
 - **Phoenician words survive in fixed formulas and divine names**: *Βαλιλ ϳαμος* "Lord of the Deep" is still his name, but the moon in a hymn is *σελᾱνᾱ*. *ϳαραχᾱ* lives on only in old formulas.
 - **Sung liturgy uses chant forms**, so a hymn says *πυσυχᾱ* where a sermon says *ψυχᾱ*.
-- **Scripture is translated in the high register**, including the Gospels ([Translating the Gospels](gospels.md), [Mark 1](mark-1.md); both will be revised).
+- **Scripture is translated in the high register**, including the Gospels ([Translating the Gospels](gospels.md), [Mark 1](mark-1.md)). Their fixed titles keep the construct: *μαλκυλ ηλος* "the kingdom of God", *βενιλ αδαμος* "the Son of Man".
 
 ---
 

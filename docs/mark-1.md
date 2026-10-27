@@ -2,9 +2,11 @@
 
 [← Overview](../README.md) · [Translating the Gospels](gospels.md)
 
-The first chapter of the Gospel of Mark, translated from the SBL Greek New Testament. It tests the [Gospel vocabulary](gospels.md) on running text: the words, idioms and grammar points that the translation needed are listed [at the end](#what-the-translation-added).
+The first chapter of the Gospel of Mark, translated from the SBL Greek New Testament in the [high register](registers.md), the register of scripture. It tests the [Gospel vocabulary](gospels.md) and the grammar of the high register on running text: the points the translation needed are listed [at the end](#what-the-translation-added).
 
-The chapter comes twice: first as running text for reading, then verse by verse with romanization, a word-by-word gloss, and an English translation, for checking. Glosses follow the [sample sentences](texts.md) and [stories](stories.md): NARR is the narrative past *ϝα-*, CONSTR the construct state, WISH the particle *λυ*, Q the question prefix *ͱα-*, FUT the particle *ϸα*, NEG *μη*. "was says" glosses the imperfective past *εκανε* + present, "he was saying".
+The chapter comes twice: first as running text for reading, then verse by verse with romanization, a word-by-word gloss, and an English translation, for checking. Glosses follow the [sample sentences](texts.md): CONSTR is the construct state, WISH the particle *λυ*, Q the question prefix *ͱα-*, FUT the particle *ϸα*, NEG *μη*. Participles are glossed "going", "having-gone", and "was teaching" glosses *εκανε* + participle.
+
+*An earlier version of this page translated the chapter in the older style of sacred narrative, with the narrative past ϝα- and native words such as βασαρον "good news" and λᾱμιδειν "teach". The high register replaced that style for scripture; see the [Roadmap](roadmap.md#plan), step 12.*
 
 ---
 
@@ -12,27 +14,27 @@ The chapter comes twice: first as running text for reading, then verse by verse 
 
 **John the Immerser (1–8)**
 
-<sup>1</sup> Ραϸιτον βασαρου Ϳεϸῡϙι Μᾱϸιχι. <sup>2</sup> Κεμω κετεβεται εν Ϳεϸαϙιϳελι νᾱβιελι: «Ͱινε, ϸελεχω μαλᾱκονι λαπανε πανουκα, ϸε-ϸα τεκενει δαρακονκα; <sup>3</sup> κολον ενι ϸε-σεϙεκει εν μαδαβαρελι: Τεκενετε δαρακον αδενι, ϙεσετε νατιβαυ ϳαϸαρα.» <sup>4</sup> Ϝα-κανει Ϳωχανανος τεβελος εν μαδαβαρελι, και εκανε κερει ταβαλον ϸαβου προς σαλαχον χατων. <sup>5</sup> Και εκανε ϳεσει προς-υ κολ γαβυλον Ϳεͱυδου και κολ αδαμιμ Ϳερυϸαλαιμου, και εκανε τεβελει-ιμ Ϳωχανανος εν ναͱαρελι Ϳαρδενου, και εκαναν ϳεδουσι χαταιμ. <sup>6</sup> Και εκανε λεβεϸεται Ϳωχανανος ϸαϙαρ γαμαλι και χαγαρον ϙαρου περι χαλασελιυ, και εκανε φαγει αρβονας και δαβαϸον σαδου. <sup>7</sup> Και εκανε κερει και λεκει: «Ϝενει αχαρε-νι ενος ϸε-εσι γαβαροτερος απο-νι, ϸε-βαλ εμι αξιος νετειν και πετερειν ϸαροχον ναϙαλωνυ. <sup>8</sup> Ανι μεν ετεβελα-τεμ ͱυδομ, ͱῡα δε ϸα τεβελει-τεμ καδοϸομ ρῡχομ.»
+<sup>1</sup> Αρχᾱ ευανγελιω Ϳεϸῡϙι Μᾱϸιχι. <sup>2</sup> Ͱως γραφεται εν Ϳεϸαϙιϳελι προφᾱτελι: «Ͱινε, ϸελεχω ανγελονι λαπανε πανουκα, ϸε-ϸα τεκενει ͱοδονκα; <sup>3</sup> φωνᾱ σεϙεκοντι εν μαδαβαρελι: Τεκενετε ͱοδον κυριω, ποιετε νατιβαυ ορθα.» <sup>4</sup> Εͱεϝατο Ϳωχανανος βαπτιζοντος εν μαδαβαρελι, και καρυσσοντος βαπτισμα μετανοιᾱς προς αφεσιν ͱαμαρτιᾱν. <sup>5</sup> Και εκανε ϳεσοντον προς-υ κολ γαβυλον Ϳεͱυδου και κολ ανθρωποι Ϳερυϸαλαιμου, και εκαναν βαπτιζομενιμ απο-υ εν ποταμελι Ϳαρδενου, ϳεδοντιμ ͱαμαρτιᾱσιμ. <sup>6</sup> Και εκανε Ϳωχανανος λεβεϸαμενος ϸαϙαρ γαμαλι και χαγαρον ϙαρου περι χαλασελιυ, και φαγοντος αρβονας και δαβαϸον σαδου. <sup>7</sup> Και εκανε καρυσσοντος, λεκοντος: «Ερχεται αχαρε-νι γαβαροτερος απο-νι, ϸε-βαλ εμι αξιος, νεταντος, πετερειν ϸαροχον ναϙαλωνυ. <sup>8</sup> Ανι μεν εβαπτισα-τεμ ͱυδομ, ͱῡα δε ϸα βαπτιζει-τεμ καδοϸομ ρῡχομ.»
 
 **The immersion and the testing (9–13)**
 
-<sup>9</sup> Ϝα-κανει εν δεκ ͱημερελις: ϝα-ϝενει Ϳεϸῡϙος απο Νασεραταθα Γαλιλου, ϝα-τεβελεται Ϳωχαναναθα εν Ϳαρδενελι. <sup>10</sup> Ϝα-ϙελει πιθομ εκ ͱυδαθα, ϝα-ιδει ϸαμον ϸε-βεκεϙεται, και ρῡχᾱν ϸε-ϳερεδει κεμω ϳωνᾱ επι-υ. <sup>11</sup> Ϝα-ͱεϝεται κολον εκ ϸαμαθα: «Ατα εις βενι, ϸε-εͱεβω-τα; εχεφεσα εν-τα.» <sup>12</sup> Ϝα-γερεϸει-υ ρῡχᾱ πιθομ προς μαδαβαρ. <sup>13</sup> Και εκανε εν μαδαβαρελι κετα δεχα ͱημερα, και εκανε νεσεται Σαταναθα; και εκανε συν χαϳομις, και εκαναν ϸερετουσι-υ μαλᾱκιμ.
+<sup>9</sup> Και εͱεϝατο εν δεκ ͱᾱμερελις: ηνθε Ϳεϸῡϙος απο Νασεραταθα Γαλιλου, και εβαπτισατο Ϳωχαναναθα εν Ϳαρδενελι. <sup>10</sup> Και πιθομ, ϙελοντος εκ ͱυδαθα, εβλεψε ωρανον βεκεϙομενον και ρῡχᾱν ϳερεδοντον ͱως ϳωνᾱ επι-υ. <sup>11</sup> Και εͱεϝατο φωνᾱ εκ ωραναθα: «Ατα εις βενι αγαπομενος; εχεφεσα εν-τα.» <sup>12</sup> Και πιθομ εγερεϸε-υ ρῡχᾱ προς μαδαβαρ. <sup>13</sup> Και εκανε εν μαδαβαρελι κετα δεχα ͱᾱμερᾱς, νεσομενος Σαταναθα; και εκανε συν χαϳομις, και εκαναν ϸερετουσι-υ ανγελοι.
 
 **The first followers (14–20)**
 
-<sup>14</sup> Οτε εμεσερατο Ϳωχανανος, ϝα-ϝενει Ϳεϸῡϙος προς Γαλιλον, ϝα-κερει βασαρον ηλι, <sup>15</sup> ϝα-λεκει: «Εμελατο ϙατον, και εκερεβε μαλκυλ ηλος. Ϸεβετε, και εμενετε εν βασαρελι.» <sup>16</sup> Ϝα-ϙεβερει παρα ϳαμιελι Γαλιλου, ϝα-ιδει Ϸιμϙωνον και Ανδρεον αχον Ϸιμϙωνι, ϸε-ϸελεκουσι δικτυον εν ϳαμιελι; ͱοτι εκαναν ͱαλιεϝιμ. <sup>17</sup> Ϝα-λεκει-ιμ Ϳεϸῡϙος: «Ϝενετε αχαρε-νι, και ϸα ϙεσω-τεμ ͱαλιεϝιμ αδαμων.» <sup>18</sup> Ϝα-ϙεζεβουσι πιθομ δικτυαιμ, ϝα-δεβεκουσι-υ. <sup>19</sup> Ϝα-αγει μεϙατον, ϝα-ιδει Ϳαϙακωβον βενιλ Ζεβαδιᾱν και Ϳωχανανον αχονυ, ϸε-τεκενουσι δικτυα εν ναϝιελι. <sup>20</sup> Ϝα-καλει-ιμ πιθομ. Ϝα-ϙεζεβουσι αβονιμ Ζεβαδιᾱν εν ναϝιελι συν σεκερομις, ϝα-αγουσι αχαρε-υ.
+<sup>14</sup> Ϳωχανανι μεσεραμενι, ηνθε Ϳεϸῡϙος προς Γαλιλον, καρυσσοντος ευανγελιον ηλι, <sup>15</sup> και λεκοντος: «Εμελατο καιρος, και εκερεβε μαλκυλ ηλος. Μετανοετε, και πιστευετε ευανγελιοι.» <sup>16</sup> Και, ϙεβεροντος παρα ϳαμιελι Γαλιλου, εβλεψε Ϸιμϙωνον και Ανδρεον αδελφον Ϸιμϙωνι, ϸελεκοντονας δικτυον εν ϳαμιελι; εκαναν γαρ ͱαλιεϝιμ. <sup>17</sup> Και ελεκε-ιμ Ϳεϸῡϙος: «Ερχεσθε αχαρε-νι, και ϸα ποιω-τεμ ͱαλιεϝιμ ανθρωπων.» <sup>18</sup> Και πιθομ, ϙεζεβαντιμ δικτυα, εδεβεκαν-υ. <sup>19</sup> Και, πορευσαμενος μεϙατον, εβλεψε Ϳαϙακωβον βενιλ Ζεβαδιᾱν και Ϳωχανανον αδελφονυ, τεκενοντονας δικτυα εν ναϝιελι. <sup>20</sup> Και πιθομ εκαλε-ιμ. Και, ϙεζεβαντιμ αβονιμ Ζεβαδιᾱν εν ναϝιελι συν σεκερομις, επορευσαντο αχαρε-υ.
 
 **In the synagogue of Capernaum (21–28)**
 
-<sup>21</sup> Ϝα-βεϝουσι Καφαρυλ Ναχυμον. Ϝα-βεϝει πιθομ ϸαβατελι μακανασαρ, και εκανε λᾱμιδει. <sup>22</sup> Και εκαναν τεμεͱουσι επι λαμαδελιυ, ͱοτι εκανε λᾱμιδει-ιμ κεμω ενος ϸε-εσι-υ ϸαλτον, και βαλ κεμω κᾱτιβιμ. <sup>23</sup> Ϝα-κανει πιθομ εν μακανασαρελιιμ αδαμος συν ταμεομ ρῡχομ, ϝα-σεϙεκει, <sup>24</sup> ϝα-λεκει: «Μα εσι βεν-νεν και βεν-τα, Ϳεϸῡϙε Νασερατικε? Ͱα-εϝενας εβεδειν-νεν? Ειδω-τα, μι εις: καδοϸιλ ηλος.» <sup>25</sup> Ϝα-γεϙερει-υ Ϳεϸῡϙος, ϝα-λεκει: «Ͱεσε, και ϳεσε εκ-υ!» <sup>26</sup> Ϝα-ρεϙεσει-υ ταμεος ρῡχᾱ, ϝα-σεϙεκει μεγομ κολομ, ϝα-ϳεσει εκ-υ. <sup>27</sup> Ϝα-τεμεͱουσι κολ αδαμιμ, ϝα-ϸελουσι αλληλονας: «Μα εσι ζε ϙασον? Νεον λαμαδον, εν ϸαλτελι! Σεϝει και ταμεοιμ ρῡχαιμ, και ϸεμεϙουσι κολονυ.» <sup>28</sup> Ϝα-ϳεσει ϸαμαρυ πιθομ προς κολ γαβυλον Γαλιλου.
+<sup>21</sup> Και εβεϝαν Καφαρυλ Ναχυμον. Και πιθομ ϸαβατελι, βεϝαντος συναγωγᾱν, εκανε διδασκοντος. <sup>22</sup> Και εκαναν θαυμαζοντιμ επι διδαχελιυ; εδιδαξε-ιμ γαρ ͱως ενος ϸε-εσι-υ εξουσιᾱ, και βαλ ͱως γραμματεϝιμ. <sup>23</sup> Και πιθομ εκανε εν συναγωγελιιμ ανθρωπος συν ταμεομ πνευματομ, και εσεϙεκε, <sup>24</sup> λεκοντος: «Μα εσι βεν-νεν και βεν-τα, Ϳεϸῡϙε Νασερατικε? Ͱα-ηνθες εβεδειν-νεν? Ειδω-τα, μι εις: καδοϸιλ ηλος.» <sup>25</sup> Και εγεϙερε-υ Ϳεϸῡϙος, λεκοντος: «Ͱεσε, και ϳεσε εκ-υ!» <sup>26</sup> Και, ρεϙεσαντος ανθρωπον και σεϙεκαντος μεγομ φωνομ, εϳεσε εκ-υ ταμεος πνευμα. <sup>27</sup> Και εθαυμασαν κολ ανθρωποι, ωστε ζᾱτειν προς αλληλονας, λεκοντιμ: «Μα εσι ζε? Νεον διδαχᾱ, εν εξουσιελι! Σεϝει και ταμεοιμ πνευμασι, και ακουουσι φωνᾱνυ.» <sup>28</sup> Και εϳεσε φᾱμᾱυ πιθομ προς κολ γαβυλον Γαλιλου.
 
 **Healing at Simon's house (29–39)**
 
-<sup>29</sup> Ϝα-ϳεσουσι πιθομ εκ μακανασαραθα, ϝα-βεϝουσι οικον Ϸιμϙωνι και Ανδρει, συν Ϳαϙακωβομ και Ϳωχανανομ. <sup>30</sup> Εκανε ϸεκεβει χαμοτᾱ Ϸιμϙωνι εν καδαχελι, ϝα-νεγεδουσι-υ πιθομ περι-υ. <sup>31</sup> Ϝα-κερεβει, ϝα-εχεζει ϳαδονυ, ϝα-κεμει-υ. Ϝα-ϙεζεβει-υ καδαχον, ϝα-ϸερετει-ιμ. <sup>32</sup> Ϝα-κανει ϙερεβον. Οτε εδυνε ͱηλιᾱ, ϝα-φερουσι προς-υ κολ χαλονας και αδαμονας ϸε-εσι-ιμ ϸεδιμ. <sup>33</sup> Και εκανε κενεσεται καλιλον καρτον προς δαλετον. <sup>34</sup> Ϝα-ρεφει ραβονας ϸε-χελουσι ραβομις μαχαλομις, ϝα-γερεϸει ραβονας ϸεδονας; και βαλ εκανε ϙεζεβει ϸεδονας λεκειν, ͱοτι εκαναν ειδουσι-υ. <sup>35</sup> Ϝα-κεμεται βοκαρελι, οτε ϙωδα εκανε λαιλον; ϝα-ϳεσει, ϝα-αγει προς ϸαμεμον μακαμαρ, και ϸαμ εκανε λιτεται. <sup>36</sup> Ϝα-ρεδεφει-υ Ϸιμϙωνος και χαβεριμυ, <sup>37</sup> ϝα-μεσουσι-υ, ϝα-λεκουσι-υ: «Κολ ενος βεκεϸει-τα.» <sup>38</sup> Ϝα-λεκει-ιμ: «Λυ αγομεν προς καραβα καφαρα, λεμαϙαν κερω και ϸαμ; ͱοτι βαϙαβυρ ζε ϙασου εϳεσα.» <sup>39</sup> Ϝα-ͱελεκει δια κολ Γαλιλον, και εκανε κερει εν μακανασαρελισιμ και γερεϸει ϸεδονας.
+<sup>29</sup> Και πιθομ, ϳεσαντιμ εκ συναγωγαθα, ηνθαν προς οικον Ϸιμϙωνι και Ανδρει, συν Ϳαϙακωβομ και Ϳωχανανομ. <sup>30</sup> Και εκανε χαμοτᾱ Ϸιμϙωνι ϸεκεβοντος πυρετελι, και πιθομ ελεκαν-υ περι-υ. <sup>31</sup> Και, κερεβαντος και εχεζαντος ϳαδονυ, εκεμε-υ; και εϙεζεβε-υ πυρετος, και εκανε ϸερετει-ιμ. <sup>32</sup> Ϙερεβου ͱεϝαμενου, ͱοκα εδυνε ͱᾱλιος, εκαναν φεροντιμ προς-υ κολ χαλονας και ανθρωπως ϸε-εσι-ιμ δαιμονια; <sup>33</sup> Και εκανε καλιλον πολις κενεσαμενον προς δαλετον. <sup>34</sup> Και εθεραπευσε ραβονας χελοντονας ραβομις νοσομις, και εγερεϸε ραβονας δαιμονια; και βαλ εκανε ϙεζεβει δαιμονια λεκειν, επει ενοησαν-υ. <sup>35</sup> Και βοκαρελι, ϙωδα κανοντου λαιλου, κεμαμενος εϳεσε, και επορευσατο προς ϸαμεμον μακαμαρ, και ϸαμ εκανε ευχομενος. <sup>36</sup> Και ερεδεφε-υ Ϸιμϙωνος και χαβεριμυ, <sup>37</sup> και εμεσαν-υ, και ελεκαν-υ: «Κολ ενος ζᾱτει-τα.» <sup>38</sup> Και ελεκε-ιμ: «Λυ πορευομεσθα προς καραβα καφαρα, ͱινα καρυσσω και ϸαμ; εϳεσα γαρ βαϙαβυρ ζε ϙασου.» <sup>39</sup> Και ηνθε καρυσσοντος εν συναγωγελισιμ δια κολ Γαλιλον, και γερεϸοντος δαιμονια.
 
 **A man with leprosy (40–45)**
 
-<sup>40</sup> Ϝα-ϝενει προς-υ σαραϙος, ϝα-νεχεμει-υ, ϝα-βερεκει, ϝα-λεκει-υ: «Ιμ θελεις, ϳεκελεις τεͱερειν-νι.» <sup>41</sup> Ϝα-χερει, ϝα-ϸελεχει ϳαδονυ, ϝα-νεγει-υ, ϝα-λεκει-υ: «Θελω. Τεͱερεσο!» <sup>42</sup> Ϝα-αγει πιθομ σαραϙατον απο-υ, ϝα-τεͱερεται. <sup>43</sup> Ϝα-γεϙερει-υ, ϝα-ϸελεχει-υ πιθομ, <sup>44</sup> ϝα-λεκει-υ: «Ιδε, μη λεκε ενον ενοι; αλλα αγε, δεικνυε νεφεϸᾱνκα κοͱενοι, και κερεβε περι ταͱαρουκα ενον ϸε-εσεϝε-α Μωϸεος, προς ϙαδονιμ.» <sup>45</sup> Ϝα-ϳεσει δεκ αδαμος, ϝα-ρεϸει κερειν ραβον και νεγεδειν λακον, ϙαδι ϸε-βαλ εκανε ϳεκελει ϙωδα Ϳεϸῡϙος βεϝειν καρτον γαλυϳον; αλλα εκανε εξω, εν ϸαμεμελις μακαμαρελις. Και εκαναν ϝενουσι προς-υ απο κολ μακαμαραθα.
+<sup>40</sup> Και ηνθε προς-υ σαραϙος, νεχεμοντος και βερεκοντος, και ελεκε-υ: «Αι θελεις, ϳεκελεις τεͱερειν-νι.» <sup>41</sup> Και, χεραντος, ϸελεχαντος ϳαδονυ, ενεγε-υ, και ελεκε-υ: «Θελω. Τεͱερεσο!» <sup>42</sup> Και πιθομ επορευσατο σαραϙατον απο-υ, και ετεͱερατο. <sup>43</sup> Και, γεϙεραντος, εϸελεχε-υ πιθομ, <sup>44</sup> και ελεκε-υ: «Βλεπε, μη λεκε ενον ενοι; αλλα πορευεσο, δεικνυε νεφεϸᾱνκα ͱιαρεϝοι, και κερεβε περι ταͱαρουκα ενον ϸε-εσεϝε-α Μωϸεος, προς μαρτυριᾱνιμ.» <sup>45</sup> Ϳεσαντος, ᾱρξατο δεκ ανθρωπος καρυσσειν ραβον και ανγελλειν λογον, ωστε βαλ ϙωδα ϳεκελειν Ϳεϸῡϙον βεϝειν πολιν γαλυϳον; αλλα εκανε εξω, εν ϸαμεμελις μακαμαρελις. Και εκαναν ερχομενιμ προς-υ απο κολ μακαμαραθα.
 
 ---
 
@@ -40,305 +42,315 @@ The chapter comes twice: first as running text for reading, then verse by verse 
 
 ### John the Immerser (1–8)
 
-> **1** *Ραϸιτον βασαρου Ϳεϸῡϙι Μᾱϸιχι.*<br>
-> Rashiton basarou Yeshūghi Māshikhi.<br>
-> Beginning good-news-GEN Jesus-GEN Anointed-GEN.<br>
-> The beginning of the good news of Jesus the Anointed.
+> **1** *Αρχᾱ ευανγελιω Ϳεϸῡϙι Μᾱϸιχι.*<br>
+> Arkhā euangeliō Yeshūghi Māshikhi.<br>
+> Beginning gospel-GEN Jesus-GEN Anointed-GEN.<br>
+> The beginning of the gospel of Jesus the Anointed.
 
-> **2** *Κεμω κετεβεται εν Ϳεϸαϙιϳελι νᾱβιελι: «Ͱινε, ϸελεχω μαλᾱκονι λαπανε πανουκα, ϸε-ϸα τεκενει δαρακονκα;*<br>
-> Kemō ketebetai en Yeshaghiyeli nābieli: «Hine, shelekhō malākoni lapane panouka, she-sha tekenei darakonka;<br>
+> **2** *Ͱως γραφεται εν Ϳεϸαϙιϳελι προφᾱτελι: «Ͱινε, ϸελεχω ανγελονι λαπανε πανουκα, ϸε-ϸα τεκενει ͱοδονκα;*<br>
+> Hōs graphetai en Yeshaghiyeli prophāteli: «Hine, shelekhō angeloni lapane panouka, she-sha tekenei hodonka;<br>
 > As is-written in Isaiah-LOC prophet-LOC: «Behold, I-send messenger-ACC-my before face-GEN-your, that-FUT prepares way-ACC-your;<br>
 > As it is written in Isaiah the prophet: “Look, I am sending my messenger ahead of you, who will prepare your way;
 
-> **3** *κολον ενι ϸε-σεϙεκει εν μαδαβαρελι: Τεκενετε δαρακον αδενι, ϙεσετε νατιβαυ ϳαϸαρα.»*<br>
-> kolon eni she-seghekei en madabareli: Tekenete darakon adeni, ghesete natibau yashara.»<br>
-> voice one-GEN that-cries in wilderness-LOC: Prepare-PL way-ACC Lord-GEN, make-PL paths-his straight.»<br>
+> **3** *φωνᾱ σεϙεκοντι εν μαδαβαρελι: Τεκενετε ͱοδον κυριω, ποιετε νατιβαυ ορθα.»*<br>
+> phōnā seghekonti en madabareli: Tekenete hodon kuriō, poiete natibau ortha.»<br>
+> voice crying-GEN in wilderness-LOC: Prepare-PL way-ACC Lord-GEN, make-PL paths-his straight.»<br>
 > a voice of one crying out in the wilderness: Prepare the way of the Lord, make his paths straight.”
 
-> **4** *Ϝα-κανει Ϳωχανανος τεβελος εν μαδαβαρελι, και εκανε κερει ταβαλον ϸαβου προς σαλαχον χατων.*<br>
-> Va-kanei Yōkhananos tebelos en madabareli, kai ekane kerei tabalon shabou pros salakhon khatōn.<br>
-> NARR-was John immerser in wilderness-LOC, and was proclaims immersion-ACC return-GEN toward forgiveness-ACC sins-GEN.<br>
+> **4** *Εͱεϝατο Ϳωχανανος βαπτιζοντος εν μαδαβαρελι, και καρυσσοντος βαπτισμα μετανοιᾱς προς αφεσιν ͱαμαρτιᾱν.*<br>
+> Ehevato Yōkhananos baptizontos en madabareli, kai karussontos baptisma metanoiās pros aphesin hamartiān.<br>
+> Came-about John immersing in wilderness-LOC, and proclaiming immersion repentance-GEN toward forgiveness-ACC sins-GEN.<br>
 > John the Immerser appeared in the wilderness, proclaiming an immersion of repentance for the forgiveness of sins.
 
-> **5** *Και εκανε ϳεσει προς-υ κολ γαβυλον Ϳεͱυδου και κολ αδαμιμ Ϳερυϸαλαιμου, και εκανε τεβελει-ιμ Ϳωχανανος εν ναͱαρελι Ϳαρδενου, και εκαναν ϳεδουσι χαταιμ.*<br>
-> Kai ekane yesei pros-u kol gabulon Yehudou kai kol adamim Yerushalaimou, kai ekane tebelei-im Yōkhananos en nahareli Yardenou, kai ekanan yedousi khataim.<br>
-> And was goes-out to-him all region Judea-GEN and all people Jerusalem-GEN, and was immerses-them John in river-LOC Jordan-GEN, and were confess sins-their.<br>
-> The whole region of Judea and all the people of Jerusalem were going out to him, and John was immersing them in the river Jordan as they confessed their sins.
+> **5** *Και εκανε ϳεσοντον προς-υ κολ γαβυλον Ϳεͱυδου και κολ ανθρωποι Ϳερυϸαλαιμου, και εκαναν βαπτιζομενιμ απο-υ εν ποταμελι Ϳαρδενου, ϳεδοντιμ ͱαμαρτιᾱσιμ.*<br>
+> Kai ekane yesonton pros-u kol gabulon Yehudou kai kol anthrōpoi Yerushalaimou, kai ekanan baptizomenim apo-u en potameli Yardenou, yedontim hamartiāsim.<br>
+> And was going-out to-him all region Judea-GEN and all people Jerusalem-GEN, and were being-immersed-PL from-him in river-LOC Jordan-GEN, confessing-PL sins-ACC-their.<br>
+> The whole region of Judea and all the people of Jerusalem were going out to him, and they were being immersed by him in the river Jordan, confessing their sins.
 
-> **6** *Και εκανε λεβεϸεται Ϳωχανανος ϸαϙαρ γαμαλι και χαγαρον ϙαρου περι χαλασελιυ, και εκανε φαγει αρβονας και δαβαϸον σαδου.*<br>
-> Kai ekane lebeshetai Yōkhananos shaghar gamali kai khagaron gharou peri khalaseliu, kai ekane phagei arbonas kai dabashon sadou.<br>
-> And was dresses-himself John hair camel-GEN and belt-ACC skin-GEN around waist-LOC-his, and was eats locusts-ACC and honey-ACC field-GEN.<br>
-> John wore camel's hair, with a leather belt around his waist, and he ate locusts and wild honey.
+> **6** *Και εκανε Ϳωχανανος λεβεϸαμενος ϸαϙαρ γαμαλι και χαγαρον ϙαρου περι χαλασελιυ, και φαγοντος αρβονας και δαβαϸον σαδου.*<br>
+> Kai ekane Yōkhananos lebeshamenos shaghar gamali kai khagaron gharou peri khalaseliu, kai phagontos arbonas kai dabashon sadou.<br>
+> And was John having-dressed hair camel-GEN and belt-ACC skin-GEN around waist-LOC-his, and eating locusts-ACC and honey-ACC field-GEN.<br>
+> John was clothed in camel's hair, with a leather belt around his waist, and he ate locusts and wild honey.
 
-> **7** *Και εκανε κερει και λεκει: «Ϝενει αχαρε-νι ενος ϸε-εσι γαβαροτερος απο-νι, ϸε-βαλ εμι αξιος νετειν και πετερειν ϸαροχον ναϙαλωνυ.*<br>
-> Kai ekane kerei kai lekei: «Venei akhare-ni enos she-esi gabaroteros apo-ni, she-bal emi axios netein kai peterein sharokhon naghalōnu.<br>
-> And was proclaims and says: «Comes after-me one that-is mightier from-me, that-not I-am worthy to-bend and to-untie strap-ACC sandals-GEN-his.<br>
+> **7** *Και εκανε καρυσσοντος, λεκοντος: «Ερχεται αχαρε-νι γαβαροτερος απο-νι, ϸε-βαλ εμι αξιος, νεταντος, πετερειν ϸαροχον ναϙαλωνυ.*<br>
+> Kai ekane karussontos, lekontos: «Erkhetai akhare-ni gabaroteros apo-ni, she-bal emi axios, netantos, peterein sharokhon naghalōnu.<br>
+> And was proclaiming, saying: «Comes after-me mightier from-me, that-not I-am worthy, having-bent, to-untie strap-ACC sandals-GEN-his.<br>
 > And he proclaimed: “After me comes one who is mightier than I. I am not worthy to bend down and untie the strap of his sandals.
 
-> **8** *Ανι μεν ετεβελα-τεμ ͱυδομ, ͱῡα δε ϸα τεβελει-τεμ καδοϸομ ρῡχομ.»*<br>
-> Ani men etebela-tem hudom, hūa de sha tebelei-tem kadoshom rūkhom.»<br>
+> **8** *Ανι μεν εβαπτισα-τεμ ͱυδομ, ͱῡα δε ϸα βαπτιζει-τεμ καδοϸομ ρῡχομ.»*<br>
+> Ani men ebaptisa-tem hudom, hūa de sha baptizei-tem kadoshom rūkhom.»<br>
 > I on-one-hand immersed-you-PL water-INS, he on-the-other FUT immerses-you-PL holy-INS spirit-INS.»<br>
 > I have immersed you with water, but he will immerse you with the Holy Spirit.”
 
 Notes:
-- **Register.** The chapter is told with the narrative past *ϝα-* + present, the way Hebrew Bible prose tells events, and sets scenes with the imperfective past *εκανε* + present ([Verbs](morphology.md#narrative-past-prefix-ϝα--phoenician-wayyiqtol-analog)). Word forms are everyday ones: *προς*, not chant *πορος*.
-- **v. 1** has no verb: it is a title, as in the Greek.
-- **v. 2** *κετεβεται* "is written" is the middle voice of *κετεβειν*. *λαπανε πανουκα* "before your face" doubles the face of *λαπανε*, as the Greek *πρὸ προσώπου* does.
-- **v. 3** *κολον ενι ϸε-σεϙεκει*: a relative clause with no noun of its own takes *ενος* "one" as its head ([Relative clauses](syntax.md#relative-clauses)), here in the genitive *ενι*.
-- **v. 4** *Ϝα-κανει* "and there was, and it came to pass" is the narrative past of "to be", from Κ-Ν like Hebrew *wayhî*. The present root ε(σ)- takes no *ϝα-*.
-- **v. 5** The verb comes before a compound subject and agrees with the first part (*εκανε ϳεσει … γαβυλον … και αδαμιμ*), as in Hebrew. The Greek passive "were immersed by him" is turned active, "John immersed them".
-- **v. 7** *γαβαροτερος απο-νι* "mightier than I": the standard of comparison is ablative, and for a pronoun it is *απο* with an enclitic, like Hebrew *mimmennî*. *ϸαροχον ναϙαλωνυ* "the strap of his sandals" carries the resumptive *-υ* of the relative clause.
-- **v. 8** *μεν … δε* sets the two immersions against each other.
+- **Register.** The chapter is in the [high register](registers.md), like all scripture: the aorist tells the events, participles link them, and the learned Doric words take their [Doric endings](morphology.md#doric-nouns-high-register) in the Greek cases (*ευανγελιω*, *κυριω*, *μετανοιᾱς*, *ͱαμαρτιᾱν*) and Tharaic endings in the sea cases (*προφᾱτελι*, *ποταμελι*). Word forms are spoken ones, not chant: *προς*, not *πορος*.
+- **v. 1** has no verb: it is a title, as in the Greek. *αρχᾱ* and *ευανγελιον* are the high words for *ραϸιτον* and *βασαρον*.
+- **v. 2** *γραφεται* "is written" is the middle voice of *γραφειν*. *λαπανε πανουκα* "before your face" doubles the face of *λαπανε*, as the Greek *πρὸ προσώπου* does.
+- **v. 3** *φωνᾱ σεϙεκοντι* "the voice of one crying": a participle used as a noun, in the genitive, where everyday speech needs a relative clause, *κολον ενι ϸε-σεϙεκει*.
+- **v. 4** *Εͱεϝατο* "came about, appeared", the aorist middle of *ͱεϝεσθαι*, is the high register's "it came to pass" (everyday *ϝα-κανει*). *βαπτιζοντος* "the immersing one" keeps Mark's participle *ὁ βαπτίζων*.
+- **v. 5** The participle after *εκανε* agrees with the first part of the compound subject, *γαβυλον*, so it is inanimate: *ϳεσοντον*. The passive "were immersed by him" is the middle with the agent *απο-υ* "from him".
+- **v. 6** *λεβεϸαμενος* "having dressed, clothed" is an aorist middle participle used as a predicate.
+- **v. 7** *γαβαροτερος* "the mightier one" is a comparative used as a noun. *νεταντος* "having stooped" follows the Greek *κύψας*.
+- **v. 8** *καδοϸος ρῡχᾱ* "the Holy Spirit" is a [fixed title](gospels.md#titles), so it keeps its native words, not the Doric *ͱιαρος πνευμα*.
 
 ---
 
 ### The immersion and the testing (9–13)
 
-> **9** *Ϝα-κανει εν δεκ ͱημερελις: ϝα-ϝενει Ϳεϸῡϙος απο Νασεραταθα Γαλιλου, ϝα-τεβελεται Ϳωχαναναθα εν Ϳαρδενελι.*<br>
-> Va-kanei en dek hēmerelis: va-venei Yeshūghos apo Naseratatha Galilou, va-tebeletai Yōkhananatha en Yardeneli.<br>
-> NARR-was in those days-LOC: NARR-comes Jesus from Nazareth-ABL Galilee-GEN, NARR-is-immersed John-ABL in Jordan-LOC.<br>
+> **9** *Και εͱεϝατο εν δεκ ͱᾱμερελις: ηνθε Ϳεϸῡϙος απο Νασεραταθα Γαλιλου, και εβαπτισατο Ϳωχαναναθα εν Ϳαρδενελι.*<br>
+> Kai ehevato en dek hāmerelis: ēnthe Yeshūghos apo Naseratatha Galilou, kai ebaptisato Yōkhananatha en Yardeneli.<br>
+> And came-about in those days-LOC: came Jesus from Nazareth-ABL Galilee-GEN, and was-immersed John-ABL in Jordan-LOC.<br>
 > In those days Jesus came from Nazareth of Galilee and was immersed by John in the Jordan.
 
-> **10** *Ϝα-ϙελει πιθομ εκ ͱυδαθα, ϝα-ιδει ϸαμον ϸε-βεκεϙεται, και ρῡχᾱν ϸε-ϳερεδει κεμω ϳωνᾱ επι-υ.*<br>
-> Va-ghelei pithom ek hudatha, va-idei shamon she-bekeghetai, kai rūkhān she-yeredei kemō yōnā epi-u.<br>
-> NARR-goes-up at-once out-of water-ABL, NARR-sees sky-ACC that-splits-itself, and spirit-ACC that-comes-down like dove onto-him.<br>
+> **10** *Και πιθομ, ϙελοντος εκ ͱυδαθα, εβλεψε ωρανον βεκεϙομενον και ρῡχᾱν ϳερεδοντον ͱως ϳωνᾱ επι-υ.*<br>
+> Kai pithom, ghelontos ek hudatha, eblepse ōranon bekeghomenon kai rūkhān yeredonton hōs yōnā epi-u.<br>
+> And at-once, going-up out-of water-ABL, he-saw heaven-ACC being-split-ACC and spirit-ACC coming-down-ACC as dove onto-him.<br>
 > As soon as he came up out of the water, he saw the heavens torn open and the Spirit coming down on him like a dove.
 
-> **11** *Ϝα-ͱεϝεται κολον εκ ϸαμαθα: «Ατα εις βενι, ϸε-εͱεβω-τα; εχεφεσα εν-τα.»*<br>
-> Va-hevetai kolon ek shamatha: «Ata eis beni, she-ehebō-ta; ekhephesa en-ta.»<br>
-> NARR-happens voice out-of sky-ABL: «You are son-my, that-I-love-you; I-delighted in-you.»<br>
-> And a voice came from the heavens: “You are my Son, whom I love; in you I am well pleased.”
+> **11** *Και εͱεϝατο φωνᾱ εκ ωραναθα: «Ατα εις βενι αγαπομενος; εχεφεσα εν-τα.»*<br>
+> Kai ehevato phōnā ek ōranatha: «Ata eis beni agapomenos; ekhephesa en-ta.»<br>
+> And came-about voice out-of heaven-ABL: «You are son-my being-loved; I-delighted in-you.»<br>
+> And a voice came from the heavens: “You are my beloved Son; in you I am well pleased.”
 
-> **12** *Ϝα-γερεϸει-υ ρῡχᾱ πιθομ προς μαδαβαρ.*<br>
-> Va-gereshei-u rūkhā pithom pros madabar.<br>
-> NARR-drives-out-him spirit at-once toward wilderness-ACC.<br>
+> **12** *Και πιθομ εγερεϸε-υ ρῡχᾱ προς μαδαβαρ.*<br>
+> Kai pithom egereshe-u rūkhā pros madabar.<br>
+> And at-once drove-out-him spirit toward wilderness-ACC.<br>
 > At once the Spirit drove him out into the wilderness.
 
-> **13** *Και εκανε εν μαδαβαρελι κετα δεχα ͱημερα, και εκανε νεσεται Σαταναθα; και εκανε συν χαϳομις, και εκαναν ϸερετουσι-υ μαλᾱκιμ.*<br>
-> Kai ekane en madabareli keta dekha hēmera, kai ekane nesetai Satanatha; kai ekane sun khayomis, kai ekanan sheretousi-u malākim.<br>
-> And was in wilderness-LOC four ten days-ACC, and was is-tested Satan-ABL; and was with beasts-INS, and were serve-him messengers.<br>
+> **13** *Και εκανε εν μαδαβαρελι κετα δεχα ͱᾱμερᾱς, νεσομενος Σαταναθα; και εκανε συν χαϳομις, και εκαναν ϸερετουσι-υ ανγελοι.*<br>
+> Kai ekane en madabareli keta dekha hāmerās, nesomenos Satanatha; kai ekane sun khayomis, kai ekanan sheretousi-u angeloi.<br>
+> And was in wilderness-LOC four ten days-ACC, being-tested Satan-ABL; and was with beasts-INS, and were serve-him angels.<br>
 > He was in the wilderness forty days, being tested by Satan. He was with the wild animals, and the angels were serving him.
 
 Notes:
-- **v. 9** *Ϝα-κανει εν δεκ ͱημερελις* "and it came to pass in those days" is the Hebrew *wayhî bayyāmîm hāhēm*. The agent of the passive is in the ablative: *Ϳωχαναναθα* "by John".
-- **v. 10** Greek participles become a chain of *ϝα-* verbs. *ϸαμον ϸε-βεκεϙεται* "the sky that was splitting" uses a relative clause where the Greek has a participle.
-- **v. 11** "Beloved" is a relative clause, *ϸε-εͱεβω-τα* "whom I love", with a second-person resumptive enclitic.
-- **v. 13** *κετα δεχα ͱημερα* "forty days": duration is in the accusative. The imperfective *εκανε … εκαναν* describes the whole stay rather than single events.
+- **v. 9** *εβαπτισατο* "was immersed" is the aorist middle of a Doric verb, used as a passive, with the agent in the ablative.
+- **v. 10** Where the older translation needed a chain of *ϝα-* verbs and two relative clauses, the high register follows the Greek participles: *ϙελοντος* "going up" agrees with the subject; *βεκεϙομενον* and *ϳερεδοντον* agree with the objects. *ρῡχᾱ* alone is the short form of the title *καδοϸος ρῡχᾱ*.
+- **v. 11** *αγαπομενος* "being loved, beloved" is the present middle participle of *αγαπειν*.
+- **v. 13** *κετα δεχα ͱᾱμερᾱς* "forty days": duration is in the accusative, here the Doric accusative plural *-ᾱς*. *εκαναν ϸερετουσι-υ* keeps a finite verb because an object enclitic cannot attach to a participle ([Participles](morphology.md#participles)).
 
 ---
 
 ### The first followers (14–20)
 
-> **14** *Οτε εμεσερατο Ϳωχανανος, ϝα-ϝενει Ϳεϸῡϙος προς Γαλιλον, ϝα-κερει βασαρον ηλι,*<br>
-> Ote emeserato Yōkhananos, va-venei Yeshūghos pros Galilon, va-kerei basaron ēli,<br>
-> When was-handed-over John, NARR-comes Jesus toward Galilee-ACC, NARR-proclaims good-news-ACC God-GEN,<br>
-> After John was handed over, Jesus came into Galilee, proclaiming the good news of God,
+> **14** *Ϳωχανανι μεσεραμενι, ηνθε Ϳεϸῡϙος προς Γαλιλον, καρυσσοντος ευανγελιον ηλι,*<br>
+> Yōkhanani meserameni, ēnthe Yeshūghos pros Galilon, karussontos euangelion ēli,<br>
+> John-GEN having-been-handed-over-GEN, came Jesus toward Galilee-ACC, proclaiming gospel-ACC God-GEN,<br>
+> After John was handed over, Jesus came into Galilee, proclaiming the gospel of God,
 
-> **15** *ϝα-λεκει: «Εμελατο ϙατον, και εκερεβε μαλκυλ ηλος. Ϸεβετε, και εμενετε εν βασαρελι.»*<br>
-> va-lekei: «Emelato ghaton, kai ekerebe malkul ēlos. Shebete, kai emenete en basareli.»<br>
-> NARR-says: «Was-fulfilled time, and drew-near kingdom-CONSTR God. Turn-back-PL, and believe-PL in good-news-LOC.»<br>
-> saying: “The time is fulfilled, and the kingdom of God has come near. Repent, and believe in the good news.”
+> **15** *και λεκοντος: «Εμελατο καιρος, και εκερεβε μαλκυλ ηλος. Μετανοετε, και πιστευετε ευανγελιοι.»*<br>
+> kai lekontos: «Emelato kairos, kai ekerebe malkul ēlos. Metanoete, kai pisteuete euangelioi.»<br>
+> and saying: «Was-fulfilled time, and drew-near kingdom-CONSTR God. Repent-PL, and believe-PL gospel-DAT.»<br>
+> saying: “The time is fulfilled, and the kingdom of God has come near. Repent, and believe in the gospel.”
 
-> **16** *Ϝα-ϙεβερει παρα ϳαμιελι Γαλιλου, ϝα-ιδει Ϸιμϙωνον και Ανδρεον αχον Ϸιμϙωνι, ϸε-ϸελεκουσι δικτυον εν ϳαμιελι; ͱοτι εκαναν ͱαλιεϝιμ.*<br>
-> Va-gheberei para yamieli Galilou, va-idei Shimghōnon kai Andreon akhon Shimghōni, she-shelekousi diktuon en yamieli; hoti ekanan halievim.<br>
-> NARR-passes beside lake-LOC Galilee-GEN, NARR-sees Simon-ACC and Andrew-ACC brother-ACC Simon-GEN, that-throw net-ACC in lake-LOC; because were fishermen.<br>
+> **16** *Και, ϙεβεροντος παρα ϳαμιελι Γαλιλου, εβλεψε Ϸιμϙωνον και Ανδρεον αδελφον Ϸιμϙωνι, ϸελεκοντονας δικτυον εν ϳαμιελι; εκαναν γαρ ͱαλιεϝιμ.*<br>
+> Kai, gheberontos para yamieli Galilou, eblepse Shimghōnon kai Andreon adelphon Shimghōni, shelekontonas diktuon en yamieli; ekanan gar halievim.<br>
+> And, passing beside lake-LOC Galilee-GEN, he-saw Simon-ACC and Andrew-ACC brother-ACC Simon-GEN, throwing-ACC-PL net-ACC in lake-LOC; were for fishermen.<br>
 > As he passed along the Sea of Galilee, he saw Simon and Andrew, Simon's brother, casting a net into the sea, for they were fishermen.
 
-> **17** *Ϝα-λεκει-ιμ Ϳεϸῡϙος: «Ϝενετε αχαρε-νι, και ϸα ϙεσω-τεμ ͱαλιεϝιμ αδαμων.»*<br>
-> Va-lekei-im Yeshūghos: «Venete akhare-ni, kai sha ghesō-tem halievim adamōn.»<br>
-> NARR-says-them Jesus: «Come-PL after-me, and FUT I-make-you-PL fishermen people-GEN.»<br>
+> **17** *Και ελεκε-ιμ Ϳεϸῡϙος: «Ερχεσθε αχαρε-νι, και ϸα ποιω-τεμ ͱαλιεϝιμ ανθρωπων.»*<br>
+> Kai eleke-im Yeshūghos: «Erkhesthe akhare-ni, kai sha poiō-tem halievim anthrōpōn.»<br>
+> And said-them Jesus: «Come-PL after-me, and FUT I-make-you-PL fishermen people-GEN.»<br>
 > Jesus said to them: “Come after me, and I will make you fishers of people.”
 
-> **18** *Ϝα-ϙεζεβουσι πιθομ δικτυαιμ, ϝα-δεβεκουσι-υ.*<br>
-> Va-ghezebousi pithom diktuaim, va-debekousi-u.<br>
-> NARR-leave at-once nets-their, NARR-follow-him.<br>
+> **18** *Και πιθομ, ϙεζεβαντιμ δικτυα, εδεβεκαν-υ.*<br>
+> Kai pithom, ghezebantim diktua, edebekan-u.<br>
+> And at-once, having-left-PL nets, they-followed-him.<br>
 > At once they left their nets and followed him.
 
-> **19** *Ϝα-αγει μεϙατον, ϝα-ιδει Ϳαϙακωβον βενιλ Ζεβαδιᾱν και Ϳωχανανον αχονυ, ϸε-τεκενουσι δικτυα εν ναϝιελι.*<br>
-> Va-agei meghaton, va-idei Yaghakōbon benil Zebadiān kai Yōkhananon akhonu, she-tekenousi diktua en navieli.<br>
-> NARR-goes little, NARR-sees James-ACC son-CONSTR Zebedee-ACC and John-ACC brother-ACC-his, that-mend nets in boat-LOC.<br>
+> **19** *Και, πορευσαμενος μεϙατον, εβλεψε Ϳαϙακωβον βενιλ Ζεβαδιᾱν και Ϳωχανανον αδελφονυ, τεκενοντονας δικτυα εν ναϝιελι.*<br>
+> Kai, poreusamenos meghaton, eblepse Yaghakōbon benil Zebadiān kai Yōkhananon adelphonu, tekenontonas diktua en navieli.<br>
+> And, having-gone little, he-saw James-ACC son-CONSTR Zebedee-ACC and John-ACC brother-ACC-his, mending-ACC-PL nets in boat-LOC.<br>
 > Going on a little farther, he saw James son of Zebedee and his brother John, who were in their boat mending the nets.
 
-> **20** *Ϝα-καλει-ιμ πιθομ. Ϝα-ϙεζεβουσι αβονιμ Ζεβαδιᾱν εν ναϝιελι συν σεκερομις, ϝα-αγουσι αχαρε-υ.*<br>
-> Va-kalei-im pithom. Va-ghezebousi abonim Zebadiān en navieli sun sekeromis, va-agousi akhare-u.<br>
-> NARR-calls-them at-once. NARR-leave father-ACC-their Zebedee-ACC in boat-LOC with hired-men-INS, NARR-go after-him.<br>
+> **20** *Και πιθομ εκαλε-ιμ. Και, ϙεζεβαντιμ αβονιμ Ζεβαδιᾱν εν ναϝιελι συν σεκερομις, επορευσαντο αχαρε-υ.*<br>
+> Kai pithom ekale-im. Kai, ghezebantim abonim Zebadiān en navieli sun sekeromis, eporeusanto akhare-u.<br>
+> And at-once he-called-them. And, having-left-PL father-ACC-their Zebedee-ACC in boat-LOC with hired-men-INS, they-went after-him.<br>
 > At once he called them, and they left their father Zebedee in the boat with the hired men and went after him.
 
 Notes:
-- **v. 14** *εμεσερατο* is the aorist middle of *μεσερειν* "hand over", used as a passive.
-- **v. 15** *μαλκυλ ηλος* "the kingdom of God" is a construct phrase; the aorists *εμελατο*, *εκερεβε* translate the Greek perfects "is fulfilled, has come near".
-- **v. 16** The Sea of Galilee is a lake, *ϳαμιον*, not the open sea *θᾱρος*. Sailors would never call it a sea.
-- **v. 17** *ϙεσω-τεμ ͱαλιεϝιμ αδαμων*: "make" takes an object and a predicate noun.
-- **v. 19** *βενιλ Ζεβαδιᾱν* "son of Zebedee": a construct phrase takes its case on its last word, here the accusative, in apposition to *Ϳαϙακωβον*.
+- **v. 14** *Ϳωχανανι μεσεραμενι* "John having been handed over" is a [genitive absolute](syntax.md#participle-phrases): John is not part of the main clause.
+- **v. 15** *μαλκυλ ηλος* "the kingdom of God" is a fixed title and keeps the construct, where free high prose would say *βασιλειᾱ ηλι*. *πιστευετε ευανγελιοι* "believe the gospel" puts the object in the dative, as Greek *πιστεύω* does. The aorists *εμελατο*, *εκερεβε* translate the Greek perfects "is fulfilled, has come near".
+- **v. 16** The Sea of Galilee is a lake, *ϳαμιον*, not the sea *θαλασσα*. *γαρ* "for" stands second in its clause.
+- **v. 17** *ποιω-τεμ ͱαλιεϝιμ ανθρωπων*: "make" takes an object and a predicate noun. *ανθρωπων* is the Doric genitive plural.
+- **v. 19** *βενιλ Ζεβαδιᾱν* "son of Zebedee": the construct survives in names, and takes its case on its last word.
 
 ---
 
 ### In the synagogue of Capernaum (21–28)
 
-> **21** *Ϝα-βεϝουσι Καφαρυλ Ναχυμον. Ϝα-βεϝει πιθομ ϸαβατελι μακανασαρ, και εκανε λᾱμιδει.*<br>
-> Va-bevousi Kapharul Nakhumon. Va-bevei pithom shabateli makanasar, kai ekane lāmidei.<br>
-> NARR-go-in village-CONSTR Nahum-ACC. NARR-goes-in at-once rest-day-LOC synagogue-ACC, and was teaches.<br>
+> **21** *Και εβεϝαν Καφαρυλ Ναχυμον. Και πιθομ ϸαβατελι, βεϝαντος συναγωγᾱν, εκανε διδασκοντος.*<br>
+> Kai ebevan Kapharul Nakhumon. Kai pithom shabateli, bevantos sunagōgān, ekane didaskontos.<br>
+> And they-went-in village-CONSTR Nahum-ACC. And at-once rest-day-LOC, having-gone-in synagogue-ACC, was teaching.<br>
 > They went into Capernaum, and at once, on the Sabbath, he went into the synagogue and was teaching.
 
-> **22** *Και εκαναν τεμεͱουσι επι λαμαδελιυ, ͱοτι εκανε λᾱμιδει-ιμ κεμω ενος ϸε-εσι-υ ϸαλτον, και βαλ κεμω κᾱτιβιμ.*<br>
-> Kai ekanan temehousi epi lamadeliu, hoti ekane lāmidei-im kemō enos she-esi-u shalton, kai bal kemō kātibim.<br>
-> And were marvel at teaching-LOC-his, because was teaches-them like one that-is-to-him authority, and not like scribes.<br>
+> **22** *Και εκαναν θαυμαζοντιμ επι διδαχελιυ; εδιδαξε-ιμ γαρ ͱως ενος ϸε-εσι-υ εξουσιᾱ, και βαλ ͱως γραμματεϝιμ.*<br>
+> Kai ekanan thaumazontim epi didakheliu; edidaxe-im gar hōs enos she-esi-u exousiā, kai bal hōs grammatevim.<br>
+> And were marveling-PL at teaching-LOC-his; taught-them for as one that-is-to-him authority, and not as scribes.<br>
 > They were amazed at his teaching, for he taught them as one who had authority, and not like the scribes.
 
-> **23** *Ϝα-κανει πιθομ εν μακανασαρελιιμ αδαμος συν ταμεομ ρῡχομ, ϝα-σεϙεκει,*<br>
-> Va-kanei pithom en makanasareliim adamos sun tameom rūkhom, va-seghekei,<br>
-> NARR-was at-once in synagogue-LOC-their man with unclean-INS spirit-INS, NARR-cries-out,<br>
+> **23** *Και πιθομ εκανε εν συναγωγελιιμ ανθρωπος συν ταμεομ πνευματομ, και εσεϙεκε,*<br>
+> Kai pithom ekane en sunagōgeliim anthrōpos sun tameom pneumatom, kai esegheke,<br>
+> And at-once was in synagogue-LOC-their man with unclean-INS spirit-INS, and cried-out,<br>
 > Just then there was a man in their synagogue with an unclean spirit, and he cried out,
 
-> **24** *ϝα-λεκει: «Μα εσι βεν-νεν και βεν-τα, Ϳεϸῡϙε Νασερατικε? Ͱα-εϝενας εβεδειν-νεν? Ειδω-τα, μι εις: καδοϸιλ ηλος.»*<br>
-> va-lekei: «Ma esi ben-nen kai ben-ta, Yeshūghe Naseratike? Ha-evenas ebedein-nen? Eidō-ta, mi eis: kadoshil ēlos.»<br>
-> NARR-says: «What is between-us and between-you, Jesus-VOC Nazarene-VOC? Q-you-came to-destroy-us? I-know-you, who you-are: holy-one-CONSTR God.»<br>
+> **24** *λεκοντος: «Μα εσι βεν-νεν και βεν-τα, Ϳεϸῡϙε Νασερατικε? Ͱα-ηνθες εβεδειν-νεν? Ειδω-τα, μι εις: καδοϸιλ ηλος.»*<br>
+> lekontos: «Ma esi ben-nen kai ben-ta, Yeshūghe Naseratike? Ha-ēnthes ebedein-nen? Eidō-ta, mi eis: kadoshil ēlos.»<br>
+> saying: «What is between-us and between-you, Jesus-VOC Nazarene-VOC? Q-you-came to-destroy-us? I-know-you, who you-are: holy-one-CONSTR God.»<br>
 > saying: “What have you to do with us, Jesus of Nazareth? Have you come to destroy us? I know who you are: the Holy One of God.”
 
-> **25** *Ϝα-γεϙερει-υ Ϳεϸῡϙος, ϝα-λεκει: «Ͱεσε, και ϳεσε εκ-υ!»*<br>
-> Va-gegherei-u Yeshūghos, va-lekei: «Hese, kai yese ek-u!»<br>
-> NARR-rebukes-him Jesus, NARR-says: «Be-silent, and go-out out-of-him!»<br>
+> **25** *Και εγεϙερε-υ Ϳεϸῡϙος, λεκοντος: «Ͱεσε, και ϳεσε εκ-υ!»*<br>
+> Kai egeghere-u Yeshūghos, lekontos: «Hese, kai yese ek-u!»<br>
+> And rebuked-him Jesus, saying: «Be-silent, and go-out out-of-him!»<br>
 > Jesus rebuked him, saying: “Be silent, and come out of him!”
 
-> **26** *Ϝα-ρεϙεσει-υ ταμεος ρῡχᾱ, ϝα-σεϙεκει μεγομ κολομ, ϝα-ϳεσει εκ-υ.*<br>
-> Va-reghesei-u tameos rūkhā, va-seghekei megom kolom, va-yesei ek-u.<br>
-> NARR-shakes-him unclean spirit, NARR-cries-out great-INS voice-INS, NARR-goes-out out-of-him.<br>
+> **26** *Και, ρεϙεσαντος ανθρωπον και σεϙεκαντος μεγομ φωνομ, εϳεσε εκ-υ ταμεος πνευμα.*<br>
+> Kai, reghesantos anthrōpon kai seghekantos megom phōnom, eyese ek-u tameos pneuma.<br>
+> And, having-shaken man-ACC and having-cried-out great-INS voice-INS, went-out out-of-him unclean spirit.<br>
 > The unclean spirit shook him, cried out with a loud voice, and came out of him.
 
-> **27** *Ϝα-τεμεͱουσι κολ αδαμιμ, ϝα-ϸελουσι αλληλονας: «Μα εσι ζε ϙασον? Νεον λαμαδον, εν ϸαλτελι! Σεϝει και ταμεοιμ ρῡχαιμ, και ϸεμεϙουσι κολονυ.»*<br>
-> Va-temehousi kol adamim, va-shelousi allēlonas: «Ma esi ze ghason? Neon lamadon, en shalteli! Sevei kai tameoim rūkhaim, kai shemeghousi kolonu.»<br>
-> NARR-marvel all people, NARR-ask each-other-ACC: «What is this deed? New teaching, in authority-LOC! He-commands also unclean-DAT spirits-DAT, and they-hear voice-ACC-his.»<br>
-> Everyone was amazed, and they asked one another: “What is this? A new teaching, with authority! He commands even the unclean spirits, and they obey him.”
+> **27** *Και εθαυμασαν κολ ανθρωποι, ωστε ζᾱτειν προς αλληλονας, λεκοντιμ: «Μα εσι ζε? Νεον διδαχᾱ, εν εξουσιελι! Σεϝει και ταμεοιμ πνευμασι, και ακουουσι φωνᾱνυ.»*<br>
+> Kai ethaumasan kol anthrōpoi, ōste zātein pros allēlonas, lekontim: «Ma esi ze? Neon didakhā, en exousieli! Sevei kai tameoim pneumasi, kai akouousi phōnānu.»<br>
+> And marveled all people, so-that to-inquire toward each-other-ACC, saying-PL: «What is this? New teaching, in authority-LOC! He-commands even unclean-DAT spirits-DAT, and they-hear voice-ACC-his.»<br>
+> Everyone was amazed, so that they asked one another: “What is this? A new teaching, with authority! He commands even the unclean spirits, and they obey him.”
 
-> **28** *Ϝα-ϳεσει ϸαμαρυ πιθομ προς κολ γαβυλον Γαλιλου.*<br>
-> Va-yesei shamaru pithom pros kol gabulon Galilou.<br>
-> NARR-goes-out name-his at-once toward all region-ACC Galilee-GEN.<br>
+> **28** *Και εϳεσε φᾱμᾱυ πιθομ προς κολ γαβυλον Γαλιλου.*<br>
+> Kai eyese phāmāu pithom pros kol gabulon Galilou.<br>
+> And went-out report-his at-once toward all region-ACC Galilee-GEN.<br>
 > At once his fame spread through the whole region of Galilee.
 
 Notes:
-- **v. 21** *βεϝειν* "go in" takes the place entered in the accusative, the case of "where to".
-- **v. 22** *ϸε-εσι-υ ϸαλτον* "who has authority": possession is "there is to him", with the object enclitic as the dative of a pronoun.
-- **v. 24** *Μα εσι βεν-νεν και βεν-τα?* "what is between us and you?" follows the Hebrew way of saying the Greek *τί ἡμῖν καὶ σοί*. Prepositions take object enclitics for pronouns: *βεν-νεν* "between us".
-- **v. 27** *ϸεμεϙουσι κολονυ* "they hear his voice" is the Hebrew idiom for "obey" (*šāmaʿ bəqôl*).
-- **v. 28** *ϸαμαρ* "name, reputation" covers the Greek *ἀκοή* "report, fame".
+- **v. 21** *βεϝειν* "go in" takes the place entered in the accusative, the case of "where to". *εκανε διδασκοντος* "was teaching" is the high-register [imperfective past](morphology.md#imperfective-past-εκανα--present), with a participle.
+- **v. 22** *ϸε-εσι-υ εξουσιᾱ* "who has authority" stays a relative clause: Tharaic has no verb "have" whose participle could stand here.
+- **v. 23** *πνευματομ* "with a spirit" is a Tharaic sea case on the Doric stem *πνευματ-*.
+- **v. 24** *καδοϸιλ ηλος* "the Holy One of God" is a fixed title. *Μα εσι βεν-νεν και βεν-τα?* "what is between us and you?" follows the Hebrew way of saying the Greek *τί ἡμῖν καὶ σοί*.
+- **v. 26** The long subject *ταμεος πνευμα* comes last; the participles before the verb agree with it. *πνευμα* is animate: spirits have agency.
+- **v. 27** *ωστε ζᾱτειν* "so that they inquired": *ωστε* takes an infinitive, as in Greek. *ακουουσι φωνᾱνυ* "they hear his voice", that is, "obey him", keeps the Hebrew idiom of the older translation (*ϸεμεϙουσι κολονυ*) in high-register words.
+- **v. 28** *φᾱμᾱ* "report, fame" is a new word (Doric *φάμα*).
 
 ---
 
 ### Healing at Simon's house (29–39)
 
-> **29** *Ϝα-ϳεσουσι πιθομ εκ μακανασαραθα, ϝα-βεϝουσι οικον Ϸιμϙωνι και Ανδρει, συν Ϳαϙακωβομ και Ϳωχανανομ.*<br>
-> Va-yesousi pithom ek makanasaratha, va-bevousi oikon Shimghōni kai Andrei, sun Yaghakōbom kai Yōkhananom.<br>
-> NARR-go-out at-once out-of synagogue-ABL, NARR-go-in house-ACC Simon-GEN and Andrew-GEN, with James-INS and John-INS.<br>
+> **29** *Και πιθομ, ϳεσαντιμ εκ συναγωγαθα, ηνθαν προς οικον Ϸιμϙωνι και Ανδρει, συν Ϳαϙακωβομ και Ϳωχανανομ.*<br>
+> Kai pithom, yesantim ek sunagōgatha, ēnthan pros oikon Shimghōni kai Andrei, sun Yaghakōbom kai Yōkhananom.<br>
+> And at-once, having-gone-out-PL out-of synagogue-ABL, they-came toward house-ACC Simon-GEN and Andrew-GEN, with James-INS and John-INS.<br>
 > As soon as they left the synagogue, they went into the house of Simon and Andrew, with James and John.
 
-> **30** *Εκανε ϸεκεβει χαμοτᾱ Ϸιμϙωνι εν καδαχελι, ϝα-νεγεδουσι-υ πιθομ περι-υ.*<br>
-> Ekane shekebei khamotā Shimghōni en kadakheli, va-negedousi-u pithom peri-u.<br>
-> Was lies mother-in-law Simon-GEN in fever-LOC, NARR-tell-him at-once about-her.<br>
+> **30** *Και εκανε χαμοτᾱ Ϸιμϙωνι ϸεκεβοντος πυρετελι, και πιθομ ελεκαν-υ περι-υ.*<br>
+> Kai ekane khamotā Shimghōni shekebontos pureteli, kai pithom elekan-u peri-u.<br>
+> And was mother-in-law Simon-GEN lying fever-LOC, and at-once they-told-him about-her.<br>
 > Simon's mother-in-law was lying in bed with a fever, and they told him about her at once.
 
-> **31** *Ϝα-κερεβει, ϝα-εχεζει ϳαδονυ, ϝα-κεμει-υ. Ϝα-ϙεζεβει-υ καδαχον, ϝα-ϸερετει-ιμ.*<br>
-> Va-kerebei, va-ekhezei yadonu, va-kemei-u. Va-ghezebei-u kadakhon, va-sheretei-im.<br>
-> NARR-approaches, NARR-takes hand-ACC-her, NARR-raises-her. NARR-leaves-her fever, NARR-serves-them.<br>
+> **31** *Και, κερεβαντος και εχεζαντος ϳαδονυ, εκεμε-υ; και εϙεζεβε-υ πυρετος, και εκανε ϸερετει-ιμ.*<br>
+> Kai, kerebantos kai ekhezantos yadonu, ekeme-u; kai eghezebe-u puretos, kai ekane sheretei-im.<br>
+> And, having-approached and having-taken hand-ACC-her, he-raised-her; and left-her fever, and was serves-them.<br>
 > He came to her, took her by the hand, and raised her up. The fever left her, and she served them.
 
-> **32** *Ϝα-κανει ϙερεβον. Οτε εδυνε ͱηλιᾱ, ϝα-φερουσι προς-υ κολ χαλονας και αδαμονας ϸε-εσι-ιμ ϸεδιμ.*<br>
-> Va-kanei gherebon. Ote edune hēliā, va-pherousi pros-u kol khalonas kai adamonas she-esi-im shedim.<br>
-> NARR-was evening. When set sun, NARR-bring to-him all sick-ACC and people-ACC that-is-to-them demons.<br>
+> **32** *Ϙερεβου ͱεϝαμενου, ͱοκα εδυνε ͱᾱλιος, εκαναν φεροντιμ προς-υ κολ χαλονας και ανθρωπως ϸε-εσι-ιμ δαιμονια;*<br>
+> Gherebou hevamenou, hoka edune hālios, ekanan pherontim pros-u kol khalonas kai anthrōpōs she-esi-im daimonia;<br>
+> Evening-GEN having-come-about-GEN, when set sun, were bringing-PL to-him all sick-ACC and people-ACC that-is-to-them demons;<br>
 > That evening, when the sun had set, they brought to him all who were sick and those who had demons.
 
-> **33** *Και εκανε κενεσεται καλιλον καρτον προς δαλετον.*<br>
-> Kai ekane kenesetai kalilon karton pros daleton.<br>
-> And was gathers-itself whole city toward door-ACC.<br>
+> **33** *Και εκανε καλιλον πολις κενεσαμενον προς δαλετον.*<br>
+> Kai ekane kalilon polis kenesamenon pros daleton.<br>
+> And was whole city gathered toward door-ACC.<br>
 > The whole city was gathered at the door.
 
-> **34** *Ϝα-ρεφει ραβονας ϸε-χελουσι ραβομις μαχαλομις, ϝα-γερεϸει ραβονας ϸεδονας; και βαλ εκανε ϙεζεβει ϸεδονας λεκειν, ͱοτι εκαναν ειδουσι-υ.*<br>
-> Va-rephei rabonas she-khelousi rabomis makhalomis, va-gereshei rabonas shedonas; kai bal ekane ghezebei shedonas lekein, hoti ekanan eidousi-u.<br>
-> NARR-heals many-ACC that-are-sick many-INS sicknesses-INS, NARR-drives-out many-ACC demons-ACC; and not was lets demons-ACC to-speak, because were know-him.<br>
+> **34** *Και εθεραπευσε ραβονας χελοντονας ραβομις νοσομις, και εγερεϸε ραβονας δαιμονια; και βαλ εκανε ϙεζεβει δαιμονια λεκειν, επει ενοησαν-υ.*<br>
+> Kai etherapeuse rabonas khelontonas rabomis nosomis, kai egereshe rabonas daimonia; kai bal ekane ghezebei daimonia lekein, epei enoēsan-u.<br>
+> And healed many-ACC being-sick-ACC-PL many-INS diseases-INS, and drove-out many-ACC demons; and not was lets demons to-speak, since they-recognized-him.<br>
 > He healed many who were sick with all kinds of diseases, and drove out many demons; and he would not let the demons speak, because they knew him.
 
-> **35** *Ϝα-κεμεται βοκαρελι, οτε ϙωδα εκανε λαιλον; ϝα-ϳεσει, ϝα-αγει προς ϸαμεμον μακαμαρ, και ϸαμ εκανε λιτεται.*<br>
-> Va-kemetai bokareli, ote ghōda ekane lailon; va-yesei, va-agei pros shamemon makamar, kai sham ekane litetai.<br>
-> NARR-rises morning-LOC, when still was night; NARR-goes-out, NARR-goes toward deserted place-ACC, and there was prays.<br>
+> **35** *Και βοκαρελι, ϙωδα κανοντου λαιλου, κεμαμενος εϳεσε, και επορευσατο προς ϸαμεμον μακαμαρ, και ϸαμ εκανε ευχομενος.*<br>
+> Kai bokareli, ghōda kanontou lailou, kemamenos eyese, kai eporeusato pros shamemon makamar, kai sham ekane eukhomenos.<br>
+> And morning-LOC, still being-GEN night-GEN, having-risen he-went-out, and went toward deserted place-ACC, and there was praying.<br>
 > Very early in the morning, while it was still night, he got up, went out to a deserted place, and was praying there.
 
-> **36** *Ϝα-ρεδεφει-υ Ϸιμϙωνος και χαβεριμυ,*<br>
-> Va-redephei-u Shimghōnos kai khaberimu,<br>
-> NARR-pursues-him Simon and companions-his,<br>
+> **36** *Και ερεδεφε-υ Ϸιμϙωνος και χαβεριμυ,*<br>
+> Kai eredephe-u Shimghōnos kai khaberimu,<br>
+> And pursued-him Simon and companions-his,<br>
 > Simon and his companions went looking for him,
 
-> **37** *ϝα-μεσουσι-υ, ϝα-λεκουσι-υ: «Κολ ενος βεκεϸει-τα.»*<br>
-> va-mesousi-u, va-lekousi-u: «Kol enos bekeshei-ta.»<br>
-> NARR-find-him, NARR-say-him: «Every one seeks-you.»<br>
+> **37** *και εμεσαν-υ, και ελεκαν-υ: «Κολ ενος ζᾱτει-τα.»*<br>
+> kai emesan-u, kai elekan-u: «Kol enos zātei-ta.»<br>
+> and they-found-him, and said-him: «Every one seeks-you.»<br>
 > and when they found him they said to him: “Everyone is looking for you.”
 
-> **38** *Ϝα-λεκει-ιμ: «Λυ αγομεν προς καραβα καφαρα, λεμαϙαν κερω και ϸαμ; ͱοτι βαϙαβυρ ζε ϙασου εϳεσα.»*<br>
-> Va-lekei-im: «Lu agomen pros karaba kaphara, lemaghan kerō kai sham; hoti baghabur ze ghasou eyesa.»<br>
-> NARR-says-them: «WISH we-go toward near villages-ACC, so-that I-proclaim also there; because for-the-sake-of this deed-GEN I-went-out.»<br>
+> **38** *Και ελεκε-ιμ: «Λυ πορευομεσθα προς καραβα καφαρα, ͱινα καρυσσω και ϸαμ; εϳεσα γαρ βαϙαβυρ ζε ϙασου.»*<br>
+> Kai eleke-im: «Lu poreuomestha pros karaba kaphara, hina karussō kai sham; eyesa gar baghabur ze ghasou.»<br>
+> And said-them: «WISH we-go toward near villages-ACC, so-that I-proclaim also there; I-went-out for for-the-sake-of this deed-GEN.»<br>
 > He said to them: “Let us go on to the nearby towns, so that I can proclaim the message there too; that is why I came out.”
 
-> **39** *Ϝα-ͱελεκει δια κολ Γαλιλον, και εκανε κερει εν μακανασαρελισιμ και γερεϸει ϸεδονας.*<br>
-> Va-helekei dia kol Galilon, kai ekane kerei en makanasarelisim kai gereshei shedonas.<br>
-> NARR-walks through all Galilee-ACC, and was proclaims in synagogues-LOC-their and drives-out demons-ACC.<br>
+> **39** *Και ηνθε καρυσσοντος εν συναγωγελισιμ δια κολ Γαλιλον, και γερεϸοντος δαιμονια.*<br>
+> Kai ēnthe karussontos en sunagōgelisim dia kol Galilon, kai gereshontos daimonia.<br>
+> And came proclaiming in synagogues-LOC-their through all Galilee-ACC, and driving-out demons.<br>
 > And he went through all Galilee, proclaiming in their synagogues and driving out demons.
 
 Notes:
 - **v. 30** *περι-υ* "about her": *-υ* is the animate enclitic, "him" or "her".
-- **v. 32** *Ϝα-κανει ϙερεβον* "and it was evening" is the Hebrew *wayhî ʿereb*.
-- **v. 34** A negated event cannot take *ϝα-*. A repeated refusal takes the imperfective *βαλ εκανε ϙεζεβει* "he would not let".
-- **v. 36** *χαβεριμυ* "his companions" stands for the Greek "those with him".
-- **v. 38** *λυ* with *we* means "let us": *λυ αγομεν*.
+- **v. 31** *εκανε ϸερετει-ιμ* keeps a finite verb for the object enclitic, as in v. 13.
+- **v. 32** Two time phrases in a row, both high register: the genitive absolute *ϙερεβου ͱεϝαμενου* "evening having come" and a clause with *ͱοκα* "when". *ϸε-εσι-ιμ δαιμονια* "who had demons" stays a relative clause, as in v. 22.
+- **v. 33** *κενεσαμενον* "gathered" agrees with the inanimate *πολις*.
+- **v. 34** *δαιμονιον* is animate, so its adjectives are animate (*ραβονας*), although its Doric plural ends in *-α* like an inanimate one; its verb is plural (*ενοησαν*). A negated repeated action keeps the finite imperfective *βαλ εκανε ϙεζεβει* "he would not let".
+- **v. 35** *ϙωδα κανοντου λαιλου* "night still being" is a genitive absolute with the participle of "to be".
+- **v. 36** The verb agrees with the first part of the compound subject, *Ϸιμϙωνος*.
+- **v. 38** *λυ πορευομεσθα* "let us go": *λυ* with the Doric middle first plural *-μεσθα*. *ͱινα* "so that" is the high word for *λεμαϙαν*.
 
 ---
 
 ### A man with leprosy (40–45)
 
-> **40** *Ϝα-ϝενει προς-υ σαραϙος, ϝα-νεχεμει-υ, ϝα-βερεκει, ϝα-λεκει-υ: «Ιμ θελεις, ϳεκελεις τεͱερειν-νι.»*<br>
-> Va-venei pros-u saraghos, va-nekhemei-u, va-berekei, va-lekei-u: «Im theleis, yekeleis teherein-ni.»<br>
-> NARR-comes to-him leper, NARR-entreats-him, NARR-kneels, NARR-says-him: «If you-want, you-can to-cleanse-me.»<br>
+> **40** *Και ηνθε προς-υ σαραϙος, νεχεμοντος και βερεκοντος, και ελεκε-υ: «Αι θελεις, ϳεκελεις τεͱερειν-νι.»*<br>
+> Kai ēnthe pros-u saraghos, nekhemontos kai berekontos, kai eleke-u: «Ai theleis, yekeleis teherein-ni.»<br>
+> And came to-him leper, entreating and kneeling, and said-him: «If you-want, you-can to-cleanse-me.»<br>
 > A man with leprosy came to him, begged him on his knees, and said: “If you are willing, you can make me clean.”
 
-> **41** *Ϝα-χερει, ϝα-ϸελεχει ϳαδονυ, ϝα-νεγει-υ, ϝα-λεκει-υ: «Θελω. Τεͱερεσο!»*<br>
-> Va-kherei, va-shelekhei yadonu, va-negei-u, va-lekei-u: «Thelō. Tehereso!»<br>
-> NARR-is-angry, NARR-stretches-out hand-ACC-his, NARR-touches-him, NARR-says-him: «I-want. Be-cleansed!»<br>
+> **41** *Και, χεραντος, ϸελεχαντος ϳαδονυ, ενεγε-υ, και ελεκε-υ: «Θελω. Τεͱερεσο!»*<br>
+> Kai, kherantos, shelekhantos yadonu, enege-u, kai eleke-u: «Thelō. Tehereso!»<br>
+> And, having-been-angry, having-stretched-out hand-ACC-his, he-touched-him, and said-him: «I-want. Be-cleansed!»<br>
 > Moved with anger, he stretched out his hand, touched him, and said to him: “I am willing. Be clean!”
 
-> **42** *Ϝα-αγει πιθομ σαραϙατον απο-υ, ϝα-τεͱερεται.*<br>
-> Va-agei pithom saraghaton apo-u, va-teheretai.<br>
-> NARR-goes at-once leprosy from-him, NARR-is-cleansed.<br>
+> **42** *Και πιθομ επορευσατο σαραϙατον απο-υ, και ετεͱερατο.*<br>
+> Kai pithom eporeusato saraghaton apo-u, kai eteherato.<br>
+> And at-once went leprosy from-him, and he-was-cleansed.<br>
 > At once the leprosy left him, and he was made clean.
 
-> **43** *Ϝα-γεϙερει-υ, ϝα-ϸελεχει-υ πιθομ,*<br>
-> Va-gegherei-u, va-shelekhei-u pithom,<br>
-> NARR-rebukes-him, NARR-sends-him at-once,<br>
+> **43** *Και, γεϙεραντος, εϸελεχε-υ πιθομ,*<br>
+> Kai, gegherantos, eshelekhe-u pithom,<br>
+> And, having-rebuked, he-sent-him at-once,<br>
 > Jesus spoke sternly to him and sent him away at once,
 
-> **44** *ϝα-λεκει-υ: «Ιδε, μη λεκε ενον ενοι; αλλα αγε, δεικνυε νεφεϸᾱνκα κοͱενοι, και κερεβε περι ταͱαρουκα ενον ϸε-εσεϝε-α Μωϸεος, προς ϙαδονιμ.»*<br>
-> va-lekei-u: «Ide, mē leke enon enoi; alla age, deiknue nepheshānka kohenoi, kai kerebe peri taharouka enon she-eseve-a Mōsheos, pros ghadonim.»<br>
-> NARR-says-him: «See, NEG say thing one-DAT; but go, show soul-ACC-your priest-DAT, and offer about cleansing-GEN-your thing that-commanded-it Moses, toward testimony-their.»<br>
+> **44** *και ελεκε-υ: «Βλεπε, μη λεκε ενον ενοι; αλλα πορευεσο, δεικνυε νεφεϸᾱνκα ͱιαρεϝοι, και κερεβε περι ταͱαρουκα ενον ϸε-εσεϝε-α Μωϸεος, προς μαρτυριᾱνιμ.»*<br>
+> kai eleke-u: «Blepe, mē leke enon enoi; alla poreueso, deiknue nepheshānka hiarevoi, kai kerebe peri taharouka enon she-eseve-a Mōsheos, pros marturiānim.»<br>
+> and said-him: «See, NEG say thing one-DAT; but go, show soul-ACC-your priest-DAT, and offer about cleansing-GEN-your thing that-commanded-it Moses, toward testimony-ACC-their.»<br>
 > saying: “See that you say nothing to anyone. But go, show yourself to the priest, and offer for your cleansing what Moses commanded, as a testimony to them.”
 
-> **45** *Ϝα-ϳεσει δεκ αδαμος, ϝα-ρεϸει κερειν ραβον και νεγεδειν λακον, ϙαδι ϸε-βαλ εκανε ϳεκελει ϙωδα Ϳεϸῡϙος βεϝειν καρτον γαλυϳον; αλλα εκανε εξω, εν ϸαμεμελις μακαμαρελις. Και εκαναν ϝενουσι προς-υ απο κολ μακαμαραθα.*<br>
-> Va-yesei dek adamos, va-reshei kerein rabon kai negedein lakon, ghadi she-bal ekane yekelei ghōda Yeshūghos bevein karton galuyon; alla ekane exō, en shamemelis makamarelis. Kai ekanan venousi pros-u apo kol makamaratha.<br>
-> NARR-goes-out that man, NARR-begins to-proclaim much and to-tell word-ACC, until that-not was can still Jesus to-enter town-ACC openly; but was outside, in deserted-LOC places-LOC. And were come to-him from every place-ABL.<br>
+> **45** *Ϳεσαντος, ᾱρξατο δεκ ανθρωπος καρυσσειν ραβον και ανγελλειν λογον, ωστε βαλ ϙωδα ϳεκελειν Ϳεϸῡϙον βεϝειν πολιν γαλυϳον; αλλα εκανε εξω, εν ϸαμεμελις μακαμαρελις. Και εκαναν ερχομενιμ προς-υ απο κολ μακαμαραθα.*<br>
+> Yesantos, ārxato dek anthrōpos karussein rabon kai angellein logon, ōste bal ghōda yekelein Yeshūghon bevein polin galuyon; alla ekane exō, en shamemelis makamarelis. Kai ekanan erkhomenim pros-u apo kol makamaratha.<br>
+> Having-gone-out, began that man to-proclaim much and to-announce word-ACC, so-that not still to-be-able Jesus-ACC to-enter city-ACC openly; but was outside, in deserted-LOC places-LOC. And were coming-PL to-him from every place-ABL.<br>
 > But the man went out and began to proclaim it freely and to spread the news, so that Jesus could no longer go into a town openly, but stayed outside in deserted places. And people kept coming to him from everywhere.
 
 Notes:
-- **v. 41** The SBL Greek text reads *ὀργισθείς* "angered", which this translation follows with *ϝα-χερει*. Many other manuscripts read *σπλαγχνισθείς* "moved with compassion", which would be *ϝα-ρεχεμει*.
-- **v. 41** *Τεͱερεσο!* "be cleansed!" is the middle imperative.
-- **v. 44** *νεφεϸᾱνκα* "yourself" is the [reflexive](morphology.md#reflexive-oneself) with *νεφεϸᾱ*. *ενον ϸε-εσεϝε-α* "what he commanded" is a headless relative with the inanimate resumptive *-α*. *ταͱαρον* "cleansing" is a new word.
-- **v. 45** *δεκ αδαμος* "that man" names the subject, which the Greek leaves as "he". *ϙαδι ϸε-* "until" gives the result of the Greek *ὥστε*.
+- **v. 40** *Αι* "if" is the high word for *ιμ*.
+- **v. 41** The SBL Greek text reads *ὀργισθείς* "angered", which this translation follows with *χεραντος*. Many other manuscripts read *σπλαγχνισθείς* "moved with compassion", which would be *ρεχεμαντος*. *Τεͱερεσο!* "be cleansed!" is the middle imperative.
+- **v. 44** *νεφεϸᾱνκα* "yourself" is the [reflexive](morphology.md#reflexive-oneself), which keeps *νεφεϸᾱ* in both registers. *ͱιαρεϝοι* "to the priest": Doric nouns in *-ευς* decline like native ones. *ενον ϸε-εσεϝε-α* "what he commanded" is a headless relative with the inanimate resumptive *-α*.
+- **v. 45** *ωστε … ϳεκελειν Ϳεϸῡϙον* "so that Jesus could": after *ωστε*, the subject of the infinitive is in the accusative, as in Greek. *δεκ αδαμος* of the older translation is now *δεκ ανθρωπος*.
 
 ---
 
 ## What the translation added
 
-The [Gospel vocabulary](gospels.md) covered every word; running text needed a few more things.
+The [Gospel vocabulary](gospels.md) covered every word; running text in the high register needed a few more things.
 
 | Addition | Where | Verses |
 |----------|-------|--------|
-| *ϝα-* is used in sacred narrative, written as well as oral | [Verbs](morphology.md#narrative-past-prefix-ϝα--phoenician-wayyiqtol-analog) | throughout |
-| *ϝα-κανει* "and there was, and it came to pass", the narrative past of "to be" | [Verbs](morphology.md#narrative-past-prefix-ϝα--phoenician-wayyiqtol-analog) | 4, 9, 23, 32 |
-| Object enclitics after prepositions (*προς-υ* "to him") and as indirect objects (*λεκει-υ* "says to him"); *εσι-υ* "he has" | [Pronouns & Enclitics](morphology.md#pronouns--enclitics) | throughout |
+| The aorist as the narrative tense, with participle phrases and the genitive absolute | [Participle phrases](syntax.md#participle-phrases) | throughout; absolute 14, 32, 35 |
+| *Εͱεϝατο* "it came to pass" in place of *ϝα-κανει* | [Registers § Grammar](registers.md#grammar) | 4, 9, 11 |
+| An object enclitic cannot attach to a participle; a finite verb is used instead | [Participles](morphology.md#participles) | 13, 31 |
+| *ωστε* + infinitive, with the subject of the infinitive in the accusative | [High-register clauses](syntax.md#high-register-clauses) | 27, 45 |
+| Fixed titles keep their native words and the construct | [Translating the Gospels § Titles](gospels.md#titles) | 8, 15, 24 |
+| *φᾱμᾱ* "report, fame" | [Lexicon](lexicon.md) | 28 |
+| Object enclitics after prepositions (*προς-υ* "to him") and as indirect objects (*ελεκε-υ* "said to him"); *εσι-υ* "he has" | [Pronouns & Enclitics](morphology.md#pronouns--enclitics) | throughout |
 | *απο* + enclitic as the standard of comparison for a pronoun (*απο-νι* "than I") | [Comparison](syntax.md#comparison) | 7 |
 | A verb before a compound subject agrees with its first part | [Word order](syntax.md#word-order-vso--mandatory) | 5, 36 |
 | *λυ* + first person plural "let us" | [Wishes](syntax.md#wishes) | 38 |
