@@ -4,19 +4,19 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-1463 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+1470 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
 - **Origin** *Greek* is the older sailors' Greek, borrowed in the ports; *Doric* is the learned layer, borrowed through poetry and the schools ([Registers](registers.md)).
 - **Chant** gives the form used in chant and sacred speech, where it differs ([History § The chant register](history.md#3-the-chant-register)).
-- **Register**: *high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it, and words with neither belong to both. ↔ marks the counterpart in the other register; *adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with.
+- **Register**: *high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it, and words with neither belong to both. ↔ marks the counterpart in the other register; *adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with. *island* and *pidgin* mark words used only in that [dialect](dialects.md).
 - In Greek- and Doric-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).
 
 ## The Sea & Navigation
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *ακᾱρα* | akāra |  | n. AN, A-stem | cape, headland — short -α in the nominative | Greek *ἄκρα* |  |  |
 | *ανεμος* | anemos |  | n. AN, O-stem | wind | Doric *ἄνεμος* |  | high ↔ *ϝελος* |
 | *ανκυρᾱ* | ankyrā |  | n. AN, A-stem | anchor | Greek *ἄγκυρα* |  |  |
@@ -42,6 +42,7 @@
 | *κυβερνος* | kybernos |  | n. AN, O-stem | helmsman, pilot | Greek *κυβερνήτης* |  | ↔ *κυβερνᾱτᾱς* |
 | *λιμᾱ* | limā |  | n. AN, A-stem | harbor, safe anchorage | Greek *λιμήν* |  |  |
 | *λιμιον* | limion |  | n. IN, ON-stem | cove, small harbor — diminutive of *λιμᾱ* | native |  |  |
+| *μαλαχος* | malakhos | Μ-Λ-Χ | n. AN, O-stem | sailor (coastal *ναϝος*) — the salt-man, built on *μαλχον* 'salt' | native (cf. Hebrew *mallāḥ*) |  | island |
 | *μαναϝαρ* | manavar | Ν-Ϝ | n. IN, AR-stem | shipyard | native |  |  |
 | *ναϝᾱ* | navā | Ν-Ϝ | n. AN, A-stem | ship | native |  |  |
 | *ναϝευς* | naveus | Ν-Ϝ | n. AN, -ευς | shipwright | native |  |  |
@@ -54,6 +55,7 @@
 | *νακαβον* | nakabon | Ν-Κ-Β | n. IN, ON-stem | hole, leak | native (cf. Hebrew *neqeb*) |  |  |
 | *ναυτᾱς* | nautās |  | n. AN, Doric -ᾱς | seaman | Doric *ναύτας* |  | high ↔ *ναϝος* |
 | *ναυτικος / ναυτικον* | nautikos / nautikon |  | adj. | nautical, naval | Doric *ναυτικός* |  | high ↔ *ναϝικος* |
+| *νᾱϝος* | nāvos | Ν-Ϝ | n. AN, O-stem | voyager, one who is always at sea — the old actor noun behind *νᾱϝειν* 'to sail', lost on the coast ([History § 1](history.md#1-root-vowel-grades)) | native |  | island |
 | *πελαγιος / πελαγιον* | pelagios / pelagion |  | adj. | of the open sea | Doric *πελάγιος* |  | high adj. for *θᾱρος* |
 | *πελαρ* | pelar | Π-Λ | n. IN, AR-stem | expanse, open water (poetic) | native |  |  |
 | *πηδαλιον* | pēdalion |  | n. IN, ON-stem | steering oar, rudder | Greek *πηδάλιον* |  |  |
@@ -69,8 +71,8 @@
 
 ## Weather & Sea Life
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αδον* | adon |  | n. IN, ON-stem | mist | Phoenician (cf. Hebrew *ʾēd*) |  |  |
 | *αιγιαλον* | aigialon |  | n. IN, ON-stem | beach | Greek *αἰγιαλός* |  |  |
 | *αρον* | aron | Α-Ρ | n. IN, ON-stem | light | native (cf. Hebrew *ʾôr*) |  |  |
@@ -87,6 +89,7 @@
 | *ζαραμον* | zaramon | Ζ-Ρ-Μ | n. IN, ON-stem | current, flow | native (cf. Hebrew *zerem*) |  |  |
 | *ζερεμειν* | zeremein | Ζ-Ρ-Μ | v. | to flow | native |  |  |
 | *ͱαλιευς* | halieus |  | n. AN, -ευς | fisherman | Greek *ἁλιεύς* |  |  |
+| *ιϳον* | iyon |  | n. IN, ON-stem | island; one's home island | Phoenician *ʾy* |  | island |
 | *καδιμος* | kadimos |  | n. AN, O-stem | the scorching east wind | Phoenician (cf. Hebrew *qādîm*) |  |  |
 | *καναφον* | kanaphon | Κ-Ν-Φ | n. IN, ON-stem | wing; edge of a sail | native (cf. Hebrew *kānāp*) |  |  |
 | *καρκινος* | karkinos |  | n. AN, O-stem | crab | Greek *καρκίνος* |  |  |
@@ -110,8 +113,10 @@
 | *ορνος* | ornos |  | n. AN, O-stem | bird | Greek *ὄρνις* |  |  |
 | *πολυπος* | polypos |  | n. AN, O-stem | octopus | Greek *πολύπους* |  |  |
 | *ϙαβον* | ghabon | Ϙ-Β | n. IN, ON-stem | cloud | native (cf. Hebrew *ʿāb*) |  |  |
+| *ϙαραβος* | gharabos |  | n. AN, O-stem | the west wind, the evening wind | Phoenician *ʿrb* 'evening, west' |  | island |
 | *ραϙαμον* | raghamon | Ρ-Ϙ-Μ | n. IN, ON-stem | thunder | native (cf. Hebrew *raʿam*) |  |  |
 | *ραϙασον* | raghason | Ρ-Ϙ-Σ | n. IN, ON-stem | earthquake; a shaking | native (cf. Hebrew *raʿaš*) |  |  |
+| *σαφονος* | saphonos |  | n. AN, O-stem | the north wind | Phoenician *ṣpn* 'north' |  | island |
 | *σᾱϙιρος* | sāghiros | Σ-Ϙ-Ρ | n. AN, O-stem | the storm (as a great actor) | native (cf. Hebrew *səʿārāh*) |  |  |
 | *σκοτος* | skotos |  | n. IN, O-stem | darkness | Doric *σκότος* | *σοκοτος* | high ↔ *χαϸακον* |
 | *συρον* | suron |  | n. IN, ON-stem | rock, reef; as a name, *Συρον*, the city of Tyre | Phoenician *ṣr* (Tyre) |  |  |
@@ -127,8 +132,8 @@
 
 ## Nature & Elements
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αεριος / αεριον* | aerios / aerion |  | adj. | of the air | Doric *ἀέριος* |  | high adj. for *ᾱερ* |
 | *αρσον* | arson |  | n. IN, ON-stem | earth, ground | Phoenician *ʾrṣ* |  | ↔ *γᾱ* |
 | *ᾱερ* | āer |  | n. AN, irregular | wind-breath, air as a living force | Greek *ἀήρ* |  |  |
@@ -142,7 +147,7 @@
 | *ͱηλιᾱ* | hēliā |  | n. AN, A-stem | sun | Greek *ἥλιος* |  | everyday ↔ *ͱᾱλιος* |
 | *ͱυδατινος / ͱυδατινον* | hydatinos / hydatinon |  | adj. | of water, watery | Doric *ὑδάτινος* |  | high adj. for *ͱυδᾱ* |
 | *ͱυδᾱ* | hydā |  | n. IN, A-stem | water (fresh) — A-stem endings, inanimate agreement ([history](history.md#4-nouns-that-changed-gender)) | Greek *ὕδωρ* |  |  |
-| *ϳαραχᾱ* | yarakhā |  | n. AN, A-stem | the moon (poetic/sacred) | Phoenician *yrḥ* |  |  |
+| *ϳαραχᾱ* | yarakhā |  | n. AN, A-stem | the moon (poetic/sacred) — the everyday word for the moon on the islands | Phoenician *yrḥ* |  |  |
 | *κεβειν* | kebein | Κ-Β | v. | to quench, put out (a fire) | native (cf. Hebrew *kābāh*) |  |  |
 | *λαͱαβον* | lahabon | Λ-Ͱ-Β | n. IN, ON-stem | flame | native (cf. Hebrew *lahab*) |  |  |
 | *πυρα* | pyra |  | n. AN, A-stem | fire (animate — it lives, it hungers) — short -α in the nominative | Greek *πῦρ* |  |  |
@@ -160,8 +165,8 @@
 
 ## Land, Plants & Animals
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αβουσον* | abouson |  | n. IN, ON-stem | manger, feeding trough | Phoenician (cf. Hebrew *ʾēbûs*) |  |  |
 | *αγροικος / αγροικον* | agroikos / agroikon |  | adj. | rustic; boorish | Doric *ἄγροικος* | *αγοροικος / αγοροικον* | high adj. for *σαδον* |
 | *ακανθον* | akanthon |  | n. IN, ON-stem | thorn, thorn bush | Greek *ἄκανθα* |  |  |
@@ -286,8 +291,8 @@
 
 ## Cardinal Directions
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *δᾱρομος* | dāromos |  | n. AN, O-stem | South — 'the noonday direction' | Phoenician *drm* |  |  |
 | *μᾱραβᾱ* | mārabā |  | n. AN, A-stem | West — 'direction of sunset' | Phoenician *mrb* |  |  |
 | *μιζραχᾱ* | mizrakhā |  | n. AN, A-stem | East — 'direction of sunrise' | Phoenician *mzrḥ* | *μιζιραχᾱ* |  |
@@ -295,8 +300,8 @@
 
 ## The Body, Health & Sickness
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αιμα* | aima |  | n. IN, Doric -μα | blood | Doric *αἷμα* |  | high ↔ *δαμον* |
 | *ακουειν* | akouein |  | v. | to hear | Greek *ἀκούειν* |  |  |
 | *αλγον* | algon |  | n. IN, ON-stem | pain | Greek *ἄλγος* |  |  |
@@ -425,8 +430,8 @@
 
 ## People, Kinship & Society
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αβος* | abos | Α-Β | n. AN, O-stem | father; plural *αβιμ* 'ancestors' | native (cf. Hebrew *ʾāb*) |  |  |
 | *αδαμος* | adamos |  | n. AN, O-stem | human being | Phoenician (cf. Hebrew *ʾādām*) |  | ↔ *ανθρωπος* |
 | *αδελφικος / αδελφικον* | adelphikos / adelphikon |  | adj. | brotherly | Doric *ἀδελφικός* |  | high adj. for *αχος* |
@@ -540,8 +545,8 @@
 
 ## House, Food & Clothing
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *ακαλον* | akalon | Α-Κ-Λ | n. IN, ON-stem | food | native (cf. Hebrew *ʾōkel*) |  |  |
 | *αλαβαστρον* | alabastron |  | n. IN, ON-stem | alabaster flask | Greek *ἀλάβαστρον* | *αλαβαστορον* |  |
 | *αντλειν* | antlein |  | v. | to draw water | Greek *ἀντλεῖν* | *αντελειν* |  |
@@ -620,8 +625,8 @@
 
 ## Trade & Craft
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αβανον* | abanon |  | n. IN, ON-stem | stone | Phoenician *ʾbn* |  |  |
 | *αμμον* | ammon |  | n. IN, ON-stem | cubit, forearm | Phoenician (cf. Hebrew *ʾammāh*) |  |  |
 | *αργαμανον* | argamanon |  | n. IN, ON-stem | purple cloth | Phoenician (cf. Hebrew *ʾargāmān*) |  |  |
@@ -747,8 +752,8 @@
 
 ## City, Law & Power
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *ασιρος* | asiros |  | n. AN, O-stem | prisoner, captive | Phoenician (cf. Hebrew *ʾāsîr*) |  |  |
 | *αστειος / αστειον* | asteios / asteion |  | adj. | urbane, refined, witty | Doric *ἀστεῖος* |  | high adj. for *καρτον* |
 | *βασανιζειν* | basanizein |  | v. | to torment, torture | Greek *βασανίζειν* |  |  |
@@ -837,8 +842,8 @@
 
 ## Ritual, Belief & Abstract
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αγαλμα* | agalma |  | n. IN, Doric -μα | statue, image of a god | Doric *ἄγαλμα* |  | high ↔ *σελεμον* |
 | *αγαπᾱ* | agapā |  | n. IN, A-stem | love (selfless, divine) | Doric *ἀγάπα* |  | high ↔ *αͱαβον* |
 | *αγαπειν* | agapein |  | v., aor. *ᾱγαπᾱσα* | to love (with selfless love) | Doric *ἀγαπάω* |  | high ↔ *εͱεβειν* |
@@ -1063,8 +1068,8 @@
 
 ## Mind, Speech & Feeling
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αισχυνᾱ* | aiskhynā |  | n. IN, A-stem | shame | Doric *αἰσχύνα* |  | high ↔ *βαϸον* |
 | *αιτειν* | aitein |  | v., aor. *αιτησα* | to ask for, request | Doric *αἰτέω* |  | high ↔ *ϸελειν* |
 | *ανγελλειν* | angellein |  | v., aor. *ᾱνγειλα* | to announce, report | Doric *ἀγγέλλω* |  | high ↔ *νεγεδειν* |
@@ -1160,8 +1165,8 @@
 
 ## Learning, Arts & Science
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αειδειν* | aeidein |  | v., aor. *ᾱεισα* | to sing (in poetry) | Doric *ἀείδω* |  | high ↔ *ϸερειν* |
 | *αισθᾱσις* | aisthāsis |  | n. IN, Doric -ις | perception, sensation | Doric *αἴσθασις* |  | high |
 | *αλᾱθεια* | alātheia |  | n. IN, A-stem | truth | Doric *ἀλάθεια* |  | high ↔ *αληθον* |
@@ -1225,8 +1230,8 @@
 
 ## Time, Calendar & Stars
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αζα* | aza |  | adv. | then, at that time | Phoenician (cf. Hebrew *ʾāz*) |  | ↔ *τοκα* |
 | *αμες* | ames |  | adv. | yesterday, last night | Phoenician (cf. Hebrew *ʾemeš*) |  |  |
 | *αστρικος / αστρικον* | astrikos / astrikon |  | adj. | of the stars, astral | Doric *ἀστρικός* | *αστιρικος / αστιρικον* | high adj. for *αστρος* |
@@ -1273,8 +1278,8 @@
 
 ## Numbers
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *ενος* | enos |  | num. | 1 | Greek *εἷς* |  |  |
 | *δεϝα* | deva |  | num. | 2 | Greek *δύο* |  |  |
 | *τρια* | tria |  | num. | 3 | Greek *τρία* | *τιρια* |  |
@@ -1290,8 +1295,8 @@
 
 ## Core Verbs
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αβαδον* | abadon | Α-Β-Δ | n. IN, ON-stem | destruction, ruin | native |  |  |
 | *αγειν* | agein |  | v. | to go, move | Greek *ἄγειν* |  |  |
 | *αθετειν* | athetein |  | v. | to reject, set aside | Greek *ἀθετεῖν* |  |  |
@@ -1374,8 +1379,8 @@
 
 ## Movement & Position
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αιρειν* | airein |  | v. | to lift, take up; to take away | Greek *αἴρειν* |  |  |
 | *βεϝειν* | bevein | Β-Ϝ | v. | to go in, enter | native (cf. Hebrew *bôʾ*) |  |  |
 | *γελελειν* | gelelein | Γ-Λ-Λ | v. | to roll | native (cf. Hebrew *gālal*) |  |  |
@@ -1415,8 +1420,8 @@
 
 ## Adjectives & Colors
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αγαθος / αγαθον* | agathos / agathon |  | adj. | good (in character) | Doric *ἀγαθός* |  | high ↔ *καλος* |
 | *αληθινος / αληθινον* | alēthinos / alēthinon |  | adj. | true, genuine | Greek *ἀληθινός* |  | everyday ↔ *αλᾱθινος* |
 | *αλλος / αλλον* | allos / allon |  | adj. | other | Greek *ἄλλος* |  |  |
@@ -1477,8 +1482,8 @@
 
 ## Function Words
 
-| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |
-|---------|-----------|------|---------|---------|--------|-------|----------|
+| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
+|---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αλληλιμ* | allēlim |  | pron. | one another; declines like a plural O-stem (ACC *αλληλονας*, DAT *αλληλοιμ*) | Greek *ἀλλήλων* |  |  |
 | *ανεν* | anen |  | pron. | we — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ανι* | ani |  | pron. | I — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
@@ -1498,6 +1503,7 @@
 | *βεν* | ben |  | prep. + GEN | between, among | Phoenician (cf. Hebrew *bên*) |  |  |
 | *βιλτι* | bilti |  | prep. + ABL | without; *βιλτι αμαναθα* 'without faith, unbelieving' | Phoenician (cf. Hebrew *biltî*) |  |  |
 | *δια* | dia |  | prep. + ACC, GEN | through, across (ACC); because of (GEN) | Greek |  |  |
+| *δωε* | dōe |  | prep. + none (nouns do not change in the pidgin) | to, for — the imperative *δωε!* 'give!' of *δωειν*, turned into a preposition | Greek |  | pidgin |
 | *εκ* | ek |  | prep. + ABL | out of | Greek |  |  |
 | *εν* | en |  | prep. + LOC | in, within | Greek |  |  |
 | *επι* | epi |  | prep. + LOC, ACC | on, upon (LOC); onto (ACC) | Greek |  |  |
@@ -1567,6 +1573,7 @@
 | *μιϸαμ* | misham |  | adv. | from there | Phoenician (cf. Hebrew *miššām*) |  |  |
 | *ομου* | omou |  | adv. | together | Greek *ὁμοῦ* |  |  |
 | *ποκα* | poka |  | adv. | once, at some time; ever | Doric *ποκά* |  | high |
+| *πολυ* | poly |  | adv. | much, very; before a noun, many (marks the plural) | Greek *πολύ* |  | pidgin |
 | *ϸαμ* | sham |  | adv. | there | Phoenician (cf. Hebrew *šām*) |  |  |
 | *τοκα* | toka |  | adv. | then, at that time | Doric *τόκα* |  | high ↔ *αζα* |
 | *χιναμ* | khinam |  | adv. | freely, for nothing; in vain | Phoenician (cf. Hebrew *ḥinnām*) |  |  |

@@ -13,6 +13,7 @@
 | "To be" | A full verb in every tense, built from two roots: a Greek-like present (*εμι, εις, εσι…*) and Phoenician Κ-Ν for past and future (*εκανα* "I was", *ϸα κανω* "I will be") |
 | Noun dual | **-ιν** becomes the general dual marker: *θᾱριν*, *ναϝιν*, *καλιν*; INS dual -ομεν → **-ομιν**. This frees -ειν for infinitives only |
 | Registers | **Two tiers**: everyday and high. The high register draws on **literary Doric**, whose prestige comes from poetry and learning. The older Greek-analog loans are re-read as **sailors' Greek** (Ionic-analog, with *η*), so the two layers give same-word doublets (*ͱημερον* / *ͱᾱμερᾱ*). Temple speech becomes a style of the high register, with Doric theology words; Phoenician words survive in formulas and divine names. The high register keeps Doric clusters, prefers the aorist, the genitive and participles, and keeps some Doric endings. Scripture is in the high register |
+| Dialects | **Three mutually intelligible varieties**, each explained by history: the coastal standard; the island dialect, which never had changes 2–3 (its everyday words are the coastal chant forms) and merged *ϸ* with *σ*; and an SVO harbor pidgin without case endings. No creole; places stay unnamed |
 | Repository | Overview in `README.md`, content in `docs/`, dictionary data in `data/lexicon.yaml`, scripts in `tools/` |
 
 ## Plan
@@ -47,9 +48,10 @@ Each step is a separate pull request.
 
 12. ✅ **Registers: scripture** — [Mark 1](mark-1.md) rewritten in the high register: aorist narration, participle phrases, genitive absolutes, Doric words with Doric endings, *αι*, *ͱοκα*, *ͱινα*, *γαρ*, *ωστε* + infinitive. The Gospel titles (*μαλκυλ ηλος*, *βενιλ αδαμος*, *καδοϸος ρῡχᾱ*) are fixed and keep the construct and their native words. `data/gospels.tsv` now gives the Doric word wherever one exists for the same Greek word (about 170 rows), and `tools/build_lexicon.py` refuses everyday-only words there. [Translating the Gospels](gospels.md): high-register constructions, the Lord's Prayer in both registers, John 1:1 with *λογος*.
 
+13. ✅ **Dialects** — [Dialects](dialects.md): the coastal standard, the island dialect (sound rules, the *ϸ*/*σ* homophones, grammar, island words) and the harbor pidgin (grammar table, a market dialogue), with one passage in all three. `tools/dialect.py` turns coastal text into island forms; the lexicon gains a `dialect` field, five island words and two pidgin words.
+
 ## Later
 
 | Future phase | What it adds |
 |---|---|
 | **Script details** | Punctuation, Greek-style alphabetic numerals |
-| **Dialectal variation** | Coastal dialect vs. island dialect vs. trade pidgin |
