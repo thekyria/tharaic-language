@@ -12,6 +12,7 @@ Tharaic did not always look the way it does today. Most of its irregular forms c
 | **Old Tharaic** | Contact with the Greek-analog (sailors' Greek, Ionic-analog) and Phoenician-analog streams; early loans are fitted to the native syllable shape. Change 1 |
 | **Classical Tharaic** | Changes 2–4. The everyday language described in these docs |
 | **Chant register** | The language of sailor chants and sacred speech: it keeps forms from before changes 2–3 and breaks up clusters in later loans (§3) |
+| **Island dialect** | Changes 2 and 3 never reached the islands, which kept the older forms in everyday speech; there, *ϸ* later merged with *σ* ([Dialects](dialects.md#island)) |
 | **Learned Doric** | Loans from literary Doric through poetry and the schools, after changes 2–4. They keep their Doric shape and make up the high register (§6, [Registers](registers.md)) |
 
 ---
@@ -30,7 +31,7 @@ Words derived from another word take that word's grade:
 
 - *ναϝος* "sailor" is a-grade because it is built on *ναϝᾱ* "ship": the ship-person.
 - *ϸαμειν* "to name" is a-grade because it is built on *ϸαμαρ* "name".
-- *μᾱλικειν* "to rule" and *θᾱρειν* "to cross the sea" are ā-grade because they are built on *μᾱλικος* and *θᾱρος*. *νᾱϝειν* "to sail" points to an old actor noun \*νᾱϝος "voyager" that is otherwise lost.
+- *μᾱλικειν* "to rule" and *θᾱρειν* "to cross the sea" are ā-grade because they are built on *μᾱλικος* and *θᾱρος*. *νᾱϝειν* "to sail" points to an old actor noun *νᾱϝος* "voyager", lost on the coast but kept on the islands ([Dialects](dialects.md#words)).
 
 *ναϝᾱ* "ship" is a-grade, the grade of things, yet it is grammatically animate. Ships were moved into the animate gender by the culture, not by the grammar (see [Morphology](morphology.md#gender-animate-vs-inanimate)).
 

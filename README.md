@@ -22,6 +22,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |
+| [Dialects](docs/dialects.md) | Coastal standard, the conservative island dialect, and the harbor pidgin |
 | [Word Building](docs/word-building.md) | Root patterns (older layer) and suffixes (younger layer) |
 | [Lexicon](docs/lexicon.md) | About 1,450 words by theme, with roots, origins, chant forms and registers (generated from `data/lexicon.yaml`) |
 | [Sample Sentences](docs/texts.md) | Glossed example sentences |
@@ -40,6 +41,7 @@ Python 3 scripts, standard library only:
 
 - `python3 tools/greek.py nāvei navos` — convert romanized Tharaic to Greek script, or back with `--roman` (reads stdin if no words are given)
 - `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, the strict chant rules with `--chant`, or the high-register rules with `--high` (defaults to `docs/*.md`)
+- `python3 tools/dialect.py "…"` — turn coastal Tharaic into the island dialect (chant forms, construct vowel, *ϸ* → *σ*)
 - `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
 
 ---
@@ -96,6 +98,11 @@ THARAIC
 ├── WORD-BUILDING LAYER
 │   ├── Older: vowel patterns on roots, μα- places, -υτον abstracts (Phoenician)
 │   └── Younger: -ικος, -ιον, -ευς suffixes (Greek)
+│
+├── DIALECT LAYER
+│   ├── Coastal: the standard
+│   ├── Island: no changes 2–3 (τιρια, ναϝιτα), ϸ merged with σ
+│   └── Harbor pidgin: SVO, no case endings, tense particles
 │
 └── REGISTER LAYER
     ├── Everyday: native, Phoenician and sailors' Greek words

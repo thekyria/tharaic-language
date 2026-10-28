@@ -28,6 +28,8 @@ Each entry in data/lexicon.yaml has these fields:
               follow the high syllable rules, which keep Doric clusters
     doublet   optional: the counterpart in the other register, by its first form
               (e.g. "χαδαρον" for θαλαμος). The counterpart must point back
+    dialect   optional: island or pidgin, for words used only there (docs/dialects.md).
+              Island words follow the strict syllable rules and have no ϸ
     aorist    Doric verbs: the first person singular aorist (εποιησα, middle ευξαμην),
               which cannot be predicted from the infinitive (docs/morphology.md)
     base      optional, learned adjectives: the everyday noun they serve as
@@ -80,6 +82,7 @@ POS = {"noun": "n.", "verb": "v.", "adj": "adj.", "prep": "prep.", "conj": "conj
 FUNCTION_ORDER = ["pron", "prep", "conj", "particle", "question", "adv"]
 LAYERS = {"native": "native", "phoenician": "Phoenician", "greek": "Greek", "doric": "Doric"}
 REGISTERS = ("high", "everyday")
+DIALECTS = ("island", "pidgin")
 STEMS = {"O": ("AN", "ος", "O-stem"), "A": ("AN", ("ᾱ", "α"), "A-stem"), "EUS": ("AN", "ευς", "-ευς"),
          "ON": ("IN", "ον", "ON-stem"), "AR": ("IN", "αρ", "AR-stem"),
          "ON-PL": ("IN", "α", "ON-stem plural"), "irregular": (None, "", "irregular"),
@@ -189,6 +192,15 @@ def check(entries):
                 err(f"doublet {e['doublet']} does not point back")
             elif "high" not in (register, other.get("register")):
                 err("one word of a doublet should be high register")
+        dialect = e.get("dialect")
+        if dialect and dialect not in DIALECTS:
+            err(f"unknown dialect {dialect}")
+        if dialect == "island":
+            for w in words(g):
+                if "ϸ" in w:
+                    err("island words have σ, not ϸ")
+                for p in problems(w.strip("-"), chant=True):
+                    err(f"island word breaks the strict rules: {p}")
         if "aorist" in e:
             a = e["aorist"]
             if pos != "verb":
@@ -321,7 +333,8 @@ def render(entries):
         "- **Chant** gives the form used in chant and sacred speech, where it differs ([History § The chant register](history.md#3-the-chant-register)).",
         "- **Register**: *high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it, "
         "and words with neither belong to both. ↔ marks the counterpart in the other register; "
-        "*adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with.",
+        "*adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with. "
+        "*island* and *pidgin* mark words used only in that [dialect](dialects.md).",
         "- In Greek- and Doric-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).",
         "",
     ]
@@ -338,13 +351,14 @@ def render(entries):
             items.sort(key=lambda e: (FUNCTION_ORDER.index(e["pos"]), sort_key(e["greek"])))
         else:
             items.sort(key=lambda e: sort_key(e["greek"]))
-        out += [f"## {title}", "", "| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register |",
-                "|---------|-----------|------|---------|---------|--------|-------|----------|"]
+        out += [f"## {title}", "", "| Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |",
+                "|---------|-----------|------|---------|---------|--------|-------|-------------------|"]
         for e in items:
             meaning = e["meaning"] + (f" — {e['note']}" if "note" in e else "")
             origin = origin_text(e)
             chant = f"*{e['chant']}*" if "chant" in e else ""
-            register = " ".join(filter(None, [e.get("register"), f"↔ *{e['doublet']}*" if "doublet" in e else "",
+            register = " ".join(filter(None, [e.get("register"), e.get("dialect"),
+                                              f"↔ *{e['doublet']}*" if "doublet" in e else "",
                                               f"adj. for *{e['base']}*" if "base" in e else ""]))
             out.append(f"| *{e['greek']}* | {romanize(e)} | {e.get('root', '')} | {grammar(e)} | "
                        f"{meaning} | {origin} | {chant} | {register} |")
