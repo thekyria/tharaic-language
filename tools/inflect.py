@@ -303,12 +303,14 @@ def nominal(tag):
     return bool(tag) and tag.split()[-1].split(".")[0] in CASES + ["AN", "IN", "CONSTR"]
 
 
-def chant_variant(e):
-    """The entry with its chant form as headword, so chant texts can be checked.
-    Verbs are left out: no text needs their chant forms yet."""
-    if "chant" not in e or e["pos"] == "verb" or e["pos"] == "adj" and " / " not in e["chant"]:
-        return None
-    return dict(e, greek=e["chant"])
+def chant_forms(e):
+    """[(tag, form)] built on the chant form, so chant texts can be checked. The lexicon
+    gives a verb's chant infinitive but not its chant aorist, so verbs get no aorist forms."""
+    if "chant" not in e or e["pos"] == "adj" and " / " not in e["chant"]:
+        return []
+    variant = {k: v for k, v in e.items() if k != "aorist"}
+    variant["greek"] = e["chant"]
+    return [(t, f) for t, f in paradigm(variant) if e["pos"] != "verb" or "AOR" not in t]
 
 
 class Index:
@@ -317,11 +319,8 @@ class Index:
     def __init__(self, entries=None, names=None):
         self.forms = {}
         for e in entries if entries is not None else parse(DATA):
-            for variant in (e, chant_variant(e)):
-                if variant is None:
-                    continue
-                for tag, form in paradigm(variant):
-                    self.add(form, (head(e), tag))
+            for tag, form in paradigm(e) + chant_forms(e):
+                self.add(form, (head(e), tag))
         for nm in names if names is not None else load_names():
             for tag, form in name_paradigm(nm):
                 self.add(form, (nm["greek"], tag))
