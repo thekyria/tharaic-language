@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Build Tharaic Stele, an inscriptional typeface for the Tharaic alphabet.
 
-Every letter is drawn as a centreline skeleton of lines and arcs, stroked with
-one even width, flared at its free ends (as if cut with a chisel), clipped flat
-at the baseline and the top line, and merged into outlines. Capitals are full height; lowercase letters
-are drawn as small capitals, as in an inscription, so ordinary text works.
+Every letter is drawn as a centreline skeleton of straight cuts, as a chisel
+makes them: curves are broken into facets every 45 degrees. The skeleton is
+stroked with one even width, widened into a straight wedge at its free ends,
+clipped flat at the baseline and the top line, and merged into outlines.
+Capitals are full height; lowercase letters are drawn as small capitals, as in
+an inscription, so ordinary text works.
 
 Writes font/TharaicStele.ttf, font/TharaicStele.woff2 and docs/font-specimen.svg.
 Unlike the other tools this one needs three packages:
@@ -26,13 +28,14 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
 FAMILY = "Tharaic Stele"
-VERSION = "0.2"
+VERSION = "0.3"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
 CAP, CAP_STROKE = 700, 84        # capitals
 SMALL, SMALL_STROKE = 510, 76    # small capitals (lowercase letters) and digits
-OVERSHOOT = 12                   # round letters reach a little past the lines
+OVERSHOOT = 0                    # faceted letters sit flat on the lines, like straight ones
+FACET = 45                       # degrees of curve per straight cut
 MITER_LIMIT = 3.0
 
 # Side bearings, in units at cap height: straight side, round side, open side, diagonal side
@@ -74,7 +77,10 @@ class Shape:
     def dot(self, x, y, d=None):
         d = d or self.s * 1.2
         p = pathops.Path()
-        add_arc(p, x, y, d / 2, d / 2, 0, 360, move=True)
+        pts = facets(x, y, d / 2, d / 2, 0, 360)
+        p.moveTo(*pts[0])
+        for pt in pts[1:]:
+            p.lineTo(*pt)
         p.close()
         self.fills.append(p)
 
@@ -86,25 +92,32 @@ class Shape:
          .arc(right - rx, bottom + r, rx, r, 90, -90).to(x0, bottom).done())
 
 
-def add_arc(p, cx, cy, rx, ry, a0, a1, move=False):
-    """Append an elliptical arc from angle a0 to a1 (degrees) as cubic segments."""
-    steps = max(1, math.ceil(abs(a1 - a0) / 90))
-    d = math.radians(a1 - a0) / steps
-    k = 4 / 3 * math.tan(d / 4)
-    t = math.radians(a0)
-    if move:
-        p.moveTo(cx + rx * math.cos(t), cy + ry * math.sin(t))
-    for _ in range(steps):
-        t1 = t + d
-        p.cubicTo(cx + rx * (math.cos(t) - k * math.sin(t)), cy + ry * (math.sin(t) + k * math.cos(t)),
-                  cx + rx * (math.cos(t1) + k * math.sin(t1)), cy + ry * (math.sin(t1) - k * math.cos(t1)),
-                  cx + rx * math.cos(t1), cy + ry * math.sin(t1))
-        t = t1
-
+# An "ellipse" here is a polygon whose sides touch the true ellipse at every
+# multiple of FACET degrees, so it has flat sides at the top, bottom, left and
+# right, and its corners at the angles between.
 
 def on_ellipse(cx, cy, rx, ry, angle):
+    """The point of the faceted ellipse in the direction of angle (degrees)."""
+    nearest = round(angle / FACET) * FACET
+    k = 1 / math.cos(math.radians(angle - nearest))
     t = math.radians(angle)
-    return cx + rx * math.cos(t), cy + ry * math.sin(t)
+    return cx + rx * k * math.cos(t), cy + ry * k * math.sin(t)
+
+
+def facets(cx, cy, rx, ry, a0, a1):
+    """The points of the faceted arc from angle a0 to a1 (degrees), corners included."""
+    step = FACET if a1 > a0 else -FACET
+    corner = (math.floor((a0 - FACET / 2) / FACET) + (1 if step > 0 else 0)) * FACET + FACET / 2
+    if (corner - a0) * step <= 1e-9:
+        corner += step
+    points = [on_ellipse(cx, cy, rx, ry, a0)]
+    while (a1 - corner) * step > 1e-9:
+        # a corner very near an end would leave a sliver of a cut: run straight past it
+        if min(abs(corner - a0), abs(corner - a1)) >= 10 or abs(a1 - a0) >= 360:
+            points.append(on_ellipse(cx, cy, rx, ry, corner))
+        corner += step
+    points.append(on_ellipse(cx, cy, rx, ry, a1))
+    return points
 
 
 class Stroke:
@@ -131,9 +144,8 @@ class PathBuilder:
         return self
 
     def arc(self, cx, cy, rx, ry, a0, a1):
-        add_arc(self.p, cx, cy, rx, ry, a0, a1)
-        n = max(2, math.ceil(abs(a1 - a0) / 3))
-        self.points += [on_ellipse(cx, cy, rx, ry, a0 + (a1 - a0) * i / n) for i in range(1, n + 1)]
+        for pt in facets(cx, cy, rx, ry, a0, a1)[1:]:
+            self.to(*pt)
         return self
 
     def done(self, closed=False):
@@ -144,7 +156,7 @@ class PathBuilder:
 
 
 # Flares: a free stroke end widens by FLARE_WIDTH (times the stroke, on each side)
-# over the last FLARE_LENGTH strokes, in a concave curve, as a chisel leaves it.
+# over the last FLARE_LENGTH strokes, in a straight wedge, as a chisel leaves it.
 FLARE_WIDTH, FLARE_LENGTH = .30, 2.0
 
 
@@ -173,7 +185,7 @@ def flare(points, s, extend):
         n = math.hypot(tx, ty)
         nx, ny = -ty / n, tx / n
         t = 1 - k / (len(samples) - 1)
-        hw = s / 2 + FLARE_WIDTH * s * t * t
+        hw = s / 2 + FLARE_WIDTH * s * t
         left.append((x + nx * hw, y + ny * hw))
         right.append((x - nx * hw, y - ny * hw))
     if extend:   # carry the full width past the end, to be cut flat by the clip
