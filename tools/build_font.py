@@ -28,7 +28,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
 FAMILY = "Tharaic Stele"
-VERSION = "0.3"
+VERSION = "0.4"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -85,11 +85,10 @@ class Shape:
         self.fills.append(p)
 
     def bowl(self, x0, top, bottom, right):
-        """A D-shaped bowl from a stem at x0, as in Β, Ρ, Ϸ."""
-        r = (top - bottom) / 2
-        rx = min(r, right - x0)
-        (self.path().move(x0, top).to(right - rx, top)
-         .arc(right - rx, bottom + r, rx, r, 90, -90).to(x0, bottom).done())
+        """A pointed bowl from a stem at x0, as in archaic Β, Ρ, Ϸ: two cuts meeting at a point."""
+        flat = x0 + .35 * (right - x0)
+        mid = (top + bottom) / 2
+        self.line((x0, top), (flat, top), (right, mid), (flat, bottom), (x0, bottom), clip=None)
 
 
 # An "ellipse" here is a polygon whose sides touch the true ellipse at every
@@ -248,11 +247,12 @@ def circle_O(g, w, cy=None, top=None, bottom=None):
 
 
 def alpha(g):
+    # Archaic: the crossbar slopes down to the right
     w = g.W(.80)
     g.line((0, 0), (w / 2, g.H), (w, 0))
-    y = .30 * g.H
-    x = w / 2 * y / g.H
-    g.line((x, y), (w - x, y))
+    y0, y1 = .38 * g.H, .22 * g.H
+    x0, x1 = w / 2 * y0 / g.H, w - w / 2 * y1 / g.H
+    g.line((x0, y0), (x1, y1))
     return "DD"
 
 
@@ -277,14 +277,25 @@ def delta(g):
 
 
 def epsilon(g):
+    # Archaic: the arms slope down from the stem, as in Phoenician he
+    drop = .10 * g.H
     g.line((0, 0), (0, g.H))
-    g.line((0, g.T), (g.W(.54), g.T))
-    g.line((0, g.M), (g.W(.46), g.M))
-    g.line((0, g.B), (g.W(.54), g.B))
+    g.line((0, g.T), (g.W(.54), g.T - drop))
+    g.line((0, g.M + drop / 2), (g.W(.46), g.M - drop / 2))
+    g.line((0, g.B + drop), (g.W(.54), g.B))
     return "SO"
 
 
 def zeta(g):
+    # Archaic: two bars joined by a stem, as in Phoenician zayin
+    w = g.W(.60)
+    g.line((0, g.T), (w, g.T))
+    g.line((0, g.B), (w, g.B))
+    g.line((w / 2, 0), (w / 2, g.H))
+    return "OO"
+
+
+def latin_Z(g):
     w = g.W(.62)
     g.line((0, g.T), (w, g.T), (0, g.B), (w, g.B))
     return "OO"
@@ -299,9 +310,11 @@ def eta(g):
 
 
 def theta(g):
+    # Archaic: a cross in the ring
     w = g.W(.88)
     circle_O(g, w)
-    g.line((w * .36, g.M), (w * .64, g.M), flared=False)
+    g.line((0, g.M), (w, g.M), clip=None)
+    g.line((w / 2, 0), (w / 2, g.H))
     return "RR"
 
 
@@ -338,24 +351,29 @@ def nu(g):
 
 
 def xi(g):
+    # Archaic: a stem through the three bars
     w = g.W(.60)
     g.line((0, g.T), (w, g.T))
     g.line((.14 * w, g.M), (.86 * w, g.M))
     g.line((0, g.B), (w, g.B))
+    g.line((w / 2, 0), (w / 2, g.H))
     return "OO"
 
 
 def omicron(g):
-    circle_O(g, g.W(.88))
+    # Archaic: smaller than the other letters, centred on the middle
+    inset = .07 * g.H
+    circle_O(g, g.W(.76), top=g.H - inset, bottom=inset)
     return "RR"
 
 
 def pi(g):
-    w = g.W(.64)
+    # Archaic: the right leg is short
+    w = g.W(.60)
     g.line((0, 0), (0, g.H))
-    g.line((w, 0), (w, g.H))
+    g.line((w, .45 * g.H), (w, g.H))
     g.line((0, g.T), (w, g.T))
-    return "SS"
+    return "SO"
 
 
 def rho(g):
@@ -400,10 +418,11 @@ def chi(g):
 
 
 def psi(g):
-    w, y = g.W(.78), .62 * g.H
+    # Archaic: a trident, its arms straight cuts
+    w, y = g.W(.74), .40 * g.H
     g.line((w / 2, 0), (w / 2, g.H))
-    g.path(clip=True).move(0, g.H).to(0, y).arc(w / 2, y, w / 2, .24 * g.H, 180, 360).to(w, g.H).done()
-    return "SS"
+    g.line((0, g.H), (w / 2, y), (w, g.H))
+    return "DD"
 
 
 def omega(g):
@@ -567,13 +586,14 @@ LETTERS = [
     ("U", 0x55, "u", [0x75], latin_U),
     ("V", 0x56, "v", [0x76], latin_V),
     ("W", 0x57, "w", [0x77], latin_W),
+    ("Z", 0x5A, "z", [0x7A], latin_Z),
 ]
 
 # Latin letters drawn the same as a Greek one share its glyph
 SAME_AS_GREEK = {
     "A": "Alpha", "B": "Beta", "E": "Epsilon", "F": "Digamma", "H": "Eta", "I": "Iota",
     "J": "Yot", "K": "Kappa", "M": "Mu", "N": "Nu", "O": "Omicron", "P": "Rho",
-    "T": "Tau", "X": "Chi", "Y": "Upsilon", "Z": "Zeta",
+    "T": "Tau", "X": "Chi", "Y": "Upsilon",
 }
 
 # Precomposed long vowels, Greek and romanized: (name, codes, base glyph)

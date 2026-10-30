@@ -29,11 +29,26 @@ Files:
 
 The units are thousandths of the font size. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops.
 
-**Facets.** A chisel cuts straight, so there are no true curves: every curve is broken into straight cuts, one for each 45° of its turn. *Ο Θ Ϙ* are octagons with flat tops, bottoms and sides, which sit on the lines like the straight letters; the bowls of *Β Ρ Ϸ* are three cuts each, and *Ω*, *C*, *S*, *U* and the digits are built the same way.
+**Facets.** A chisel cuts straight, so there are no true curves: every curve is broken into straight cuts, one for each 45° of its turn. *Ο Θ Ϙ* are octagons with flat tops, bottoms and sides; *Ω*, *C*, *S*, *U* and the digits are built the same way. Bowls are not faceted but pointed (see below).
 
 **Flares.** Every free end of a stroke widens in a straight-sided wedge over its last two stroke-widths, by almost a third of the stroke on each side, as the chisel opens the cut at its end. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
 
-**Archaic touches.** Most letters keep their familiar Classical Greek shapes, so the text stays readable. A few follow older inscriptions: *Σ* and *Μ* have splayed outer strokes, *Α* has a low crossbar, and *Ω* is open at the bottom and stands on two feet.
+**Archaic forms.** Where an older inscriptional form exists and stays readable, the font uses it, as stone-cutters did before the Classical alphabet settled:
+
+| Letter | Archaic form |
+|--------|--------------|
+| **Α** | The crossbar slopes down to the right |
+| **Β Ρ Ϸ** | Pointed bowls: two cuts meeting at a point |
+| **Ε** | The arms slope down from the stem, as in Phoenician *he* |
+| **Ζ** | Two bars joined by a stem (⌶), as in Phoenician *zayin*. It differs from *Ι* by its bars |
+| **Θ** | A cross in the ring (⊕) |
+| **Ξ** | A stem through the three bars |
+| **Ο** | Smaller than the other letters, centred on the middle |
+| **Π** | The right leg is short |
+| **Σ Μ** | Splayed outer strokes |
+| **Ψ** | A trident of straight cuts |
+
+The other letters keep the forms everyone knows. *Ω* was a late letter even in Greek; here it is open at the bottom and stands on two feet.
 
 **The extra letters** are drawn after their Unicode forms, in the same strokes as the rest:
 
@@ -46,7 +61,7 @@ The units are thousandths of the font size. Diagonal strokes are cut flat where 
 | **Ϙ ϙ** koppa | A ring on a short stem, standing on the baseline. *Φ* has its stem through the ring |
 | **ᾱ ῡ**, **Ᾱ Ῡ** | A macron centred over the letter. A separate combining macron (U+0304) is placed the same way |
 
-**Latin letters** are there for the romanization, with the long vowels *ā ē ī ō ū*. Like the Greek ones, lowercase is drawn as small capitals. Letters with the same shape in both alphabets share one drawing (*A* is *Α*, *P* is *Ρ*, *F* is *Ϝ*, *J* is *Ϳ*); *C D G L Q R S U V W* are drawn on their own in the same strokes. Hebrew transliteration marks such as *ḥ* and *ṣ* are not included.
+**Latin letters** are there for the romanization, with the long vowels *ā ē ī ō ū*. Like the Greek ones, lowercase is drawn as small capitals. Letters with the same shape in both alphabets share one drawing, archaic forms included, much as early Latin inscriptions borrowed them (*A* is *Α*, *P* is *Ρ*, *F* is *Ϝ*, *J* is *Ϳ*); *C D G L Q R S U V W Z* are drawn on their own in the same strokes, with pointed bowls in *D*, *R*. *Z* keeps its later zigzag form, since the archaic *Ζ* would read as *I*. Hebrew transliteration marks such as *ḥ* and *ṣ* are not included.
 
 **Digits and punctuation** cover what the docs use: digits at small-capital height, *. , : ; · ! ? ( ) [ ] - – — « »* and quotation marks, the Greek question mark (*;*) and raised dot (*·*), and the inscriptional word divider *⁝*. Punctuation and alphabetic numerals are still to be designed for the script itself ([Roadmap](roadmap.md#later)); the font will follow that work.
 
