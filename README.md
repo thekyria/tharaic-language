@@ -43,6 +43,11 @@ Python 3 scripts, standard library only:
 - `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, the strict chant rules with `--chant`, or the high-register rules with `--high` (defaults to `docs/*.md`)
 - `python3 tools/dialect.py "…"` — turn coastal Tharaic into the island dialect (chant forms, construct vowel, *ϸ* → *σ*)
 - `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
+- `python3 tools/inflect.py ναϝᾱ λεκειν` — print the full paradigm of lexicon words; `--parse εβλεψε` analyzes a form; `--tables` regenerates the paradigm tables in `docs/morphology.md` and `docs/word-building.md` from the rules, and `--check` verifies they are up to date
+- `python3 tools/check_texts.py [files…]` — check that every word of the texts (Mark 1, the stories, proverbs, sacred texts, calendar, and the examples in syntax and word building) is a form of a lexicon word or of a name in `data/names.tsv`
+- `python3 -m unittest discover -s tests` — unit tests for the tools
+
+All of these run on every pull request (`.github/workflows/check.yml`).
 
 ---
 
