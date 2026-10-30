@@ -64,6 +64,8 @@ Notes:
 
 These decline like O-stems on a stem ending in **-εϝ-**. The nominative *-ευς* and vocative *-ευ* are the only special forms, from older \*-εϝος and \*-εϝε (compare the early Greek genitive \*βασιλῆϝος, Homeric βασιλῆος):
 
+<!-- inflect: eus κασαφευς -->
+
 | Case | Singular |
 |------|----------|
 | **NOM** | *κασαφευς*<br>kasapheus |
@@ -74,5 +76,7 @@ These decline like O-stems on a stem ending in **-εϝ-**. The nominative *-ευ
 | **LOC** | *κασαφεϝελι*<br>kasapheveli |
 | **INS** | *κασαφεϝομ*<br>kasaphevom |
 | **ABL** | *κασαφεϝαθα*<br>kasaphevatha |
+
+<!-- /inflect -->
 
 Dual and plural follow the O-stem on *κασαφεϝ-*: *κασαφεϝιν*, *κασαφεϝιμ*…
