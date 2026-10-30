@@ -4,7 +4,7 @@
 
 <!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->
 
-1470 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
+1474 words, grouped by theme and sorted in Tharaic alphabetical order (*α β γ δ ε ϝ ζ ͱ η θ ι ϳ κ λ μ ν ξ ο π ϙ ρ σ ϸ τ υ φ χ ψ ω*: the extra letters sit at their historical places).
 
 - **Root** is the consonantal root for words built in the [older layer](word-building.md#older-layer-patterns-on-roots).
 - **Origin**: *native* words are inherited and built on a root; *Phoenician* and *Greek* words are later loans that keep their source shape. A source note marked *cf.* compares a native word with its Semitic relative.
@@ -1485,15 +1485,19 @@
 | Tharaic | Romanized | Root | Grammar | Meaning | Origin | Chant | Register, dialect |
 |---------|-----------|------|---------|---------|--------|-------|-------------------|
 | *αλληλιμ* | allēlim |  | pron. | one another; declines like a plural O-stem (ACC *αλληλονας*, DAT *αλληλοιμ*) | Greek *ἀλλήλων* |  |  |
+| *αναιν* | anain |  | pron. | we two — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ανεν* | anen |  | pron. | we — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ανι* | ani |  | pron. | I — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ατα* | ata |  | pron. | you (sg.) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
+| *αταιν* | atain |  | pron. | you two — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ατεμ* | atem |  | pron. | you (pl.) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *δεκ* | dek |  | pron. | that, those (before a noun) | Phoenician (cf. Aramaic *dēk*) |  |  |
 | *ζε* | ze |  | pron. | this, these (demonstrative, before a noun) | Phoenician *z* |  |  |
 | *ͱια* | hia |  | pron. | it (inanimate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
+| *ͱιαιν* | hiain |  | pron. | they two (inanimate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ͱιομ* | hiom |  | pron. | they (inanimate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ͱῡα* | hūa |  | pron. | he, she (animate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
+| *ͱῡαιν* | hūain |  | pron. | they two (animate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ͱῡιμ* | hūim |  | pron. | they (animate) — see [Pronouns](morphology.md#pronouns--enclitics) | Phoenician |  |  |
 | *ανα* | ana |  | prep. + ACC | up, up along | Greek |  |  |
 | *αντι* | anti |  | prep. + GEN | against, opposite, instead of | Greek |  |  |
