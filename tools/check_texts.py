@@ -12,6 +12,10 @@ possibly with the prefixes ϝα-, ϸε-, ͱα-, object enclitics after a hyphen
 Skipped: accented citations of real Greek, roots (Ν-Ϝ, Α-Λ-Μ), single letters, word parts written with a leading or trailing hyphen (-ιλ, ϝα-), and
 starred forms (\\*βᾱσιλιλ), which mark something as wrong or reconstructed.
 
+A line can also name words to skip on that line, in a comment that does not
+show on the rendered page, for older forms or words split into their parts:
+    … the participle as νᾱϝον / νᾱϝουσα … <!-- check_texts: skip νᾱϝουσα -->
+
 Defaults to the texts listed in TEXTS. With --strict, exits 1 when a word
 is unknown.
 """
@@ -25,13 +29,13 @@ from build_lexicon import ROOT  # noqa: E402
 from check_phonotactics import ACCENTS, VOWELS  # noqa: E402
 from inflect import Index  # noqa: E402
 
-# The texts, and the grammar pages whose examples are all well-formed Tharaic. morphology.md,
-# registers.md and history.md also show word parts, older and deliberately wrong forms;
-# dialects.md shows island forms.
+# The texts and the grammar pages. registers.md and history.md also show older and
+# deliberately wrong forms, and dialects.md shows island forms, so they are not checked.
 TEXTS = ["texts.md", "proverbs.md", "sacred.md", "stories.md", "calendar.md", "gospels.md", "mark-1.md",
-         "syntax.md", "word-building.md"]
+         "syntax.md", "word-building.md", "morphology.md"]
 LETTERS = "Ͱ-Ͽἀ-῿"
 TOKEN = re.compile(f"[{LETTERS}]+(?:-[{LETTERS}]+)*")
+SKIP = re.compile(r"<!-- check_texts: skip (.*?) -->")
 
 
 def tokens(line):
@@ -55,8 +59,9 @@ def scan(paths, index):
         with open(path, encoding="utf-8") as f:
             for n, line in enumerate(f, 1):
                 line = unicodedata.normalize("NFC", line)
-                for word, _ in tokens(line):
-                    if not index.analyze(word):
+                skip = {w for m in SKIP.finditer(line) for w in m.group(1).split()}
+                for word, _ in tokens(SKIP.sub("", line)):
+                    if word not in skip and not index.analyze(word):
                         unknown.append((path, n, word))
     return unknown
 

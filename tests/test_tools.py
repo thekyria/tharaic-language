@@ -1,13 +1,14 @@
 """Tests for the scripts in tools/. Run: python3 -m unittest discover -s tests"""
 import os
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tools"))
 
 from build_lexicon import DATA, parse, romanize  # noqa: E402
 from check_phonotactics import problems  # noqa: E402
-from check_texts import tokens  # noqa: E402
+from check_texts import scan, tokens  # noqa: E402
 from dialect import island  # noqa: E402
 from greek import to_greek, to_roman  # noqa: E402
 from inflect import Index, augment, paradigm, unaugment  # noqa: E402
@@ -94,6 +95,13 @@ class CheckTextsTest(unittest.TestCase):
     def test_skips(self):
         line = "*ναϝος*, root Ν-Ϝ, ending *-ιλ*, not \\*βᾱσιλιλ, Greek *ἄστρα*, the letter *ᾱ*"
         self.assertEqual([w for w, _ in tokens(line)], ["ναϝος"])
+
+    def test_skip_marker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "text.md")
+            with open(path, "w", encoding="utf-8") as f:
+                f.write("*ναϝος* and *νᾱϝουσα* <!-- check_texts: skip νᾱϝουσα -->\n*νᾱϝουσα*\n")
+            self.assertEqual([(n, w) for _, n, w in scan([path], Index())], [(2, "νᾱϝουσα")])
 
 
 if __name__ == "__main__":

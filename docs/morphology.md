@@ -476,7 +476,7 @@ A participle is a verbal adjective. It agrees with its noun in gender, number an
 - Object enclitics attach only to finite verbs. When the object of a participle is a pronoun, the high register uses a finite verb instead: *εκανε ϸερετει-ιμ* "she was serving them", not \*ϸερετοντος-ιμ.
 - Everyday speech uses participles mostly as plain adjectives and nouns: *νᾱϝοντος ναϝᾱ* "a sailing ship". The high register builds whole phrases with them, in place of relative clauses and chains of verbs ([Syntax § Participle phrases](syntax.md#participle-phrases)).
 
-*Earlier versions gave the participle as νᾱϝον / νᾱϝουσα, the Greek masculine and feminine. Tharaic distinguishes animate and inanimate, not masculine and feminine, so the participle is now a regular adjective.*
+*Earlier versions gave the participle as νᾱϝον / νᾱϝουσα, the Greek masculine and feminine. Tharaic distinguishes animate and inanimate, not masculine and feminine, so the participle is now a regular adjective.* <!-- check_texts: skip νᾱϝουσα -->
 
 ---
 
@@ -552,7 +552,7 @@ The learned Doric verbs keep two Doric person endings: **1st plural *-μες*** 
 <!-- /inflect -->
 
 - **The aorist cannot be predicted** from the infinitive, since it keeps the Greek aorist stem (*γραφειν* → *εγραψα*, *διδασκειν* → *εδιδαξα*, *ερχεσθαι* → *ηνθα*). The lexicon gives it for every Doric verb. All of them take the Tharaic aorist endings in *-α*, even Greek strong aorists: *εμαθα* "I learned" (Greek *ἔμαθον*).
-- **The augment** is *ε-* before a consonant. A vowel is lengthened: **α → ᾱ** (the Doric long *ā*, where sailors' Greek would have *η*), ε → η, ο → ω, υ → ῡ. *ι* and the diphthongs stay as they are: *ᾱρξαμην* "I began", *ηλεησα* "I had mercy", *ͱῡμνησα* "I hymned", *ευξαμην* "I prayed". In verbs with a prefix, the augment goes after the prefix: *μετ-ε-νοησα*, *απ-ε-κριναμην*.
+- **The augment** is *ε-* before a consonant. A vowel is lengthened: **α → ᾱ** (the Doric long *ā*, where sailors' Greek would have *η*), ε → η, ο → ω, υ → ῡ. *ι* and the diphthongs stay as they are: *ᾱρξαμην* "I began", *ηλεησα* "I had mercy", *ͱῡμνησα* "I hymned", *ευξαμην* "I prayed". In verbs with a prefix, the augment goes after the prefix: *μετ-ε-νοησα*, *απ-ε-κριναμην*. <!-- check_texts: skip μετ-ε-νοησα απ-ε-κριναμην -->
 - **Middle verbs** have 1st plural *-μεσθα*: *ερχομεσθα* "we come", aorist *ευξαμεσθα* "we prayed". The other middle endings are the [native ones](#middle-voice).
 - Future (*ϸα ποιω*), imperative (*ποιε!*), infinitive and participles are formed as for native verbs.
 
@@ -616,7 +616,7 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 | Comparative | *-οτερος* / *-οτερον*<br>-oteros / -oteron | *καλοτερος*<br>kaloteros "fairer, better" |
 | Superlative | *-οτατος* / *-οτατον*<br>-otatos / -otaton | *καλοτατος*<br>kalotatos "fairest, best" |
 
-The endings attach to the adjective's stem (*μεγ-ᾱς* → *μεγοτερος*) and decline like *καλος*. The standard of comparison goes in the ablative ([Syntax § Comparison](syntax.md#comparison)).
+The endings attach to the adjective's stem (*μεγ-ᾱς* → *μεγοτερος*) and decline like *καλος*. The standard of comparison goes in the ablative ([Syntax § Comparison](syntax.md#comparison)). <!-- check_texts: skip μεγ-ᾱς -->
 
 **Construct superlative.** Old titles and formulas use the Phoenician-style construct instead: a noun in the construct state followed by its own plural, as in Hebrew "song of songs". The high register uses *-οτατος*, except in the fixed title *ηλιλ ηλιμ* "god of gods".
 
