@@ -12,6 +12,7 @@
 - **Chant** gives the form used in chant and sacred speech, where it differs ([History § The chant register](history.md#3-the-chant-register)).
 - **Register**: *high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it, and words with neither belong to both. ↔ marks the counterpart in the other register; *adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with. *island* and *pidgin* mark words used only in that [dialect](dialects.md).
 - In Greek- and Doric-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).
+- The [English index](english-index.md) lists the words by their English meanings.
 
 ## The Sea & Navigation
 

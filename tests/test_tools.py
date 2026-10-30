@@ -6,7 +6,7 @@ import unittest
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "tools"))
 
-from build_lexicon import DATA, parse, romanize  # noqa: E402
+from build_lexicon import DATA, anchor, english_keys, parse, romanize  # noqa: E402
 from check_phonotactics import problems  # noqa: E402
 from check_texts import scan, tokens  # noqa: E402
 from dialect import island  # noqa: E402
@@ -30,6 +30,23 @@ class GreekTest(unittest.TestCase):
     def test_round_trip(self):
         for e in ENTRIES:
             self.assertEqual(to_greek(romanize(e)), e["greek"], e["greek"])
+
+
+class EnglishIndexTest(unittest.TestCase):
+    def test_keys(self):
+        self.assertEqual(english_keys({"meaning": "to cross the sea"}), ["cross the sea"])
+        self.assertEqual(english_keys({"meaning": "wave (a living thing of the sea)"}), ["wave"])
+        self.assertEqual(english_keys({"meaning": "tradition, what is handed down"}), ["tradition"])
+        self.assertEqual(english_keys({"meaning": "open sea", "index": "sea, open sea"}), ["sea", "open sea"])
+        self.assertEqual(english_keys(BY_HEAD["ενος"]), ["one"])
+
+    def test_every_entry_has_a_key(self):
+        for e in ENTRIES:
+            self.assertTrue(english_keys(e), e["greek"])
+
+    def test_anchor(self):
+        self.assertEqual(anchor("The Sea & Navigation"), "the-sea--navigation")
+        self.assertEqual(anchor("Time, Calendar & Stars"), "time-calendar--stars")
 
 
 class PhonotacticsTest(unittest.TestCase):
