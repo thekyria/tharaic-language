@@ -52,6 +52,8 @@ Each step is a separate pull request.
 
 14. ✅ **Checks** — `tools/inflect.py` generates every paradigm from the lexicon, and the paradigm tables in [Morphology](morphology.md) and [Word Building](word-building.md) are now generated from it. `tools/check_texts.py` checks that every word of the texts is a form of a lexicon word or of a name (the new `data/names.tsv`). It found two slips, now fixed: *Ͱα-ηνθες* for *Ͱα-ηνθας* in Mark 1:24, and *μιζραχᾱθα* for *μιζραχαθα* in the sample sentences. The lexicon gains the dual pronouns. All checks and unit tests run on every pull request.
 
+15. ✅ **English index** — [English Index](english-index.md), generated from the lexicon: about 2,000 English words and phrases, each with its Tharaic words in both registers, linked to the lexicon. The keys come from the meanings; a new `index` field in `data/lexicon.yaml` sets them where the meaning does not give the plain word (*θᾱρος* under "sea", the numbers under "one", "two"…).
+
 ## Later
 
 | Future phase | What it adds |
