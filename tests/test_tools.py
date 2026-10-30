@@ -88,6 +88,7 @@ class InflectTest(unittest.TestCase):
         self.assertIn(("κανειν", "PRES.3SG ε(σ)-"), index.analyze("ϸε-εσι-υ"))      # prefix and enclitic
         self.assertIn(("ͱοδος", "ACC.SG +κα"), index.analyze("ͱοδονκα"))     # possessive enclitic
         self.assertIn(("Ϳεϸῡϙος", "VOC.SG"), index.analyze("Ϳεϸῡϙε"))        # a name
+        self.assertIn(("κτιζειν", "INF"), index.analyze("κιτιζειν"))           # chant form
         self.assertEqual(index.analyze("ναϝοτ"), [])
 
 

@@ -29,10 +29,10 @@ from build_lexicon import ROOT  # noqa: E402
 from check_phonotactics import ACCENTS, VOWELS  # noqa: E402
 from inflect import Index  # noqa: E402
 
-# The texts and the grammar pages. registers.md and history.md also show older and
-# deliberately wrong forms, and dialects.md shows island forms, so they are not checked.
+# The texts and the grammar pages. history.md shows reconstructed forms and dialects.md
+# island forms, so they are not checked.
 TEXTS = ["texts.md", "proverbs.md", "sacred.md", "stories.md", "calendar.md", "gospels.md", "mark-1.md",
-         "syntax.md", "word-building.md", "morphology.md"]
+         "syntax.md", "word-building.md", "morphology.md", "registers.md"]
 LETTERS = "Ͱ-Ͽἀ-῿"
 TOKEN = re.compile(f"[{LETTERS}]+(?:-[{LETTERS}]+)*")
 SKIP = re.compile(r"<!-- check_texts: skip (.*?) -->")
