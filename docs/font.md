@@ -1,0 +1,74 @@
+# The Stele Typeface
+
+[← Overview](../README.md)
+
+**Tharaic Stele** is a typeface for the [Tharaic alphabet](phonology.md), in the style of a carved inscription: even strokes, no serifs, flat ends where a stroke meets the baseline or the top line. It covers every letter of the alphabet, including the extra letters that most fonts lack or draw unevenly, so a whole text appears in one style.
+
+![Specimen of Tharaic Stele](font-specimen.svg)
+
+Files:
+
+| File | Use |
+|------|-----|
+| [`font/TharaicStele.ttf`](../font/TharaicStele.ttf) | Install on a computer |
+| [`font/TharaicStele.woff2`](../font/TharaicStele.woff2) | Use on a web page |
+| [`tools/build_font.py`](../tools/build_font.py) | The source: every letter is drawn there |
+
+---
+
+## Design
+
+**One alphabet.** Inscriptions have no lowercase, so the font has none either: **lowercase letters are drawn as small capitals**. Ordinary text, written in lowercase as in these docs, comes out as an inscription with larger initials (*Δωει θᾱρος* → ΔΩΕΙ ΘᾹΡΟΣ with a full-height Δ). Final *ς* has the same form as *σ*.
+
+**Strokes.** Every letter is a centreline of straight lines and arcs, cut with one width of stroke:
+
+| | Height | Stroke |
+|---|---|---|
+| Capitals | 700 | 84 |
+| Small capitals, digits | 510 | 76 |
+
+The units are thousandths of the font size. Round letters (*Ο Θ Φ Ϙ*) reach slightly past the lines so they look the same height as flat ones. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops, as a chisel leaves them.
+
+**Archaic touches.** Most letters keep their familiar Classical Greek shapes, so the text stays readable. A few follow older inscriptions: *Σ* and *Μ* have splayed outer strokes, *Α* has a low crossbar, and *Ω* is an open circle on two feet.
+
+**The extra letters** are drawn after their Unicode forms, in the same strokes as the rest:
+
+| Letter | Form in the font |
+|--------|------------------|
+| **Ϝ ϝ** digamma | F: stem, top bar and a shorter middle bar |
+| **Ͱ ͱ** heta | The left half of Η: a stem and half a crossbar |
+| **Ϳ ϳ** yot | J: a stem that hooks to the left at the bottom |
+| **Ϸ ϸ** sho | Þ: a stem with a bowl at mid-height. *Ρ* has its bowl at the top |
+| **Ϙ ϙ** koppa | A circle on a short stem, standing on the baseline. *Φ* has its stem through the circle |
+| **ᾱ ῡ**, **Ᾱ Ῡ** | A macron centred over the letter. A separate combining macron (U+0304) is placed the same way |
+
+**Digits and punctuation** cover what the docs use: digits at small-capital height, *. , : ; · ! ? ( ) [ ] - – — « »* and quotation marks, the Greek question mark (*;*) and raised dot (*·*), and the inscriptional word divider *⁝*. Punctuation and alphabetic numerals are still to be designed for the script itself ([Roadmap](roadmap.md#later)); the font will follow that work.
+
+**Spacing.** Side bearings depend on the shape of each side (stem, round, open or diagonal), and a small kerning table closes the gaps between pairs like *ΤΑ*, *ΑΥ* and *ΓΑ*, in capitals and small capitals.
+
+---
+
+## Using it
+
+On a computer, install `TharaicStele.ttf` and choose *Tharaic Stele* in any program. On a web page:
+
+```css
+@font-face {
+  font-family: "Tharaic Stele";
+  src: url("TharaicStele.woff2") format("woff2");
+}
+.tharaic { font-family: "Tharaic Stele", serif; }
+```
+
+The font has **no Latin letters**: romanized text falls back to another font. It also has no Greek accents or breathings, which Tharaic does not write, so quotations from Classical Greek (*ὀργισθείς*) fall back too.
+
+## Changing it
+
+Each letter is a short function in `tools/build_font.py`. Edit it and rebuild:
+
+```bash
+pip install fonttools skia-pathops brotli
+python3 tools/build_font.py
+```
+
+This writes the two font files and this page's specimen. The build is reproducible: the same source gives the same files.

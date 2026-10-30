@@ -19,6 +19,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | Document | Covers |
 |----------|--------|
 | [Phonology & Script](docs/phonology.md) | Greek alphabet and extra letters, vowels, consonants, phonotactics, stress |
+| [The Stele Typeface](docs/font.md) | An inscriptional font for the alphabet, with all the extra letters: design, use and specimen |
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |
@@ -37,12 +38,13 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 
 ## Tools
 
-Python 3 scripts, standard library only:
+Python 3 scripts, standard library only except the font builder:
 
 - `python3 tools/greek.py nāvei navos` — convert romanized Tharaic to Greek script, or back with `--roman` (reads stdin if no words are given)
 - `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, the strict chant rules with `--chant`, or the high-register rules with `--high` (defaults to `docs/*.md`)
 - `python3 tools/dialect.py "…"` — turn coastal Tharaic into the island dialect (chant forms, construct vowel, *ϸ* → *σ*)
 - `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
+- `python3 tools/build_font.py` — build the [Stele typeface](docs/font.md) into `font/` and its specimen; needs `pip install fonttools skia-pathops brotli`
 
 ---
 
