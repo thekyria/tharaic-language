@@ -50,6 +50,8 @@ Each step is a separate pull request.
 
 13. ✅ **Dialects** — [Dialects](dialects.md): the coastal standard, the island dialect (sound rules, the *ϸ*/*σ* homophones, grammar, island words) and the harbor pidgin (grammar table, a market dialogue), with one passage in all three. `tools/dialect.py` turns coastal text into island forms; the lexicon gains a `dialect` field, five island words and two pidgin words.
 
+14. ✅ **Checks** — `tools/inflect.py` generates every paradigm from the lexicon, and the paradigm tables in [Morphology](morphology.md) and [Word Building](word-building.md) are now generated from it. `tools/check_texts.py` checks that every word of the texts is a form of a lexicon word or of a name (the new `data/names.tsv`). It found two slips, now fixed: *Ͱα-ηνθες* for *Ͱα-ηνθας* in Mark 1:24, and *μιζραχᾱθα* for *μιζραχαθα* in the sample sentences. The lexicon gains the dual pronouns. All checks and unit tests run on every pull request.
+
 ## Later
 
 | Future phase | What it adds |

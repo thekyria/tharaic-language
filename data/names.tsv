@@ -1,0 +1,60 @@
+# Proper names, for tools/check_texts.py. See docs/gospels.md § Names for how they are formed.
+# Columns: name, class, meaning.
+# Class: O, A or ON (declined like nouns of that stem class), adj (declined like καλος),
+# or quoted (a foreign word quoted as it is, such as the Aramaic of the Gospels).
+name	class	meaning
+Ϳεϸῡϙος	O	Jesus
+Ϳωχανανος	O	John
+Ϸιμϙωνος	O	Simon
+Κηφᾱ	A	Cephas, Peter
+Ϳαϙακωβος	O	James, Jacob
+Ζεβαδιᾱ	A	Zebedee
+Ανδρεος	O	Andrew
+Φιλιπος	O	Philip
+Τωμᾱ	A	Thomas
+Ϳεͱυδᾱ	A	Judas, Judah
+Μιρϳαμᾱ	A	Mary
+Μαρθᾱ	A	Martha
+Μαγαδαλον	ON	Magdala
+Μαγαδαλικος	adj	of Magdala, Magdalene
+Ϳωσεφος	O	Joseph
+Ελϙαζαρος	O	Lazarus
+Δαϝιδος	O	David
+Μωϸεος	O	Moses
+Αβραͱαμος	O	Abraham
+Ϳισχακος	O	Isaac
+Ϳισραηλος	O	Israel
+Ηλιϳᾱ	A	Elijah
+Ϳεϸαϙιϳᾱ	A	Isaiah
+Ϳωνᾱ	A	Jonah
+Ϸελομος	O	Solomon
+Γαβριηλος	O	Gabriel
+Ϙιμανυηλος	O	Emmanuel
+Ναχυμος	O	Nahum, in Καφαρυλ Ναχυμος "Capernaum"
+Πιλατος	O	Pilate
+Ͱηρωδος	O	Herod
+Καισαρος	O	Caesar
+Φαρυϸος	O	Pharisee
+Σαδοκος	O	Sadducee
+Ϳεͱυδον	ON	Judea
+Ϳεͱυδικος	adj	Judean, a Jew
+ϙιβρικος	adj	Hebrew
+Γαλιλον	ON	Galilee
+Ϸομερον	ON	Samaria
+Ϳερυϸαλαιμον	ON	Jerusalem
+Βητελεχεμον	ON	Bethlehem
+Νασερατον	ON	Nazareth
+Νασερατικος	adj	of Nazareth, Nazarene
+Γεͱινομον	ON	Gehenna
+Ϳαρδενον	ON	the Jordan
+Σιδωνον	ON	Sidon
+Μισρον	ON	Egypt
+ζεβυλον	ON	the high house, in Βαλιλ ζεβυλον "Beelzebul"
+ταλιθα	quoted	Aramaic "girl"
+κουμ	quoted	Aramaic "get up"
+εφαθα	quoted	Aramaic "be opened"
+ελωι	quoted	Aramaic "my God"
+λεμα	quoted	Aramaic "why"
+σαβακθανι	quoted	Aramaic "you have left me"
+αβα	quoted	Aramaic "father"
+ραβουνι	quoted	Aramaic "my teacher"
