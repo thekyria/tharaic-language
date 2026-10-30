@@ -1,8 +1,10 @@
-# The Stele Typeface
+# The Tharaic Typefaces
 
 [← Overview](../README.md)
 
 **Tharaic Stele** is a typeface for the [Tharaic alphabet](phonology.md), in the style of a carved inscription: every stroke is a straight cut, curves included, and strokes widen into a wedge at their ends, as a chisel leaves them. It covers every letter of the alphabet, including the extra letters that most fonts lack or draw unevenly, and the Latin letters of the romanization, so a whole text appears in one style.
+
+A second face, **[Tharaic Wedge](#tharaic-wedge)**, draws the same letters as if pressed into clay with a stylus, in cuneiform wedges: Stele for temple inscriptions, Wedge for the merchants' tablets and ledgers.
 
 ![Specimen of Tharaic Stele](font-specimen.svg)
 
@@ -10,8 +12,8 @@ Files:
 
 | File | Use |
 |------|-----|
-| [`font/TharaicStele.ttf`](../font/TharaicStele.ttf) | Install on a computer |
-| [`font/TharaicStele.woff2`](../font/TharaicStele.woff2) | Use on a web page |
+| [`font/TharaicStele.ttf`](../font/TharaicStele.ttf), [`font/TharaicWedge.ttf`](../font/TharaicWedge.ttf) | Install on a computer |
+| [`font/TharaicStele.woff2`](../font/TharaicStele.woff2), [`font/TharaicWedge.woff2`](../font/TharaicWedge.woff2) | Use on a web page |
 | [`tools/build_font.py`](../tools/build_font.py) | The source: every letter is drawn there |
 
 ---
@@ -69,19 +71,38 @@ The other letters keep the forms everyone knows. *Ω* was a late letter even in 
 
 ---
 
+## Tharaic Wedge
+
+![Specimen of Tharaic Wedge](font-specimen-wedge.svg)
+
+Tharaic Wedge has the same letters, metrics, spacing and kerning as Stele, drawn in clay instead of stone. Only the strokes differ:
+
+- **Every straight cut is a wedge**: a triangular head where the stylus was pressed in, and a tail that thins away from it. Cuts that join in Stele are separate wedges here, touching as they do on a tablet.
+- **The head is at the top** of an upright or slanting cut, and **at the left** of a level one, the way cuneiform is pressed.
+- **One head per meeting point.** Where two cuts start at the same point, as at the top of *Α* or the corners of a diamond, only the first has a head; the second starts thin.
+- **Short facets** (in *S* and the digits) have no head and an even width, so a run of them reads as one stroke.
+- **Dots are corner wedges** (the *Winkelhaken* of cuneiform): a head with no tail.
+
+Changes to a letter's drawing apply to both faces. Wedge is meant for display sizes: below about 16 pixels the thin tails fade.
+
 ## Using it
 
-On a computer, install `TharaicStele.ttf` and choose *Tharaic Stele* in any program. On a web page:
+On a computer, install `TharaicStele.ttf` or `TharaicWedge.ttf` and choose *Tharaic Stele* or *Tharaic Wedge* in any program. On a web page:
 
 ```css
 @font-face {
   font-family: "Tharaic Stele";
   src: url("TharaicStele.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Tharaic Wedge";
+  src: url("TharaicWedge.woff2") format("woff2");
+}
 .tharaic { font-family: "Tharaic Stele", serif; }
+.tharaic-clay { font-family: "Tharaic Wedge", serif; }
 ```
 
-The font has no Greek accents or breathings, which Tharaic does not write, so quotations from Classical Greek (*ὀργισθείς*) fall back to another font.
+The fonts have no Greek accents or breathings, which Tharaic does not write, so quotations from Classical Greek (*ὀργισθείς*) fall back to another font.
 
 ## Changing it
 
@@ -92,4 +113,4 @@ pip install fonttools skia-pathops brotli
 python3 tools/build_font.py
 ```
 
-This writes the two font files and this page's specimen. The build is reproducible: the same source gives the same files.
+This writes both faces (`.ttf` and `.woff2`) and this page's two specimens. The wedge shape is set by the `WEDGE_*` numbers near the top of the file. The build is reproducible: the same source gives the same files.

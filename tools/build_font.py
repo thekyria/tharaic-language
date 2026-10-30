@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Tharaic Stele, an inscriptional typeface for the Tharaic alphabet.
+"""Build Tharaic Stele and Tharaic Wedge, two typefaces for the Tharaic alphabet.
 
 Every letter is drawn as a centreline skeleton of straight cuts, as a chisel
 makes them: curves are broken into facets every 60 degrees. The skeleton is
@@ -8,7 +8,12 @@ clipped flat at the baseline and the top line, and merged into outlines.
 Capitals are full height; lowercase letters are drawn as small capitals, as in
 an inscription, so ordinary text works.
 
-Writes font/TharaicStele.ttf, font/TharaicStele.woff2 and docs/font-specimen.svg.
+Tharaic Wedge draws the same skeletons as if pressed into clay: every straight
+cut becomes a cuneiform wedge, a triangular head where the stylus went in and a
+tail that thins away from it.
+
+Writes font/TharaicStele.* and font/TharaicWedge.* (.ttf and .woff2), and
+docs/font-specimen.svg and docs/font-specimen-wedge.svg.
 Unlike the other tools this one needs three packages:
 
     pip install fonttools skia-pathops brotli
@@ -27,8 +32,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
-FAMILY = "Tharaic Stele"
-VERSION = "0.7"
+VERSION = "0.8"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -236,16 +240,80 @@ def outline(shape):
                 if f is not None:
                     p = pathops.op(p, f, pathops.PathOp.UNION)
         if st.clip:
-            box = pathops.Path()
-            lo, hi = st.clip
-            box.moveTo(-5000, lo); box.lineTo(5000, lo); box.lineTo(5000, hi); box.lineTo(-5000, hi); box.close()
-            p = pathops.op(p, box, pathops.PathOp.INTERSECTION)
+            p = pathops.op(p, clip_box(*st.clip), pathops.PathOp.INTERSECTION)
         parts.append(p)
     parts.extend(shape.fills)
+    return union(parts)
+
+
+def union(parts):
     result = pathops.Path()
     for p in parts:
         result = pathops.op(result, p, pathops.PathOp.UNION)
     return result
+
+
+def clip_box(lo, hi):
+    box = pathops.Path()
+    box.moveTo(-5000, lo); box.lineTo(5000, lo); box.lineTo(5000, hi); box.lineTo(-5000, hi); box.close()
+    return box
+
+
+def polygon(points):
+    p = pathops.Path()
+    p.moveTo(*points[0])
+    for pt in points[1:]:
+        p.lineTo(*pt)
+    p.close()
+    return p
+
+
+# Wedges, in strokes: the half-width and length of the head, the half-width of the tail
+# where it leaves the head, and how much of that it keeps at its far end. A cut shorter
+# than WEDGE_MIN gets no head of its own (the short facets of S and the digits).
+WEDGE_HEAD_W, WEDGE_HEAD_L, WEDGE_TAIL_W, WEDGE_TAIL_END, WEDGE_MIN = .80, 1.3, .36, .45, 2.5
+
+
+def wedge(p0, p1, s, heads):
+    """One cut as a cuneiform wedge, its head at the upper end (the left, if nearly level)."""
+    (x0, y0), (x1, y1) = p0, p1
+    dx, dy = x1 - x0, y1 - y0
+    if (abs(dy) > .3 * abs(dx) and y1 > y0) or (abs(dy) <= .3 * abs(dx) and x1 < x0):
+        (x0, y0), (x1, y1), dx, dy = (x1, y1), (x0, y0), -dx, -dy
+    n = math.hypot(dx, dy)
+    if n < 1:
+        return None
+    ux, uy = dx / n, dy / n
+    nx, ny = -uy, ux
+    hw, hl, tw = WEDGE_HEAD_W * s, min(WEDGE_HEAD_L * s, .7 * n), WEDGE_TAIL_W * s
+    # one head per meeting point: a second cut from the same point starts without one
+    te = tw * WEDGE_TAIL_END
+    if n < WEDGE_MIN * s:   # a short facet: an even cut, so a run of them joins up
+        hw = te = tw
+    elif any(math.hypot(x0 - hx, y0 - hy) < 1.2 * s for hx, hy in heads):
+        hw = tw
+    else:
+        heads.append((x0, y0))
+    hx, hy = x0 + ux * hl, y0 + uy * hl
+    return polygon([(x0 + nx * hw, y0 + ny * hw), (hx + nx * tw, hy + ny * tw), (x1 + nx * te, y1 + ny * te),
+                    (x1 - nx * te, y1 - ny * te), (hx - nx * tw, hy - ny * tw), (x0 - nx * hw, y0 - ny * hw)])
+
+
+def outline_wedge(shape):
+    """Press a shape's skeleton into clay: every straight cut a wedge, every dot a corner wedge."""
+    parts, heads = [], []
+    for st in shape.strokes:
+        pts = st.points + ([st.points[0]] if st.closed else [])
+        wedges = [w for w in (wedge(a, b, shape.s, heads) for a, b in zip(pts, pts[1:])) if w is not None]
+        p = union(wedges)
+        if st.clip:
+            p = pathops.op(p, clip_box(*st.clip), pathops.PathOp.INTERSECTION)
+        parts.append(p)
+    for f in shape.fills:   # a dot is a corner wedge (Winkelhaken): a head with no tail
+        x0, y0, x1, y1 = f.bounds
+        cx, cy, r = (x0 + x1) / 2, (y0 + y1) / 2, (x1 - x0) / 2
+        parts.append(polygon([(cx - r, cy + r), (cx + r, cy), (cx - r, cy - r)]))
+    return union(parts)
 
 
 # ---------------------------------------------------------------------------
@@ -903,37 +971,37 @@ class Glyph:
         self.path = path
 
 
-def make(fn, height, stroke, width_unit):
+def make(fn, height, stroke, width_unit, outliner):
     g = Shape(height, stroke, width_unit)
     sides = fn(g)
     scale = (height / CAP) ** .6
-    return Glyph(outline(g), sides[0], sides[1], scale)
+    return Glyph(outliner(g), sides[0], sides[1], scale)
 
 
 def draw(glyph, pen):
     glyph.path.draw(TransformPen(pen, (1, 0, 0, 1, glyph.dx, 0)))
 
 
-def add_macron(glyph, height, stroke):
+def add_macron(glyph, height, stroke, outliner):
     """Return a copy of a glyph with a macron bar centred above it."""
     g = Shape(height, stroke * .8, 1)
     y = height + MACRON_GAP + g.s / 2
     half = min(glyph.advance * .3, height * .3)
     c = glyph.advance / 2 - glyph.dx
     g.line((c - half, y), (c + half, y), clip=None)
-    bar = outline(g)
+    bar = outliner(g)
     merged = pathops.op(glyph.path, bar, pathops.PathOp.UNION)
     new = Glyph.__new__(Glyph)
     new.path, new.dx, new.advance = merged, glyph.dx, glyph.advance
     return new
 
 
-def build_glyphs():
+def build_glyphs(outliner):
     glyphs, cmap = {}, {}
     for cap_name, cap_code, small_name, small_codes, fn in LETTERS:
-        glyphs[cap_name] = make(fn, CAP, CAP_STROKE, CAP)
+        glyphs[cap_name] = make(fn, CAP, CAP_STROKE, CAP, outliner)
         cmap[cap_code] = cap_name
-        glyphs[small_name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06)
+        glyphs[small_name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06, outliner)
         for code in small_codes:
             cmap[code] = small_name
     for latin, other in {**SAME_AS_GREEK, **LATIN_SAME}.items():
@@ -941,14 +1009,15 @@ def build_glyphs():
         cmap[ord(latin.lower())] = other.lower()
     for name, codes, base in MACRONS:
         small = base[0].islower()
-        glyphs[name] = add_macron(glyphs[base], SMALL if small else CAP, SMALL_STROKE if small else CAP_STROKE)
+        glyphs[name] = add_macron(glyphs[base], SMALL if small else CAP, SMALL_STROKE if small else CAP_STROKE,
+                                  outliner)
         for code in codes:
             cmap[code] = name
     for name, code, fn in DIGITS:
-        glyphs[name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06)
+        glyphs[name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06, outliner)
         cmap[code] = name
     for name, codes, fn in PUNCTUATION:
-        glyphs[name] = make(fn, CAP, SMALL_STROKE, CAP)
+        glyphs[name] = make(fn, CAP, SMALL_STROKE, CAP, outliner)
         for code in codes:
             cmap[code] = name
     # The combining macron, for text written with a separate U+0304
@@ -956,7 +1025,7 @@ def build_glyphs():
     y = SMALL + MACRON_GAP + g.s / 2
     g.line((-.15 * SMALL, y), (.15 * SMALL, y), clip=None)
     mark = Glyph.__new__(Glyph)
-    mark.path, mark.dx, mark.advance = outline(g), 0, 0
+    mark.path, mark.dx, mark.advance = outliner(g), 0, 0
     glyphs["macroncomb"] = mark
     cmap[0x304] = "macroncomb"
     return glyphs, cmap
@@ -997,8 +1066,20 @@ def notdef():
     return Glyph(outline(g), "S", "S", 1)
 
 
-def build():
-    glyphs, cmap = build_glyphs()
+# The two faces: (family, file name, specimen file, outliner, description, page colour, ink colour)
+FACES = [
+    ("Tharaic Stele", "TharaicStele", "font-specimen.svg", outline,
+     "An inscriptional typeface for the Tharaic alphabet, as if cut in stone. Lowercase letters are small capitals.",
+     "#f4efe6", "#2b2622"),
+    ("Tharaic Wedge", "TharaicWedge", "font-specimen-wedge.svg", outline_wedge,
+     "A typeface for the Tharaic alphabet in cuneiform wedges, as if pressed into clay. Lowercase letters are small capitals.",
+     "#e8d6bd", "#3a2a1c"),
+]
+
+
+def build(face):
+    family, file_name, _, outliner, description, _, _ = face
+    glyphs, cmap = build_glyphs(outliner)
     glyphs = {".notdef": notdef(), "space": None, **glyphs}
     cmap[0x20] = cmap[0xA0] = "space"
     order = list(glyphs)
@@ -1023,13 +1104,13 @@ def build():
     ascent, descent = 900, -260
     fb.setupHorizontalHeader(ascent=ascent, descent=descent)
     fb.setupNameTable({
-        "familyName": FAMILY,
+        "familyName": family,
         "styleName": "Regular",
-        "uniqueFontIdentifier": f"{FAMILY.replace(' ', '')}-Regular-{VERSION}",
-        "fullName": f"{FAMILY} Regular",
-        "psName": f"{FAMILY.replace(' ', '')}-Regular",
+        "uniqueFontIdentifier": f"{file_name}-Regular-{VERSION}",
+        "fullName": f"{family} Regular",
+        "psName": f"{file_name}-Regular",
         "version": f"Version {VERSION}",
-        "description": "An inscriptional typeface for the Tharaic alphabet. Lowercase letters are small capitals.",
+        "description": description,
     })
     fb.setupOS2(sTypoAscender=ascent, sTypoDescender=descent, sTypoLineGap=0,
                 usWinAscent=ascent, usWinDescent=-descent, sxHeight=SMALL, sCapHeight=CAP,
@@ -1041,9 +1122,9 @@ def build():
 
     out = ROOT / "font"
     out.mkdir(exist_ok=True)
-    fb.font.save(out / "TharaicStele.ttf")
+    fb.font.save(out / f"{file_name}.ttf")
     fb.font.flavor = "woff2"
-    fb.font.save(out / "TharaicStele.woff2")
+    fb.font.save(out / f"{file_name}.woff2")
     fb.font.flavor = None
     return fb.font
 
@@ -1068,7 +1149,8 @@ SPECIMEN = [
 ]
 
 
-def specimen(font):
+def specimen(font, face):
+    _, _, specimen_file, _, _, page, ink = face
     cmap = font.getBestCmap()
     glyph_set = font.getGlyphSet()
     hmtx = font["hmtx"]
@@ -1103,12 +1185,13 @@ def specimen(font):
     y += 30
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {y:.0f}" width="{width // 2}">\n'
            f'<style>.cap{{font: 22px sans-serif; fill: #6b6155}}</style>\n'
-           f'<rect width="100%" height="100%" fill="#f4efe6"/>\n<g fill="#2b2622">\n'
+           f'<rect width="100%" height="100%" fill="{page}"/>\n<g fill="{ink}">\n'
            + "\n".join(body) + "\n</g>\n</svg>\n")
-    (ROOT / "docs" / "font-specimen.svg").write_text(svg, encoding="utf-8")
+    (ROOT / "docs" / specimen_file).write_text(svg, encoding="utf-8")
 
 
 if __name__ == "__main__":
-    font = build()
-    specimen(font)
-    print(f"Built font/TharaicStele.ttf and .woff2 ({len(font.getGlyphOrder())} glyphs) and docs/font-specimen.svg")
+    for face in FACES:
+        font = build(face)
+        specimen(font, face)
+        print(f"Built font/{face[1]}.ttf and .woff2 ({len(font.getGlyphOrder())} glyphs) and docs/{face[2]}")
