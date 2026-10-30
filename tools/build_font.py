@@ -2,8 +2,8 @@
 """Build Tharaic Stele, an inscriptional typeface for the Tharaic alphabet.
 
 Every letter is drawn as a centreline skeleton of lines and arcs, stroked with
-one even width (as if cut with a chisel), clipped flat at the baseline and the
-top line, and merged into outlines. Capitals are full height; lowercase letters
+one even width, flared at its free ends (as if cut with a chisel), clipped flat
+at the baseline and the top line, and merged into outlines. Capitals are full height; lowercase letters
 are drawn as small capitals, as in an inscription, so ordinary text works.
 
 Writes font/TharaicStele.ttf, font/TharaicStele.woff2 and docs/font-specimen.svg.
@@ -26,7 +26,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
 FAMILY = "Tharaic Stele"
-VERSION = "0.1"
+VERSION = "0.2"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -52,24 +52,21 @@ class Shape:
         self.B = stroke / 2             # centreline of a bar on the baseline
         self.M = height / 2
         self.u = width_unit
-        self.strokes = []               # (pathops.Path, clip range or None)
+        self.strokes = []               # Stroke objects
         self.fills = []                 # filled pathops.Path (dots)
 
     def W(self, ratio):
         return ratio * self.u
 
-    def line(self, *points, closed=False, clip=True):
-        p = pathops.Path()
-        p.moveTo(*points[0])
+    def line(self, *points, closed=False, clip=True, flared=True):
+        b = self.path(clip, flared).move(*points[0])
         for pt in points[1:]:
-            p.lineTo(*pt)
-        if closed:
-            p.close()
-        self.strokes.append((p, (0, self.H) if clip is True else clip))
+            b.to(*pt)
+        b.done(closed)
 
-    def path(self, clip=None):
+    def path(self, clip=None, flared=True):
         """Start a path of lines and elliptical arcs; call .done() to add it."""
-        return PathBuilder(self, clip)
+        return PathBuilder(self, clip, flared)
 
     def ellipse(self, cx, cy, rx, ry):
         self.path().move(cx + rx, cy).arc(cx, cy, rx, ry, 0, 360).done(closed=True)
@@ -110,39 +107,112 @@ def on_ellipse(cx, cy, rx, ry, angle):
     return cx + rx * math.cos(t), cy + ry * math.sin(t)
 
 
+class Stroke:
+    """A skeleton path, with its centreline as points (for the flares) and its clip range."""
+
+    def __init__(self, path, points, closed, clip, flared):
+        self.path, self.points, self.closed, self.clip = path, points, closed, clip
+        self.flared = flared and not closed
+
+
 class PathBuilder:
-    def __init__(self, shape, clip):
-        self.shape, self.clip, self.p = shape, clip, pathops.Path()
+    def __init__(self, shape, clip, flared):
+        self.shape, self.clip, self.flared = shape, clip, flared
+        self.p, self.points = pathops.Path(), []
 
     def move(self, x, y):
         self.p.moveTo(x, y)
+        self.points.append((x, y))
         return self
 
     def to(self, x, y):
         self.p.lineTo(x, y)
+        self.points.append((x, y))
         return self
 
     def arc(self, cx, cy, rx, ry, a0, a1):
         add_arc(self.p, cx, cy, rx, ry, a0, a1)
+        n = max(2, math.ceil(abs(a1 - a0) / 3))
+        self.points += [on_ellipse(cx, cy, rx, ry, a0 + (a1 - a0) * i / n) for i in range(1, n + 1)]
         return self
 
     def done(self, closed=False):
         if closed:
             self.p.close()
         clip = (0, self.shape.H) if self.clip is True else self.clip
-        self.shape.strokes.append((self.p, clip))
+        self.shape.strokes.append(Stroke(self.p, self.points, closed, clip, self.flared))
+
+
+# Flares: a free stroke end widens by FLARE_WIDTH (times the stroke, on each side)
+# over the last FLARE_LENGTH strokes, in a concave curve, as a chisel leaves it.
+FLARE_WIDTH, FLARE_LENGTH = .22, 2.0
+
+
+def flare(points, s, extend):
+    """A polygon that widens a stroke towards its end at points[0]."""
+    length = FLARE_LENGTH * s
+    # Walk inwards from the end, sampling every length/16
+    samples, walked, i = [points[0]], 0.0, 0
+    step, target = length / 16, length / 16
+    while i < len(points) - 1 and walked < length:
+        (x0, y0), (x1, y1) = points[i], points[i + 1]
+        seg = math.hypot(x1 - x0, y1 - y0)
+        while seg and walked + seg >= target and target <= length:
+            f = (target - walked) / seg
+            samples.append((x0 + (x1 - x0) * f, y0 + (y1 - y0) * f))
+            target += step
+        walked += seg
+        i += 1
+    if len(samples) < 3:
+        return None
+    left, right = [], []
+    for k, (x, y) in enumerate(samples):
+        a = samples[max(k - 1, 0)]
+        b = samples[min(k + 1, len(samples) - 1)]
+        tx, ty = b[0] - a[0], b[1] - a[1]
+        n = math.hypot(tx, ty)
+        nx, ny = -ty / n, tx / n
+        t = 1 - k / (len(samples) - 1)
+        hw = s / 2 + FLARE_WIDTH * s * t * t
+        left.append((x + nx * hw, y + ny * hw))
+        right.append((x - nx * hw, y - ny * hw))
+    if extend:   # carry the full width past the end, to be cut flat by the clip
+        (x0, y0), (x1, y1) = samples[0], samples[1]
+        d = math.hypot(x0 - x1, y0 - y1)
+        ox, oy = (x0 - x1) / d * s, (y0 - y1) / d * s
+        left.insert(0, (left[0][0] + ox, left[0][1] + oy))
+        right.insert(0, (right[0][0] + ox, right[0][1] + oy))
+    p = pathops.Path()
+    p.moveTo(*left[0])
+    for pt in left[1:] + right[::-1]:
+        p.lineTo(*pt)
+    p.close()
+    return p
 
 
 def outline(shape):
-    """Stroke, clip and merge a shape's skeleton into one filled path."""
-    parts = []
-    for skeleton, clip in shape.strokes:
+    """Stroke, flare, clip and merge a shape's skeleton into one filled path."""
+    bodies = []
+    for st in shape.strokes:
         p = pathops.Path()
-        p.addPath(skeleton)
+        p.addPath(st.path)
         p.stroke(shape.s, pathops.LineCap.BUTT_CAP, pathops.LineJoin.MITER_JOIN, MITER_LIMIT)
-        if clip:
+        bodies.append(p)
+    parts = []
+    for i, st in enumerate(shape.strokes):
+        p = bodies[i]
+        if st.flared:
+            others = [b for j, b in enumerate(bodies) if j != i] + shape.fills
+            for pts in (st.points, st.points[::-1]):
+                if any(o.contains(pts[0]) for o in others):
+                    continue   # the end joins another stroke
+                on_line = st.clip and any(abs(pts[0][1] - y) < 1 for y in st.clip)
+                f = flare(pts, shape.s, on_line)
+                if f is not None:
+                    p = pathops.op(p, f, pathops.PathOp.UNION)
+        if st.clip:
             box = pathops.Path()
-            lo, hi = clip
+            lo, hi = st.clip
             box.moveTo(-5000, lo); box.lineTo(5000, lo); box.lineTo(5000, hi); box.lineTo(-5000, hi); box.close()
             p = pathops.op(p, box, pathops.PathOp.INTERSECTION)
         parts.append(p)
@@ -219,7 +289,7 @@ def eta(g):
 def theta(g):
     w = g.W(.88)
     circle_O(g, w)
-    g.line((w * .36, g.M), (w * .64, g.M))
+    g.line((w * .36, g.M), (w * .64, g.M), flared=False)
     return "RR"
 
 
@@ -369,6 +439,81 @@ def koppa(g):
     return "RR"
 
 
+# Latin letters whose shapes the Greek ones do not already give
+
+def latin_C(g):
+    w = g.W(.80)
+    g.path().move(*on_ellipse(w / 2, g.M, w / 2, g.M - g.B + OVERSHOOT, 48)) \
+        .arc(w / 2, g.M, w / 2, g.M - g.B + OVERSHOOT, 48, 312).done()
+    return "RO"
+
+
+def latin_D(g):
+    g.line((0, 0), (0, g.H))
+    g.bowl(0, g.T, g.B, g.W(.74))
+    return "SR"
+
+
+def latin_G(g):
+    w, ry = g.W(.80), g.M - g.B + OVERSHOOT
+    y = .44 * g.H
+    (g.path().move(*on_ellipse(w / 2, g.M, w / 2, ry, 48))
+     .arc(w / 2, g.M, w / 2, ry, 48, 352).to(w, y).to(.56 * w, y).done())
+    return "RO"
+
+
+def latin_L(g):
+    g.line((0, g.H), (0, 0))
+    g.line((0, g.B), (g.W(.52), g.B))
+    return "SO"
+
+
+def latin_Q(g):
+    w = g.W(.88)
+    circle_O(g, w)
+    start = on_ellipse(w / 2, g.M, w / 2, g.M - g.B + OVERSHOOT, -80)   # on the bowl, so only the tail end flares
+    g.line(start, (1.0 * w, -.16 * g.H), clip=None)
+    return "RR"
+
+
+def latin_R(g):
+    w = g.W(.60)
+    g.line((0, 0), (0, g.H))
+    g.bowl(0, g.T, .44 * g.H, g.W(.54))
+    g.line((.34 * w, .44 * g.H), (w, 0))
+    return "SD"
+
+
+def latin_S(g):
+    w, m = g.W(.56), .53 * g.H
+    r1 = (g.T - m) / 2 + OVERSHOOT / 2
+    r2 = (m - g.B) / 2 + OVERSHOOT / 2
+    rx1, rx2 = .46 * w, .5 * w
+    (g.path().move(*on_ellipse(w / 2, m + r1, rx1, r1, 25))
+     .arc(w / 2, m + r1, rx1, r1, 25, 270)
+     .arc(w / 2, m - r2, rx2, r2, 90, -155).done())
+    return "OO"
+
+
+def latin_U(g):
+    w, cy = g.W(.66), .40 * g.H
+    (g.path(clip=(-OVERSHOOT, g.H)).move(0, g.H).to(0, cy)
+     .arc(w / 2, cy, w / 2, cy - g.B + OVERSHOOT, 180, 360).to(w, g.H).done())
+    return "SS"
+
+
+def latin_V(g):
+    w = g.W(.78)
+    g.line((0, g.H), (w / 2, 0), (w, g.H))
+    return "DD"
+
+
+def latin_W(g):
+    w = g.W(1.16)
+    g.line((0, g.H), (.24 * w, 0), (.5 * w, g.H), (.76 * w, 0), (w, g.H))
+    return "DD"
+
+
 LETTERS = [
     # (capital name, capital code, small name, small codes, function)
     ("Alpha", 0x391, "alpha", [0x3B1], alpha),
@@ -400,12 +545,33 @@ LETTERS = [
     ("Yot", 0x37F, "yot", [0x3F3], yot),
     ("Sho", 0x3F7, "sho", [0x3F8], sho),
     ("Koppa", 0x3D8, "koppa", [0x3D9], koppa),
+    ("C", 0x43, "c", [0x63], latin_C),
+    ("D", 0x44, "d", [0x64], latin_D),
+    ("G", 0x47, "g", [0x67], latin_G),
+    ("L", 0x4C, "l", [0x6C], latin_L),
+    ("Q", 0x51, "q", [0x71], latin_Q),
+    ("R", 0x52, "r", [0x72], latin_R),
+    ("S", 0x53, "s", [0x73], latin_S),
+    ("U", 0x55, "u", [0x75], latin_U),
+    ("V", 0x56, "v", [0x76], latin_V),
+    ("W", 0x57, "w", [0x77], latin_W),
 ]
 
-# Precomposed long vowels: (name, code, base glyph)
+# Latin letters drawn the same as a Greek one share its glyph
+SAME_AS_GREEK = {
+    "A": "Alpha", "B": "Beta", "E": "Epsilon", "F": "Digamma", "H": "Eta", "I": "Iota",
+    "J": "Yot", "K": "Kappa", "M": "Mu", "N": "Nu", "O": "Omicron", "P": "Rho",
+    "T": "Tau", "X": "Chi", "Y": "Upsilon", "Z": "Zeta",
+}
+
+# Precomposed long vowels, Greek and romanized: (name, codes, base glyph)
 MACRONS = [
-    ("Alphamacron", 0x1FB9, "Alpha"), ("alphamacron", 0x1FB1, "alpha"),
-    ("Upsilonmacron", 0x1FE9, "Upsilon"), ("upsilonmacron", 0x1FE1, "upsilon"),
+    ("Alphamacron", [0x1FB9, 0x100], "Alpha"), ("alphamacron", [0x1FB1, 0x101], "alpha"),
+    ("Upsilonmacron", [0x1FE9], "Upsilon"), ("upsilonmacron", [0x1FE1], "upsilon"),
+    ("Epsilonmacron", [0x112], "Epsilon"), ("epsilonmacron", [0x113], "epsilon"),
+    ("Iotamacron", [0x12A], "Iota"), ("iotamacron", [0x12B], "iota"),
+    ("Omicronmacron", [0x14C], "Omicron"), ("omicronmacron", [0x14D], "omicron"),
+    ("Umacron", [0x16A], "U"), ("umacron", [0x16B], "u"),
 ]
 MACRON_GAP = 56
 
@@ -652,9 +818,9 @@ PUNCTUATION = [
 KERN_GROUPS = {
     "DIAG_L": ["Alpha", "Lambda", "Delta"],          # left side slopes away at the top
     "DIAG_R": ["Alpha", "Lambda", "Delta"],
-    "OPEN_TOP": ["Tau", "Upsilon", "Gamma", "Digamma"],
+    "OPEN_TOP": ["Tau", "Upsilon", "Gamma", "Digamma", "V", "W"],
     "OPEN_BELOW_R": ["Gamma", "Digamma", "Rho", "Sho", "Heta", "Tau"],
-    "ROUND": ["Omicron", "Theta", "Koppa", "Phi"],
+    "ROUND": ["Omicron", "Theta", "Koppa", "Phi", "C", "G", "Q"],
     "X": ["Chi", "Kappa"],
 }
 KERN_PAIRS = [
@@ -668,6 +834,7 @@ KERN_PAIRS = [
     ("X", "ROUND", -25),
     ("ROUND", "X", -25),
     ("Lambda", "Lambda", -10),
+    ("L", "OPEN_TOP", -70),
 ]
 
 
@@ -718,10 +885,14 @@ def build_glyphs():
         glyphs[small_name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06)
         for code in small_codes:
             cmap[code] = small_name
-    for name, code, base in MACRONS:
+    for latin, greek in SAME_AS_GREEK.items():
+        cmap[ord(latin)] = greek
+        cmap[ord(latin.lower())] = greek.lower()
+    for name, codes, base in MACRONS:
         small = base[0].islower()
         glyphs[name] = add_macron(glyphs[base], SMALL if small else CAP, SMALL_STROKE if small else CAP_STROKE)
-        cmap[code] = name
+        for code in codes:
+            cmap[code] = name
     for name, code, fn in DIGITS:
         glyphs[name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06)
         cmap[code] = name
@@ -835,8 +1006,11 @@ SPECIMEN = [
     ("ΘᾹΡΟΣ", 120, None),
     ("ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ ϜͰͿϷϘ ᾹῩ", 52, "Capitals"),
     ("αβγδεζηθικλμνξοπρστυφχψω ϝͱϳϸϙ ᾱῡ", 52, "Lowercase, drawn as small capitals"),
+    ("ABCDEFGHIJKLMNOPQRSTUVWXYZ ĀĒĪŌŪ", 52, "Latin, for the romanization"),
+    ("abcdefghijklmnopqrstuvwxyz āēīōū", 52, None),
     ("0123456789 . , : ; · ⁝ ! ? « » ( ) –", 52, "Digits and punctuation"),
     ("Δωει θᾱρος και λαμβανει θᾱρος.", 60, "“The sea gives and the sea takes.”"),
+    ("Dōei thāros kai lambanei thāros.", 60, None),
     ("Ζε αβανον εβενε Χᾱριϸος βενιλ Αδενος", 44, "From the votive inscription in The Sacred Register"),
     ("Βαλιλ ϳαμοι, ͱοτι εϸεμεϙε κολονυ.", 44, None),
     ("Λυ βερεχει-υ!", 44, None),

@@ -2,7 +2,7 @@
 
 [← Overview](../README.md)
 
-**Tharaic Stele** is a typeface for the [Tharaic alphabet](phonology.md), in the style of a carved inscription: even strokes, no serifs, flat ends where a stroke meets the baseline or the top line. It covers every letter of the alphabet, including the extra letters that most fonts lack or draw unevenly, so a whole text appears in one style.
+**Tharaic Stele** is a typeface for the [Tharaic alphabet](phonology.md), in the style of a carved inscription: even strokes that flare at their ends, as a chisel leaves them, and no serifs. It covers every letter of the alphabet, including the extra letters that most fonts lack or draw unevenly, and the Latin letters of the romanization, so a whole text appears in one style.
 
 ![Specimen of Tharaic Stele](font-specimen.svg)
 
@@ -27,7 +27,9 @@ Files:
 | Capitals | 700 | 84 |
 | Small capitals, digits | 510 | 76 |
 
-The units are thousandths of the font size. Round letters (*Ο Θ Φ Ϙ*) reach slightly past the lines so they look the same height as flat ones. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops, as a chisel leaves them.
+The units are thousandths of the font size. Round letters (*Ο Θ Φ Ϙ*) reach slightly past the lines so they look the same height as flat ones. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops.
+
+**Flares.** Every free end of a stroke widens in a concave curve over its last two stroke-widths, by about a fifth of the stroke on each side, as in glyphic lettering cut in stone. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
 
 **Archaic touches.** Most letters keep their familiar Classical Greek shapes, so the text stays readable. A few follow older inscriptions: *Σ* and *Μ* have splayed outer strokes, *Α* has a low crossbar, and *Ω* is an open circle on two feet.
 
@@ -41,6 +43,8 @@ The units are thousandths of the font size. Round letters (*Ο Θ Φ Ϙ*) reach 
 | **Ϸ ϸ** sho | Þ: a stem with a bowl at mid-height. *Ρ* has its bowl at the top |
 | **Ϙ ϙ** koppa | A circle on a short stem, standing on the baseline. *Φ* has its stem through the circle |
 | **ᾱ ῡ**, **Ᾱ Ῡ** | A macron centred over the letter. A separate combining macron (U+0304) is placed the same way |
+
+**Latin letters** are there for the romanization, with the long vowels *ā ē ī ō ū*. Like the Greek ones, lowercase is drawn as small capitals. Letters with the same shape in both alphabets share one drawing (*A* is *Α*, *P* is *Ρ*, *F* is *Ϝ*, *J* is *Ϳ*); *C D G L Q R S U V W* are drawn on their own in the same strokes. Hebrew transliteration marks such as *ḥ* and *ṣ* are not included.
 
 **Digits and punctuation** cover what the docs use: digits at small-capital height, *. , : ; · ! ? ( ) [ ] - – — « »* and quotation marks, the Greek question mark (*;*) and raised dot (*·*), and the inscriptional word divider *⁝*. Punctuation and alphabetic numerals are still to be designed for the script itself ([Roadmap](roadmap.md#later)); the font will follow that work.
 
@@ -60,7 +64,7 @@ On a computer, install `TharaicStele.ttf` and choose *Tharaic Stele* in any prog
 .tharaic { font-family: "Tharaic Stele", serif; }
 ```
 
-The font has **no Latin letters**: romanized text falls back to another font. It also has no Greek accents or breathings, which Tharaic does not write, so quotations from Classical Greek (*ὀργισθείς*) fall back too.
+The font has no Greek accents or breathings, which Tharaic does not write, so quotations from Classical Greek (*ὀργισθείς*) fall back to another font.
 
 ## Changing it
 

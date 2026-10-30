@@ -19,7 +19,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | Document | Covers |
 |----------|--------|
 | [Phonology & Script](docs/phonology.md) | Greek alphabet and extra letters, vowels, consonants, phonotactics, stress |
-| [The Stele Typeface](docs/font.md) | An inscriptional font for the alphabet, with all the extra letters: design, use and specimen |
+| [The Stele Typeface](docs/font.md) | An inscriptional font with flared strokes for the alphabet, its extra letters and the romanization: design, use and specimen |
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |
