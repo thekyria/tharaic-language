@@ -2,7 +2,7 @@
 """Build Tharaic Stele, an inscriptional typeface for the Tharaic alphabet.
 
 Every letter is drawn as a centreline skeleton of straight cuts, as a chisel
-makes them: curves are broken into facets every 45 degrees. The skeleton is
+makes them: curves are broken into facets every 60 degrees. The skeleton is
 stroked with one even width, widened into a straight wedge at its free ends,
 clipped flat at the baseline and the top line, and merged into outlines.
 Capitals are full height; lowercase letters are drawn as small capitals, as in
@@ -28,14 +28,15 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
 FAMILY = "Tharaic Stele"
-VERSION = "0.4"
+VERSION = "0.5"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
 CAP, CAP_STROKE = 700, 84        # capitals
 SMALL, SMALL_STROKE = 510, 76    # small capitals (lowercase letters) and digits
 OVERSHOOT = 0                    # faceted letters sit flat on the lines, like straight ones
-FACET = 45                       # degrees of curve per straight cut
+FACET = 60                       # degrees of curve per straight cut
+PHASE = 90                       # a facet always lies flat along the top (and bottom)
 MITER_LIMIT = 3.0
 
 # Side bearings, in units at cap height: straight side, round side, open side, diagonal side
@@ -91,24 +92,26 @@ class Shape:
         self.line((x0, top), (flat, top), (right, mid), (flat, bottom), (x0, bottom), clip=None)
 
 
-# An "ellipse" here is a polygon whose sides touch the true ellipse at every
-# multiple of FACET degrees, so it has flat sides at the top, bottom, left and
-# right, and its corners at the angles between.
+# An "ellipse" here is a polygon whose sides touch the true ellipse at PHASE and
+# every FACET degrees from it: with 60, a hexagon with a flat top and bottom and
+# pointed sides, its corners at 0, 60, 120... degrees.
 
 def on_ellipse(cx, cy, rx, ry, angle):
     """The point of the faceted ellipse in the direction of angle (degrees)."""
-    nearest = round(angle / FACET) * FACET
-    k = 1 / math.cos(math.radians(angle - nearest))
+    def touch(a):
+        return PHASE + round((a - PHASE) / FACET) * FACET
+    k = 1 / math.cos(math.radians(angle - touch(angle)))
+    narrow = math.cos(math.radians(touch(0)))   # pull pointed sides back to the width rx
     t = math.radians(angle)
-    return cx + rx * k * math.cos(t), cy + ry * k * math.sin(t)
+    return cx + rx * narrow * k * math.cos(t), cy + ry * k * math.sin(t)
 
 
 def facets(cx, cy, rx, ry, a0, a1):
     """The points of the faceted arc from angle a0 to a1 (degrees), corners included."""
     step = FACET if a1 > a0 else -FACET
-    corner = (math.floor((a0 - FACET / 2) / FACET) + (1 if step > 0 else 0)) * FACET + FACET / 2
-    if (corner - a0) * step <= 1e-9:
-        corner += step
+    first = PHASE + FACET / 2       # corners lie halfway between the touching points
+    k = (a0 - first) / FACET
+    corner = first + (math.floor(k) + 1 if step > 0 else math.ceil(k) - 1) * FACET
     points = [on_ellipse(cx, cy, rx, ry, a0)]
     while (a1 - corner) * step > 1e-9:
         # a corner very near an end would leave a sliver of a cut: run straight past it
@@ -161,7 +164,8 @@ FLARE_WIDTH, FLARE_LENGTH = .30, 2.0
 
 def flare(points, s, extend):
     """A polygon that widens a stroke towards its end at points[0]."""
-    length = FLARE_LENGTH * s
+    # never past the end of the first cut, so a flare cannot wrap round a corner
+    length = min(FLARE_LENGTH * s, .9 * math.dist(points[0], points[1]))
     # Walk inwards from the end, sampling every length/16
     samples, walked, i = [points[0]], 0.0, 0
     step, target = length / 16, length / 16
@@ -426,11 +430,11 @@ def psi(g):
 
 
 def omega(g):
+    # The hexagon of Ο, its bottom cut away and turned out into two feet
     w = g.W(.88)
-    ry = (g.T - g.B) / (1 + math.sin(math.radians(60)))
-    cy, rx, cx = g.T - ry + OVERSHOOT / 2, .43 * w, w / 2
-    (g.path(clip=(0, g.H + OVERSHOOT)).move(0, g.B).to(cx - rx / 2, g.B)
-     .arc(cx, cy, rx, ry, 240, -60).to(w, g.B).done())
+    cx, rx, ry = w / 2, .40 * w, (g.T - g.B) / 2
+    (g.path(clip=True).move(0, g.B).to(*on_ellipse(cx, g.M, rx, ry, 240))
+     .arc(cx, g.M, rx, ry, 240, -60).to(w, g.B).done())
     return "OO"
 
 
@@ -473,9 +477,9 @@ def koppa(g):
 # Latin letters whose shapes the Greek ones do not already give
 
 def latin_C(g):
-    w = g.W(.80)
-    g.path().move(*on_ellipse(w / 2, g.M, w / 2, g.M - g.B + OVERSHOOT, 48)) \
-        .arc(w / 2, g.M, w / 2, g.M - g.B + OVERSHOOT, 48, 312).done()
+    # Four cuts: the top, two diagonals to a point, the bottom
+    w, ry = g.W(.74), g.M - g.B
+    g.path(clip=True).move(*on_ellipse(w / 2, g.M, w / 2, ry, 60)).arc(w / 2, g.M, w / 2, ry, 60, 300).done()
     return "RO"
 
 
@@ -486,11 +490,12 @@ def latin_D(g):
 
 
 def latin_G(g):
-    w, ry = g.W(.80), g.M - g.B + OVERSHOOT
-    y = .44 * g.H
-    (g.path().move(*on_ellipse(w / 2, g.M, w / 2, ry, 48))
-     .arc(w / 2, g.M, w / 2, ry, 48, 352).to(w, y).to(.56 * w, y).done())
-    return "RO"
+    # The C, with an upright spur at the end of the bottom
+    w, ry = g.W(.74), g.M - g.B
+    end = on_ellipse(w / 2, g.M, w / 2, ry, 300)
+    (g.path(clip=True).move(*on_ellipse(w / 2, g.M, w / 2, ry, 60))
+     .arc(w / 2, g.M, w / 2, ry, 60, 300).to(end[0], .46 * g.H).done())
+    return "RS"
 
 
 def latin_L(g):
@@ -524,13 +529,6 @@ def latin_S(g):
      .arc(w / 2, m + r1, rx1, r1, 25, 270)
      .arc(w / 2, m - r2, rx2, r2, 90, -155).done())
     return "OO"
-
-
-def latin_U(g):
-    w, cy = g.W(.66), .40 * g.H
-    (g.path(clip=(-OVERSHOOT, g.H)).move(0, g.H).to(0, cy)
-     .arc(w / 2, cy, w / 2, cy - g.B + OVERSHOOT, 180, 360).to(w, g.H).done())
-    return "SS"
 
 
 def latin_V(g):
@@ -583,7 +581,6 @@ LETTERS = [
     ("Q", 0x51, "q", [0x71], latin_Q),
     ("R", 0x52, "r", [0x72], latin_R),
     ("S", 0x53, "s", [0x73], latin_S),
-    ("U", 0x55, "u", [0x75], latin_U),
     ("V", 0x56, "v", [0x76], latin_V),
     ("W", 0x57, "w", [0x77], latin_W),
     ("Z", 0x5A, "z", [0x7A], latin_Z),
@@ -596,6 +593,11 @@ SAME_AS_GREEK = {
     "T": "Tau", "X": "Chi", "Y": "Upsilon",
 }
 
+# Letters written with another Latin letter, as in Roman inscriptions: U is V
+LATIN_SAME = {
+    "U": "V",
+}
+
 # Precomposed long vowels, Greek and romanized: (name, codes, base glyph)
 MACRONS = [
     ("Alphamacron", [0x1FB9, 0x100], "Alpha"), ("alphamacron", [0x1FB1, 0x101], "alpha"),
@@ -603,7 +605,7 @@ MACRONS = [
     ("Epsilonmacron", [0x112], "Epsilon"), ("epsilonmacron", [0x113], "epsilon"),
     ("Iotamacron", [0x12A], "Iota"), ("iotamacron", [0x12B], "iota"),
     ("Omicronmacron", [0x14C], "Omicron"), ("omicronmacron", [0x14D], "omicron"),
-    ("Umacron", [0x16A], "U"), ("umacron", [0x16B], "u"),
+    ("Vmacron", [0x16A], "V"), ("vmacron", [0x16B], "v"),   # ū: U is written V
 ]
 MACRON_GAP = 56
 
@@ -917,9 +919,9 @@ def build_glyphs():
         glyphs[small_name] = make(fn, SMALL, SMALL_STROKE, SMALL * 1.06)
         for code in small_codes:
             cmap[code] = small_name
-    for latin, greek in SAME_AS_GREEK.items():
-        cmap[ord(latin)] = greek
-        cmap[ord(latin.lower())] = greek.lower()
+    for latin, other in {**SAME_AS_GREEK, **LATIN_SAME}.items():
+        cmap[ord(latin)] = other
+        cmap[ord(latin.lower())] = other.lower()
     for name, codes, base in MACRONS:
         small = base[0].islower()
         glyphs[name] = add_macron(glyphs[base], SMALL if small else CAP, SMALL_STROKE if small else CAP_STROKE)
