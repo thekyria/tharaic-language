@@ -28,7 +28,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
 FAMILY = "Tharaic Stele"
-VERSION = "0.6"
+VERSION = "0.7"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -84,6 +84,16 @@ class Shape:
             p.lineTo(*pt)
         p.close()
         self.fills.append(p)
+
+    def diamond(self, cx, cy, half_w, half_h):
+        """A diamond of four cuts whose sharp (mitred) points reach half_w and half_h from
+        its centre. Returns the half-width and half-height of its centreline."""
+        b, a = half_w, half_h
+        for _ in range(20):   # the mitred points reach past the centreline corners: solve for those
+            side = math.hypot(a, b)
+            a, b = half_h - self.s / 2 * side / b, half_w - self.s / 2 * side / a
+        self.line((cx, cy + a), (cx + b, cy), (cx, cy - a), (cx - b, cy), closed=True, clip=None)
+        return b, a
 
     def bowl(self, x0, top, bottom, right):
         """A pointed bowl from a stem at x0, as in archaic Β, Ρ, Ϸ: two cuts meeting at a point."""
@@ -314,11 +324,12 @@ def eta(g):
 
 
 def theta(g):
-    # Archaic: a cross in the ring
-    w = g.W(.88)
-    circle_O(g, w)
-    g.line((0, g.M), (w, g.M), clip=None)
-    g.line((w / 2, 0), (w / 2, g.H))
+    # Archaic: a cross in a diamond, full height so the four counters stay open
+    half_w = g.W(.96) / 2 + g.s / 2
+    cx = half_w
+    b, a = g.diamond(cx, g.M, half_w, g.H / 2)
+    g.line((cx - b, g.M), (cx + b, g.M), clip=None)
+    g.line((cx, g.M - a), (cx, g.M + a), clip=None)
     return "RR"
 
 
@@ -364,15 +375,17 @@ def xi(g):
     return "OO"
 
 
+def small_diamond(g):
+    """The diamond of Ο, Θ and Q: smaller than the other letters, centred on the middle.
+    Returns its centre x and centreline half-width and half-height."""
+    half_w = g.W(.76) / 2 + g.s / 2
+    b, a = g.diamond(half_w, g.M, half_w, g.H / 2 - .07 * g.H)
+    return half_w, b, a
+
+
 def omicron(g):
-    # Archaic: a diamond of four cuts, smaller than the other letters, centred on the middle
-    half_w, half_h = g.W(.76) / 2 + g.s / 2, g.H / 2 - .07 * g.H   # outline, to the sharp points
-    b, a = half_w, half_h
-    for _ in range(20):   # the mitred points reach past the centreline corners: solve for those
-        side = math.hypot(a, b)
-        a, b = half_h - g.s / 2 * side / b, half_w - g.s / 2 * side / a
-    cx = half_w - g.s / 2
-    g.line((cx, g.M + a), (cx + b, g.M), (cx, g.M - a), (cx - b, g.M), closed=True, clip=None)
+    # Archaic: a diamond of four cuts
+    small_diamond(g)
     return "RR"
 
 
@@ -413,9 +426,10 @@ def upsilon(g):
 
 
 def phi(g):
+    # A diamond on a stem that runs through it
     w = g.W(.84)
     g.line((w / 2, 0), (w / 2, g.H))
-    g.ellipse(w / 2, g.M, w / 2, .27 * g.H)
+    g.diamond(w / 2, g.M, w / 2, .30 * g.H)
     return "RR"
 
 
@@ -435,11 +449,11 @@ def psi(g):
 
 
 def omega(g):
-    # The hexagon of Ο, its bottom cut away and turned out into two feet
-    w = g.W(.88)
-    cx, rx, ry = w / 2, .40 * w, (g.T - g.B) / 2
-    (g.path(clip=True).move(0, g.B).to(*on_ellipse(cx, g.M, rx, ry, 240))
-     .arc(cx, g.M, rx, ry, 240, -60).to(w, g.B).done())
+    # A diamond standing over a bar on the baseline
+    w = g.W(.80)
+    g.line((0, g.B), (w, g.B))
+    bottom, top = 1.6 * g.s, g.H - .07 * g.H
+    g.diamond(w / 2, (top + bottom) / 2, g.W(.70) / 2, (top - bottom) / 2)
     return "OO"
 
 
@@ -457,10 +471,10 @@ def heta(g):
 
 
 def yot(g):
-    w, cy = g.W(.48), .34 * g.H
-    (g.path(clip=(-OVERSHOOT, g.H)).move(w, g.H).to(w, cy)
-     .arc(w / 2, cy, w / 2, cy - g.B + OVERSHOOT, 0, -165).done())
-    return "OS"
+    # An upside-down Λ with a short left leg: two cuts
+    w = g.W(.50)
+    g.line((w, g.H), (.62 * w, 0), (0, .38 * g.H))
+    return "DD"
 
 
 def sho(g):
@@ -470,22 +484,22 @@ def sho(g):
 
 
 def koppa(g):
-    w = g.W(.70)
-    bottom = .30 * g.H
-    ry = (g.H - bottom - g.s) / 2 + OVERSHOOT
-    cy = (g.H + bottom) / 2
-    g.ellipse(w / 2, cy, w / 2, ry)
-    g.line((w / 2, 0), (w / 2, cy - ry))
+    # A diamond on a short stem
+    w = g.W(.66)
+    bottom, top = .32 * g.H, g.H - .02 * g.H
+    cy = (top + bottom) / 2
+    b, a = g.diamond(w / 2, cy, w / 2, (top - bottom) / 2)
+    g.line((w / 2, 0), (w / 2, cy - a))
     return "RR"
 
 
 # Latin letters whose shapes the Greek ones do not already give
 
 def latin_C(g):
-    # Four cuts: the top, two diagonals to a point, the bottom
-    w, ry = g.W(.74), g.M - g.B
-    g.path(clip=True).move(*on_ellipse(w / 2, g.M, w / 2, ry, 60)).arc(w / 2, g.M, w / 2, ry, 60, 300).done()
-    return "RO"
+    # A wide ⟨: two cuts about 100 degrees apart
+    w = g.W(.42)
+    g.line((w, g.H), (0, g.M), (w, 0))
+    return "DO"
 
 
 def latin_D(g):
@@ -496,11 +510,9 @@ def latin_D(g):
 
 def latin_G(g):
     # The C, with an upright spur at the end of the bottom
-    w, ry = g.W(.74), g.M - g.B
-    end = on_ellipse(w / 2, g.M, w / 2, ry, 300)
-    (g.path(clip=True).move(*on_ellipse(w / 2, g.M, w / 2, ry, 60))
-     .arc(w / 2, g.M, w / 2, ry, 60, 300).to(end[0], .46 * g.H).done())
-    return "RS"
+    w = g.W(.46)
+    g.line((w, g.H), (0, g.M), (w, 0), (w, .40 * g.H))
+    return "DS"
 
 
 def latin_L(g):
@@ -510,10 +522,10 @@ def latin_L(g):
 
 
 def latin_Q(g):
-    w = g.W(.88)
-    circle_O(g, w)
-    start = on_ellipse(w / 2, g.M, w / 2, g.M - g.B + OVERSHOOT, -80)   # on the bowl, so only the tail end flares
-    g.line(start, (1.0 * w, -.16 * g.H), clip=None)
+    # The diamond of O, with a tail from its lower right side
+    cx, b, a = small_diamond(g)
+    start = (cx + b / 2, g.M - a / 2)   # on the diamond, so only the tail end flares
+    g.line(start, (cx + 1.1 * b, -.16 * g.H), clip=None)
     return "RR"
 
 

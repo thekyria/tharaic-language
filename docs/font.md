@@ -29,7 +29,7 @@ Files:
 
 The units are thousandths of the font size. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops.
 
-**Facets.** A chisel cuts straight, so there are no true curves: every curve is broken into straight cuts, one for each 60° of its turn, as few as still read as round. *Θ Ϙ Φ Q* and the digit *0* are hexagons with a flat top and bottom and pointed sides; *Ω* is the same hexagon with its bottom turned out into two feet; *C* is four cuts (top, two diagonals to a point, bottom) and *G* adds one upright spur. *S*, *Ϳ* and the digits are built the same way. Bowls are not faceted but pointed (see below).
+**No curves.** A chisel cuts straight, so there are no true curves: round letters are built on a **diamond** of four cuts instead: *Ο* and *Q*, *Θ* (with a cross), *Φ* (on a stem through it), *Ϙ* (on a short stem) and *Ω* (over a bar on the baseline). *C* is a wide ⟨ of two cuts, about 100° open, and *G* adds an upright spur. The few curves left, in *S* and the digits (*0* is a hexagon, to tell it from *O*), are broken into straight cuts, one for each 60° of their turn. Bowls are pointed (see below).
 
 **Flares.** Every free end of a stroke widens in a straight-sided wedge over its last two stroke-widths, by almost a third of the stroke on each side, as the chisel opens the cut at its end. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
 
@@ -41,14 +41,14 @@ The units are thousandths of the font size. Diagonal strokes are cut flat where 
 | **Β Ρ Ϸ** | Pointed bowls: two cuts meeting at a point |
 | **Ε** | The arms slope down from the stem, as in Phoenician *he* |
 | **Ζ** | Two bars joined by a stem (⌶), as in Phoenician *zayin*. It differs from *Ι* by its bars |
-| **Θ** | A cross in the ring (⊕) |
+| **Θ** | A cross in a diamond, full height so its four counters stay open |
 | **Ξ** | A stem through the three bars |
 | **Ο** | A diamond of four cuts, smaller than the other letters and centred on the middle. Latin *O* shares it |
 | **Π** | The right leg is short |
 | **Σ Μ** | Splayed outer strokes |
 | **Ψ** | A trident of straight cuts |
 
-The other letters keep the forms everyone knows. *Ω* was a late letter even in Greek; here it is open at the bottom and stands on two feet.
+The other letters keep the forms everyone knows. *Ω* was a late letter even in Greek; here it is a diamond standing over a bar on the baseline.
 
 **The extra letters** are drawn after their Unicode forms, in the same strokes as the rest:
 
@@ -56,12 +56,12 @@ The other letters keep the forms everyone knows. *Ω* was a late letter even in 
 |--------|------------------|
 | **Ϝ ϝ** digamma | F: stem, top bar and a shorter middle bar |
 | **Ͱ ͱ** heta | The left half of Η: a stem and half a crossbar |
-| **Ϳ ϳ** yot | J: a stem that hooks to the left at the bottom |
+| **Ϳ ϳ** yot | An upside-down Λ with a short left leg: two cuts. Unlike *V*, its legs are unequal. Latin *J* shares it |
 | **Ϸ ϸ** sho | Þ: a stem with a bowl at mid-height. *Ρ* has its bowl at the top |
-| **Ϙ ϙ** koppa | A ring on a short stem, standing on the baseline. *Φ* has its stem through the ring |
+| **Ϙ ϙ** koppa | A diamond on a short stem, standing on the baseline. *Φ* has its stem through the diamond |
 | **ᾱ ῡ**, **Ᾱ Ῡ** | A macron centred over the letter. A separate combining macron (U+0304) is placed the same way |
 
-**Latin letters** are there for the romanization, with the long vowels *ā ē ī ō ū*. Like the Greek ones, lowercase is drawn as small capitals. Letters with the same shape in both alphabets share one drawing, archaic forms included, much as early Latin inscriptions borrowed them (*A* is *Α*, *P* is *Ρ*, *F* is *Ϝ*, *J* is *Ϳ*); *C D G L Q R S V W Z* are drawn on their own in the same strokes, with pointed bowls in *D*, *R*. **U is written V**, as in Roman inscriptions: *u* and *v*, *ū* and a V with a macron, look the same and are told apart by context. Only the drawing is shared, so the text itself still holds *u*, and copying or searching it works as before. *Z* keeps its later zigzag form, since the archaic *Ζ* would read as *I*. Hebrew transliteration marks such as *ḥ* and *ṣ* are not included.
+**Latin letters** are there for the romanization, with the long vowels *ā ē ī ō ū*. Like the Greek ones, lowercase is drawn as small capitals. Letters with the same shape in both alphabets share one drawing, archaic forms included, much as early Latin inscriptions borrowed them (*A* is *Α*, *P* is *Ρ*, *F* is *Ϝ*, *J* is *Ϳ*); *C D G L Q R S V W Z* are drawn on their own in the same strokes: *C* is a wide ⟨, *G* the same with a spur, *Q* the diamond of *O* with a tail, and *D*, *R* have pointed bowls. **U is written V**, as in Roman inscriptions: *u* and *v*, *ū* and a V with a macron, look the same and are told apart by context. Only the drawing is shared, so the text itself still holds *u*, and copying or searching it works as before. *Z* keeps its later zigzag form, since the archaic *Ζ* would read as *I*. Hebrew transliteration marks such as *ḥ* and *ṣ* are not included.
 
 **Digits and punctuation** cover what the docs use: digits at small-capital height, *. , : ; · ! ? ( ) [ ] - – — « »* and quotation marks, the Greek question mark (*;*) and raised dot (*·*), and the inscriptional word divider *⁝*. Punctuation and alphabetic numerals are still to be designed for the script itself ([Roadmap](roadmap.md#later)); the font will follow that work.
 
