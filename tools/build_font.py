@@ -28,7 +28,7 @@ from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
 FAMILY = "Tharaic Stele"
-VERSION = "0.5"
+VERSION = "0.6"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -365,9 +365,14 @@ def xi(g):
 
 
 def omicron(g):
-    # Archaic: smaller than the other letters, centred on the middle
-    inset = .07 * g.H
-    circle_O(g, g.W(.76), top=g.H - inset, bottom=inset)
+    # Archaic: a diamond of four cuts, smaller than the other letters, centred on the middle
+    half_w, half_h = g.W(.76) / 2 + g.s / 2, g.H / 2 - .07 * g.H   # outline, to the sharp points
+    b, a = half_w, half_h
+    for _ in range(20):   # the mitred points reach past the centreline corners: solve for those
+        side = math.hypot(a, b)
+        a, b = half_h - g.s / 2 * side / b, half_w - g.s / 2 * side / a
+    cx = half_w - g.s / 2
+    g.line((cx, g.M + a), (cx + b, g.M), (cx, g.M - a), (cx - b, g.M), closed=True, clip=None)
     return "RR"
 
 

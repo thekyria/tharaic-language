@@ -29,7 +29,7 @@ Files:
 
 The units are thousandths of the font size. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops.
 
-**Facets.** A chisel cuts straight, so there are no true curves: every curve is broken into straight cuts, one for each 60° of its turn, as few as still read as round. *Ο Θ Ϙ Φ Q* are hexagons with a flat top and bottom and pointed sides; *Ω* is the same hexagon with its bottom turned out into two feet; *C* is four cuts (top, two diagonals to a point, bottom) and *G* adds one upright spur. *S*, *Ϳ* and the digits are built the same way. Bowls are not faceted but pointed (see below).
+**Facets.** A chisel cuts straight, so there are no true curves: every curve is broken into straight cuts, one for each 60° of its turn, as few as still read as round. *Θ Ϙ Φ Q* and the digit *0* are hexagons with a flat top and bottom and pointed sides; *Ω* is the same hexagon with its bottom turned out into two feet; *C* is four cuts (top, two diagonals to a point, bottom) and *G* adds one upright spur. *S*, *Ϳ* and the digits are built the same way. Bowls are not faceted but pointed (see below).
 
 **Flares.** Every free end of a stroke widens in a straight-sided wedge over its last two stroke-widths, by almost a third of the stroke on each side, as the chisel opens the cut at its end. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
 
@@ -43,7 +43,7 @@ The units are thousandths of the font size. Diagonal strokes are cut flat where 
 | **Ζ** | Two bars joined by a stem (⌶), as in Phoenician *zayin*. It differs from *Ι* by its bars |
 | **Θ** | A cross in the ring (⊕) |
 | **Ξ** | A stem through the three bars |
-| **Ο** | Smaller than the other letters, centred on the middle |
+| **Ο** | A diamond of four cuts, smaller than the other letters and centred on the middle. Latin *O* shares it |
 | **Π** | The right leg is short |
 | **Σ Μ** | Splayed outer strokes |
 | **Ψ** | A trident of straight cuts |
