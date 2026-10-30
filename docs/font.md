@@ -29,7 +29,7 @@ Files:
 
 The units are thousandths of the font size. Round letters (*Ο Θ Φ Ϙ*) reach slightly past the lines so they look the same height as flat ones. Diagonal strokes are cut flat where they meet a line, so *Α Λ Δ* have flat tops.
 
-**Flares.** Every free end of a stroke widens in a concave curve over its last two stroke-widths, by about a fifth of the stroke on each side, as in glyphic lettering cut in stone. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
+**Flares.** Every free end of a stroke widens in a concave curve over its last two stroke-widths, by almost a third of the stroke on each side, as in glyphic lettering cut in stone. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
 
 **Archaic touches.** Most letters keep their familiar Classical Greek shapes, so the text stays readable. A few follow older inscriptions: *Σ* and *Μ* have splayed outer strokes, *Α* has a low crossbar, and *Ω* is an open circle on two feet.
 

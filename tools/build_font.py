@@ -145,7 +145,7 @@ class PathBuilder:
 
 # Flares: a free stroke end widens by FLARE_WIDTH (times the stroke, on each side)
 # over the last FLARE_LENGTH strokes, in a concave curve, as a chisel leaves it.
-FLARE_WIDTH, FLARE_LENGTH = .22, 2.0
+FLARE_WIDTH, FLARE_LENGTH = .30, 2.0
 
 
 def flare(points, s, extend):
