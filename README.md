@@ -19,7 +19,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | Document | Covers |
 |----------|--------|
 | [Phonology & Script](docs/phonology.md) | Greek alphabet and extra letters, vowels, consonants, phonotactics, stress |
-| [The Tharaic Typefaces](docs/font.md) | Three fonts for the alphabet: Stele, archaic inscriptional letters of straight, chiselled cuts; Wedge, the same letters in cuneiform wedges; and Ledger, a reed-pen cursive after Semitic scribes; all cover the extra letters and the romanization: design, use and specimens |
+| [The Tharaic Typefaces](docs/font.md) | Three fonts for the alphabet: Stele, archaic inscriptional letters of straight, chiselled cuts; Wedge, the same letters in cuneiform wedges; and Ledger, a rounded reed-pen hand after Semitic scribes; all cover the extra letters and the romanization: design, use and specimens |
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |

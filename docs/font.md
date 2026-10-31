@@ -104,13 +104,12 @@ Changes to a letter's drawing apply to all three faces, except where Wedge has i
 
 ![Specimen of Tharaic Ledger](font-specimen-ledger.svg)
 
-Tharaic Ledger writes the letters of Stele with a reed pen, as a merchant keeps accounts: quicker and rounder than stone, after the cursive of Phoenician and Aramaic scribes. The letters and their forms are Stele's; the pen changes them like this:
+Tharaic Ledger writes the letters of Stele with a reed pen, as a merchant keeps accounts, after the book hands of the Semitic scribes: upright, round and heavy along the line. The letters and their forms are Stele's; the pen changes them like this:
 
-- **A broad nib**, held steeply (70° from level), so level strokes are thick and upright ones thin, as in Hebrew and Aramaic book hands. Slanting strokes swell and thin with their direction.
-- **Rounded turns.** Where a stroke turns through an open angle, the pen rounds it: bowls, diamonds, *S* and the digits become curves. Sharp turns (under 75°, as in *Δ Α Ν Σ*) stay sharp.
-- **A forward slant** of 10°.
-- **Long downstrokes.** The stems of *Ρ Ϸ Φ Ψ Ϙ* reach below the line, like the long tails of Semitic cursive. So does *Q*, which shares *Ϙ*'s stem.
-- **Dots** are short dabs of the nib.
+- **A rounded broad nib**, an oval held steeply (75° from level): level strokes come out heavy and upright ones thin, as in Hebrew, Aramaic and Arabic book hands, and every stroke ends and every dot is round.
+- **No corners.** Every turn of a stroke is rounded: open ones broadly, so bowls, diamonds, *C*, *S* and the digits become curves; sharp ones (in *Α Δ Ν Σ*) only a little, so the letters keep their shape. Only the meetings of separate strokes (as in *Τ* or *Ε*) stay angular.
+- **Upright**, with no slant.
+- **Sweeping tails.** The stems of *Ρ Ϸ Φ Ψ Ϙ* (and *Q*, which shares *Ϙ*) run below the line and sweep to the left, like the tails of Arabic *rāʾ* and *nūn* or Hebrew final letters.
 
 Ledger has no lowercase either, as Semitic scripts have none: lowercase letters are small capitals, as in the other faces.
 
