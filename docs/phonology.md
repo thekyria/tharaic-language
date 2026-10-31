@@ -12,7 +12,7 @@ Tharaic is written in the **Greek alphabet**, extended with a few archaic and au
 | **Ϸ ϸ** | sho | /ʃ/ | Bactrian Greek script |
 | **Ϙ ϙ** | koppa | /ɣ/ | Archaic Greek, from Phoenician qoph |
 
-No accent marks are written: stress is predictable (see [Phonotactics](#phonotactics--the-no-cluster-rule)). A final sigma is written **ς**. The Latin romanization is given alongside each letter below for reference. [The Tharaic Typefaces](font.md) draw every letter, including the extra ones, in two styles: cut in stone and pressed in clay.
+No accent marks are written: stress is predictable (see [Phonotactics](#phonotactics--the-no-cluster-rule)). A final sigma is written **ς**. The Latin romanization is given alongside each letter below for reference. [The Tharaic Typefaces](font.md) draw every letter, including the extra ones, in three styles: cut in stone, pressed in clay and written with a pen.
 
 ## Vowels
 

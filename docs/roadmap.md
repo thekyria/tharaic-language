@@ -55,6 +55,8 @@ Each step is a separate pull request.
 
 15. ✅ **Wedge typeface** — [Tharaic Wedge](font.md#tharaic-wedge): a second face drawing the same letters as cuneiform wedges pressed into clay, for tablets and ledgers, with at most four wedges per letter (triangle-based Θ Φ Ϙ Ω, a Phoenician-style Β, simpler S, digits and ?). `tools/build_font.py` builds both faces from the same skeletons.
 
+16. ✅ **Ledger typeface** — [Tharaic Ledger](font.md#tharaic-ledger): a third face writing Stele's letters with a reed pen for the merchants' ledgers, after Phoenician and Aramaic cursive: a broad nib with thick level strokes, rounded open turns, a forward slant and long downstrokes in *Ρ Ϸ Φ Ψ Ϙ*.
+
 ## Later
 
 | Future phase | What it adds |

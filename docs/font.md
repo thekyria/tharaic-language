@@ -4,7 +4,7 @@
 
 **Tharaic Stele** is a typeface for the [Tharaic alphabet](phonology.md), in the style of a carved inscription: every stroke is a straight cut, curves included, and strokes widen into a wedge at their ends, as a chisel leaves them. It covers every letter of the alphabet, including the extra letters that most fonts lack or draw unevenly, and the Latin letters of the romanization, so a whole text appears in one style.
 
-A second face, **[Tharaic Wedge](#tharaic-wedge)**, draws the same letters as if pressed into clay with a stylus, in cuneiform wedges: Stele for temple inscriptions, Wedge for the merchants' tablets and ledgers.
+Two more faces draw the same letters with other tools: **[Tharaic Wedge](#tharaic-wedge)** as if pressed into clay with a stylus, in cuneiform wedges, and **[Tharaic Ledger](#tharaic-ledger)** as if written with a reed pen, in a cursive after Phoenician and Aramaic scribes. Stele is for temple inscriptions, Wedge for clay tablets, Ledger for the merchants' accounts and letters.
 
 ![Specimen of Tharaic Stele](font-specimen.svg)
 
@@ -12,8 +12,8 @@ Files:
 
 | File | Use |
 |------|-----|
-| [`font/TharaicStele.ttf`](../font/TharaicStele.ttf), [`font/TharaicWedge.ttf`](../font/TharaicWedge.ttf) | Install on a computer |
-| [`font/TharaicStele.woff2`](../font/TharaicStele.woff2), [`font/TharaicWedge.woff2`](../font/TharaicWedge.woff2) | Use on a web page |
+| [`font/TharaicStele.ttf`](../font/TharaicStele.ttf), [`font/TharaicWedge.ttf`](../font/TharaicWedge.ttf), [`font/TharaicLedger.ttf`](../font/TharaicLedger.ttf) | Install on a computer |
+| [`font/TharaicStele.woff2`](../font/TharaicStele.woff2), [`font/TharaicWedge.woff2`](../font/TharaicWedge.woff2), [`font/TharaicLedger.woff2`](../font/TharaicLedger.woff2) | Use on a web page |
 | [`tools/build_font.py`](../tools/build_font.py) | The source: every letter is drawn there |
 
 ---
@@ -98,11 +98,25 @@ Tharaic Wedge has the same letters, metrics, spacing and kerning as Stele, drawn
 
   *Ο* keeps its diamond of four. The build stops with an error if a drawing in Wedge goes over four.
 
-Changes to a letter's drawing apply to both faces. Wedge is meant for display sizes: below about 16 pixels the thin tails fade.
+Changes to a letter's drawing apply to all three faces, except where Wedge has its own simpler form. Wedge is meant for display sizes: below about 16 pixels the thin tails fade.
+
+## Tharaic Ledger
+
+![Specimen of Tharaic Ledger](font-specimen-ledger.svg)
+
+Tharaic Ledger writes the letters of Stele with a reed pen, as a merchant keeps accounts: quicker and rounder than stone, after the cursive of Phoenician and Aramaic scribes. The letters and their forms are Stele's; the pen changes them like this:
+
+- **A broad nib**, held steeply (70° from level), so level strokes are thick and upright ones thin, as in Hebrew and Aramaic book hands. Slanting strokes swell and thin with their direction.
+- **Rounded turns.** Where a stroke turns through an open angle, the pen rounds it: bowls, diamonds, *S* and the digits become curves. Sharp turns (under 75°, as in *Δ Α Ν Σ*) stay sharp.
+- **A forward slant** of 10°.
+- **Long downstrokes.** The stems of *Ρ Ϸ Φ Ψ Ϙ* reach below the line, like the long tails of Semitic cursive. So does *Q*, which shares *Ϙ*'s stem.
+- **Dots** are short dabs of the nib.
+
+Ledger has no lowercase either, as Semitic scripts have none: lowercase letters are small capitals, as in the other faces.
 
 ## Using it
 
-On a computer, install `TharaicStele.ttf` or `TharaicWedge.ttf` and choose *Tharaic Stele* or *Tharaic Wedge* in any program. On a web page:
+On a computer, install `TharaicStele.ttf`, `TharaicWedge.ttf` or `TharaicLedger.ttf` and choose *Tharaic Stele*, *Tharaic Wedge* or *Tharaic Ledger* in any program. On a web page:
 
 ```css
 @font-face {
@@ -113,8 +127,13 @@ On a computer, install `TharaicStele.ttf` or `TharaicWedge.ttf` and choose *Thar
   font-family: "Tharaic Wedge";
   src: url("TharaicWedge.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Tharaic Ledger";
+  src: url("TharaicLedger.woff2") format("woff2");
+}
 .tharaic { font-family: "Tharaic Stele", serif; }
 .tharaic-clay { font-family: "Tharaic Wedge", serif; }
+.tharaic-ledger { font-family: "Tharaic Ledger", serif; }
 ```
 
 The fonts have no Greek accents or breathings, which Tharaic does not write, so quotations from Classical Greek (*ὀργισθείς*) fall back to another font.
@@ -128,4 +147,4 @@ pip install fonttools skia-pathops brotli
 python3 tools/build_font.py
 ```
 
-This writes both faces (`.ttf` and `.woff2`) and this page's two specimens. The wedge shape is set by the `WEDGE_*` numbers and the limit by `MAX_WEDGES`; a letter's simpler Wedge form is the `if g.wedge:` branch in its function. The build is reproducible: the same source gives the same files.
+This writes the three faces (`.ttf` and `.woff2`) and this page's three specimens. The wedge shape is set by the `WEDGE_*` numbers and the limit by `MAX_WEDGES`; a letter's simpler Wedge form is the `if g.wedge:` branch in its function. Ledger's pen is set by the `LEDGER_*` numbers. The build is reproducible: the same source gives the same files.

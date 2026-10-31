@@ -19,7 +19,7 @@ Later, **literary Doric** (a second Greek-analog dialect, the language of poetry
 | Document | Covers |
 |----------|--------|
 | [Phonology & Script](docs/phonology.md) | Greek alphabet and extra letters, vowels, consonants, phonotactics, stress |
-| [The Tharaic Typefaces](docs/font.md) | Two fonts for the alphabet: Stele, archaic inscriptional letters of straight, chiselled cuts, and Wedge, the same letters in cuneiform wedges; both cover the extra letters and the romanization: design, use and specimens |
+| [The Tharaic Typefaces](docs/font.md) | Three fonts for the alphabet: Stele, archaic inscriptional letters of straight, chiselled cuts; Wedge, the same letters in cuneiform wedges; and Ledger, a reed-pen cursive after Semitic scribes; all cover the extra letters and the romanization: design, use and specimens |
 | [Morphology](docs/morphology.md) | Root system, gender, noun paradigms, construct state, pronouns, verbs (incl. "to be", imperfective past, middle voice), adjectives and comparison |
 | [Syntax & Function Words](docs/syntax.md) | Word order, negation, questions, relative clauses, conditions, comparison, prepositions and their cases, conjunctions |
 | [Registers](docs/registers.md) | Everyday and high speech, the learned Doric layer, doublets, pronunciation and grammar of the high register |
@@ -44,7 +44,7 @@ Python 3 scripts, standard library only except the font builder:
 - `python3 tools/check_phonotactics.py [files…]` — list words in the docs that break the everyday syllable rules, the strict chant rules with `--chant`, or the high-register rules with `--high` (defaults to `docs/*.md`)
 - `python3 tools/dialect.py "…"` — turn coastal Tharaic into the island dialect (chant forms, construct vowel, *ϸ* → *σ*)
 - `python3 tools/build_lexicon.py` — check every entry in `data/lexicon.yaml` (grammar fields, romanization, syllable rules, chant forms, sound changes) and regenerate `docs/lexicon.md`; `--check` only verifies it is up to date. It also checks that every word in `data/gospels.tsv` is in the lexicon
-- `python3 tools/build_font.py` — build the [Stele and Wedge typefaces](docs/font.md) into `font/` and their specimens; needs `pip install fonttools skia-pathops brotli`
+- `python3 tools/build_font.py` — build the [Stele, Wedge and Ledger typefaces](docs/font.md) into `font/` and their specimens; needs `pip install fonttools skia-pathops brotli`
 
 ---
 

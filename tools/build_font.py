@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Tharaic Stele and Tharaic Wedge, two typefaces for the Tharaic alphabet.
+"""Build Tharaic Stele, Wedge and Ledger, three typefaces for the Tharaic alphabet.
 
 Every letter is drawn as a centreline skeleton of straight cuts, as a chisel
 makes them: curves are broken into facets every 60 degrees. The skeleton is
@@ -12,8 +12,13 @@ Tharaic Wedge draws the same skeletons as if pressed into clay: every straight
 cut becomes a cuneiform wedge, a triangular head where the stylus went in and a
 tail that thins away from it.
 
-Writes font/TharaicStele.* and font/TharaicWedge.* (.ttf and .woff2), and
-docs/font-specimen.svg and docs/font-specimen-wedge.svg.
+Tharaic Ledger writes them with a reed pen, as in the merchants' ledgers and
+the cursive of Aramaic and Phoenician scribes: a broad nib held so that level
+strokes are thick and upright ones thin, corners rounded off, a forward slant,
+and long downstrokes below the line in a few letters.
+
+Writes font/TharaicStele.*, font/TharaicWedge.* and font/TharaicLedger.* (.ttf
+and .woff2), and their specimens in docs/.
 Unlike the other tools this one needs three packages:
 
     pip install fonttools skia-pathops brotli
@@ -32,7 +37,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "0.10"
+VERSION = "0.11"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -61,6 +66,8 @@ class Shape:
         self.M = height / 2
         self.u = width_unit
         self.wedge = False              # drawn for Tharaic Wedge, which allows at most MAX_WEDGES cuts
+        self.ledger = False             # drawn for Tharaic Ledger
+        self.foot = 0                   # where long stems end: below the line in Ledger
         self.strokes = []               # Stroke objects
         self.fills = []                 # filled pathops.Path (dots)
 
@@ -326,6 +333,82 @@ def outline_wedge(shape):
     return union(parts)
 
 
+# Ledger: the nib's angle from level (degrees), length and thickness (in strokes),
+# the forward slant (degrees); corners of at least LEDGER_ROUND_MIN degrees are
+# rounded, starting LEDGER_ROUND_CUT of the way along the shorter side.
+LEDGER_NIB_ANGLE, LEDGER_NIB_LEN, LEDGER_NIB_THICK, LEDGER_SLANT = 70, 1.45, .30, 10
+LEDGER_ROUND_MIN, LEDGER_ROUND_CUT = 75, .45
+LEDGER_DESCENDER = .22   # how far long stems reach below the line, in heights
+
+
+def hull(points):
+    """The convex hull of some points, anticlockwise."""
+    pts = sorted(set(points))
+    def half(seq):
+        out = []
+        for q in seq:
+            while len(out) > 1 and ((out[-1][0] - out[-2][0]) * (q[1] - out[-2][1])
+                                    - (out[-1][1] - out[-2][1]) * (q[0] - out[-2][0])) <= 0:
+                out.pop()
+            out.append(q)
+        return out
+    lower, upper = half(pts), half(pts[::-1])
+    return lower[:-1] + upper[:-1]
+
+
+def round_off(points, closed):
+    """Round off the open corners of a skeleton, as a pen turns them; sharp corners
+    (under LEDGER_ROUND_MIN degrees, as in Δ Α Ν) stay sharp."""
+    n = len(points)
+    if n < 3:
+        return points
+    out = []
+    for i, v in enumerate(points):
+        if not closed and i in (0, n - 1):
+            out.append(v)
+            continue
+        a, b = points[i - 1], points[(i + 1) % n]
+        la, lb = math.dist(a, v), math.dist(b, v)
+        if la < 1 or lb < 1:
+            out.append(v)
+            continue
+        cos = ((a[0] - v[0]) * (b[0] - v[0]) + (a[1] - v[1]) * (b[1] - v[1])) / (la * lb)
+        if math.degrees(math.acos(max(-1, min(1, cos)))) < LEDGER_ROUND_MIN:
+            out.append(v)
+            continue
+        c = LEDGER_ROUND_CUT * min(la, lb)
+        p0 = (v[0] + (a[0] - v[0]) * c / la, v[1] + (a[1] - v[1]) * c / la)
+        p2 = (v[0] + (b[0] - v[0]) * c / lb, v[1] + (b[1] - v[1]) * c / lb)
+        for k in range(9):   # a quadratic curve from p0 to p2, pulled towards the corner
+            t = k / 8
+            out.append(((1 - t) ** 2 * p0[0] + 2 * t * (1 - t) * v[0] + t * t * p2[0],
+                        (1 - t) ** 2 * p0[1] + 2 * t * (1 - t) * v[1] + t * t * p2[1]))
+    return out
+
+
+def nib_stroke(p0, p1, s):
+    """The shape a broad nib leaves drawn from p0 to p1."""
+    t = math.radians(LEDGER_NIB_ANGLE)
+    ux, uy = math.cos(t) * LEDGER_NIB_LEN * s / 2, math.sin(t) * LEDGER_NIB_LEN * s / 2
+    vx, vy = -math.sin(t) * LEDGER_NIB_THICK * s / 2, math.cos(t) * LEDGER_NIB_THICK * s / 2
+    corners = [(ux + vx, uy + vy), (ux - vx, uy - vy), (-ux + vx, -uy + vy), (-ux - vx, -uy - vy)]
+    return polygon(hull([(x + cx, y + cy) for x, y in (p0, p1) for cx, cy in corners]))
+
+
+def outline_ledger(shape):
+    """Write a shape's skeleton with a reed pen: rounded corners, a broad nib, a forward slant."""
+    parts = []
+    for st in shape.strokes:
+        pts = round_off(list(st.points), st.closed)
+        seq = pts + [pts[0]] if st.closed else pts
+        parts += [nib_stroke(a, b, shape.s) for a, b in zip(seq, seq[1:])]
+    for f in shape.fills:   # a dot is a short dab of the nib
+        x0, y0, x1, y1 = f.bounds
+        cx, cy, d = (x0 + x1) / 2, (y0 + y1) / 2, .2 * shape.s
+        parts.append(nib_stroke((cx - d, cy - d), (cx + d, cy + d), shape.s))
+    return union(parts).transform(1, 0, math.tan(math.radians(LEDGER_SLANT)), 1, 0, 0)
+
+
 # ---------------------------------------------------------------------------
 # Letters. Coordinates are centrelines: a stem at x=0 runs from -s/2 to s/2.
 # Each function returns the side bearings (left, right) as keys of SIDES.
@@ -416,6 +499,8 @@ def theta(g):
     half_w = g.W(.96) / 2 + g.s / 2
     cx = half_w
     b, a = g.diamond(cx, g.M, half_w, g.H / 2)
+    if g.ledger:   # the pen rounds the diamond's points, so keep the cross inside it
+        b, a = .72 * b, .72 * a
     g.line((cx - b, g.M), (cx + b, g.M), clip=None)
     g.line((cx, g.M - a), (cx, g.M + a), clip=None)
     return "RR"
@@ -487,7 +572,7 @@ def pi(g):
 
 
 def rho(g):
-    g.line((0, 0), (0, g.H))
+    g.line((0, g.foot), (0, g.H))
     g.bowl(0, g.T, .42 * g.H, g.W(.54))
     return "SR"
 
@@ -521,7 +606,7 @@ def phi(g):
         return "DD"
     # A diamond on a stem that runs through it
     w = g.W(.84)
-    g.line((w / 2, 0), (w / 2, g.H))
+    g.line((w / 2, g.foot), (w / 2, g.H))
     g.diamond(w / 2, g.M, w / 2, .30 * g.H)
     return "RR"
 
@@ -536,7 +621,7 @@ def chi(g):
 def psi(g):
     # Archaic: a trident, its arms straight cuts
     w, y = g.W(.74), .40 * g.H
-    g.line((w / 2, 0), (w / 2, g.H))
+    g.line((w / 2, g.foot), (w / 2, g.H))
     g.line((0, g.H), (w / 2, y), (w, g.H))
     return "DD"
 
@@ -576,7 +661,7 @@ def yot(g):
 
 
 def sho(g):
-    g.line((0, 0), (0, g.H))
+    g.line((0, g.foot), (0, g.H))
     g.bowl(0, .76 * g.H, .26 * g.H, g.W(.54))
     return "SR"
 
@@ -592,7 +677,7 @@ def koppa(g):
     bottom, top = .32 * g.H, g.H - .02 * g.H
     cy = (top + bottom) / 2
     b, a = g.diamond(w / 2, cy, w / 2, (top - bottom) / 2)
-    g.line((w / 2, 0), (w / 2, cy - a))
+    g.line((w / 2, g.foot), (w / 2, cy - a))
     return "RR"
 
 
@@ -1048,6 +1133,8 @@ class Glyph:
 def make(fn, height, stroke, width_unit, outliner):
     g = Shape(height, stroke, width_unit)
     g.wedge = outliner is outline_wedge
+    g.ledger = outliner is outline_ledger
+    g.foot = -LEDGER_DESCENDER * height if g.ledger else 0
     sides = fn(g)
     scale = (height / CAP) ** .6
     path = outliner(g)
@@ -1152,6 +1239,10 @@ FACES = [
     ("Tharaic Wedge", "TharaicWedge", "font-specimen-wedge.svg", outline_wedge,
      "A typeface for the Tharaic alphabet in cuneiform wedges, as if pressed into clay. Lowercase letters are small capitals.",
      "#e8d6bd", "#3a2a1c"),
+    ("Tharaic Ledger", "TharaicLedger", "font-specimen-ledger.svg", outline_ledger,
+     "A cursive typeface for the Tharaic alphabet, as if written with a reed pen in a merchant's ledger. "
+     "Lowercase letters are small capitals.",
+     "#efe3c6", "#2e2216"),
 ]
 
 
@@ -1179,7 +1270,8 @@ def build(face):
     for name in order:   # left side bearings from the real outlines
         metrics[name] = (metrics[name][0], getattr(fb.font["glyf"][name], "xMin", 0))
     fb.setupHorizontalMetrics(metrics)
-    ascent, descent = 900, -260
+    lowest = min(getattr(fb.font["glyf"][n], "yMin", 0) for n in order)
+    ascent, descent = 900, min(-260, math.floor(lowest / 10) * 10)   # room for Ledger's descenders
     fb.setupHorizontalHeader(ascent=ascent, descent=descent)
     fb.setupNameTable({
         "familyName": family,
