@@ -32,7 +32,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "0.10"
+VERSION = "0.11"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -178,11 +178,21 @@ class PathBuilder:
 
 # Flares: a free stroke end widens by FLARE_WIDTH (times the stroke, on each side)
 # over the last FLARE_LENGTH strokes, in a straight wedge, as a chisel leaves it.
-FLARE_WIDTH, FLARE_LENGTH = .30, 2.0
+# Only the head of a stroke flares, the end where Wedge presses its head (see is_head):
+# the other end is cut plain, so Stele echoes the wedges of clay.
+FLARE_WIDTH, FLARE_LENGTH = .40, 2.0
 
 
-def flare(points, s, extend):
-    """A polygon that widens a stroke towards its end at points[0]."""
+def is_head(end, toward):
+    """Whether a stroke end is its head: the upper end of an upright or slanting cut,
+    the left end of a nearly level one. The same rule places the heads in Wedge."""
+    dx, dy = toward[0] - end[0], toward[1] - end[1]
+    return dy < 0 if abs(dy) > .3 * abs(dx) else dx > 0
+
+
+def flare(points, s, extend, width=FLARE_WIDTH):
+    """A polygon that widens a stroke by width towards its end at points[0]
+    (with width 0, just the straight extension past a line)."""
     # never past the end of the first cut, so a flare cannot wrap round a corner
     length = min(FLARE_LENGTH * s, .9 * math.dist(points[0], points[1]))
     # Walk inwards from the end, sampling every length/16
@@ -207,7 +217,7 @@ def flare(points, s, extend):
         n = math.hypot(tx, ty)
         nx, ny = -ty / n, tx / n
         t = 1 - k / (len(samples) - 1)
-        hw = s / 2 + FLARE_WIDTH * s * t
+        hw = s / 2 + width * s * t
         left.append((x + nx * hw, y + ny * hw))
         right.append((x - nx * hw, y - ny * hw))
     if extend:   # carry the full width past the end, to be cut flat by the clip
@@ -241,7 +251,12 @@ def outline(shape):
                 if any(o.contains(pts[0]) for o in others):
                     continue   # the end joins another stroke
                 on_line = st.clip and any(abs(pts[0][1] - y) < 1 for y in st.clip)
-                f = flare(pts, shape.s, on_line)
+                if is_head(pts[0], pts[1]):
+                    f = flare(pts, shape.s, on_line)
+                elif on_line:   # a plain tail on a line: run it straight past, to be cut level
+                    f = flare(pts, shape.s, True, width=0)
+                else:
+                    continue    # a plain tail in the air
                 if f is not None:
                     p = pathops.op(p, f, pathops.PathOp.UNION)
         if st.clip:
@@ -282,9 +297,9 @@ WEDGE_HEAD_W, WEDGE_HEAD_L, WEDGE_TAIL_W, WEDGE_TAIL_END, WEDGE_MIN = .80, 1.3, 
 def wedge(p0, p1, s, heads):
     """One cut as a cuneiform wedge, its head at the upper end (the left, if nearly level)."""
     (x0, y0), (x1, y1) = p0, p1
+    if not is_head(p0, p1):
+        (x0, y0), (x1, y1) = p1, p0
     dx, dy = x1 - x0, y1 - y0
-    if (abs(dy) > .3 * abs(dx) and y1 > y0) or (abs(dy) <= .3 * abs(dx) and x1 < x0):
-        (x0, y0), (x1, y1), dx, dy = (x1, y1), (x0, y0), -dx, -dy
     n = math.hypot(dx, dy)
     if n < 1:
         return None
