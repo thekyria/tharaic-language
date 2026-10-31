@@ -14,6 +14,7 @@
 | Noun dual | **-ιν** becomes the general dual marker: *θᾱριν*, *ναϝιν*, *καλιν*; INS dual -ομεν → **-ομιν**. This frees -ειν for infinitives only |
 | Registers | **Two tiers**: everyday and high. The high register draws on **literary Doric**, whose prestige comes from poetry and learning. The older Greek-analog loans are re-read as **sailors' Greek** (Ionic-analog, with *η*), so the two layers give same-word doublets (*ͱημερον* / *ͱᾱμερᾱ*). Temple speech becomes a style of the high register, with Doric theology words; Phoenician words survive in formulas and divine names. The high register keeps Doric clusters, prefers the aorist, the genitive and participles, and keeps some Doric endings. Scripture is in the high register |
 | Dialects | **Three mutually intelligible varieties**, each explained by history: the coastal standard; the island dialect, which never had changes 2–3 (its everyday words are the coastal chant forms) and merged *ϸ* with *σ*; and an SVO harbor pidgin without case endings. No creole; places stay unnamed |
+| Typeface | **Inscriptional**: one alphabet of capitals in even, straight chisel cuts (round letters on a diamond, C as ⟨) with wedge-flared ends and archaic letterforms (pointed bowls, ⊕, ⌶, short-legged Π, diamond Ο Θ Φ Ϙ Ω), lowercase as small capitals, Latin letters for the romanization, with U written V; built from code in `tools/build_font.py`, with the font files in `font/` |
 | Repository | Overview in `README.md`, content in `docs/`, dictionary data in `data/lexicon.yaml`, scripts in `tools/` |
 
 ## Plan
@@ -53,6 +54,12 @@ Each step is a separate pull request.
 14. ✅ **Checks** — `tools/inflect.py` generates every paradigm from the lexicon, and the paradigm tables in [Morphology](morphology.md) and [Word Building](word-building.md) are now generated from it. `tools/check_texts.py` checks that every word of the texts is a form of a lexicon word or of a name (the new `data/names.tsv`). It found two slips, now fixed: *Ͱα-ηνθες* for *Ͱα-ηνθας* in Mark 1:24, and *μιζραχᾱθα* for *μιζραχαθα* in the sample sentences. The lexicon gains the dual pronouns. All checks and unit tests run on every pull request.
 
 15. ✅ **English index** — [English Index](english-index.md), generated from the lexicon: about 2,000 English words and phrases, each with its Tharaic words in both registers, linked to the lexicon. The keys come from the meanings; a new `index` field in `data/lexicon.yaml` sets them where the meaning does not give the plain word (*θᾱρος* under "sea", the numbers under "one", "two"…).
+
+16. ✅ **Typeface** — [The Tharaic Typefaces](font.md): an inscriptional font covering the whole alphabet with its extra letters (*Ϝ Ͱ Ϳ Ϸ Ϙ*, *ᾱ ῡ*), straight chisel cuts with diamond-based round letters, wedge-flared stroke ends, archaic letterforms, Latin letters and long vowels for the romanization, lowercase drawn as small capitals, digits and the punctuation the docs use, basic kerning and macron placement. `tools/build_font.py` draws each letter as a stroked skeleton and writes `font/TharaicStele.ttf`, `.woff2` and the specimen.
+
+17. ✅ **Wedge typeface** — [Tharaic Wedge](font.md#tharaic-wedge): a second face drawing the same letters as cuneiform wedges pressed into clay, for tablets and ledgers, with at most four wedges per letter (triangle-based Θ Φ Ϙ Ω, a Phoenician-style Β, simpler S, digits and ?). `tools/build_font.py` builds both faces from the same skeletons.
+
+18. ✅ **Ledger typeface** — [Tharaic Ledger](font.md#tharaic-ledger): a third face writing Stele's letters with a reed pen for the merchants' ledgers, after Phoenician and Aramaic cursive: an upright hand with a rounded broad nib (heavy level strokes, round ends), every turn rounded but one angle per letter, and tails in *Ρ Ϸ Φ Ψ Ϙ* that sweep left below the line.
 
 ## Later
 
