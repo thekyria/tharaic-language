@@ -33,7 +33,7 @@ The units are thousandths of the font size. Diagonal strokes are cut flat where 
 
 **No curves.** A chisel cuts straight, so there are no true curves: round letters are built on a **diamond** of four cuts instead: *Ο* and *Q*, *Θ* (with a cross), *Φ* (on a stem through it), *Ϙ* (on a short stem) and *Ω* (over a bar on the baseline). *C* is a wide ⟨ of two cuts, about 100° open, and *G* adds an upright spur. The few curves left, in *S* and the digits (*0* is a hexagon, to tell it from *O*), are broken into straight cuts, one for each 60° of their turn. Bowls are pointed (see below).
 
-**Flares.** Each stroke has a head and a tail, as in [Wedge](#tharaic-wedge): the head is the top of an upright or slanting stroke and the left end of a level one. A free head widens in a straight-sided wedge over its last two stroke-widths, by four tenths of the stroke on each side, where the chisel was struck in; the tail is cut plain, and level where it meets the baseline. So stems stand on plain feet under wedge-shaped tops (*Ι Η Ν*), the top bar of *Τ* has a spur at its left end only, and *Α Λ Μ* stand on plain, level feet. Ends that join another stroke stay plain.
+**Flares.** Every free end of a stroke widens in a straight-sided wedge over its last two stroke-widths, by almost a third of the stroke on each side, as the chisel opens the cut at its end. Where a stem stands on the baseline the flare makes a broad foot; where a bar along the top or bottom line ends (*Ε Τ Γ*), it makes a spur pointing away from the line. Ends that join another stroke stay plain, and so does the short floating bar of *Θ*.
 
 **Archaic forms.** Where an older inscriptional form exists and stays readable, the font uses it, as stone-cutters did before the Classical alphabet settled:
 
