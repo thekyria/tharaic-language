@@ -37,7 +37,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "0.12"
+VERSION = "0.13"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -341,10 +341,10 @@ def outline_wedge(shape):
 
 
 # Ledger: the nib is an oval, its long axis at LEDGER_NIB_ANGLE degrees from level,
-# LEDGER_NIB_LEN by LEDGER_NIB_THICK strokes. Corners of at least LEDGER_ROUND_MIN
-# degrees are rounded from LEDGER_ROUND_CUT of the way along the shorter side; sharper
-# ones from LEDGER_SHARP_CUT of it, at most LEDGER_SHARP_MAX strokes, so Α and Δ keep
-# their shape.
+# LEDGER_NIB_LEN by LEDGER_NIB_THICK strokes. A letter keeps at most one angle: its
+# sharpest corner, if under LEDGER_ROUND_MIN degrees, is rounded only from
+# LEDGER_SHARP_CUT of the way along the shorter side (at most LEDGER_SHARP_MAX strokes);
+# every other corner is rounded broadly, from LEDGER_ROUND_CUT of the way.
 LEDGER_NIB_ANGLE, LEDGER_NIB_LEN, LEDGER_NIB_THICK = 75, 1.6, .55
 LEDGER_ROUND_MIN, LEDGER_ROUND_CUT, LEDGER_SHARP_CUT, LEDGER_SHARP_MAX = 75, .45, .2, 1.2
 LEDGER_DESCENDER, LEDGER_TAIL = .22, .22   # how far long stems reach below the line, and left
@@ -365,24 +365,31 @@ def hull(points):
     return lower[:-1] + upper[:-1]
 
 
-def round_off(points, closed, stroke):
-    """Round off the corners of a skeleton, as a pen turns them: open ones broadly,
-    sharp ones (under LEDGER_ROUND_MIN degrees, as in Δ Α Ν) a little."""
+def corner_angle(points, closed, i):
+    """The angle (degrees) at corner i of a skeleton, or None at a free end or a sliver."""
     n = len(points)
-    if n < 3:
-        return points
+    if n < 3 or (not closed and i in (0, n - 1)):
+        return None
+    a, v, b = points[i - 1], points[i], points[(i + 1) % n]
+    la, lb = math.dist(a, v), math.dist(b, v)
+    if la < 1 or lb < 1:
+        return None
+    cos = ((a[0] - v[0]) * (b[0] - v[0]) + (a[1] - v[1]) * (b[1] - v[1])) / (la * lb)
+    return math.degrees(math.acos(max(-1, min(1, cos))))
+
+
+def round_off(points, closed, stroke, keep=None):
+    """Round off the corners of a skeleton, as a pen turns them: all broadly, except
+    corner keep (the letter's one angle), which is rounded only a little."""
+    n = len(points)
     out = []
     for i, v in enumerate(points):
-        if not closed and i in (0, n - 1):
+        if corner_angle(points, closed, i) is None:
             out.append(v)
             continue
         a, b = points[i - 1], points[(i + 1) % n]
         la, lb = math.dist(a, v), math.dist(b, v)
-        if la < 1 or lb < 1:
-            out.append(v)
-            continue
-        cos = ((a[0] - v[0]) * (b[0] - v[0]) + (a[1] - v[1]) * (b[1] - v[1])) / (la * lb)
-        if math.degrees(math.acos(max(-1, min(1, cos)))) < LEDGER_ROUND_MIN:
+        if i == keep:
             c = min(LEDGER_SHARP_CUT * min(la, lb), LEDGER_SHARP_MAX * stroke)
         else:
             c = LEDGER_ROUND_CUT * min(la, lb)
@@ -406,10 +413,16 @@ def nib_stroke(p0, p1, s):
 
 
 def outline_ledger(shape):
-    """Write a shape's skeleton with a reed pen: rounded corners and a rounded broad nib."""
+    """Write a shape's skeleton with a reed pen: a rounded broad nib, and every corner
+    rounded but the letter's one angle, its sharpest corner."""
+    corners = [(angle, j, i) for j, st in enumerate(shape.strokes)
+               for i in range(len(st.points))
+               if (angle := corner_angle(st.points, st.closed, i)) is not None and angle < LEDGER_ROUND_MIN]
+    angle_at = min(corners)[1:] if corners else None
     parts = []
-    for st in shape.strokes:
-        pts = round_off(list(st.points), st.closed, shape.s)
+    for j, st in enumerate(shape.strokes):
+        keep = angle_at[1] if angle_at and angle_at[0] == j else None
+        pts = round_off(list(st.points), st.closed, shape.s, keep)
         seq = pts + [pts[0]] if st.closed else pts
         parts += [nib_stroke(a, b, shape.s) for a, b in zip(seq, seq[1:])]
     for f in shape.fills:   # a dot is a dab of the nib

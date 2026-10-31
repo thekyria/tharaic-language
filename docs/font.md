@@ -107,7 +107,7 @@ Changes to a letter's drawing apply to all three faces, except where Wedge has i
 Tharaic Ledger writes the letters of Stele with a reed pen, as a merchant keeps accounts, after the book hands of the Semitic scribes: upright, round and heavy along the line. The letters and their forms are Stele's; the pen changes them like this:
 
 - **A rounded broad nib**, an oval held steeply (75° from level): level strokes come out heavy and upright ones thin, as in Hebrew, Aramaic and Arabic book hands, and every stroke ends and every dot is round.
-- **No corners.** Every turn of a stroke is rounded: open ones broadly, so bowls, diamonds, *C*, *S* and the digits become curves; sharp ones (in *Α Δ Ν Σ*) only a little, so the letters keep their shape. Only the meetings of separate strokes (as in *Τ* or *Ε*) stay angular.
+- **One angle per letter.** Every turn of a stroke is rounded, so bowls, diamonds, *C*, *S* and the digits become curves, except the letter's sharpest turn, if it has a sharp one: that one stays a point. So *Δ* keeps its apex over a rounded base, *Μ* its middle V between rounded shoulders, *Ν* and *Σ* one point each, and *Α Λ V* their one apex. Where separate strokes meet (as in *Τ*, *Η* or *Ε*) there is no turn to round.
 - **Upright**, with no slant.
 - **Sweeping tails.** The stems of *Ρ Ϸ Φ Ψ Ϙ* (and *Q*, which shares *Ϙ*) run below the line and sweep to the left, like the tails of Arabic *rāʾ* and *nūn* or Hebrew final letters.
 
