@@ -53,7 +53,7 @@ Each step is a separate pull request.
 
 14. ✅ **Typeface** — [The Stele Typeface](font.md): an inscriptional font covering the whole alphabet with its extra letters (*Ϝ Ͱ Ϳ Ϸ Ϙ*, *ᾱ ῡ*), straight chisel cuts with diamond-based round letters, wedge-flared stroke ends, archaic letterforms, Latin letters and long vowels for the romanization, lowercase drawn as small capitals, digits and the punctuation the docs use, basic kerning and macron placement. `tools/build_font.py` draws each letter as a stroked skeleton and writes `font/TharaicStele.ttf`, `.woff2` and the specimen.
 
-15. ✅ **Wedge typeface** — [Tharaic Wedge](font.md#tharaic-wedge): a second face drawing the same letters as cuneiform wedges pressed into clay, for tablets and ledgers. `tools/build_font.py` builds both faces from the same skeletons.
+15. ✅ **Wedge typeface** — [Tharaic Wedge](font.md#tharaic-wedge): a second face drawing the same letters as cuneiform wedges pressed into clay, for tablets and ledgers, with at most five wedges per letter (simpler Β Θ S, digits and ? where needed). `tools/build_font.py` builds both faces from the same skeletons.
 
 ## Later
 

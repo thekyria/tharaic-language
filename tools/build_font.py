@@ -32,7 +32,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "0.8"
+VERSION = "0.9"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -60,6 +60,7 @@ class Shape:
         self.B = stroke / 2             # centreline of a bar on the baseline
         self.M = height / 2
         self.u = width_unit
+        self.wedge = False              # drawn for Tharaic Wedge, which allows at most MAX_WEDGES cuts
         self.strokes = []               # Stroke objects
         self.fills = []                 # filled pathops.Path (dots)
 
@@ -100,9 +101,13 @@ class Shape:
         return b, a
 
     def bowl(self, x0, top, bottom, right):
-        """A pointed bowl from a stem at x0, as in archaic Β, Ρ, Ϸ: two cuts meeting at a point."""
-        flat = x0 + .35 * (right - x0)
+        """A pointed bowl from a stem at x0, as in archaic Β, Ρ, Ϸ: two cuts meeting at a point,
+        with short flats along the top and bottom (none in Wedge, to save cuts)."""
         mid = (top + bottom) / 2
+        if self.wedge:
+            self.line((x0, top), (right, mid), (x0, bottom), clip=None)
+            return
+        flat = x0 + .35 * (right - x0)
         self.line((x0, top), (flat, top), (right, mid), (flat, bottom), (x0, bottom), clip=None)
 
 
@@ -299,12 +304,16 @@ def wedge(p0, p1, s, heads):
                     (x1 - nx * te, y1 - ny * te), (hx - nx * tw, hy - ny * tw), (x0 - nx * hw, y0 - ny * hw)])
 
 
+MAX_WEDGES = 5   # per glyph, in Tharaic Wedge
+
+
 def outline_wedge(shape):
     """Press a shape's skeleton into clay: every straight cut a wedge, every dot a corner wedge."""
-    parts, heads = [], []
+    parts, heads, count = [], [], len(shape.fills)
     for st in shape.strokes:
         pts = st.points + ([st.points[0]] if st.closed else [])
         wedges = [w for w in (wedge(a, b, shape.s, heads) for a, b in zip(pts, pts[1:])) if w is not None]
+        count += len(wedges)
         p = union(wedges)
         if st.clip:
             p = pathops.op(p, clip_box(*st.clip), pathops.PathOp.INTERSECTION)
@@ -313,6 +322,7 @@ def outline_wedge(shape):
         x0, y0, x1, y1 = f.bounds
         cx, cy, r = (x0 + x1) / 2, (y0 + y1) / 2, (x1 - x0) / 2
         parts.append(polygon([(cx - r, cy + r), (cx + r, cy), (cx - r, cy - r)]))
+    shape.wedge_count = count
     return union(parts)
 
 
@@ -392,6 +402,10 @@ def eta(g):
 
 
 def theta(g):
+    if g.wedge:   # archaic ⊙: a dot in the diamond, to stay within five wedges
+        cx, b, a = small_diamond(g)
+        g.dot(cx, g.M)
+        return "RR"
     # Archaic: a cross in a diamond, full height so the four counters stay open
     half_w = g.W(.96) / 2 + g.s / 2
     cx = half_w
@@ -606,6 +620,10 @@ def latin_R(g):
 
 
 def latin_S(g):
+    if g.wedge:   # a zigzag of three cuts, as in archaic inscriptions
+        w = g.W(.56)
+        g.line((w, g.T), (0, .62 * g.H), (w, .38 * g.H), (0, g.B))
+        return "OO"
     w, m = g.W(.56), .53 * g.H
     r1 = (g.T - m) / 2 + OVERSHOOT / 2
     r2 = (m - g.B) / 2 + OVERSHOOT / 2
@@ -700,6 +718,10 @@ MACRON_GAP = 56
 # ---------------------------------------------------------------------------
 
 def d0(g):
+    if g.wedge:   # a box, to tell it from the diamond O
+        w = g.W(.46)
+        g.line((0, g.B), (0, g.T), (w, g.T), (w, g.B), closed=True)
+        return "SS"
     circle_O(g, g.W(.62))
     return "RR"
 
@@ -710,6 +732,10 @@ def d1(g):
 
 
 def d2(g):
+    if g.wedge:
+        w = g.W(.58)
+        g.line((0, .78 * g.H), (.45 * w, g.T), (w, .72 * g.H), (0, g.B), (w, g.B))
+        return "OO"
     w = g.W(.60)
     ry = .28 * g.H
     cy = g.T - ry + OVERSHOOT
@@ -719,6 +745,10 @@ def d2(g):
 
 
 def d3(g):
+    if g.wedge:
+        w = g.W(.56)
+        g.line((0, g.T), (w, g.T), (.35 * w, .56 * g.H), (w, .30 * g.H), (.5 * w, g.B), (0, .12 * g.H))
+        return "OR"
     w, m = g.W(.58), .55 * g.H
     r1 = (g.T - m) / 2 + OVERSHOOT / 2
     r2 = (m - g.B) / 2 + OVERSHOOT / 2
@@ -736,6 +766,10 @@ def d4(g):
 
 
 def d5(g):
+    if g.wedge:
+        w = g.W(.56)
+        g.line((w, g.T), (0, g.T), (0, .56 * g.H), (w, .38 * g.H), (.45 * w, g.B), (0, .10 * g.H))
+        return "OR"
     w = g.W(.58)
     ry = .32 * g.H
     cy = g.B + ry - OVERSHOOT
@@ -747,6 +781,10 @@ def d5(g):
 
 
 def d6(g):
+    if g.wedge:   # a stroke down into a triangle
+        w = g.W(.58)
+        g.line((.85 * w, g.T), (0, .32 * g.H), (.5 * w, g.B), (w, .32 * g.H), (0, .32 * g.H))
+        return "RR"
     w = g.W(.60)
     ry = .32 * g.H
     cy = g.B + ry - OVERSHOOT
@@ -762,6 +800,10 @@ def d7(g):
 
 
 def d8(g):
+    if g.wedge:   # an hourglass of four cuts
+        w = g.W(.56)
+        g.line((0, g.T), (w, g.T), (0, g.B), (w, g.B), closed=True)
+        return "OO"
     w, m = g.W(.60), .56 * g.H
     r1 = (g.T - m) / 2 + OVERSHOOT / 2
     r2 = (m - g.B) / 2 + OVERSHOOT / 2
@@ -771,6 +813,10 @@ def d8(g):
 
 
 def d9(g):
+    if g.wedge:   # the 6 turned round
+        w = g.W(.58)
+        g.line((.15 * w, g.B), (w, .68 * g.H), (.5 * w, g.T), (0, .68 * g.H), (w, .68 * g.H))
+        return "RR"
     w = g.W(.60)
     ry = .32 * g.H
     cy = g.T - ry + OVERSHOOT
@@ -833,6 +879,11 @@ def exclam(g):
 
 
 def question(g):
+    if g.wedge:
+        w = g.W(.50)
+        g.line((0, .80 * g.H), (.5 * w, g.T), (w, .80 * g.H), (.5 * w, .52 * g.H), (.5 * w, .28 * g.H))
+        g.dot(.5 * w, g.s * .6)
+        return "OO"
     w, ry = g.W(.50), .22 * g.H
     cy = g.T - ry
     (g.path(clip=(0, g.H + OVERSHOOT)).move(*on_ellipse(w / 2, cy, w / 2, ry, 160))
@@ -973,9 +1024,13 @@ class Glyph:
 
 def make(fn, height, stroke, width_unit, outliner):
     g = Shape(height, stroke, width_unit)
+    g.wedge = outliner is outline_wedge
     sides = fn(g)
     scale = (height / CAP) ** .6
-    return Glyph(outliner(g), sides[0], sides[1], scale)
+    path = outliner(g)
+    if g.wedge and g.wedge_count > MAX_WEDGES:
+        raise ValueError(f"{fn.__name__} uses {g.wedge_count} wedges; Tharaic Wedge allows {MAX_WEDGES}")
+    return Glyph(path, sides[0], sides[1], scale)
 
 
 def draw(glyph, pen):

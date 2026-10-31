@@ -80,8 +80,19 @@ Tharaic Wedge has the same letters, metrics, spacing and kerning as Stele, drawn
 - **Every straight cut is a wedge**: a triangular head where the stylus was pressed in, and a tail that thins away from it. Cuts that join in Stele are separate wedges here, touching as they do on a tablet.
 - **The head is at the top** of an upright or slanting cut, and **at the left** of a level one, the way cuneiform is pressed.
 - **One head per meeting point.** Where two cuts start at the same point, as at the top of *Α* or the corners of a diamond, only the first has a head; the second starts thin.
-- **Short facets** (in *S* and the digits) have no head and an even width, so a run of them reads as one stroke.
+- **Short cuts** have no head and an even width, so a run of them reads as one stroke.
 - **Dots are corner wedges** (the *Winkelhaken* of cuneiform): a head with no tail.
+- **At most five wedges per letter**, as a scribe would press a sign in a few strokes. Letters that would need more have simpler forms in Wedge only:
+
+  | Letter | In Wedge |
+  |--------|----------|
+  | **Β Ρ Ϸ**, *D R* | Bowls of two wedges, from the stem out to the point and back, with no flats |
+  | **Θ** | A corner wedge in the diamond (⊙, the other archaic form) instead of the cross |
+  | *S* | A zigzag of three wedges, as in archaic inscriptions |
+  | Digits | Straight forms: *0* a box, *8* an hourglass, *6* and *9* a stroke into a triangle, *2 3 5* of four or five wedges |
+  | *?* | Four wedges and a dot |
+
+  The build stops with an error if a drawing in Wedge goes over five.
 
 Changes to a letter's drawing apply to both faces. Wedge is meant for display sizes: below about 16 pixels the thin tails fade.
 
@@ -113,4 +124,4 @@ pip install fonttools skia-pathops brotli
 python3 tools/build_font.py
 ```
 
-This writes both faces (`.ttf` and `.woff2`) and this page's two specimens. The wedge shape is set by the `WEDGE_*` numbers near the top of the file. The build is reproducible: the same source gives the same files.
+This writes both faces (`.ttf` and `.woff2`) and this page's two specimens. The wedge shape is set by the `WEDGE_*` numbers and the limit by `MAX_WEDGES`; a letter's simpler Wedge form is the `if g.wedge:` branch in its function. The build is reproducible: the same source gives the same files.
