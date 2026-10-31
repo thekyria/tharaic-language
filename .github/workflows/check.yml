@@ -1,0 +1,25 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Lexicon is valid and docs/lexicon.md is up to date
+        run: python3 tools/build_lexicon.py --check
+      - name: Paradigm tables match the inflection rules
+        run: python3 tools/inflect.py --check
+      - name: Syllable rules
+        run: python3 tools/check_phonotactics.py --strict
+      - name: Every word of the texts is in the lexicon
+        run: python3 tools/check_texts.py --strict
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v

@@ -103,6 +103,8 @@ The dual ends in **-ιν** (instrumental **-ομιν**); the genitive and dative
 
 ### Animate O-stem: *θᾱρος* (sea) | Root: Τ-Ρ
 
+<!-- inflect: noun θᾱρος -->
+
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
 | **NOM** | *θᾱρος*<br>thāros | *θᾱριν*<br>thārin | *θᾱριμ*<br>thārim |
@@ -114,9 +116,13 @@ The dual ends in **-ιν** (instrumental **-ομιν**); the genitive and dative
 | **INS** | *θᾱρομ*<br>thārom | *θᾱρομιν*<br>thāromin | *θᾱρομις*<br>thāromis |
 | **ABL** | *θᾱραθα*<br>thāratha | *θᾱραθιν*<br>thārathin | *θᾱραθις*<br>thārathis |
 
+<!-- /inflect -->
+
 ---
 
 ### Animate A-stem: *ναϝᾱ* (ship) | Root: Ν-Ϝ
+
+<!-- inflect: noun ναϝᾱ -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -129,9 +135,13 @@ The dual ends in **-ιν** (instrumental **-ομιν**); the genitive and dative
 | **INS** | *ναϝομ*<br>navom | *ναϝομιν*<br>navomin | *ναϝομις*<br>navomis |
 | **ABL** | *ναϝαθα*<br>navatha | *ναϝαθιν*<br>navathin | *ναϝαθις*<br>navathis |
 
+<!-- /inflect -->
+
 ---
 
 ### Inanimate ON-stem: *λακον* (word) | Root: Λ-Κ
+
+<!-- inflect: noun λακον -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -144,9 +154,13 @@ The dual ends in **-ιν** (instrumental **-ομιν**); the genitive and dative
 | **INS** | *λακομ*<br>lakom | *λακομιν*<br>lakomin | *λακομις*<br>lakomis |
 | **ABL** | *λακαθα*<br>lakatha | *λακαθιν*<br>lakathin | *λακαθις*<br>lakathis |
 
+<!-- /inflect -->
+
 ---
 
 ### Inanimate AR-stem: *πελαρ* (expanse) | Root: Π-Λ
+
+<!-- inflect: noun πελαρ -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -158,6 +172,8 @@ The dual ends in **-ιν** (instrumental **-ομιν**); the genitive and dative
 | **LOC** | *πελαρελι*<br>pelareli | *πελαρελιν*<br>pelarelin | *πελαρελις*<br>pelarelis |
 | **INS** | *πελαρομ*<br>pelarom | *πελαρομιν*<br>pelaromin | *πελαρομις*<br>pelaromis |
 | **ABL** | *πελαραθα*<br>pelaratha | *πελαραθιν*<br>pelarathin | *πελαραθις*<br>pelarathis |
+
+<!-- /inflect -->
 
 ---
 
@@ -176,6 +192,8 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 
 #### -ος: *δᾱμος* (the people)
 
+<!-- inflect: noun δᾱμος -->
+
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
 | **NOM** | *δᾱμος*<br>dāmos | *δᾱμιν*<br>dāmin | *δᾱμοι*<br>dāmoi |
@@ -187,7 +205,11 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 | **INS** | *δᾱμομ*<br>dāmom | *δᾱμομιν*<br>dāmomin | *δᾱμομις*<br>dāmomis |
 | **ABL** | *δᾱμαθα*<br>dāmatha | *δᾱμαθιν*<br>dāmathin | *δᾱμαθις*<br>dāmathis |
 
+<!-- /inflect -->
+
 #### -ᾱ: *ψυχᾱ* (soul)
+
+<!-- inflect: noun ψυχᾱ -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -200,7 +222,11 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 | **INS** | *ψυχομ*<br>psykhom | *ψυχομιν*<br>psykhomin | *ψυχομις*<br>psykhomis |
 | **ABL** | *ψυχαθα*<br>psykhatha | *ψυχαθιν*<br>psykhathin | *ψυχαθις*<br>psykhathis |
 
+<!-- /inflect -->
+
 #### -ον: *βιβλιον* (book)
+
+<!-- inflect: noun βιβλιον -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -213,7 +239,11 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 | **INS** | *βιβλιομ*<br>bibliom | *βιβλιομιν*<br>bibliomin | *βιβλιομις*<br>bibliomis |
 | **ABL** | *βιβλιαθα*<br>bibliatha | *βιβλιαθιν*<br>bibliathin | *βιβλιαθις*<br>bibliathis |
 
+<!-- /inflect -->
+
 #### -ᾱς: *ποιητᾱς* (poet)
+
+<!-- inflect: noun ποιητᾱς -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -226,7 +256,11 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 | **INS** | *ποιητομ*<br>poiētom | *ποιητομιν*<br>poiētomin | *ποιητομις*<br>poiētomis |
 | **ABL** | *ποιηταθα*<br>poiētatha | *ποιηταθιν*<br>poiētathin | *ποιηταθις*<br>poiētathis |
 
+<!-- /inflect -->
+
 #### -μα: *ποιημα* (poem)
+
+<!-- inflect: noun ποιημα -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -239,7 +273,11 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 | **INS** | *ποιηματομ*<br>poiēmatom | *ποιηματομιν*<br>poiēmatomin | *ποιηματομις*<br>poiēmatomis |
 | **ABL** | *ποιηματαθα*<br>poiēmatatha | *ποιηματαθιν*<br>poiēmatathin | *ποιηματαθις*<br>poiēmatathis |
 
+<!-- /inflect -->
+
 #### -ις: *ποιησις* (poetry)
+
+<!-- inflect: noun ποιησις -->
 
 | Case | Singular | Dual | Plural |
 |------|----------|------|--------|
@@ -251,6 +289,8 @@ The learned Doric nouns of the [high register](registers.md) keep their **Doric 
 | **LOC** | *ποιησελι*<br>poiēseli | *ποιησελιν*<br>poiēselin | *ποιησελις*<br>poiēselis |
 | **INS** | *ποιησομ*<br>poiēsom | *ποιησομιν*<br>poiēsomin | *ποιησομις*<br>poiēsomis |
 | **ABL** | *ποιησαθα*<br>poiēsatha | *ποιησαθιν*<br>poiēsathin | *ποιησαθις*<br>poiēsathis |
+
+<!-- /inflect -->
 
 Notes:
 - The endings follow the "severe" Doric of the schools: genitive *-ω* and accusative plural *-ως* for the *-ος* class, genitive *-ᾱς* and genitive plural *-ᾱν* for the *-ᾱ* class.
@@ -385,19 +425,27 @@ This form belongs to **oral tales, folk song and chant**. The [high register](re
 
 **Present:**
 
+<!-- inflect: present νᾱϝειν -->
+
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
 | 1st | *νᾱϝω*<br>nāvō | *νᾱϝετον*<br>nāveton | *νᾱϝομεν*<br>nāvomen |
 | 2nd | *νᾱϝεις*<br>nāveis | *νᾱϝετον*<br>nāveton | *νᾱϝετε*<br>nāvete |
 | 3rd | *νᾱϝει*<br>nāvei | *νᾱϝετον*<br>nāveton | *νᾱϝουσι*<br>nāvousi |
 
+<!-- /inflect -->
+
 **Aorist (completed past, augment):**
+
+<!-- inflect: aorist νᾱϝειν -->
 
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
 | 1st | *ενᾱϝα*<br>enāva | *ενᾱϝατον*<br>enāvaton | *ενᾱϝαμεν*<br>enāvamen |
 | 2nd | *ενᾱϝας*<br>enāvas | *ενᾱϝατον*<br>enāvaton | *ενᾱϝατε*<br>enāvate |
 | 3rd | *ενᾱϝε*<br>enāve | *ενᾱϝατον*<br>enāvaton | *ενᾱϝαν*<br>enāvan |
+
+<!-- /inflect -->
 
 **Future: *ϸα* + present form**
 
@@ -428,7 +476,7 @@ A participle is a verbal adjective. It agrees with its noun in gender, number an
 - Object enclitics attach only to finite verbs. When the object of a participle is a pronoun, the high register uses a finite verb instead: *εκανε ϸερετει-ιμ* "she was serving them", not \*ϸερετοντος-ιμ.
 - Everyday speech uses participles mostly as plain adjectives and nouns: *νᾱϝοντος ναϝᾱ* "a sailing ship". The high register builds whole phrases with them, in place of relative clauses and chains of verbs ([Syntax § Participle phrases](syntax.md#participle-phrases)).
 
-*Earlier versions gave the participle as νᾱϝον / νᾱϝουσα, the Greek masculine and feminine. Tharaic distinguishes animate and inanimate, not masculine and feminine, so the participle is now a regular adjective.*
+*Earlier versions gave the participle as νᾱϝον / νᾱϝουσα, the Greek masculine and feminine. Tharaic distinguishes animate and inanimate, not masculine and feminine, so the participle is now a regular adjective.* <!-- check_texts: skip νᾱϝουσα -->
 
 ---
 
@@ -451,19 +499,27 @@ The middle voice shows that the action comes back to the subject: done **to ones
 
 **Present middle** of *φερ-* "carry":
 
+<!-- inflect: middle-present φερειν -->
+
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
 | 1st | *φερομαι*<br>pheromai | *φερεσθον*<br>pheresthon | *φερομεθα*<br>pherometha |
 | 2nd | *φερεσαι*<br>pheresai | *φερεσθον*<br>pheresthon | *φερεσθε*<br>pheresthe |
 | 3rd | *φερεται*<br>pheretai | *φερεσθον*<br>pheresthon | *φερονται*<br>pherontai |
 
+<!-- /inflect -->
+
 **Aorist middle:**
+
+<!-- inflect: middle-aorist φερειν -->
 
 | | Singular | Dual | Plural |
 |--|----------|------|--------|
 | 1st | *εφεραμην*<br>epheramēn | *εφερασθον*<br>epherasthon | *εφεραμεθα*<br>epherametha |
 | 2nd | *εφερασο*<br>epheraso | *εφερασθον*<br>epherasthon | *εφερασθε*<br>epherasthe |
 | 3rd | *εφερατο*<br>epherato | *εφερασθον*<br>epherasthon | *εφεραντο*<br>epheranto |
+
+<!-- /inflect -->
 
 Infinitive: *φερεσθαι* (pheresthai). Imperative: *φερεσο!* (sg), *φερεσθε!* (pl), as in *Κεμεσο!* "Get up!" (*κεμεσθαι* "to rise"). The future is *ϸα* + present middle; the narrative past is *ϝα-* + present middle.
 
@@ -481,6 +537,8 @@ The learned Doric verbs keep two Doric person endings: **1st plural *-μες*** 
 
 **Present** and **aorist** of *ποιειν* "to make, compose":
 
+<!-- inflect: doric-verb ποιειν -->
+
 | | Present | Aorist |
 |--|---------|--------|
 | 1sg | *ποιω*<br>poiō | *εποιησα*<br>epoiēsa |
@@ -491,8 +549,10 @@ The learned Doric verbs keep two Doric person endings: **1st plural *-μες*** 
 | 2pl | *ποιετε*<br>poiete | *εποιησατε*<br>epoiēsate |
 | 3pl | ***ποιοντι***<br>poionti | *εποιησαν*<br>epoiēsan |
 
+<!-- /inflect -->
+
 - **The aorist cannot be predicted** from the infinitive, since it keeps the Greek aorist stem (*γραφειν* → *εγραψα*, *διδασκειν* → *εδιδαξα*, *ερχεσθαι* → *ηνθα*). The lexicon gives it for every Doric verb. All of them take the Tharaic aorist endings in *-α*, even Greek strong aorists: *εμαθα* "I learned" (Greek *ἔμαθον*).
-- **The augment** is *ε-* before a consonant. A vowel is lengthened: **α → ᾱ** (the Doric long *ā*, where sailors' Greek would have *η*), ε → η, ο → ω, υ → ῡ. *ι* and the diphthongs stay as they are: *ᾱρξαμην* "I began", *ηλεησα* "I had mercy", *ͱῡμνησα* "I hymned", *ευξαμην* "I prayed". In verbs with a prefix, the augment goes after the prefix: *μετ-ε-νοησα*, *απ-ε-κριναμην*.
+- **The augment** is *ε-* before a consonant. A vowel is lengthened: **α → ᾱ** (the Doric long *ā*, where sailors' Greek would have *η*), ε → η, ο → ω, υ → ῡ. *ι* and the diphthongs stay as they are: *ᾱρξαμην* "I began", *ηλεησα* "I had mercy", *ͱῡμνησα* "I hymned", *ευξαμην* "I prayed". In verbs with a prefix, the augment goes after the prefix: *μετ-ε-νοησα*, *απ-ε-κριναμην*. <!-- check_texts: skip μετ-ε-νοησα απ-ε-κριναμην -->
 - **Middle verbs** have 1st plural *-μεσθα*: *ερχομεσθα* "we come", aorist *ευξαμεσθα* "we prayed". The other middle endings are the [native ones](#middle-voice).
 - Future (*ϸα ποιω*), imperative (*ποιε!*), infinitive and participles are formed as for native verbs.
 
@@ -532,6 +592,8 @@ Infinitive *κανειν* (kanein), imperative *κανε!* / *κανετε!* (ka
 
 Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good, fair, favorable):
 
+<!-- inflect: adjective καλος -->
+
 | Case | Animate SG | Inanimate SG | Animate DU | Animate PL | Inanimate PL |
 |------|-----------|--------------|------------|------------|--------------|
 | **NOM** | *καλος*<br>kalos | *καλον*<br>kalon | *καλιν*<br>kalin | *καλιμ*<br>kalim | *καλα*<br>kala |
@@ -543,6 +605,8 @@ Agree in **Animate / Inanimate** gender. Full declension for *καλος* (good,
 | **INS** | *καλομ*<br>kalom | *καλομ*<br>kalom | *καλομιν*<br>kalomin | *καλομις*<br>kalomis | *καλομις*<br>kalomis |
 | **ABL** | *καλαθα*<br>kalatha | *καλαθα*<br>kalatha | *καλαθιν*<br>kalathin | *καλαθις*<br>kalathis | *καλαθις*<br>kalathis |
 
+<!-- /inflect -->
+
 The LOC, INS, and ABL cases are identical across both genders — a structural reminder of their Phoenician origin.
 
 ### Comparison
@@ -552,7 +616,7 @@ The LOC, INS, and ABL cases are identical across both genders — a structural r
 | Comparative | *-οτερος* / *-οτερον*<br>-oteros / -oteron | *καλοτερος*<br>kaloteros "fairer, better" |
 | Superlative | *-οτατος* / *-οτατον*<br>-otatos / -otaton | *καλοτατος*<br>kalotatos "fairest, best" |
 
-The endings attach to the adjective's stem (*μεγ-ᾱς* → *μεγοτερος*) and decline like *καλος*. The standard of comparison goes in the ablative ([Syntax § Comparison](syntax.md#comparison)).
+The endings attach to the adjective's stem (*μεγ-ᾱς* → *μεγοτερος*) and decline like *καλος*. The standard of comparison goes in the ablative ([Syntax § Comparison](syntax.md#comparison)). <!-- check_texts: skip μεγ-ᾱς -->
 
 **Construct superlative.** Old titles and formulas use the Phoenician-style construct instead: a noun in the construct state followed by its own plural, as in Hebrew "song of songs". The high register uses *-οτατος*, except in the fixed title *ηλιλ ηλιμ* "god of gods".
 

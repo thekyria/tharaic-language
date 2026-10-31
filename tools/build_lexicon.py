@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Check data/lexicon.yaml and generate docs/lexicon.md from it.
+"""Check data/lexicon.yaml and generate docs/lexicon.md and docs/english-index.md from it.
 
 Usage:
-    python3 tools/build_lexicon.py           # check, then write docs/lexicon.md
-    python3 tools/build_lexicon.py --check   # check, and fail if docs/lexicon.md is out of date
+    python3 tools/build_lexicon.py           # check, then write the two pages
+    python3 tools/build_lexicon.py --check   # check, and fail if either page is out of date
 
 It also checks that every Tharaic word in data/gospels.tsv is in the lexicon and
 not marked everyday, since scripture is in the high register.
@@ -39,6 +39,11 @@ Each entry in data/lexicon.yaml has these fields:
     late      optional, "yes": a native word formed after the sound changes in
               docs/history.md (e.g. with the productive suffix -υτον), so they do not apply
     roman     optional: romanization, when the automatic one is not wanted
+    index     optional: the English words under which the entry appears in
+              docs/english-index.md, comma-separated ("sea, open sea"). Without
+              it, the keys come from the meaning: each part between commas and
+              semicolons, without "to", "the", "a" or "an", if it has at most
+              three words. Use it when those keys miss the plain word
 
 The file uses a small subset of YAML (a list of flat mappings with
 double-quoted values), so no YAML library is needed.
@@ -54,6 +59,7 @@ from check_phonotactics import problems, OBSTRUENTS, VOWELS  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "lexicon.yaml")
 OUT = os.path.join(ROOT, "docs", "lexicon.md")
+INDEX_OUT = os.path.join(ROOT, "docs", "english-index.md")
 GOSPELS = os.path.join(ROOT, "data", "gospels.tsv")
 
 THEMES = [
@@ -245,6 +251,10 @@ def check(entries):
             err("preposition needs cases")
         elif pos == "num" and "value" not in e:
             err("number needs value")
+        if "index" in e and (GREEK_LETTER.search(e["index"]) or not english_keys(e)):
+            err("index should list English words, separated by commas")
+        elif not english_keys(e):
+            err("the meaning gives no short English key; add an index field")
         strict_ok = True
         for w in words(g):
             body = w.strip("-")
@@ -287,6 +297,24 @@ def check_gospels(entries):
                 elif w.strip("-") in everyday:
                     errors.append(f"{GOSPELS}:{n}: {cols[0]}: {w} is everyday register; scripture is high")
     return errors
+
+
+GREEK_LETTER = re.compile("[Ͱ-Ͽἀ-῿]")
+ARTICLE = re.compile(r"^(to|the|a|an) ", re.I)
+
+
+def english_keys(e):
+    """The English keys of an entry in the English index."""
+    if "index" in e:
+        return [k.strip() for k in e["index"].split(",") if k.strip()]
+    m = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", e["meaning"])  # a link keeps its text
+    m = re.sub(r"\([^)]*\)", "", m)
+    keys = []
+    for part in re.split(r"[,;!]| — ", m):
+        k = ARTICLE.sub("", part.strip(" '\"*.…?"))
+        if k and len(k.split()) <= 3 and not GREEK_LETTER.search(k) and k not in keys:
+            keys.append(k)
+    return keys
 
 
 def sort_key(text):
@@ -336,6 +364,7 @@ def render(entries):
         "*adj. for* marks a [learned adjective](registers.md#learned-adjectives) and the everyday noun it goes with. "
         "*island* and *pidgin* mark words used only in that [dialect](dialects.md).",
         "- In Greek- and Doric-layer words, υ is romanized *y* (*συν* syn), except in diphthongs and before a vowel (*κυανος* kuanos).",
+        "- The [English index](english-index.md) lists the words by their English meanings.",
         "",
     ]
     by_theme = {k: [] for k, _ in THEMES}
@@ -366,6 +395,48 @@ def render(entries):
     return "\n".join(out)
 
 
+def anchor(title):
+    """The GitHub anchor of a heading: "The Sea & Navigation" -> "the-sea--navigation"."""
+    return re.sub(r"[^\w\- ]", "", title.lower()).replace(" ", "-")
+
+
+def render_index(entries):
+    titles = dict(THEMES)
+    by_key = {}
+    for e in entries:
+        for k in english_keys(e):
+            by_key.setdefault(k, []).append(e)
+    out = [
+        "# English Index",
+        "",
+        "[← Overview](../README.md) · [Lexicon](lexicon.md)",
+        "",
+        "<!-- Generated from data/lexicon.yaml by tools/build_lexicon.py. Edit the YAML, not this file. -->",
+        "",
+        f"{len(by_key)} English words and phrases, each with the Tharaic words for it. Each Tharaic word links "
+        "to its section of the [lexicon](lexicon.md), which gives its root, grammar and origin. "
+        "*high* words belong to the [high register](registers.md) only, *everyday* words are avoided in it; "
+        "*island* and *pidgin* words belong to that [dialect](dialects.md).",
+    ]
+    keys = sorted(by_key, key=lambda k: (k.lower(), k))
+    letters = sorted({k[0].upper() for k in keys})
+    out += ["", " · ".join(f"[{c}](#{c.lower()})" for c in letters)]
+    letter = None
+    for key in keys:
+        first = key[0].upper()
+        if first != letter:
+            letter = first
+            out += ["", f"## {letter}", "", "| English | Tharaic |", "|---------|---------|"]
+        items = sorted(by_key[key], key=lambda e: (e.get("register") == "high", sort_key(e["greek"])))
+        words = "; ".join(
+            " ".join(filter(None, [f"[*{e['greek']}*](lexicon.md#{anchor(titles[e['theme']])})", POS[e["pos"]],
+                                   e.get("register"), e.get("dialect")]))
+            for e in items)
+        out.append(f"| {key} | {words} |")
+    out.append("")
+    return "\n".join(out)
+
+
 def main():
     entries = parse(DATA)
     errors = check(entries)
@@ -375,16 +446,18 @@ def main():
         print(line)
     if errors:
         sys.exit(f"{len(errors)} problem(s) in data/")
-    text = render(entries)
+    pages = [(OUT, render(entries)), (INDEX_OUT, render_index(entries))]
     if "--check" in sys.argv[1:]:
-        with open(OUT, encoding="utf-8") as f:
-            if f.read() != text:
-                sys.exit(f"{OUT} is out of date; run python3 tools/build_lexicon.py")
-        print(f"{len(entries)} entries OK; {OUT} is up to date")
+        for path, text in pages:
+            with open(path, encoding="utf-8") as f:
+                if f.read() != text:
+                    sys.exit(f"{path} is out of date; run python3 tools/build_lexicon.py")
+        print(f"{len(entries)} entries OK; {OUT} and {INDEX_OUT} are up to date")
         return
-    with open(OUT, "w", encoding="utf-8") as f:
-        f.write(text)
-    print(f"{len(entries)} entries OK; wrote {OUT}")
+    for path, text in pages:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(text)
+    print(f"{len(entries)} entries OK; wrote {OUT} and {INDEX_OUT}")
 
 
 if __name__ == "__main__":

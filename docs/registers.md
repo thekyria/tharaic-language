@@ -105,7 +105,7 @@ The high register sounds different, and speakers hear it at once.
 
 **1. ᾱ for η.** Doric has *ᾱ* where sailors' Greek has *η*. This is the shibboleth of educated speech: *ͱᾱμερᾱ*, *σελᾱνᾱ*, *δᾱμος*.
 
-Speakers who want to sound learned sometimes put *ᾱ* where Doric itself has *η*, saying *ανᾱρ* for *ανηρ* "man". This *hyperdorism* is laughed at, as Greek comedy laughed at false Doric.
+Speakers who want to sound learned sometimes put *ᾱ* where Doric itself has *η*, saying *ανᾱρ* for *ανηρ* "man". This *hyperdorism* is laughed at, as Greek comedy laughed at false Doric. <!-- check_texts: skip ανᾱρ -->
 
 **2. Clusters.** Doric words keep the clusters of their source, which everyday syllables do not allow ([Phonotactics](phonology.md#phonotactics--the-no-cluster-rule)):
 
