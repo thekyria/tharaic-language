@@ -32,7 +32,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "0.9"
+VERSION = "0.10"
 BUILD_DATE = "Fri Oct 30 00:00:00 2026"
 
 UPM = 1000
@@ -304,7 +304,7 @@ def wedge(p0, p1, s, heads):
                     (x1 - nx * te, y1 - ny * te), (hx - nx * tw, hy - ny * tw), (x0 - nx * hw, y0 - ny * hw)])
 
 
-MAX_WEDGES = 5   # per glyph, in Tharaic Wedge
+MAX_WEDGES = 4   # per glyph, in Tharaic Wedge
 
 
 def outline_wedge(shape):
@@ -349,6 +349,11 @@ def alpha(g):
 
 
 def beta(g):
+    if g.wedge:   # stem, upper bowl and a foot, like Phoenician bet: four wedges
+        g.line((0, 0), (0, g.H))
+        g.bowl(0, g.T, .44 * g.H, g.W(.50))
+        g.line((0, g.B), (g.W(.52), g.B))
+        return "SO"
     g.line((0, 0), (0, g.H))
     m = .53 * g.H
     g.bowl(0, g.T, m, g.W(.50))
@@ -402,10 +407,11 @@ def eta(g):
 
 
 def theta(g):
-    if g.wedge:   # archaic ⊙: a dot in the diamond, to stay within five wedges
-        cx, b, a = small_diamond(g)
-        g.dot(cx, g.M)
-        return "RR"
+    if g.wedge:   # a dot in a downward triangle, to stay within four wedges
+        w = g.W(.80)
+        g.line((0, g.T), (w, g.T), (w / 2, 0), closed=True)
+        g.dot(w / 2, .62 * g.H)
+        return "DD"
     # Archaic: a cross in a diamond, full height so the four counters stay open
     half_w = g.W(.96) / 2 + g.s / 2
     cx = half_w
@@ -508,6 +514,11 @@ def upsilon(g):
 
 
 def phi(g):
+    if g.wedge:   # a stem through an upward triangle
+        w = g.W(.76)
+        g.line((w / 2, 0), (w / 2, g.H))
+        g.line((0, .20 * g.H), (w, .20 * g.H), (w / 2, .82 * g.H), closed=True, clip=None)
+        return "DD"
     # A diamond on a stem that runs through it
     w = g.W(.84)
     g.line((w / 2, 0), (w / 2, g.H))
@@ -531,6 +542,11 @@ def psi(g):
 
 
 def omega(g):
+    if g.wedge:   # a downward triangle over a bar on the baseline
+        w = g.W(.80)
+        g.line((0, g.B), (w, g.B))
+        g.line((.1 * w, g.T), (.9 * w, g.T), (w / 2, 1.6 * g.s), closed=True)
+        return "OO"
     # A diamond standing over a bar on the baseline
     w = g.W(.80)
     g.line((0, g.B), (w, g.B))
@@ -566,6 +582,11 @@ def sho(g):
 
 
 def koppa(g):
+    if g.wedge:   # a downward triangle on a short stem
+        w = g.W(.62)
+        g.line((0, g.T), (w, g.T), (w / 2, .32 * g.H), closed=True)
+        g.line((w / 2, 0), (w / 2, .32 * g.H))
+        return "DD"
     # A diamond on a short stem
     w = g.W(.66)
     bottom, top = .32 * g.H, g.H - .02 * g.H
@@ -604,6 +625,8 @@ def latin_L(g):
 
 
 def latin_Q(g):
+    if g.wedge:   # Q comes from koppa, and in Wedge it is drawn the same
+        return koppa(g)
     # The diamond of O, with a tail from its lower right side
     cx, b, a = small_diamond(g)
     start = (cx + b / 2, g.M - a / 2)   # on the diamond, so only the tail end flares
@@ -747,7 +770,7 @@ def d2(g):
 def d3(g):
     if g.wedge:
         w = g.W(.56)
-        g.line((0, g.T), (w, g.T), (.35 * w, .56 * g.H), (w, .30 * g.H), (.5 * w, g.B), (0, .12 * g.H))
+        g.line((0, g.T), (w, g.T), (.3 * w, .55 * g.H), (w, .28 * g.H), (0, g.B))
         return "OR"
     w, m = g.W(.58), .55 * g.H
     r1 = (g.T - m) / 2 + OVERSHOOT / 2
@@ -768,7 +791,7 @@ def d4(g):
 def d5(g):
     if g.wedge:
         w = g.W(.56)
-        g.line((w, g.T), (0, g.T), (0, .56 * g.H), (w, .38 * g.H), (.45 * w, g.B), (0, .10 * g.H))
+        g.line((w, g.T), (0, g.T), (0, .56 * g.H), (w, .36 * g.H), (0, g.B))
         return "OR"
     w = g.W(.58)
     ry = .32 * g.H
@@ -881,7 +904,7 @@ def exclam(g):
 def question(g):
     if g.wedge:
         w = g.W(.50)
-        g.line((0, .80 * g.H), (.5 * w, g.T), (w, .80 * g.H), (.5 * w, .52 * g.H), (.5 * w, .28 * g.H))
+        g.line((0, .80 * g.H), (.5 * w, g.T), (w, .80 * g.H), (.5 * w, .30 * g.H))
         g.dot(.5 * w, g.s * .6)
         return "OO"
     w, ry = g.W(.50), .22 * g.H

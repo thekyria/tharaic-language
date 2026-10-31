@@ -82,17 +82,21 @@ Tharaic Wedge has the same letters, metrics, spacing and kerning as Stele, drawn
 - **One head per meeting point.** Where two cuts start at the same point, as at the top of *Α* or the corners of a diamond, only the first has a head; the second starts thin.
 - **Short cuts** have no head and an even width, so a run of them reads as one stroke.
 - **Dots are corner wedges** (the *Winkelhaken* of cuneiform): a head with no tail.
-- **At most five wedges per letter**, as a scribe would press a sign in a few strokes. Letters that would need more have simpler forms in Wedge only:
+- **At most four wedges per letter**, as a scribe would press a sign in a few strokes. A macron above a long vowel is a mark of its own and not counted. Letters that would need more have simpler forms in Wedge only:
 
   | Letter | In Wedge |
   |--------|----------|
-  | **Β Ρ Ϸ**, *D R* | Bowls of two wedges, from the stem out to the point and back, with no flats |
-  | **Θ** | A corner wedge in the diamond (⊙, the other archaic form) instead of the cross |
+  | **Ρ Ϸ**, *D R* | Bowls of two wedges, from the stem out to the point and back, with no flats |
+  | **Β** | A stem, an upper bowl and a foot along the baseline, like Phoenician *bet* |
+  | **Θ** | A corner wedge in a downward triangle |
+  | **Φ** | A stem through an upward triangle |
+  | **Ϙ**, *Q* | A downward triangle on a short stem; Latin *Q*, which comes from koppa, is drawn the same |
+  | **Ω** | A downward triangle over a bar on the baseline |
   | *S* | A zigzag of three wedges, as in archaic inscriptions |
-  | Digits | Straight forms: *0* a box, *8* an hourglass, *6* and *9* a stroke into a triangle, *2 3 5* of four or five wedges |
-  | *?* | Four wedges and a dot |
+  | Digits | Straight forms: *0* a box, *8* an hourglass, *6* and *9* a stroke into a triangle, *2 3 5* of four wedges |
+  | *?* | Three wedges and a dot |
 
-  The build stops with an error if a drawing in Wedge goes over five.
+  *Ο* keeps its diamond of four. The build stops with an error if a drawing in Wedge goes over four.
 
 Changes to a letter's drawing apply to both faces. Wedge is meant for display sizes: below about 16 pixels the thin tails fade.
 
