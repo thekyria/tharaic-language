@@ -61,8 +61,16 @@ Each step is a separate pull request.
 
 18. ✅ **Ledger typeface** — [Tharaic Ledger](font.md#tharaic-ledger): a third face writing Stele's letters with a reed pen for the merchants' ledgers, after Phoenician and Aramaic cursive: an upright hand with a rounded broad nib (heavy level strokes, round ends), every turn rounded but one angle per letter, and tails in *Ρ Ϸ Φ Ψ Ϙ* that sweep left below the line.
 
-## Later
-
-| Future phase | What it adds |
-|---|---|
-| **Script details** | Punctuation, Greek-style alphabetic numerals |
+19. **Script details: punctuation and numerals** — planned. How Tharaic writes numbers and marks up a text, in a new "Punctuation & Numerals" section of [Phonology & Script](phonology.md):
+   - **Two numeral systems, one per stream**, as the vocabulary has two layers:
+     - **Alphabetic numerals** (Greek-analog) for inscriptions, scripture and the high register. The Milesian order needs exactly two letters beyond the Classical alphabet, *Ϝ* (6) and *Ϙ* (90), and both are already Tharaic letters. For 900, where Greek has sampi, *Ϸ* takes its place. A number is marked with the keraia (*ʹ*), thousands with the lower keraia (*͵*): *ρκγʹ* 123, *͵α* 1,000. *Ͱ* and *Ϳ* have no value.
+     - **Tally numerals** (Phoenician-analog) for ledgers and tablets: strokes for the units in groups of three, signs for 10, 20 and 100, encoded as the Unicode Phoenician number signs (U+10916–U+1091B). To decide: whether they run left to right, like Tharaic text, or keep their Phoenician right-to-left order.
+     - How numbers are read stays as in [Calendar § Dates](calendar.md#dates): a number after a noun labels it (*ͱημερον γʹ* "day 3").
+   - **Punctuation.** Fix what the docs already use, and decide the open points:
+     - word division: spaces in writing; the interpunct (*·*) or tricolon (*⁝*) between words in inscriptions
+     - the full stop, and the raised dot (*·*) for a pause
+     - whether yes/no questions, already marked by *ͱα-*, need the Greek question mark (*;*), and whether question-word questions do
+     - quotation marks (*« »*)
+     - the hyphen after proclitics and before enclitics (*ͱα-*, *ϸε-*, *-υ*) as a rule of spelling
+     - the paragraphos (*⸏*) and coronis (*⸎*) to mark sections in scripture and ledgers
+   - **Tools and fonts:** `tools/numerals.py` converting numbers to and from both systems, with unit tests in CI; the new signs (*ʹ ͵ ⸏ ⸎* and the tally signs) in all three [typefaces](font.md); the dates in [Calendar](calendar.md) and a short ledger sample written with them.
