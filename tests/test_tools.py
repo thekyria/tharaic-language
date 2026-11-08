@@ -11,9 +11,9 @@ from build_lexicon import DATA, anchor, english_keys, parse, romanize  # noqa: E
 from check_phonotactics import problems  # noqa: E402
 from check_texts import scan, tokens  # noqa: E402
 from dialect import island  # noqa: E402
-from export_lexicon import lexicon_data, lexicon_json  # noqa: E402
+from export_lexicon import forms_data, lexicon_data, lexicon_json  # noqa: E402
 from greek import to_greek, to_roman  # noqa: E402
-from inflect import Index, augment, paradigm, unaugment  # noqa: E402
+from inflect import OBJECT, POSSESSIVE, Index, augment, paradigm, unaugment  # noqa: E402
 
 ENTRIES = parse(DATA)
 BY_HEAD = {e["greek"].split(" / ")[0]: e for e in ENTRIES}
@@ -137,6 +137,15 @@ class ExportLexiconTest(unittest.TestCase):
         sea = data["entries"][data["keys"]["sea"][0][0]]
         self.assertEqual((sea["g"], sea["r"], sea["p"]), ("θᾱρος", "thāros", "noun"))
         self.assertEqual(sea["sec"], anchor("The Sea & Navigation"))
+
+    def test_forms(self):
+        data = forms_data(ENTRIES)
+        analyses = {(data["lemmas"][n][0], data["tags"][t]) for n, t in data["forms"]["εβλεψε"]}
+        self.assertIn(("βλεπειν", "AOR.3SG"), analyses)
+        lemma = next(m for m in data["lemmas"] if m[0] == "βλεπειν")
+        self.assertEqual([ENTRIES[i]["greek"] for i in lemma[1]], ["βλεπειν"])
+        self.assertEqual(set(data["possessive"]), set(POSSESSIVE))
+        self.assertEqual(set(data["object"]), set(OBJECT))
 
 
 if __name__ == "__main__":

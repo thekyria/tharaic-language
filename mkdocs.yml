@@ -41,6 +41,7 @@ extra_css:
 extra_javascript:
   - assets/tharaic.js
   - assets/lookup.js
+  - assets/analyze.js
 
 markdown_extensions:
   - tables

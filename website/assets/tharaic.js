@@ -15,6 +15,21 @@
   var LOWER = { "Ͱ": "ͱ", "Ϳ": "ϳ", "Ϸ": "ϸ", "Ϙ": "ϙ", "Ϝ": "ϝ", "Ᾱ": "ᾱ", "Ῡ": "ῡ" };
   var RUN = /[Ͱ-Ͽἀ-῿]+/g;
   var KEY = "tharaic-display";
+  // assets/ folder, from this script's own address, so data files load from any page
+  var BASE = (document.currentScript && document.currentScript.src || "assets/tharaic.js").replace(/[^/]*$/, "");
+  var loaded = {};
+
+  // Load a JSON file from assets/ once: data("lexicon.json") → Promise
+  function data(name) {
+    if (!loaded[name]) {
+      loaded[name] = fetch(BASE + name).then(function (r) {
+        if (!r.ok) throw new Error(name + ": " + r.status);
+        return r.json();
+      });
+      loaded[name].catch(function () { delete loaded[name]; });
+    }
+    return loaded[name];
+  }
 
   function lower(c) { return LOWER[c] || c.toLowerCase(); }
 
@@ -27,7 +42,7 @@
     var out = "";
     for (var i = 0; i < word.length; i++) {
       var c = word[i], l = lower(c), r = ROMAN[l];
-      out += c !== l ? r[0].toUpperCase() + r.slice(1) : r;
+      out += !r ? c : c !== l ? r[0].toUpperCase() + r.slice(1) : r;
     }
     return out;
   }
@@ -64,7 +79,7 @@
       while ((m = RUN.exec(text))) {
         if (!isTharaic(m[0])) continue;
         if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
-        frag.appendChild(word(m[0]));
+        frag.appendChild(clickable(word(m[0]), node.parentNode));
         last = m.index + m[0].length;
       }
       if (last === 0) return;
@@ -80,6 +95,18 @@
     s.setAttribute("lang", "x-tharaic");
     s.textContent = state.script === "roman" ? toRoman(greek) : greek;
     return s;
+  }
+
+  // Let a word be clicked for its analysis (assets/analyze.js), unless it is a link.
+  // Words in running text are also keyboard stops; words in tables are not, so the
+  // lexicon's thousands of words do not each need a Tab press.
+  function clickable(span, parent) {
+    parent = parent || span.parentNode;
+    if (parent && parent.closest && parent.closest("a")) return span;
+    span.classList.add("th--click");
+    span.setAttribute("role", "button");
+    if (!(parent && parent.closest && parent.closest("table"))) span.tabIndex = 0;
+    return span;
   }
 
   function refresh(root) {
@@ -113,7 +140,8 @@
     refresh();
   }
 
-  window.Tharaic = { word: word, toRoman: toRoman, isTharaic: isTharaic, refresh: refresh, state: state };
+  window.Tharaic = { word: word, clickable: clickable, toRoman: toRoman, isTharaic: isTharaic,
+                     lower: lower, refresh: refresh, data: data, state: state };
   document.documentElement.setAttribute("data-th-font", state.font);
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
   else start();

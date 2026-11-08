@@ -87,3 +87,41 @@ html[data-th-font="ledger"] .th { font-family: var(--th-font-ledger); font-style
 .th-lookup__alt { margin: 0 0.25rem 0.25rem 0; }
 .th-lookup__alt .th { font-style: normal; }
 .th-lookup__meta { color: var(--md-default-fg-color--light); font-size: 0.9em; }
+
+/* Clickable words and the analysis popover (assets/analyze.js) */
+.th--click { cursor: pointer; border-radius: 0.1rem; }
+.th--click:hover { text-decoration: underline dotted; text-underline-offset: 0.2em; }
+.th--click:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 1px; }
+.th--click[aria-expanded="true"] { background: var(--md-accent-fg-color--transparent); }
+.th-controls__hint { color: var(--md-default-fg-color--light); margin-right: auto; align-self: center; }
+.th-pop {
+  position: absolute;
+  z-index: 10;
+  width: 22rem;
+  max-width: calc(100vw - 16px);
+  box-sizing: border-box;
+  padding: 0.6rem 0.8rem 0.5rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+  box-shadow: var(--md-shadow-z2);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+.th-pop__close {
+  position: absolute; top: 0.2rem; right: 0.3rem;
+  font: inherit; font-size: 1rem; line-height: 1;
+  background: none; border: 0; cursor: pointer; padding: 0.2rem 0.35rem;
+  color: var(--md-default-fg-color--light);
+}
+.th-pop__word { font-size: 0.95rem; margin: 0 1.4rem 0.3rem 0; }
+.th-pop__roman { color: var(--md-default-fg-color--light); font-style: italic; }
+.th-pop__block { margin-top: 0.4rem; }
+.th-pop__block + .th-pop__block { border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 0.4rem; }
+.th-pop__meta { color: var(--md-default-fg-color--light); font-size: 0.9em; }
+.md-typeset .th-pop__tags { margin: 0.2rem 0 0; padding-left: 1rem; }
+.md-typeset .th-pop__tags li { margin: 0; }
+.md-typeset .th-pop__tags code { margin-left: 0.4em; font-size: 0.85em; }
+.th-pop__affix { margin-top: 0.3rem; }
+.th-pop__none { color: var(--md-default-fg-color--light); margin: 0.3rem 0 0; }
