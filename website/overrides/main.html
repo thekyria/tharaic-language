@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="th-controls" role="group" aria-label="How Tharaic words are shown">
+  <span class="th-controls__group" role="radiogroup" aria-label="Script">
+    <span class="th-controls__label">Script</span>
+    <button type="button" data-th-script="greek" aria-pressed="true">Greek</button>
+    <button type="button" data-th-script="roman" aria-pressed="false">Roman</button>
+  </span>
+  <span class="th-controls__group" role="radiogroup" aria-label="Font">
+    <span class="th-controls__label">Font</span>
+    <button type="button" data-th-font="plain" aria-pressed="true">Plain</button>
+    <button type="button" data-th-font="stele" aria-pressed="false">Stele</button>
+    <button type="button" data-th-font="wedge" aria-pressed="false">Wedge</button>
+    <button type="button" data-th-font="ledger" aria-pressed="false">Ledger</button>
+  </span>
+</div>
+{{ super() }}
+{% endblock %}

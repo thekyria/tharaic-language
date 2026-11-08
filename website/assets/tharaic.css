@@ -1,0 +1,89 @@
+/* Tharaic website styles: the typefaces, the display controls and the lookup page. */
+
+@font-face { font-family: "Tharaic Stele"; src: url("../fonts/TharaicStele.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Tharaic Wedge"; src: url("../fonts/TharaicWedge.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Tharaic Ledger"; src: url("../fonts/TharaicLedger.woff2") format("woff2"); font-display: swap; }
+
+:root {
+  --th-font-stele: "Tharaic Stele", var(--md-text-font-family, sans-serif);
+  --th-font-wedge: "Tharaic Wedge", var(--md-text-font-family, sans-serif);
+  --th-font-ledger: "Tharaic Ledger", var(--md-text-font-family, sans-serif);
+  --th-unknown: #b3261e;
+}
+[data-md-color-scheme="slate"] { --th-unknown: #f2b8b5; }
+
+/* The typefaces have no italic: show Tharaic words upright in them */
+html[data-th-font="stele"] .th { font-family: var(--th-font-stele); font-style: normal; }
+html[data-th-font="wedge"] .th { font-family: var(--th-font-wedge); font-style: normal; }
+html[data-th-font="ledger"] .th { font-family: var(--th-font-ledger); font-style: normal; }
+
+/* Display controls above each page */
+.th-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  justify-content: flex-end;
+  font-size: 0.68rem;
+  margin: 0 0 0.6rem;
+}
+.th-controls__group { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 0.25rem; }
+.th-controls__label { color: var(--md-default-fg-color--light); margin-right: 0.2rem; }
+.th-controls button,
+.th-lookup button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: transparent;
+  color: var(--md-default-fg-color);
+  padding: 0.15rem 0.55rem;
+}
+.th-controls button[aria-pressed="true"],
+.th-lookup button[aria-pressed="true"] {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+.th-controls button:focus-visible,
+.th-lookup button:focus-visible,
+.th-lookup textarea:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 1px; }
+
+/* Lookup page */
+.th-lookup textarea {
+  width: 100%;
+  min-height: 6rem;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  resize: vertical;
+}
+.th-lookup__bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin: 0.6rem 0; font-size: 0.75rem; }
+.th-lookup__bar .th-lookup__go { font-size: 0.8rem; padding: 0.3rem 1rem; }
+.th-lookup__bar .th-lookup__go,
+.th-lookup__bar .th-lookup__go:hover {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+}
+.th-lookup__output {
+  min-height: 3rem;
+  padding: 0.8rem 1rem;
+  border-left: 0.2rem solid var(--md-accent-fg-color);
+  background: var(--md-code-bg-color);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.th-lookup__output:empty::before { content: "The Tharaic words appear here."; color: var(--md-default-fg-color--light); font-size: 0.8rem; }
+.th-lookup__unknown { color: var(--th-unknown); font-size: 0.85em; }
+.th-lookup__hint { font-size: 0.7rem; color: var(--md-default-fg-color--light); }
+.th-lookup table td { vertical-align: top; }
+.th-lookup table .th { font-size: 1.05em; }
+.th-lookup__alt { margin: 0 0.25rem 0.25rem 0; }
+.th-lookup__alt .th { font-style: normal; }
+.th-lookup__meta { color: var(--md-default-fg-color--light); font-size: 0.9em; }
