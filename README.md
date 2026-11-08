@@ -57,9 +57,10 @@ All of these except the font builder run on every pull request (`.github/workflo
 The docs are also published as a website with GitHub Pages, built with [MkDocs](https://www.mkdocs.org/) and the Material theme (`mkdocs.yml`, `website/`, `.github/workflows/site.yml`). On top of the docs it has:
 
 - **Script and font buttons** on every page: Tharaic words in Greek script or romanized, in a plain font or in Stele, Wedge or Ledger
+- **click any Tharaic word** for its analysis: the lexicon word it comes from, its meaning, and its grammar (*εβλεψε*: *βλεπειν* "to see", aorist 3rd person singular), including prefixes and enclitics. It knows every form `tools/inflect.py` generates
 - an **English → Tharaic lookup** (`website/lookup.md`): type English and get the Tharaic word for each English word, with its meaning and the other words that could be used. It is a word-by-word lookup in the lexicon, not a translation: it keeps the English word order and gives dictionary forms
 
-To build it locally: `pip install mkdocs-material`, then `python3 -m mkdocs serve` and open http://127.0.0.1:8000. `python3 tools/export_lexicon.py` writes the lexicon as the JSON the lookup uses.
+To build it locally: `pip install mkdocs-material`, then `python3 -m mkdocs serve` and open http://127.0.0.1:8000. `python3 tools/export_lexicon.py` writes the lexicon as the JSON the lookup uses, and `--forms` the word forms the analysis uses.
 
 ---
 

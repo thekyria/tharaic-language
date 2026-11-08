@@ -227,6 +227,7 @@
         var e = t.list[t.choice].e, s = tharaic(e);
         s.title = t.text + " — " + e.m;
         output.appendChild(s);
+        if (window.Tharaic) window.Tharaic.clickable(s, output);
       } else if (t.kind === "unknown") {
         output.appendChild(el("span", "th-lookup__unknown", "[" + t.text + "]"));
       } else {
@@ -326,8 +327,7 @@
   } catch (e) { /* old browser: keep the example */ }
 
   output.textContent = "Loading the lexicon…";
-  fetch("assets/lexicon.json")
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+  window.Tharaic.data("lexicon.json")
     .then(function (data) { lexicon = data; output.textContent = ""; run(); })
     .catch(function () { output.textContent = "The lexicon could not be loaded. Reload the page to try again."; });
 
