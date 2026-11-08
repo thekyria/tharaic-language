@@ -1,4 +1,5 @@
 """Tests for the scripts in tools/. Run: python3 -m unittest discover -s tests"""
+import json
 import os
 import sys
 import tempfile
@@ -10,6 +11,7 @@ from build_lexicon import DATA, anchor, english_keys, parse, romanize  # noqa: E
 from check_phonotactics import problems  # noqa: E402
 from check_texts import scan, tokens  # noqa: E402
 from dialect import island  # noqa: E402
+from export_lexicon import lexicon_data, lexicon_json  # noqa: E402
 from greek import to_greek, to_roman  # noqa: E402
 from inflect import Index, augment, paradigm, unaugment  # noqa: E402
 
@@ -120,6 +122,21 @@ class CheckTextsTest(unittest.TestCase):
             with open(path, "w", encoding="utf-8") as f:
                 f.write("*ναϝος* and *νᾱϝουσα* <!-- check_texts: skip νᾱϝουσα -->\n*νᾱϝουσα*\n")
             self.assertEqual([(n, w) for _, n, w in scan([path], Index())], [(2, "νᾱϝουσα")])
+
+
+class ExportLexiconTest(unittest.TestCase):
+    def test_keys_match_english_index(self):
+        data = lexicon_data(ENTRIES)
+        self.assertEqual(len(data["entries"]), len(ENTRIES))
+        for n, e in enumerate(ENTRIES):
+            for pos, k in enumerate(english_keys(e)):
+                self.assertIn([n, pos], data["keys"][k.lower()], k)
+
+    def test_entry(self):
+        data = json.loads(lexicon_json(ENTRIES))
+        sea = data["entries"][data["keys"]["sea"][0][0]]
+        self.assertEqual((sea["g"], sea["r"], sea["p"]), ("θᾱρος", "thāros", "noun"))
+        self.assertEqual(sea["sec"], anchor("The Sea & Navigation"))
 
 
 if __name__ == "__main__":

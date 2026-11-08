@@ -1,0 +1,84 @@
+# The website: python3 -m mkdocs build (or serve), after pip install mkdocs-material.
+# Pages come from docs/ plus README.md as the home page; website/hooks.py adds the rest.
+site_name: Tharaic
+site_description: A fictional language for a seafaring culture
+repo_url: https://github.com/thekyria/tharaic-language
+repo_name: thekyria/tharaic-language
+edit_uri: ""
+docs_dir: docs
+use_directory_urls: false
+
+theme:
+  name: material
+  custom_dir: website/overrides
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+hooks:
+  - website/hooks.py
+
+extra_css:
+  - assets/tharaic.css
+extra_javascript:
+  - assets/tharaic.js
+  - assets/lookup.js
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+validation:
+  links:
+    anchors: warn
+
+nav:
+  - Home: index.md
+  - English → Tharaic lookup: lookup.md
+  - Sound & script:
+      - Phonology & Script: phonology.md
+      - The Tharaic Typefaces: font.md
+  - Grammar:
+      - Morphology: morphology.md
+      - Syntax & Function Words: syntax.md
+      - Registers: registers.md
+      - Dialects: dialects.md
+      - Word Building: word-building.md
+      - History: history.md
+  - Words:
+      - Lexicon: lexicon.md
+      - English Index: english-index.md
+  - Texts:
+      - Sample Sentences: texts.md
+      - Proverbs & Oaths: proverbs.md
+      - The Sacred Register: sacred.md
+      - Chants & Stories: stories.md
+      - Calendar & Star Lore: calendar.md
+      - Translating the Gospels: gospels.md
+      - Mark 1: mark-1.md
+  - Roadmap: roadmap.md
